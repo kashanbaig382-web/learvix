@@ -2,7 +2,7 @@ import { articles } from "@/data/articles";
 import { articleContent } from "@/data/articleContent";
 
 export default function sitemap() {
-  const baseUrl = "https://learvix.vercel.app";
+  const baseUrl = "https://learvix-ai.vercel.app";
 
   const staticPages = [
     "",

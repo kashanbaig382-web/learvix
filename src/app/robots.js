@@ -5,6 +5,6 @@ export default function robots() {
       allow: "/",
     },
 
-    sitemap: "https://learvix.vercel.app/sitemap.xml",
+    sitemap: "https://learvix-ai.vercel.app/sitemap.xml",
   };
 }
