@@ -1488,4 +1488,484 @@ During interphase.`,
       }
     ]
   },
+  "make-a-study-guide-from-notes-with-ai": {
+    introduction: [
+      "A good study guide is more than a shorter version of your notes. It should show you what you need to understand, how important ideas connect, what you still need to review, and how to test yourself before an exam.",
+      "AI can help turn scattered lecture notes into a structured study guide with key concepts, definitions, processes, formulas, examples, and practice questions. But the generated guide should not automatically be treated as complete or accurate.",
+      "In this guide, you will learn how to make a study guide from notes with AI, verify it against your course material, identify gaps in your knowledge, and turn the finished guide into an active revision system."
+    ],
+
+    sections: [
+      {
+        heading: "Quick Answer: How to Make a Study Guide From Notes With AI",
+        paragraphs: [
+          "Gather the notes that match the topic or exam you are preparing for, organize them into manageable sections, and give them to an AI tool with clear instructions about what the study guide should contain.",
+          "Ask the AI to use your material as its source, organize the important concepts, flag missing information instead of guessing, and include questions you can use to test yourself. Then verify the finished guide against your original notes before studying from it."
+        ],
+        list: [
+          "Define the topic or exam you are studying for.",
+          "Gather the relevant notes and course material.",
+          "Clean up unclear or incomplete notes.",
+          "Choose the structure of your study guide.",
+          "Give AI clear source-based instructions.",
+          "Generate the first version of the guide.",
+          "Verify important information against your notes.",
+          "Mark missing or uncertain material.",
+          "Turn key sections into active-recall questions.",
+          "Use weak areas to plan your revision."
+        ],
+        note:
+          "Think of the AI-generated study guide as an organized first draft. Your original course material remains the source you should use to check important details."
+      },
+
+      {
+        heading: "What Should an AI Study Guide Include?",
+        paragraphs: [
+          "There is no single study-guide format that works for every subject. However, a useful guide usually combines organization with opportunities to test yourself.",
+          "Instead of asking AI for one long summary, give each type of information its own section."
+        ],
+        list: [
+          "A short overview of the topic.",
+          "Major concepts organized by section.",
+          "Important terms and definitions.",
+          "Processes or sequences you need to understand.",
+          "Formulas and what their variables mean when relevant.",
+          "Important examples.",
+          "Comparisons or relationships between concepts.",
+          "Common mistakes or confusing points supported by your notes.",
+          "Material that needs verification.",
+          "Self-test questions."
+        ],
+        note:
+          "Your guide does not need every section above. A mathematics guide may focus heavily on formulas and worked methods, while a history guide may focus more on events, causes, consequences, and comparisons."
+      },
+
+      {
+        heading: "Step 1: Define What You Are Studying For",
+        paragraphs: [
+          "Before giving AI your notes, define the scope of the study guide. This prevents the guide from becoming a general overview when you actually need focused exam preparation.",
+          "If your teacher has provided learning objectives, an exam outline, syllabus section, or review sheet, use it to decide what material belongs in the guide."
+        ],
+        list: [
+          "What subject are you studying?",
+          "Which chapters or lectures are included?",
+          "Which topics are excluded?",
+          "What learning objectives have you been given?",
+          "What type of exam or assessment are you preparing for?",
+          "Are you expected to recall facts, explain concepts, solve problems, compare ideas, or apply knowledge?"
+        ],
+        example: `Instead of:
+
+"Make a biology study guide."
+
+Try:
+
+"I am preparing for a biology exam covering cell division, mitosis, meiosis, and the cell cycle. Use the notes I provide to build a study guide focused on definitions, stages, comparisons, important processes, and self-test questions."`
+      },
+
+      {
+        heading: "Step 2: Gather Your Study Material",
+        paragraphs: [
+          "Your study guide is only as relevant as the material you give the AI. Start with sources that actually match your class.",
+          "Depending on the course, this might include lecture notes, slides, assigned readings, teacher review sheets, or your own corrected notes."
+        ],
+        list: [
+          "Lecture notes.",
+          "Class slides.",
+          "Teacher-provided review sheets.",
+          "Relevant textbook sections.",
+          "Readable PDFs.",
+          "Course learning objectives.",
+          "Your own previous summaries.",
+          "Corrected examples or practice material."
+        ],
+        note:
+          "More material is not always better. Include sources that belong to the same topic or assessment instead of combining unrelated parts of the course."
+      },
+
+      {
+        heading: "Step 3: Clean and Organize Your Notes",
+        paragraphs: [
+          "Lecture notes often contain abbreviations, unfinished sentences, duplicated ideas, reminders, and information written without enough context.",
+          "You do not need to rewrite everything before using AI, but obvious ambiguities should be corrected so the model has a clearer source."
+        ],
+        list: [
+          "Separate notes by lecture or topic.",
+          "Add useful headings.",
+          "Expand unclear abbreviations.",
+          "Correct obvious typing errors.",
+          "Keep important definitions and examples.",
+          "Preserve formulas and explain variables when your notes provide them.",
+          "Mark incomplete sections instead of guessing what they mean.",
+          "Remove unrelated reminders and duplicated text."
+        ],
+        note:
+          "If you do not know what an incomplete note means, leave it marked as unclear. Do not invent the missing information just to make the input look cleaner."
+      },
+
+      {
+        heading: "Step 4: Choose the Structure of Your Study Guide",
+        paragraphs: [
+          "Before generation, tell AI exactly how the guide should be organized. This gives you more control than simply asking it to summarize your notes.",
+          "A structured guide also makes it easier to spot missing information."
+        ],
+        list: [
+          "Topic overview.",
+          "Key concepts.",
+          "Important definitions.",
+          "Processes or steps.",
+          "Formulas and variables.",
+          "Examples.",
+          "Concept comparisons.",
+          "Important relationships or cause-and-effect connections.",
+          "Common confusing points.",
+          "Needs Verification section.",
+          "Self-test questions."
+        ]
+      },
+
+      {
+        heading: "Step 5: Use a Better AI Study Guide Prompt",
+        paragraphs: [
+          "The prompt should tell AI what material it is allowed to use, what the finished guide should contain, and what to do when your notes are incomplete.",
+          "One particularly useful instruction is to create a separate section for information that cannot be confidently supported by your notes."
+        ]
+      },
+
+      {
+        heading: "Copy-Paste AI Prompt for Making a Study Guide From Notes",
+        paragraphs: [
+          "Use this prompt as a starting point and adjust the subject, level, and exam information when necessary."
+        ],
+        prompt: `Create a structured study guide using ONLY the notes I provide below.
+
+Study context:
+Subject: [SUBJECT]
+Topic or unit: [TOPIC]
+Exam type: [EXAM TYPE IF KNOWN]
+
+Organize the study guide into:
+
+1. Topic Overview
+2. Key Concepts
+3. Important Terms and Definitions
+4. Processes, Steps, or Formulas
+5. Important Examples
+6. Connections and Comparisons Between Concepts
+7. Common Confusing Points
+8. Needs Verification
+9. Self-Test Questions
+
+Rules:
+- Use only information supported by my notes.
+- Do not silently add missing facts from outside knowledge.
+- Keep important terminology accurate.
+- Preserve useful examples and context.
+- Remove unnecessary repetition.
+- Explain difficult ideas clearly without changing their meaning.
+- If my notes are incomplete, ambiguous, or contradictory, put the issue under "Needs Verification" instead of guessing.
+- Do not claim that something will appear on my exam unless my notes explicitly say so.
+- Include 10 self-test questions based on the most important material.
+- Put the answers in a separate answer-key section so I can attempt the questions first.
+
+My notes:
+[PASTE YOUR NOTES HERE]`
+      },
+
+      {
+        heading: "Step 6: Verify the Study Guide Against Your Notes",
+        paragraphs: [
+          "Do not start memorizing the generated guide immediately. Open your original notes and compare the two.",
+          "AI can omit an important detail, misunderstand shorthand, simplify a concept too aggressively, or produce information that sounds reasonable but is not supported by your source."
+        ],
+        list: [
+          "Check important definitions.",
+          "Verify formulas, numbers, dates, names, and terminology.",
+          "Look for major concepts that were omitted.",
+          "Check whether examples still have the correct meaning.",
+          "Look for unsupported information.",
+          "Check whether two different concepts were accidentally combined.",
+          "Review every item in the Needs Verification section.",
+          "Compare the guide with any official exam outline or learning objectives you have."
+        ],
+        note:
+          "A clean, professional-looking study guide is not automatically an accurate one. Verification is part of creating the guide, not an optional extra."
+      },
+
+      {
+        heading: "Step 7: Find Gaps in Your Knowledge",
+        paragraphs: [
+          "Once the content itself has been checked, use the study guide to discover what you do not understand.",
+          "Go section by section and try to explain each important concept without reading the explanation. Anything you cannot explain confidently becomes a revision target."
+        ],
+        list: [
+          "Concepts you cannot explain in your own words.",
+          "Definitions you repeatedly forget.",
+          "Processes whose order you confuse.",
+          "Formulas you know but do not know when to use.",
+          "Comparisons you mix up.",
+          "Questions you answer only partially.",
+          "Sections of your original notes that are still unclear."
+        ],
+        prompt: `Help me identify my weak areas using this verified study guide.
+
+Ask me one question at a time from the guide.
+
+After each answer:
+- tell me whether my answer is complete based only on the study guide,
+- identify the specific idea I missed,
+- do not introduce unrelated outside information,
+- keep a list of the topics I struggle with.
+
+At the end, group my weak areas by topic.`
+      },
+
+      {
+        heading: "Step 8: Turn the Study Guide Into Active Recall",
+        paragraphs: [
+          "A study guide is useful for organizing information, but repeatedly reading it should not be the only thing you do.",
+          "After you understand a section, hide the explanation and try to retrieve the information yourself."
+        ],
+        list: [
+          "Turn definitions into flashcards.",
+          "Convert headings into questions.",
+          "Create short-answer questions.",
+          "Generate a mixed practice quiz.",
+          "Explain concepts aloud without looking.",
+          "Recreate processes or diagrams from memory when appropriate.",
+          "Answer comparison questions without checking the guide first."
+        ],
+        prompt: `Turn this verified study guide into active-recall practice.
+
+Create:
+- 5 short-answer questions,
+- 5 multiple-choice questions,
+- 5 concept explanation questions.
+
+Use only the study guide as the source.
+
+Do not show answers after each question.
+Put the complete answer key at the end.
+
+Focus more questions on the concepts marked as difficult or important.`
+      },
+
+      {
+        heading: "Step 9: Build a Revision Plan From the Study Guide",
+        paragraphs: [
+          "Your guide can also help decide what to study next. Instead of spending equal time on every section, separate topics based on how well you know them.",
+          "A simple system is to label topics as strong, developing, or weak."
+        ],
+        list: [
+          "Strong — you can explain and apply the concept without help.",
+          "Developing — you understand the main idea but miss details.",
+          "Weak — you cannot explain the concept reliably yet."
+        ],
+        prompt: `Create a revision plan from this study guide and my weak-topic list.
+
+Prioritize:
+1. weak topics,
+2. developing topics,
+3. strong topics for shorter review.
+
+For each study session, include:
+- topic to review,
+- one active-recall task,
+- one short self-test,
+- what I should be able to explain before moving on.
+
+Do not predict what will appear on my exam.`
+      },
+
+      {
+        heading: "Example: Lecture Notes to AI Study Guide",
+        paragraphs: [
+          "Here is a simplified example using biology notes."
+        ],
+        example: `RAW NOTES
+
+Mitosis
+cell division
+2 identical daughter cells
+growth + repair
+DNA copied before mitosis
+stages: prophase metaphase anaphase telophase
+meiosis different - 4 cells? half chromosomes
+
+
+AI STUDY GUIDE
+
+TOPIC OVERVIEW
+Mitosis is a type of cell division associated with growth and tissue repair.
+
+KEY CONCEPTS
+- Mitosis produces two genetically identical daughter cells.
+- DNA is copied before mitosis begins.
+
+IMPORTANT PROCESS
+Stages listed in the notes:
+1. Prophase
+2. Metaphase
+3. Anaphase
+4. Telophase
+
+MITOSIS VS. MEIOSIS
+The notes indicate that meiosis differs from mitosis and may produce four cells with half the chromosome number.
+
+NEEDS VERIFICATION
+- Confirm the exact description of meiosis because the original note contains uncertainty ("4 cells?").
+- The notes do not explain what happens during each stage of mitosis.
+
+SELF-TEST QUESTIONS
+1. What is mitosis?
+2. How many daughter cells does mitosis produce?
+3. What are the stages of mitosis listed in the notes?
+4. Why is mitosis important?
+5. Which information about meiosis still needs verification?`,
+        note:
+          "Notice that the AI did not silently turn the uncertain meiosis note into a confident fact. It preserved the uncertainty so the student knows what to verify."
+      },
+
+      {
+        heading: "How to Make AI Study Guides for Different Subjects",
+        paragraphs: [
+          "The structure of your guide should change depending on what the subject requires you to do."
+        ],
+        list: [
+          "Science — concepts, terminology, processes, diagrams, cause-and-effect relationships, and applications.",
+          "Mathematics — formulas, variable meanings, when to use each method, worked examples, and common errors.",
+          "History — events, dates, people, causes, consequences, comparisons, and evidence from your material.",
+          "Literature — characters, themes, events, arguments, textual evidence from permitted material, and comparisons.",
+          "Computer science — concepts, syntax or rules where relevant, processes, examples, and problem-solving questions."
+        ],
+        note:
+          "Do not ask AI to invent subject-specific sections that your course does not require. Match the guide to your actual learning objectives."
+      },
+
+      {
+        heading: "How to Make a Study Guide From Multiple Lectures",
+        paragraphs: [
+          "When an exam covers several lectures, processing everything at once can make verification difficult.",
+          "A better approach is to create and verify smaller section guides before combining them."
+        ],
+        list: [
+          "Organize material by lecture or topic.",
+          "Generate one section guide at a time.",
+          "Verify each section against its original notes.",
+          "Use consistent terminology across sections.",
+          "Combine the verified sections.",
+          "Ask AI to identify repeated concepts and relationships between lectures.",
+          "Create a final cumulative self-test."
+        ],
+        note:
+          "Combining verified sections is safer than generating one enormous guide from weeks of unorganized notes."
+      },
+
+      {
+        heading: "How to Make a Study Guide From Handwritten Notes",
+        paragraphs: [
+          "If your notes are handwritten, you can type them manually or use a tool that can extract text from images.",
+          "Check the extracted text before asking AI to build the study guide. Handwriting recognition may misread names, numbers, symbols, abbreviations, formulas, and technical terminology.",
+          "For difficult handwriting, correcting the text first can significantly improve the quality of the generated guide."
+        ]
+      },
+
+      {
+        heading: "How to Make a Study Guide From PDFs",
+        paragraphs: [
+          "If your AI tool supports document uploads, you may be able to create a study guide directly from lecture PDFs, slides exported as PDFs, or textbook sections that you are permitted to use.",
+          "For long documents, specify the relevant chapter or page range. Check tables, equations, diagrams, scanned pages, and unusual formatting against the original document because document extraction may not preserve them perfectly."
+        ],
+        note:
+          "Keep the original PDF available while reviewing the generated guide so important information can be traced back to its source."
+      },
+
+      {
+        heading: "Common AI Study Guide Mistakes",
+        paragraphs: [
+          "AI can reduce the time required to organize material, but it can also make it easy to produce a large amount of low-quality revision content."
+        ],
+        list: [
+          "Giving AI weeks of unorganized notes in one prompt.",
+          "Asking only for a summary instead of a structured guide.",
+          "Allowing AI to silently fill gaps in incomplete notes.",
+          "Trusting definitions and formulas without checking them.",
+          "Including every minor detail instead of prioritizing concepts.",
+          "Assuming AI knows exactly what will be on your exam.",
+          "Creating practice questions but reading the answers immediately.",
+          "Ignoring weak areas after self-testing.",
+          "Using the guide as a replacement for understanding the source material.",
+          "Never updating the guide when new course material is added."
+        ]
+      },
+
+      {
+        heading: "Can You Make an AI Study Guide for Free?",
+        paragraphs: [
+          "Yes, depending on the tools available to you. Some general AI assistants and student-focused tools offer free access or limited free usage that can be used to organize notes into a study guide.",
+          "Features, upload limits, and free-plan allowances can change, so check the current terms of the tool you choose.",
+          "You do not necessarily need a dedicated study-guide generator. If an AI tool accepts your notes and follows detailed instructions, you can use a structured prompt to create the first draft yourself."
+        ]
+      },
+
+      {
+        heading: "Using AI Study Guides Responsibly",
+        paragraphs: [
+          "AI should help organize your learning rather than replace it. You are still responsible for checking the information, understanding the concepts, and deciding whether you can explain them without assistance.",
+          "Do not upload private, confidential, or restricted course material without understanding the rules and the AI service's data practices.",
+          "For graded work, assignments, and assessments, follow your teacher's, school's, university's, or course's rules regarding AI use."
+        ],
+        note:
+          "A useful principle is: AI can organize the material and help create practice, but verification, understanding, and recall should remain with you."
+      },
+
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "Making a study guide with AI can save time, but the biggest advantage is not automatic summarization. It is the ability to turn scattered material into a structured system you can verify and actively study.",
+          "Define the exam scope, organize your notes, generate a source-based guide, check it carefully, identify your weak areas, and then use active recall to strengthen them.",
+          "The complete workflow is: notes → structure → AI study guide → verify → find gaps → active recall → revision plan.",
+          "Used this way, AI becomes part of your study process without taking over the thinking that actually helps you learn."
+        ]
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can AI make a study guide from my notes?",
+        answer:
+          "Yes. You can provide your notes to a suitable AI tool and ask it to organize them into sections such as key concepts, definitions, processes, examples, and self-test questions. Check the generated guide against your original notes before relying on it."
+      },
+      {
+        question: "What is the best prompt for making an AI study guide?",
+        answer:
+          "A useful prompt defines the subject and exam scope, tells the AI to use your notes as its source, specifies the sections you want, asks it not to invent missing information, and creates a separate area for anything that needs verification."
+      },
+      {
+        question: "What should an AI study guide include?",
+        answer:
+          "Depending on the subject, it may include a topic overview, key concepts, definitions, processes, formulas, examples, comparisons, areas that need verification, and self-test questions."
+      },
+      {
+        question: "Can AI make a study guide from multiple lectures?",
+        answer:
+          "Yes. For a large amount of material, it is usually easier to create and verify guides for individual lectures or topics first and then combine the verified sections into a cumulative guide."
+      },
+      {
+        question: "Can I make a study guide from handwritten notes?",
+        answer:
+          "Yes. You can type the notes or convert handwriting into digital text using a suitable image or text-recognition tool. Check the extracted text carefully before generating the study guide."
+      },
+      {
+        question: "Can AI make a study guide from a PDF?",
+        answer:
+          "Many AI tools can work with PDF uploads. For long PDFs, focus on the relevant chapter or pages and verify generated definitions, formulas, tables, diagrams, and other important details against the original document."
+      },
+      {
+        question: "Should I study only from an AI-generated study guide?",
+        answer:
+          "Usually not. Treat the guide as a revision aid alongside your original notes and official course resources. Verify important information and use self-testing or other active study methods instead of relying only on rereading."
+      }
+    ]
+  },
 };
