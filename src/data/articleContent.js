@@ -345,6 +345,29 @@ A: Oxygen.`,
         ],
       },
     ],
+    relatedGuides: [
+  {
+    slug: "turn-a-pdf-into-flashcards-with-ai",
+    category: "Notes & PDFs",
+    title: "How to Turn a PDF Into Flashcards With AI",
+    description:
+      "Turn PDF study material into focused flashcards and verify them before revision."
+  },
+  {
+    slug: "create-quizzes-from-notes-using-ai",
+    category: "Exam Prep",
+    title: "How to Create Quizzes From Notes Using AI",
+    description:
+      "Turn your notes into practice quizzes and use mistakes to find weak areas."
+  },
+  {
+    slug: "make-a-study-guide-from-notes-with-ai",
+    category: "Study Guides",
+    title: "How to Make a Study Guide From Notes With AI",
+    description:
+      "Organize your notes into a structured AI study guide and active revision plan."
+  }
+],
 
     faqs: [
       {
@@ -664,6 +687,29 @@ Keep the answer key separate at the end.`
           "Study smarter with AI, but keep your own thinking at the center of the process."
       }
     ],
+    relatedGuides: [
+  {
+    slug: "make-a-study-guide-from-notes-with-ai",
+    category: "Study Guides",
+    title: "How to Make a Study Guide From Notes With AI",
+    description:
+      "Turn your notes into a structured study guide, identify weak areas, and build a revision plan."
+  },
+  {
+    slug: "summarize-lecture-notes-with-ai",
+    category: "Study Guides",
+    title: "How to Summarize Lecture Notes With AI",
+    description:
+      "Organize long lecture notes into a clear AI-generated study summary."
+  },
+  {
+    slug: "turn-lecture-notes-into-flashcards-with-ai",
+    category: "Notes & PDFs",
+    title: "How to Turn Lecture Notes Into Flashcards With AI",
+    description:
+      "Convert lecture notes into focused active-recall flashcards for revision."
+  }
+],
 
     faqs: [
       {
@@ -1030,6 +1076,29 @@ Flag any table, diagram, equation, or section that you cannot interpret confiden
         ]
       }
     ],
+  relatedGuides: [
+  {
+    slug: "make-a-study-guide-from-notes-with-ai",
+    category: "Study Guides",
+    title: "How to Make a Study Guide From Notes With AI",
+    description:
+      "Turn your summarized notes into a structured study guide and revision system."
+  },
+  {
+    slug: "turn-lecture-notes-into-flashcards-with-ai",
+    category: "Notes & PDFs",
+    title: "How to Turn Lecture Notes Into Flashcards With AI",
+    description:
+      "Transform your lecture notes into focused flashcards for active recall."
+  },
+  {
+    slug: "create-quizzes-from-notes-using-ai",
+    category: "Exam Prep",
+    title: "How to Create Quizzes From Notes Using AI",
+    description:
+      "Create practice quizzes from your notes and use mistakes to find weak areas."
+  }
+],
 
     faqs: [
       {
@@ -1449,6 +1518,29 @@ During interphase.`,
         ]
       }
     ],
+    relatedGuides: [
+  {
+    slug: "turn-lecture-notes-into-flashcards-with-ai",
+    category: "Notes & PDFs",
+    title: "How to Turn Lecture Notes Into Flashcards With AI",
+    description:
+      "Create active-recall flashcards directly from lecture notes using AI."
+  },
+  {
+    slug: "make-a-study-guide-from-notes-with-ai",
+    category: "Study Guides",
+    title: "How to Make a Study Guide From Notes With AI",
+    description:
+      "Organize your study material into a structured AI-powered study guide."
+  },
+  {
+    slug: "create-quizzes-from-notes-using-ai",
+    category: "Exam Prep",
+    title: "How to Create Quizzes From Notes Using AI",
+    description:
+      "Turn study material into practice questions and targeted revision."
+  }
+],
 
     faqs: [
       {
@@ -1929,6 +2021,29 @@ SELF-TEST QUESTIONS
         ]
       }
     ],
+    relatedGuides: [
+  {
+    slug: "summarize-lecture-notes-with-ai",
+    category: "Study Guides",
+    title: "How to Summarize Lecture Notes With AI",
+    description:
+      "Create a clear AI summary before building your complete study guide."
+  },
+  {
+    slug: "turn-lecture-notes-into-flashcards-with-ai",
+    category: "Notes & PDFs",
+    title: "How to Turn Lecture Notes Into Flashcards With AI",
+    description:
+      "Turn key concepts from your notes into active-recall flashcards."
+  },
+  {
+    slug: "create-quizzes-from-notes-using-ai",
+    category: "Exam Prep",
+    title: "How to Create Quizzes From Notes Using AI",
+    description:
+      "Test your knowledge with AI-generated quizzes and identify weak areas."
+  }
+],
 
     faqs: [
       {

@@ -1,9 +1,19 @@
+import Link from "next/link";
+
 export default function ArticleContent({ content }) {
+  const introduction = Array.isArray(content.introduction)
+    ? content.introduction
+    : content.introduction
+      ? [content.introduction]
+      : [];
+
   return (
     <div className="article-content">
-      {content.introduction && (
-        <p className="article-introduction">{content.introduction}</p>
-      )}
+      {introduction.map((paragraph, index) => (
+        <p className="article-introduction" key={index}>
+          {paragraph}
+        </p>
+      ))}
 
       {content.sections.map((section, sectionIndex) => (
         <section
@@ -38,6 +48,17 @@ export default function ArticleContent({ content }) {
             </div>
           )}
 
+          {section.paragraphsAfter?.map((paragraph, index) => (
+            <p key={`after-${index}`}>{paragraph}</p>
+          ))}
+
+          {section.exampleAfter && (
+            <div className="article-example">
+              <span>Example</span>
+              <p>{section.exampleAfter}</p>
+            </div>
+          )}
+
           {section.note && (
             <div className="article-note">
               <strong>LEARVIX Tip</strong>
@@ -46,6 +67,34 @@ export default function ArticleContent({ content }) {
           )}
         </section>
       ))}
+
+      {content.relatedGuides?.length > 0 && (
+        <section className="article-related">
+          <span className="article-related-label">Continue Learning</span>
+
+          <h2>Related LEARVIX Guides</h2>
+
+          <p className="article-related-intro">
+            Continue building your AI-powered study workflow with these related
+            guides.
+          </p>
+
+          <div className="article-related-grid">
+            {content.relatedGuides.map((guide) => (
+              <Link
+                href={`/blog/${guide.slug}`}
+                className="article-related-card"
+                key={guide.slug}
+              >
+                <span>{guide.category}</span>
+                <h3>{guide.title}</h3>
+                <p>{guide.description}</p>
+                <strong>Read Guide →</strong>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {content.faqs?.length > 0 && (
         <section className="article-faq">
