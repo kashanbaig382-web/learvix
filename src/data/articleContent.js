@@ -1064,4 +1064,428 @@ Flag any table, diagram, equation, or section that you cannot interpret confiden
       }
     ]
   },
+  "turn-a-pdf-into-flashcards-with-ai": {
+    introduction: [
+      "PDFs are useful for storing lecture slides, study guides, research material, and textbook chapters, but reading the same pages repeatedly is not always an effective way to prepare for an exam.",
+      "AI can help turn information from a PDF into flashcards that require you to recall concepts instead of simply rereading them. The important part, however, is not generating as many cards as possible. It is creating accurate, focused flashcards that actually help you study.",
+      "In this guide, you will learn how to turn a PDF into flashcards with AI, verify the generated cards against the original document, improve weak questions, and use the final deck for active recall and spaced review."
+    ],
+
+    sections: [
+      {
+        heading: "Quick Answer: How to Turn a PDF Into Flashcards With AI",
+        paragraphs: [
+          "Choose the relevant chapter or section of your PDF, upload it to an AI tool that supports documents or extract the text, and ask the AI to create focused question-and-answer flashcards using only the provided material.",
+          "Do not start studying immediately after generation. Compare important cards with the original PDF, remove weak or duplicate cards, and fix anything that is inaccurate or missing context."
+        ],
+        list: [
+          "Choose the chapter, topic, or page range you want to study.",
+          "Check whether the PDF contains selectable text or scanned images.",
+          "Upload the PDF or provide the relevant extracted text.",
+          "Ask AI to generate focused active-recall flashcards.",
+          "Keep each card focused on one main idea.",
+          "Verify important answers against the PDF.",
+          "Remove duplicates and improve vague cards.",
+          "Study the finished deck using active recall.",
+          "Review difficult cards again over time."
+        ],
+        note:
+          "Treat AI-generated flashcards as a first draft. The original PDF should remain your reference when checking important information."
+      },
+
+      {
+        heading: "Why Turn PDFs Into Flashcards?",
+        paragraphs: [
+          "Long PDFs can contain far more information than you need to think about at one time. Flashcards break important material into smaller questions that you can actively answer.",
+          "AI can reduce some of the repetitive work involved in finding definitions, concepts, relationships, processes, and other testable information inside a document.",
+          "The goal is not to convert every sentence into a card. A useful deck should focus on information worth remembering and questions that make you retrieve that information from memory."
+        ],
+        list: [
+          "Break large study material into smaller questions.",
+          "Practice retrieving information without looking at the PDF.",
+          "Identify concepts you repeatedly forget.",
+          "Review important definitions and processes.",
+          "Create reusable revision material from lecture documents."
+        ]
+      },
+
+      {
+        heading: "Step 1: Choose the Right Part of Your PDF",
+        paragraphs: [
+          "Before uploading a large document, decide exactly what you want to study. One chapter, lecture, topic, or page range is usually easier to review than an entire textbook at once.",
+          "Working with focused sections also makes it easier to check whether the generated flashcards accurately represent the source."
+        ],
+        list: [
+          "Choose one chapter or lecture.",
+          "Identify the pages relevant to your current topic.",
+          "Exclude references, appendices, or unrelated sections when they are not needed.",
+          "Keep diagrams, examples, and tables available for verification.",
+          "Split very large PDFs into logical study sections."
+        ],
+        note:
+          "More source material does not automatically produce better flashcards. A smaller, clearly defined section often gives you a deck that is easier to verify and study."
+      },
+
+      {
+        heading: "Step 2: Check What Type of PDF You Have",
+        paragraphs: [
+          "Not every PDF stores information in the same way. Some contain selectable digital text, while others are essentially collections of scanned page images.",
+          "If you can select and copy normal sentences from the document, the PDF probably contains readable text. If you cannot, the document may require image processing or optical character recognition before some tools can work with it reliably."
+        ],
+        list: [
+          "Text-based PDF — usually contains selectable text.",
+          "Scanned PDF — pages may be stored as images.",
+          "Mixed PDF — may contain normal text plus scanned pages, diagrams, or images.",
+          "Complex PDF — may contain equations, tables, multi-column layouts, or specialized notation."
+        ],
+        note:
+          "OCR and document extraction can make mistakes. Pay extra attention to numbers, formulas, symbols, names, tables, and technical terminology."
+      },
+
+      {
+        heading: "Step 3: Upload the PDF or Extract the Text",
+        paragraphs: [
+          "If your AI tool supports PDF uploads, you can provide the relevant document directly. Otherwise, copy the text from the pages you want to study and paste it into the tool.",
+          "Tell the AI which chapter, pages, or topic it should use. This gives the task a clearer boundary and makes the output easier to verify.",
+          "Before uploading course material, consider whether the document contains private, confidential, copyrighted, or institution-restricted information and follow the relevant rules."
+        ]
+      },
+
+      {
+        heading: "Step 4: Decide What Kind of Flashcards You Want",
+        paragraphs: [
+          "Different material requires different kinds of questions. A deck containing only definition cards may be useful for terminology but weak for a topic that requires explanation, comparison, or application.",
+          "Tell the AI what kinds of cards fit your subject."
+        ],
+        list: [
+          "Definition cards — useful for important terms.",
+          "Concept cards — ask what an idea means or why it matters.",
+          "Process cards — test steps or stages.",
+          "Comparison cards — distinguish related concepts.",
+          "Cause-and-effect cards — useful when relationships matter.",
+          "Formula cards — test equations, variables, or conditions.",
+          "Application cards — require using a concept in a simple situation.",
+          "Cloze-style cards — useful for selected facts or terminology when appropriate."
+        ],
+        note:
+          "Do not force every card format into every subject. Choose question types based on what you actually need to learn."
+      },
+
+      {
+        heading: "Step 5: Use a Better PDF-to-Flashcards Prompt",
+        paragraphs: [
+          "A vague request such as \"make flashcards from this PDF\" gives the AI too much freedom. Better instructions define the source, card quality, output format, and what the AI should do when information is unclear.",
+          "You should also tell the AI not to add unsupported facts from outside the document."
+        ]
+      },
+
+      {
+        heading: "Copy-Paste AI Prompt for PDF Flashcards",
+        paragraphs: [
+          "Use this prompt after uploading your PDF or providing the relevant text."
+        ],
+        prompt: `Create active-recall flashcards from the PDF material I provide.
+
+Rules:
+- Use ONLY information supported by the PDF.
+- Focus on the most important concepts rather than every sentence.
+- Create one main idea per flashcard.
+- Write a clear question on the front.
+- Keep the answer concise but complete enough to understand.
+- Include important definitions, concepts, processes, comparisons, formulas, and relationships where appropriate.
+- Avoid duplicate or nearly identical cards.
+- Do not invent information that is missing from the PDF.
+- If a section, table, diagram, formula, or sentence is unclear, flag it instead of guessing.
+- Avoid questions that can be answered only because of vague wording or missing context.
+- Create no more than 20 flashcards in this batch.
+
+Format each card like this:
+
+Question:
+Answer:
+
+PDF material:
+[UPLOAD THE PDF OR PASTE THE RELEVANT TEXT]`
+      },
+
+      {
+        heading: "Step 6: Review Every AI-Generated Flashcard",
+        paragraphs: [
+          "Generation is only the beginning. Before using the cards for serious revision, compare them with the source document.",
+          "AI can misunderstand extracted text, remove important context, create an overly broad answer, or occasionally include information that the PDF does not support."
+        ],
+        list: [
+          "Check whether the answer is supported by the PDF.",
+          "Verify numbers, dates, formulas, names, and technical terms.",
+          "Look for missing context that changes the meaning.",
+          "Remove duplicate cards.",
+          "Split cards that test several ideas at once.",
+          "Rewrite vague questions.",
+          "Check whether important concepts were completely missed.",
+          "Flag anything that requires confirmation from your teacher or official course material."
+        ],
+        note:
+          "A flashcard can sound professional and still contain an error. Verify the information rather than trusting the wording."
+      },
+
+      {
+        heading: "Step 7: Improve Weak Flashcards",
+        paragraphs: [
+          "Some generated cards may contain useful information but still be difficult to study. Instead of regenerating the entire deck, improve the weak cards.",
+          "A good revision request should tell the AI exactly what is wrong."
+        ],
+        prompt: `Review these flashcards using the PDF as the source.
+
+Improve them using these rules:
+- Keep one main idea per card.
+- Rewrite vague questions so they can be understood without unnecessary context.
+- Shorten answers that contain unnecessary information.
+- Split cards that test multiple unrelated ideas.
+- Remove duplicate cards.
+- Preserve important technical terminology.
+- Correct any answer that is not supported by the PDF.
+- Flag anything that cannot be verified from the PDF.
+- Do not add outside information.`
+      },
+
+      {
+        heading: "What Makes a Good AI Flashcard?",
+        paragraphs: [
+          "The quality of the deck matters more than the number of cards generated. A useful flashcard should make you retrieve a specific piece of knowledge without making the answer obvious."
+        ],
+        list: [
+          "One main idea per card.",
+          "A clear and specific question.",
+          "Enough context to understand what is being asked.",
+          "A concise answer.",
+          "No unnecessary clues in the question.",
+          "No unsupported information.",
+          "No duplicate questions.",
+          "A question that requires recall rather than simple recognition when possible."
+        ],
+        example: `WEAK FLASHCARD
+
+Question:
+What is photosynthesis and where does it happen and why is it important?
+
+Answer:
+Photosynthesis is how plants make glucose using light, it happens in chloroplasts, and it stores energy.
+
+
+BETTER FLASHCARDS
+
+Card 1
+Question:
+What is photosynthesis?
+
+Answer:
+The process by which light energy is converted into chemical energy stored in glucose.
+
+Card 2
+Question:
+Where does photosynthesis take place in plant cells?
+
+Answer:
+In chloroplasts.
+
+Card 3
+Question:
+What form of energy is stored as a result of photosynthesis?
+
+Answer:
+Chemical energy in glucose.`,
+        note:
+          "Breaking a broad card into focused questions makes it easier to identify exactly what you remember and what you still need to review."
+      },
+
+      {
+        heading: "Example: PDF Text to AI Flashcards",
+        paragraphs: [
+          "Imagine a biology PDF contains the following simplified section."
+        ],
+        example: `PDF TEXT
+
+Mitosis is a type of cell division that produces two genetically identical daughter cells. It is important for growth, tissue repair, and replacement of damaged cells. Before mitosis begins, DNA is replicated during interphase.
+
+AI FLASHCARDS
+
+Card 1
+Question:
+What is mitosis?
+
+Answer:
+A type of cell division that produces two genetically identical daughter cells.
+
+Card 2
+Question:
+What are two important functions of mitosis?
+
+Answer:
+Growth and tissue repair or replacement of damaged cells.
+
+Card 3
+Question:
+When is DNA replicated before mitosis?
+
+Answer:
+During interphase.`,
+        note:
+          "After generation, each answer should still be compared with the actual PDF section before the deck is treated as verified."
+      },
+
+      {
+        heading: "How to Turn a Long PDF Into Flashcards",
+        paragraphs: [
+          "Trying to convert hundreds of pages into one enormous flashcard deck can create too many cards to review properly.",
+          "Instead, divide the PDF into manageable study units and build the deck gradually."
+        ],
+        list: [
+          "Choose one chapter or topic.",
+          "Generate a limited batch of cards.",
+          "Verify that batch against the PDF.",
+          "Remove low-value and duplicate cards.",
+          "Move to the next section.",
+          "Combine verified cards into your final deck.",
+          "Tag or group cards by topic if your study app supports it."
+        ],
+        note:
+          "A smaller deck of useful cards is often more practical than hundreds of automatically generated questions you have never reviewed."
+      },
+
+      {
+        heading: "How to Turn a Scanned PDF Into Flashcards",
+        paragraphs: [
+          "A scanned PDF may contain images of pages rather than normal digital text. Depending on the tool, the document may need OCR or image understanding before its contents can be used to create flashcards.",
+          "After the text is extracted, check it before generating cards. OCR errors can completely change a technical term, number, formula, or name."
+        ],
+        list: [
+          "Extract or recognize the text from the scanned pages.",
+          "Compare the extracted text with the original scan.",
+          "Correct obvious recognition errors.",
+          "Process one logical section at a time.",
+          "Generate flashcards from the corrected material.",
+          "Verify the final cards against the original scanned pages."
+        ],
+        note:
+          "Scanned equations, diagrams, tables, and handwritten annotations deserve additional checking because their meaning may not survive text extraction correctly."
+      },
+
+      {
+        heading: "How Many Flashcards Should You Generate?",
+        paragraphs: [
+          "There is no perfect number of flashcards for every PDF. The right number depends on the length of the material, its difficulty, and how many distinct concepts are worth remembering.",
+          "Instead of asking AI for the maximum possible number, start with a manageable batch such as 10 to 20 cards for a focused section. Review them and generate more only when important concepts are missing.",
+          "This keeps quality control realistic and prevents your study deck from filling with low-value questions."
+        ]
+      },
+
+      {
+        heading: "Turn PDF Flashcards Into an Exam Study System",
+        paragraphs: [
+          "Once the deck has been verified, use the cards to find weaknesses rather than simply reading the questions and answers together.",
+          "Try to answer each question before revealing the answer. Cards you answer correctly and confidently may need less frequent attention, while difficult cards deserve more review."
+        ],
+        list: [
+          "Read the question without looking at the answer.",
+          "Answer it from memory.",
+          "Reveal the answer and compare.",
+          "Mark cards you answered incorrectly or incompletely.",
+          "Return to the PDF when you do not understand why an answer is correct.",
+          "Review weak cards again later.",
+          "Space review sessions across multiple days when possible."
+        ],
+        note:
+          "Flashcards are most useful when they make you retrieve information. Simply flipping through answers without attempting recall turns them back into another form of rereading."
+      },
+
+      {
+        heading: "Common PDF-to-Flashcard Mistakes",
+        paragraphs: [
+          "AI can make flashcard creation faster, but automation also makes it easy to create a large amount of poor study material very quickly."
+        ],
+        list: [
+          "Turning the entire textbook into flashcards at once.",
+          "Generating a card from every sentence.",
+          "Never checking cards against the PDF.",
+          "Keeping duplicate questions.",
+          "Using cards with several unrelated ideas.",
+          "Accepting overly long answers.",
+          "Ignoring extraction or OCR errors.",
+          "Studying facts that the PDF never contained.",
+          "Generating cards but never testing yourself.",
+          "Replacing understanding of the topic with memorization alone."
+        ]
+      },
+
+      {
+        heading: "Can You Turn PDFs Into Flashcards for Free?",
+        paragraphs: [
+          "Yes, depending on the tools available to you. Some AI assistants and study tools provide free access, limited free usage, or document-processing features that can be used to create flashcards.",
+          "Free-plan limits and features can change, so check the current terms of the tool you choose rather than assuming a specific upload size, number of cards, or usage allowance.",
+          "You can also copy text from a PDF and use an AI tool that accepts text if direct PDF upload is unavailable."
+        ],
+        note:
+          "Choose a tool based on whether it can reliably work with your material, not simply because it promises the largest number of automatically generated cards."
+      },
+
+      {
+        heading: "Using AI Responsibly With Course PDFs",
+        paragraphs: [
+          "Before uploading lecture slides, textbooks, research papers, or course documents, consider the rules that apply to the material.",
+          "Do not upload private or confidential information to an AI service without understanding how that service handles the data. You should also respect copyright, licensing restrictions, and your institution's policies.",
+          "For assessed work, follow your teacher, school, university, or course rules regarding AI use. Using AI privately to create revision questions does not automatically mean every use of AI is allowed in an assignment."
+        ],
+        note:
+          "LEARVIX recommends using AI as a study assistant: let it help organize practice material while you remain responsible for verification, understanding, and learning."
+      },
+
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "Turning a PDF into flashcards with AI can save time, but speed should not come at the cost of accuracy or useful study design.",
+          "Choose a focused part of the document, generate a manageable number of cards, verify them against the PDF, improve weak questions, and then use the finished deck for active recall.",
+          "The complete workflow is: PDF → focused section → AI flashcards → verify → improve → active recall → spaced review.",
+          "Used this way, AI helps with the repetitive work of creating study material while you stay responsible for deciding what is accurate and what you actually know."
+        ]
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can AI turn a PDF into flashcards?",
+        answer:
+          "Yes. AI tools that support documents can often generate questions and answers from PDF content. You can also extract text from a PDF and provide it to an AI tool manually. Always verify important cards against the original document."
+      },
+      {
+        question: "What is the best prompt for making flashcards from a PDF?",
+        answer:
+          "A useful prompt tells the AI to use only the PDF as its source, focus on important concepts, keep one main idea per card, avoid duplicates, use concise answers, and flag unclear information instead of guessing."
+      },
+      {
+        question: "Can AI make flashcards from a scanned PDF?",
+        answer:
+          "It may be possible if the tool can process images or use OCR. Because text recognition can introduce errors, check extracted numbers, formulas, names, symbols, and technical terms against the original scanned pages."
+      },
+      {
+        question: "How many flashcards should I make from a PDF?",
+        answer:
+          "There is no fixed number. Start with a manageable batch for one focused section, such as 10 to 20 cards, verify their quality, and create additional cards only when important concepts are missing."
+      },
+      {
+        question: "Can I make PDF flashcards for free?",
+        answer:
+          "Some AI and study tools provide free access or limited free features. Availability and limits can change, so check the current plan of the tool you want to use. Copying relevant PDF text into a text-based AI tool may also be an option."
+      },
+      {
+        question: "Are AI-generated flashcards accurate?",
+        answer:
+          "They can be useful, but accuracy should not be assumed. AI may misunderstand the source, lose context, or generate unsupported information, so important flashcards should be compared with the original PDF before studying."
+      },
+      {
+        question: "Should I turn an entire textbook PDF into flashcards?",
+        answer:
+          "Usually it is better to work chapter by chapter or topic by topic. Smaller batches are easier to verify, organize, and study than a very large automatically generated deck."
+      }
+    ]
+  },
 };

@@ -25,6 +25,14 @@ export const articles = [
       "Use AI to organize long lecture notes into clear summaries while keeping the important ideas.",
     readTime: "6 min read",
   },
+  {
+    slug: "turn-a-pdf-into-flashcards-with-ai",
+    category: "Notes & PDFs",
+    title: "How to Turn a PDF Into Flashcards With AI",
+    description:
+      "Learn how to turn a PDF into accurate AI flashcards using a step-by-step workflow for generation, verification, active recall, and smarter revision.",
+    readTime: "11 min read",
+  },
 ];
 
 export const publishedArticles = articles.filter(
