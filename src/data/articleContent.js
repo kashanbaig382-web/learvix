@@ -379,4 +379,323 @@ A: Oxygen.`,
       },
     ],
   },
+
+  "create-quizzes-from-notes-using-ai": {
+    introduction: [
+      "Turning your notes into practice quizzes is one of the most useful ways to use AI for studying. Instead of reading the same pages again and again, you can test what you actually remember.",
+      "AI can quickly transform lecture notes, class summaries, or textbook notes into multiple-choice, true-or-false, short-answer, and application questions. The important part is not simply generating questions—it is using those questions to find gaps in your understanding.",
+      "In this guide, you will learn a simple workflow for creating quizzes from your notes with AI, checking the generated answers, and using your mistakes to plan what to study next."
+    ],
+
+    sections: [
+      {
+        heading: "Quick Answer: How to Make a Quiz From Your Notes With AI",
+        paragraphs: [
+          "The basic process is simple: prepare your notes, give them to an AI tool, tell the AI exactly what type of quiz you want, take the quiz without looking at the answers, and then review your mistakes."
+        ],
+        list: [
+          "Choose one topic or lecture.",
+          "Clean up your notes so the important information is clear.",
+          "Paste or upload the notes to an AI tool.",
+          "Ask for a specific number and mix of questions.",
+          "Tell the AI to keep the answer key separate.",
+          "Complete the quiz without checking your notes.",
+          "Verify the answers against your original material.",
+          "Review weak topics and generate another targeted quiz."
+        ],
+        note:
+          "The goal is not to generate the largest possible quiz. A smaller quiz that tests important concepts is usually more useful than dozens of repetitive questions."
+      },
+
+      {
+        heading: "Why Turn Your Notes Into Practice Quizzes?",
+        paragraphs: [
+          "Reading notes can make information feel familiar, but familiarity does not always mean you can recall the information without help. Practice questions force you to retrieve what you know.",
+          "Quizzes can also reveal specific weak areas. Instead of vaguely deciding that you need to study an entire chapter again, you can identify the concepts you struggled to answer and focus your revision there.",
+          "AI makes this workflow faster because it can create different types of questions from material you already have."
+        ]
+      },
+
+      {
+        heading: "Step 1: Prepare Your Notes",
+        paragraphs: [
+          "Before asking AI to create a quiz, make sure the notes you provide are understandable. AI-generated questions depend heavily on the quality of the source material.",
+          "You do not need perfectly formatted notes, but obvious mistakes, missing definitions, or mixed topics can lead to confusing questions."
+        ],
+        list: [
+          "Use one lecture, chapter, or topic at a time.",
+          "Keep important definitions and examples.",
+          "Remove unrelated information.",
+          "Correct obvious spelling or factual mistakes.",
+          "Mark information that you are unsure about instead of pretending it is complete."
+        ],
+        note:
+          "If your notes are incomplete, tell the AI not to invent missing information. You can then verify unclear concepts using your textbook, teacher's materials, or another reliable source."
+      },
+
+      {
+        heading: "Step 2: Choose the Right Quiz Format",
+        paragraphs: [
+          "Different question formats test different parts of your understanding. You do not have to use only multiple-choice questions.",
+          "For general revision, a mixed quiz can make your practice more useful."
+        ],
+        list: [
+          "Multiple choice — useful for checking concepts and distinguishing between similar answers.",
+          "True or false — useful for quickly testing factual statements.",
+          "Short answer — requires you to recall an answer without seeing options.",
+          "Fill in the blank — useful for important terms, formulas, and definitions.",
+          "Application questions — useful for testing whether you can use a concept in a new situation."
+        ],
+        note:
+          "For stronger recall practice, include some questions where the answer is not visible among several options."
+      },
+
+      {
+        heading: "Step 3: Give Your Notes to an AI Tool",
+        paragraphs: [
+          "Once your notes are ready, provide them to an AI tool that can work with text. Depending on the tool, you may be able to paste your notes directly or upload a supported document.",
+          "Keep the source focused. Giving AI one clear topic usually makes it easier to create relevant questions than combining many unrelated lectures into one request.",
+          "If the material contains equations, diagrams, tables, or specialized terminology, inspect the generated questions carefully because important context may be lost when the material is processed."
+        ]
+      },
+
+      {
+        heading: "Step 4: Use a Better AI Quiz Prompt",
+        paragraphs: [
+          "A vague request such as \"make a quiz\" gives the AI too much freedom. A better prompt explains the source, number of questions, difficulty, question types, and how the answer key should be handled.",
+          "You should also tell the AI to use only the information contained in your notes unless you specifically want outside information."
+        ]
+      },
+
+      {
+        heading: "Copy-Paste AI Prompt for Creating a Quiz From Notes",
+        paragraphs: [
+          "You can adapt the following prompt for most subjects."
+        ],
+        prompt: `Create a practice quiz using ONLY the notes I provide below.
+
+Rules:
+- Create 15 questions.
+- Use a mix of multiple-choice, true-or-false, and short-answer questions.
+- Focus on the most important concepts rather than minor details.
+- Include some questions that test understanding, not only memorization.
+- Do not invent facts that are not present in my notes.
+- If something in the notes is unclear, flag it instead of guessing.
+- Do not show the answers immediately after each question.
+- Put the complete answer key in a separate section at the end.
+- For incorrect multiple-choice options, make them realistic but clearly distinguishable using the information in the notes.
+- Avoid duplicate questions.
+
+Lecture notes:
+[PASTE YOUR NOTES HERE]`
+      },
+
+      {
+        heading: "Step 5: Take the Quiz Before Looking at the Answers",
+        paragraphs: [
+          "Once the quiz has been generated, resist the temptation to immediately read the answer key. Try answering the questions from memory first.",
+          "For short-answer questions, write or say your answer before checking the correct response. For multiple-choice questions, choose an option before looking at any explanation.",
+          "Mark questions you guessed on even if your guess was correct. A lucky answer does not necessarily mean the concept is secure."
+        ],
+        note:
+          "Treat uncertain correct answers as weak areas too. Confidence can help you distinguish knowledge from guessing."
+      },
+
+      {
+        heading: "Step 6: Check the AI-Generated Answer Key",
+        paragraphs: [
+          "AI-generated answer keys should not automatically be treated as authoritative. Compare important answers with your original notes, textbook, lecture slides, or other trusted course material.",
+          "Pay extra attention to questions where the wording seems ambiguous or where two options appear equally reasonable."
+        ],
+        list: [
+          "Check that the answer is supported by your notes.",
+          "Look for questions that accidentally contain more than one correct answer.",
+          "Check whether important context was removed.",
+          "Remove repetitive or trivial questions.",
+          "Correct any factual mistakes before using the quiz again."
+        ],
+        note:
+          "AI is useful for generating study material, but verification remains your responsibility."
+      },
+
+      {
+        heading: "Step 7: Turn Wrong Answers Into a Revision Plan",
+        paragraphs: [
+          "Your mistakes are often the most valuable part of the quiz. Instead of only calculating a score, group incorrect answers by topic.",
+          "For example, if you miss four questions and three of them involve the same concept, that topic probably deserves more attention than the rest of the chapter.",
+          "After reviewing the weak topic, ask AI to generate a smaller follow-up quiz focused only on that area."
+        ],
+        prompt: `I struggled with the following questions from my previous quiz:
+
+[PASTE THE QUESTIONS YOU MISSED]
+
+Using my original notes, identify the concepts I need to review.
+
+Then create 5 NEW questions focused on those weak areas.
+
+Do not repeat the previous questions.
+Do not show the answer key until the end.
+Use only information supported by my notes.`
+      },
+
+      {
+        heading: "Example: Lecture Notes to AI Practice Quiz",
+        paragraphs: [
+          "Imagine you are studying biology and your notes contain the following information:"
+        ],
+        example: `Lecture notes:
+
+Photosynthesis allows plants to convert light energy into chemical energy.
+
+It mainly takes place in chloroplasts.
+
+Chlorophyll absorbs light energy.
+
+The process uses carbon dioxide and water and produces glucose and oxygen.`,
+        paragraphsAfter: [
+          "After giving these notes to AI, a simple practice quiz might look like this:"
+        ],
+        exampleAfter: `1. Where does photosynthesis mainly take place in plant cells?
+
+A. Nucleus
+B. Chloroplasts
+C. Ribosomes
+D. Cell membrane
+
+2. What is the role of chlorophyll in photosynthesis?
+
+3. True or False:
+Photosynthesis converts chemical energy into light energy.
+
+4. Which two substances are used in the process according to the notes?
+
+5. Name the two products mentioned in the notes.
+
+Answer key:
+
+1. B. Chloroplasts
+2. It absorbs light energy.
+3. False.
+4. Carbon dioxide and water.
+5. Glucose and oxygen.`,
+        note:
+          "This is intentionally a simple example. For advanced subjects, ask for questions that require comparison, explanation, calculation, or application where appropriate."
+      },
+
+      {
+        heading: "How to Make AI Questions More Like Your Real Exam",
+        paragraphs: [
+          "Generic AI questions may not match the way your teacher or institution designs exams. You can improve the output by describing the format you need.",
+          "If you have legitimate sample questions, a syllabus, or teacher-provided practice material, you can describe their general structure to the AI without asking it to predict confidential exam questions."
+        ],
+        list: [
+          "Specify the expected difficulty level.",
+          "Choose the number of questions.",
+          "Specify the question types.",
+          "Ask for conceptual or application-based questions.",
+          "Set a time limit for yourself when taking the quiz.",
+          "Ask for explanations in the answer key if they help you understand mistakes."
+        ],
+        prompt: `Create a quiz from these notes for exam practice.
+
+Difficulty: intermediate
+Questions: 20
+Format:
+- 8 multiple-choice
+- 4 true-or-false
+- 5 short-answer
+- 3 application questions
+
+Prioritize understanding and application over simple memorization.
+
+Keep the answer key separate at the end.`
+      },
+
+      {
+        heading: "Common Mistakes to Avoid",
+        paragraphs: [
+          "AI quizzes become less useful when the generation process replaces the actual studying. The quiz should make you think, not simply give you more content to scroll through."
+        ],
+        list: [
+          "Generating a huge quiz from an entire course at once.",
+          "Reading the answer immediately after every question.",
+          "Using only easy multiple-choice questions.",
+          "Trusting every AI-generated answer without verification.",
+          "Ignoring questions you answered correctly by guessing.",
+          "Repeating identical questions instead of targeting weak concepts.",
+          "Using AI-generated material as a substitute for official course resources."
+        ]
+      },
+
+      {
+        heading: "Can AI Create a Quiz From a PDF?",
+        paragraphs: [
+          "Yes, some AI tools can work with uploaded PDFs or extracted PDF text. A useful workflow is to select one chapter or section, ask AI to identify the important concepts, and then generate questions from that material.",
+          "PDF extraction is not always perfect. Tables, mathematical notation, scanned pages, and unusual formatting may be interpreted incorrectly, so compare important questions and answers with the original document.",
+          "If your AI tool cannot directly read the PDF, you can copy the relevant text into the conversation instead."
+        ]
+      },
+
+      {
+        heading: "Can AI Create Quizzes From Handwritten Notes?",
+        paragraphs: [
+          "It can, but handwritten notes usually need to be converted into readable digital text first. Some tools can process images of handwriting, while another option is to type or transcribe the important sections.",
+          "Always review the converted text before generating the quiz. A misread word, number, formula, or symbol can produce an incorrect question."
+        ]
+      },
+
+      {
+        heading: "Is It Okay to Use AI-Generated Quizzes for Studying?",
+        paragraphs: [
+          "Using AI to create personal practice questions can be a legitimate study aid, but the rules of your school, university, course, or assessment still matter.",
+          "AI should support your learning rather than complete graded work that you are expected to do independently. When an assignment or assessment restricts AI use, follow those requirements.",
+          "A good rule for LEARVIX workflows is simple: use AI to help yourself think, practice, organize, and understand—not to avoid learning the material."
+        ]
+      },
+
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "Creating quizzes from your notes with AI can turn passive study material into an interactive revision system. The strongest workflow is not simply notes to AI to quiz.",
+          "Instead, use a cycle: notes → quiz → attempt → verify → identify weak areas → review → targeted re-quiz.",
+          "That cycle keeps you involved in the learning process while letting AI handle repetitive work such as generating new practice questions."
+        ],
+        note:
+          "Study smarter with AI, but keep your own thinking at the center of the process."
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can AI make a quiz from my notes?",
+        answer:
+          "Yes. You can provide your notes to a suitable AI tool and ask it to generate multiple-choice, true-or-false, short-answer, or other practice questions. Always review the generated questions and answers for accuracy."
+      },
+      {
+        question: "What is the best prompt for making a quiz from notes?",
+        answer:
+          "A useful prompt specifies the number of questions, question types, difficulty, source material, and answer-key format. It should also tell the AI not to invent information that is missing from your notes."
+      },
+      {
+        question: "Can AI generate multiple-choice questions from notes?",
+        answer:
+          "Yes. AI can generate multiple-choice questions from provided notes. Ask for realistic distractors and verify that each question has one clearly supported correct answer."
+      },
+      {
+        question: "Can I create a quiz from a PDF using AI?",
+        answer:
+          "Some AI tools can process PDF files directly. You can also extract or copy the relevant text from a PDF and ask AI to create a quiz from it. Check the original PDF when verifying important answers."
+      },
+      {
+        question: "Should I trust AI-generated quiz answers?",
+        answer:
+          "No AI-generated answer should be trusted automatically. Verify important answers against your notes, textbooks, lecture material, or other reliable sources before using the quiz for revision."
+      },
+      {
+        question: "How many AI-generated questions should I create?",
+        answer:
+          "There is no universal number. Start with a manageable quiz focused on one topic. Around 10 to 20 well-targeted questions can be more useful than a very large set of repetitive questions."
+      }
+    ]
+  },
 };

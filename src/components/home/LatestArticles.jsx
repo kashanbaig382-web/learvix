@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { articles } from "@/data/articles";
 import { publishedArticles } from "@/data/articles";
 
 export default function LatestArticles() {
