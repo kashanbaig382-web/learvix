@@ -14,7 +14,9 @@ const manrope = Manrope({
 
 export const metadata = {
   metadataBase: new URL("https://learvix-ai.vercel.app"),
-
+  verification: {
+    google: "ZHGMlJyEfoAgAckEEC9z_HfWEKZA_SSr2QBuTUkKGYU",
+  },
   title: {
     default: "LEARVIX — Study Smarter With AI",
     template: "%s | LEARVIX",
