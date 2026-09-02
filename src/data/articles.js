@@ -41,6 +41,14 @@ export const articles = [
       "Learn how to turn your notes into a structured AI study guide, verify the content, find weak areas, and build an active revision plan.",
     readTime: "12 min read",
   },
+  {
+    slug: "use-ai-to-study-for-exams",
+    category: "Exam Prep",
+    title: "How to Use AI to Study for Exams",
+    description:
+      "Learn how to use AI for exam preparation with diagnostic quizzes, weak-area analysis, active recall, revision planning, and mock exams.",
+    readTime: "14 min read",
+  },
 ];
 
 export const publishedArticles = articles.filter(

@@ -346,28 +346,28 @@ A: Oxygen.`,
       },
     ],
     relatedGuides: [
-  {
-    slug: "turn-a-pdf-into-flashcards-with-ai",
-    category: "Notes & PDFs",
-    title: "How to Turn a PDF Into Flashcards With AI",
-    description:
-      "Turn PDF study material into focused flashcards and verify them before revision."
-  },
-  {
-    slug: "create-quizzes-from-notes-using-ai",
-    category: "Exam Prep",
-    title: "How to Create Quizzes From Notes Using AI",
-    description:
-      "Turn your notes into practice quizzes and use mistakes to find weak areas."
-  },
-  {
-    slug: "make-a-study-guide-from-notes-with-ai",
-    category: "Study Guides",
-    title: "How to Make a Study Guide From Notes With AI",
-    description:
-      "Organize your notes into a structured AI study guide and active revision plan."
-  }
-],
+      {
+        slug: "turn-a-pdf-into-flashcards-with-ai",
+        category: "Notes & PDFs",
+        title: "How to Turn a PDF Into Flashcards With AI",
+        description:
+          "Turn PDF study material into focused flashcards and verify them before revision."
+      },
+      {
+        slug: "create-quizzes-from-notes-using-ai",
+        category: "Exam Prep",
+        title: "How to Create Quizzes From Notes Using AI",
+        description:
+          "Turn your notes into practice quizzes and use mistakes to find weak areas."
+      },
+      {
+        slug: "make-a-study-guide-from-notes-with-ai",
+        category: "Study Guides",
+        title: "How to Make a Study Guide From Notes With AI",
+        description:
+          "Organize your notes into a structured AI study guide and active revision plan."
+      }
+    ],
 
     faqs: [
       {
@@ -688,28 +688,28 @@ Keep the answer key separate at the end.`
       }
     ],
     relatedGuides: [
-  {
-    slug: "make-a-study-guide-from-notes-with-ai",
-    category: "Study Guides",
-    title: "How to Make a Study Guide From Notes With AI",
-    description:
-      "Turn your notes into a structured study guide, identify weak areas, and build a revision plan."
-  },
-  {
-    slug: "summarize-lecture-notes-with-ai",
-    category: "Study Guides",
-    title: "How to Summarize Lecture Notes With AI",
-    description:
-      "Organize long lecture notes into a clear AI-generated study summary."
-  },
-  {
-    slug: "turn-lecture-notes-into-flashcards-with-ai",
-    category: "Notes & PDFs",
-    title: "How to Turn Lecture Notes Into Flashcards With AI",
-    description:
-      "Convert lecture notes into focused active-recall flashcards for revision."
-  }
-],
+      {
+        slug: "make-a-study-guide-from-notes-with-ai",
+        category: "Study Guides",
+        title: "How to Make a Study Guide From Notes With AI",
+        description:
+          "Turn your notes into a structured study guide, identify weak areas, and build a revision plan."
+      },
+      {
+        slug: "summarize-lecture-notes-with-ai",
+        category: "Study Guides",
+        title: "How to Summarize Lecture Notes With AI",
+        description:
+          "Organize long lecture notes into a clear AI-generated study summary."
+      },
+      {
+        slug: "turn-lecture-notes-into-flashcards-with-ai",
+        category: "Notes & PDFs",
+        title: "How to Turn Lecture Notes Into Flashcards With AI",
+        description:
+          "Convert lecture notes into focused active-recall flashcards for revision."
+      }
+    ],
 
     faqs: [
       {
@@ -1076,29 +1076,29 @@ Flag any table, diagram, equation, or section that you cannot interpret confiden
         ]
       }
     ],
-  relatedGuides: [
-  {
-    slug: "make-a-study-guide-from-notes-with-ai",
-    category: "Study Guides",
-    title: "How to Make a Study Guide From Notes With AI",
-    description:
-      "Turn your summarized notes into a structured study guide and revision system."
-  },
-  {
-    slug: "turn-lecture-notes-into-flashcards-with-ai",
-    category: "Notes & PDFs",
-    title: "How to Turn Lecture Notes Into Flashcards With AI",
-    description:
-      "Transform your lecture notes into focused flashcards for active recall."
-  },
-  {
-    slug: "create-quizzes-from-notes-using-ai",
-    category: "Exam Prep",
-    title: "How to Create Quizzes From Notes Using AI",
-    description:
-      "Create practice quizzes from your notes and use mistakes to find weak areas."
-  }
-],
+    relatedGuides: [
+      {
+        slug: "make-a-study-guide-from-notes-with-ai",
+        category: "Study Guides",
+        title: "How to Make a Study Guide From Notes With AI",
+        description:
+          "Turn your summarized notes into a structured study guide and revision system."
+      },
+      {
+        slug: "turn-lecture-notes-into-flashcards-with-ai",
+        category: "Notes & PDFs",
+        title: "How to Turn Lecture Notes Into Flashcards With AI",
+        description:
+          "Transform your lecture notes into focused flashcards for active recall."
+      },
+      {
+        slug: "create-quizzes-from-notes-using-ai",
+        category: "Exam Prep",
+        title: "How to Create Quizzes From Notes Using AI",
+        description:
+          "Create practice quizzes from your notes and use mistakes to find weak areas."
+      }
+    ],
 
     faqs: [
       {
@@ -1519,28 +1519,28 @@ During interphase.`,
       }
     ],
     relatedGuides: [
-  {
-    slug: "turn-lecture-notes-into-flashcards-with-ai",
-    category: "Notes & PDFs",
-    title: "How to Turn Lecture Notes Into Flashcards With AI",
-    description:
-      "Create active-recall flashcards directly from lecture notes using AI."
-  },
-  {
-    slug: "make-a-study-guide-from-notes-with-ai",
-    category: "Study Guides",
-    title: "How to Make a Study Guide From Notes With AI",
-    description:
-      "Organize your study material into a structured AI-powered study guide."
-  },
-  {
-    slug: "create-quizzes-from-notes-using-ai",
-    category: "Exam Prep",
-    title: "How to Create Quizzes From Notes Using AI",
-    description:
-      "Turn study material into practice questions and targeted revision."
-  }
-],
+      {
+        slug: "turn-lecture-notes-into-flashcards-with-ai",
+        category: "Notes & PDFs",
+        title: "How to Turn Lecture Notes Into Flashcards With AI",
+        description:
+          "Create active-recall flashcards directly from lecture notes using AI."
+      },
+      {
+        slug: "make-a-study-guide-from-notes-with-ai",
+        category: "Study Guides",
+        title: "How to Make a Study Guide From Notes With AI",
+        description:
+          "Organize your study material into a structured AI-powered study guide."
+      },
+      {
+        slug: "create-quizzes-from-notes-using-ai",
+        category: "Exam Prep",
+        title: "How to Create Quizzes From Notes Using AI",
+        description:
+          "Turn study material into practice questions and targeted revision."
+      }
+    ],
 
     faqs: [
       {
@@ -2022,28 +2022,28 @@ SELF-TEST QUESTIONS
       }
     ],
     relatedGuides: [
-  {
-    slug: "summarize-lecture-notes-with-ai",
-    category: "Study Guides",
-    title: "How to Summarize Lecture Notes With AI",
-    description:
-      "Create a clear AI summary before building your complete study guide."
-  },
-  {
-    slug: "turn-lecture-notes-into-flashcards-with-ai",
-    category: "Notes & PDFs",
-    title: "How to Turn Lecture Notes Into Flashcards With AI",
-    description:
-      "Turn key concepts from your notes into active-recall flashcards."
-  },
-  {
-    slug: "create-quizzes-from-notes-using-ai",
-    category: "Exam Prep",
-    title: "How to Create Quizzes From Notes Using AI",
-    description:
-      "Test your knowledge with AI-generated quizzes and identify weak areas."
-  }
-],
+      {
+        slug: "summarize-lecture-notes-with-ai",
+        category: "Study Guides",
+        title: "How to Summarize Lecture Notes With AI",
+        description:
+          "Create a clear AI summary before building your complete study guide."
+      },
+      {
+        slug: "turn-lecture-notes-into-flashcards-with-ai",
+        category: "Notes & PDFs",
+        title: "How to Turn Lecture Notes Into Flashcards With AI",
+        description:
+          "Turn key concepts from your notes into active-recall flashcards."
+      },
+      {
+        slug: "create-quizzes-from-notes-using-ai",
+        category: "Exam Prep",
+        title: "How to Create Quizzes From Notes Using AI",
+        description:
+          "Test your knowledge with AI-generated quizzes and identify weak areas."
+      }
+    ],
 
     faqs: [
       {
@@ -2080,6 +2080,595 @@ SELF-TEST QUESTIONS
         question: "Should I study only from an AI-generated study guide?",
         answer:
           "Usually not. Treat the guide as a revision aid alongside your original notes and official course resources. Verify important information and use self-testing or other active study methods instead of relying only on rereading."
+      }
+    ]
+  },
+  "use-ai-to-study-for-exams": {
+    introduction: [
+      "AI can help you organize notes, create practice questions, explain difficult concepts, build flashcards, and plan revision before an exam. But using more AI does not automatically mean studying better.",
+      "A stronger approach is to use AI as a study partner that makes you retrieve information, discover weak areas, and practice the skills your exam actually requires.",
+      "In this guide, you will learn how to use AI to study for exams through a practical workflow: define the exam scope, test yourself, identify weak areas, repair those gaps, practice active recall, review over time, and finish with realistic mock-exam practice."
+    ],
+
+    sections: [
+      {
+        heading: "Quick Answer: How to Use AI to Study for Exams",
+        paragraphs: [
+          "Start by giving AI the scope of your exam and the study material you are allowed to use. Instead of immediately asking for summaries, first use a short diagnostic quiz to discover what you already know and where you struggle.",
+          "Then focus your study time on those weak areas. Use AI for explanations, study guides, flashcards, quizzes, and revision planning while continuing to verify important information against your original course material."
+        ],
+        list: [
+          "Define what the exam covers.",
+          "Gather your notes and trusted course material.",
+          "Take an AI-generated diagnostic quiz.",
+          "Identify your strongest and weakest topics.",
+          "Create a revision plan based on those weaknesses.",
+          "Use AI to explain difficult concepts.",
+          "Turn important material into active-recall questions and flashcards.",
+          "Review difficult material across multiple sessions.",
+          "Take a realistic practice exam.",
+          "Use your mistakes to plan the final review."
+        ],
+        note:
+          "Do not begin by asking AI to predict what will be on your exam. Build your preparation around your syllabus, teacher-provided material, learning objectives, notes, and your actual weaknesses."
+      },
+
+      {
+        heading: "What Can AI Help With During Exam Preparation?",
+        paragraphs: [
+          "AI is most useful when it reduces repetitive preparation work while leaving the actual remembering, reasoning, and problem solving to you.",
+          "Different subjects require different study methods, but several AI-assisted tasks can fit into many exam-preparation workflows."
+        ],
+        list: [
+          "Organizing an exam syllabus into topics.",
+          "Creating a realistic revision schedule.",
+          "Summarizing or restructuring your own notes.",
+          "Explaining difficult concepts at different levels.",
+          "Generating active-recall questions.",
+          "Creating flashcards from verified material.",
+          "Building practice quizzes.",
+          "Finding patterns in your mistakes.",
+          "Generating new practice questions for weak areas.",
+          "Simulating parts of an exam format for practice."
+        ],
+        note:
+          "AI should support the preparation process. It should not replace official course material or your own attempt to understand and retrieve the information."
+      },
+
+      {
+        heading: "Step 1: Define the Scope of Your Exam",
+        paragraphs: [
+          "Before creating study material, determine what the exam actually covers. This gives your AI conversations a clear boundary.",
+          "Use information supplied by your course whenever possible instead of asking AI to guess what is important."
+        ],
+        list: [
+          "Subject and course.",
+          "Exam date.",
+          "Chapters or lectures included.",
+          "Topics that are excluded.",
+          "Teacher-provided learning objectives.",
+          "Review sheets or syllabus sections.",
+          "Exam format if known.",
+          "Available study time."
+        ],
+        example: `EXAM INFORMATION
+
+Subject: Biology
+Exam date: September 20
+Topics:
+- Cell structure
+- Cell division
+- Photosynthesis
+- Cellular respiration
+
+Exam format:
+- Multiple choice
+- Short answer
+- Diagram labeling
+
+Available study time:
+90 minutes per day`,
+        note:
+          "If you do not know the exam format or topic weighting, say that it is unknown. Do not ask AI to present guesses as facts."
+      },
+
+      {
+        heading: "Step 2: Gather Trusted Study Material",
+        paragraphs: [
+          "AI-generated exam preparation becomes more useful when it starts from material connected to your actual course.",
+          "Gather the resources you normally rely on before asking AI to generate questions or explanations."
+        ],
+        list: [
+          "Lecture notes.",
+          "Teacher-provided slides.",
+          "Relevant textbook sections.",
+          "Course study guides.",
+          "Learning objectives.",
+          "Returned quizzes or practice work you are permitted to use.",
+          "Your own verified summaries.",
+          "Relevant PDFs."
+        ],
+        note:
+          "Be careful with private, confidential, copyrighted, or institution-restricted material. Follow your school's rules and the data policies of the AI service you use."
+      },
+
+      {
+        heading: "Step 3: Take a Diagnostic Quiz Before You Start Reviewing",
+        paragraphs: [
+          "One of the easiest mistakes during exam preparation is spending most of your time reviewing material you already know because it feels comfortable.",
+          "A short diagnostic quiz can help reveal which topics deserve more attention. Attempt it before rereading all of your notes so the result better reflects what you can currently retrieve."
+        ],
+        prompt: `Create a diagnostic quiz from the study material I provide.
+
+Rules:
+- Use ONLY the provided material.
+- Create 15 questions covering the major topics.
+- Use a mix of short-answer and multiple-choice questions.
+- Include questions that test understanding, not only definitions.
+- Do not show the answers immediately.
+- Put the complete answer key in a separate section at the end.
+- Do not invent material that is missing from my notes.
+- If something is unclear, flag it instead of guessing.
+
+After I answer the questions, help me classify each topic as:
+- Strong
+- Developing
+- Weak
+
+Study material:
+[PASTE OR UPLOAD YOUR MATERIAL]`,
+        note:
+          "Attempt every question before checking the answer key. A diagnostic becomes much less useful if you read the answers while taking it."
+      },
+
+      {
+        heading: "Step 4: Turn Your Results Into a Weak-Area Map",
+        paragraphs: [
+          "Do not look only at your total score. Two students with the same score may need completely different revision plans.",
+          "Group your mistakes by topic and consider whether an answer was correct because you knew it or because you guessed."
+        ],
+        list: [
+          "Strong — you can answer and explain the topic confidently.",
+          "Developing — you understand the main idea but miss details or make occasional mistakes.",
+          "Weak — you cannot reliably explain or apply the concept yet."
+        ],
+        example: `BIOLOGY DIAGNOSTIC
+
+Cell structure — Strong
+Photosynthesis — Developing
+Mitosis — Weak
+Meiosis — Weak
+Cellular respiration — Developing`,
+        note:
+          "A correct guess should not automatically count as a strong topic. Mark uncertainty so you know what deserves another check."
+      },
+
+      {
+        heading: "Step 5: Ask AI to Build a Revision Plan Around Your Weak Areas",
+        paragraphs: [
+          "Now AI has something useful to plan around: the exam scope, available time, and evidence about what you find difficult.",
+          "Weak topics should generally receive more attention than topics you can already retrieve confidently."
+        ],
+        prompt: `Create an exam revision plan using the information below.
+
+Exam date:
+[DATE]
+
+Time available each day:
+[TIME]
+
+Strong topics:
+[LIST]
+
+Developing topics:
+[LIST]
+
+Weak topics:
+[LIST]
+
+Build a realistic plan that:
+- gives more attention to weak topics,
+- revisits difficult material across multiple sessions,
+- includes active-recall practice,
+- includes practice questions,
+- includes short review checkpoints,
+- includes at least one cumulative practice session,
+- avoids scheduling only passive rereading,
+- keeps the final review manageable.
+
+Do not predict what will appear on the exam.`,
+        note:
+          "Be realistic about your available time. A plan designed around six hours per day is useless if you can consistently study for only ninety minutes."
+      },
+
+      {
+        heading: "Step 6: Use AI to Understand Difficult Concepts",
+        paragraphs: [
+          "When a diagnostic reveals a weak topic, do not immediately memorize an AI-generated paragraph. First identify exactly what part you do not understand.",
+          "AI can then act more like a tutor by explaining the concept, asking questions, and checking your explanation."
+        ],
+        prompt: `Help me understand this concept for exam preparation:
+
+[CONCEPT]
+
+Use the course material I provide as the main source.
+
+First:
+1. explain the concept clearly,
+2. identify the key idea I need to understand,
+3. give one simple example if the material supports it.
+
+Then ask me to explain the concept back in my own words.
+
+Do not immediately give me another full explanation after my response. First identify what part of my explanation is correct, incomplete, or unclear.`,
+        note:
+          "Try explaining the idea yourself after reading the explanation. Understanding feels very different when you have to produce the explanation without looking."
+      },
+
+      {
+        heading: "Step 7: Turn Important Material Into Active Recall",
+        paragraphs: [
+          "Once you understand a topic, practice retrieving it without looking at the source.",
+          "AI can quickly turn verified notes into questions, but you should still be the person producing the answers."
+        ],
+        list: [
+          "Flashcards for important definitions and focused concepts.",
+          "Short-answer questions for explanations.",
+          "Comparison questions for similar concepts.",
+          "Process questions for sequences and stages.",
+          "Formula questions when equations matter.",
+          "Application questions when the exam requires problem solving.",
+          "Explain-from-memory prompts for larger concepts."
+        ],
+        prompt: `Turn this verified material into active-recall practice.
+
+Create:
+- 5 short-answer questions,
+- 5 concept questions,
+- 5 application or comparison questions where appropriate.
+
+Rules:
+- Use only the material I provide.
+- Prioritize important concepts.
+- Do not show answers after each question.
+- Put the answer key at the end.
+- Avoid duplicate questions.
+- Flag anything that cannot be supported by the source.
+
+Material:
+[PASTE VERIFIED MATERIAL]`
+      },
+
+      {
+        heading: "Step 8: Use AI Flashcards for Focused Revision",
+        paragraphs: [
+          "Flashcards can be useful for information that benefits from repeated retrieval, especially definitions, terminology, processes, formulas, and focused conceptual relationships.",
+          "Avoid turning every sentence of your notes into a card. The goal is a manageable set of questions worth remembering."
+        ],
+        list: [
+          "Keep one main idea per card.",
+          "Make the question specific.",
+          "Keep answers concise but complete.",
+          "Remove duplicate cards.",
+          "Verify important answers against your source.",
+          "Attempt the answer before revealing it.",
+          "Review difficult cards again later."
+        ],
+        note:
+          "LEARVIX already has dedicated guides for turning lecture notes and PDFs into AI flashcards, so use those workflows when you need a complete flashcard system."
+      },
+
+      {
+        heading: "Step 9: Generate Practice Quizzes From Your Notes",
+        paragraphs: [
+          "Practice questions are useful because they reveal whether you can retrieve and apply information without simply recognizing it on a page.",
+          "Ask AI to vary the question format when that matches your real assessment."
+        ],
+        prompt: `Create an exam-practice quiz using ONLY my verified study material.
+
+Include:
+- multiple-choice questions,
+- short-answer questions,
+- explanation questions,
+- application questions where appropriate.
+
+Difficulty:
+[BEGINNER / INTERMEDIATE / ADVANCED]
+
+Rules:
+- Do not show answers until the end.
+- Avoid duplicate questions.
+- Focus on important concepts.
+- Do not invent unsupported facts.
+- Make incorrect multiple-choice options plausible but clearly distinguishable using the source material.
+
+After I finish, group my mistakes by topic.`,
+        note:
+          "The useful output of a practice quiz is not only the score. The mistakes tell you what your next revision session should focus on."
+      },
+
+      {
+        heading: "Step 10: Keep an Error Log",
+        paragraphs: [
+          "Instead of forgetting wrong answers as soon as you correct them, keep a small error log throughout your exam preparation.",
+          "This creates a record of concepts that repeatedly cause problems."
+        ],
+        list: [
+          "Question or topic.",
+          "What you answered.",
+          "What the verified answer should contain.",
+          "Why your answer was incomplete or incorrect.",
+          "What concept you need to review.",
+          "Whether you made the same mistake before."
+        ],
+        example: `TOPIC: Mitosis vs. meiosis
+
+Mistake:
+Confused the number of daughter cells.
+
+Why:
+I remembered the definition but mixed up the outcomes.
+
+Action:
+Review the comparison table and answer three new comparison questions tomorrow.`,
+        note:
+          "Repeated mistakes deserve more attention than one-off slips. Use the log to decide which topics return in later practice."
+      },
+
+      {
+        heading: "Step 11: Review Important Material Over Multiple Sessions",
+        paragraphs: [
+          "Trying to complete all revision in one long session can create a feeling of familiarity without showing whether the information remains available later.",
+          "Return to difficult material across separate study sessions and test yourself again rather than simply rereading the same explanation."
+        ],
+        example: `Example review cycle:
+
+Session 1:
+Learn and understand the topic.
+
+Session 2:
+Attempt recall questions without notes.
+
+Session 3:
+Review missed questions and difficult flashcards.
+
+Session 4:
+Mix the topic with questions from other chapters.
+
+Before the exam:
+Test the topic again as part of cumulative practice.`,
+        note:
+          "The exact spacing should depend on how much time you have before the exam and how difficult the material is."
+      },
+
+      {
+        heading: "Step 12: Simulate the Exam With a Practice Test",
+        paragraphs: [
+          "As the exam approaches, move from isolated topic practice toward cumulative practice that resembles the demands of your assessment.",
+          "If you know the real exam format, tell AI the format. If you do not know it, do not ask AI to pretend that it does."
+        ],
+        prompt: `Create a cumulative practice exam from the verified material I provide.
+
+Known exam format:
+[FORMAT OR WRITE "UNKNOWN"]
+
+Topics:
+[TOPICS]
+
+Rules:
+- Use only the supplied material.
+- Cover multiple topics.
+- Avoid repeating questions I have already practiced where possible.
+- Match the known exam format only when I have provided it.
+- Do not predict actual exam questions.
+- Keep the answer key separate.
+- Include a simple marking guide where appropriate.
+
+I will complete the practice exam before checking the answers.`,
+        note:
+          "A generated mock exam is practice material, not a prediction of your real examination."
+      },
+
+      {
+        heading: "Step 13: Use the Mock Exam to Plan Your Final Review",
+        paragraphs: [
+          "After completing the practice exam, return to the weak-area approach instead of rereading everything from the beginning.",
+          "Combine your mock-exam mistakes with your existing error log and identify the concepts that still need attention."
+        ],
+        list: [
+          "Review questions you answered incorrectly.",
+          "Review correct answers that were guesses.",
+          "Group mistakes by topic.",
+          "Return to the original course material for unclear concepts.",
+          "Practice new questions on persistent weak areas.",
+          "Briefly revisit strong topics instead of ignoring them completely.",
+          "Avoid using the final hours only to generate more AI content."
+        ]
+      },
+
+      {
+        heading: "Example: A Complete AI Exam Study Workflow",
+        paragraphs: [
+          "Imagine you have a biology exam in seven days covering five major topics."
+        ],
+        example: `DAY 1
+Map the exam scope.
+Take a diagnostic quiz.
+Identify weak topics.
+
+DAY 2
+Study the weakest topic.
+Explain concepts in your own words.
+Create focused recall questions.
+
+DAY 3
+Study the second weak topic.
+Review yesterday's difficult questions.
+Update your error log.
+
+DAY 4
+Take a mixed quiz.
+Review developing topics.
+Practice difficult flashcards.
+
+DAY 5
+Complete cumulative recall practice.
+Repair repeated mistakes.
+
+DAY 6
+Take a practice exam under realistic conditions.
+Analyze every mistake.
+
+DAY 7
+Review the error log and persistent weak areas.
+Do a shorter mixed recall session.
+Keep the final review manageable.`,
+        note:
+          "This is only an example. Your plan should change according to the number of topics, available time, subject, exam format, and your current understanding."
+      },
+
+      {
+        heading: "How to Use AI for Different Types of Exams",
+        paragraphs: [
+          "Your AI workflow should reflect what the exam asks you to do rather than forcing every subject into the same study method."
+        ],
+        list: [
+          "Multiple-choice exams — practice distinguishing similar concepts and explaining why alternatives are wrong.",
+          "Short-answer exams — practice retrieving concise explanations without seeing options.",
+          "Essay exams — practice planning arguments, recalling evidence, and outlining answers under time limits.",
+          "Mathematics exams — prioritize solving problems yourself before checking explanations or solutions.",
+          "Science exams — combine concepts, processes, terminology, diagrams, calculations, and application questions where relevant.",
+          "Language exams — practice retrieval, comprehension, grammar, vocabulary, writing, or speaking according to the assessment.",
+          "Coding exams — practice writing and debugging code yourself rather than only reading generated solutions."
+        ]
+      },
+
+      {
+        heading: "Common Mistakes When Using AI for Exam Preparation",
+        paragraphs: [
+          "AI can create enormous amounts of study material quickly. That becomes a disadvantage when generating content starts replacing actual practice."
+        ],
+        list: [
+          "Asking AI to predict the real exam.",
+          "Reading AI summaries for hours without testing yourself.",
+          "Generating hundreds of flashcards you never review.",
+          "Trusting generated answers without verification.",
+          "Spending equal time on every topic despite obvious weaknesses.",
+          "Looking at answers before attempting questions.",
+          "Ignoring correct answers that were guesses.",
+          "Using only multiple-choice questions for subjects that require explanation or problem solving.",
+          "Generating new resources instead of reviewing existing mistakes.",
+          "Uploading restricted or sensitive course material.",
+          "Using AI in ways prohibited by your school or course."
+        ]
+      },
+
+      {
+        heading: "Can You Use AI to Study the Night Before an Exam?",
+        paragraphs: [
+          "AI can still help when time is limited, but the strategy should become narrower. Trying to generate and learn an entire course overnight is unlikely to be a useful plan.",
+          "Focus on the exam scope, your highest-priority weak areas, important verified concepts, and a manageable amount of retrieval practice."
+        ],
+        list: [
+          "Identify the most important material from your official course resources.",
+          "Prioritize known weak areas.",
+          "Use short active-recall sessions.",
+          "Review your existing error log if you have one.",
+          "Avoid generating huge new study guides.",
+          "Keep the final review focused and manageable."
+        ]
+      },
+
+      {
+        heading: "Should You Trust AI Answers While Studying?",
+        paragraphs: [
+          "No AI-generated answer should automatically become something you memorize.",
+          "Compare important definitions, formulas, dates, technical details, and explanations with your trusted course material. This is especially important when the AI is working from incomplete notes, scanned documents, complex tables, or equations.",
+          "When the source does not contain enough information, asking AI to flag uncertainty is better than allowing it to silently fill the gap."
+        ],
+        note:
+          "Professional-sounding wording is not evidence that an answer is correct."
+      },
+
+      {
+        heading: "Using AI for Exams Without Cheating",
+        paragraphs: [
+          "Using AI for private revision is different from using it during an assessment or submitting generated work as your own.",
+          "Rules vary between schools, universities, teachers, courses, and assessments. Follow the policies that apply to you.",
+          "A useful boundary for LEARVIX workflows is to use AI to organize, explain, question, and support practice while keeping the actual learning and assessed work in your hands."
+        ]
+      },
+
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "The most useful way to use AI for exams is not to ask it for more information. It is to use AI to make your preparation more focused and interactive.",
+          "Start with the actual exam scope, test yourself before reviewing everything, identify weak areas, repair those weaknesses, practice retrieving information, revisit difficult material, and finish with cumulative exam-style practice.",
+          "The complete LEARVIX workflow is: exam scope → diagnostic test → weak areas → targeted learning → active recall → spaced review → mock exam → final review.",
+          "Let AI handle repetitive organization and question generation. Keep the remembering, reasoning, verification, and exam performance with you."
+        ]
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "make-a-study-guide-from-notes-with-ai",
+        category: "Study Guides",
+        title: "How to Make a Study Guide From Notes With AI",
+        description:
+          "Turn your notes into a structured study guide and build a focused revision plan."
+      },
+      {
+        slug: "create-quizzes-from-notes-using-ai",
+        category: "Exam Prep",
+        title: "How to Create Quizzes From Notes Using AI",
+        description:
+          "Create practice quizzes from your notes and use mistakes to identify weak areas."
+      },
+      {
+        slug: "turn-lecture-notes-into-flashcards-with-ai",
+        category: "Notes & PDFs",
+        title: "How to Turn Lecture Notes Into Flashcards With AI",
+        description:
+          "Turn verified lecture notes into focused active-recall flashcards."
+      }
+    ],
+
+    faqs: [
+      {
+        question: "How can I use AI to study for an exam?",
+        answer:
+          "Use AI to organize the exam scope, create diagnostic questions, identify weak areas, explain difficult concepts, generate active-recall practice, create flashcards and quizzes, and plan revision. Verify important information against your trusted course material."
+      },
+      {
+        question: "Can AI create an exam study plan?",
+        answer:
+          "Yes. Give the AI your exam date, topics, available study time, and known weak areas. Ask it to prioritize difficult topics, include repeated review, active recall, and cumulative practice rather than scheduling only passive reading."
+      },
+      {
+        question: "Can AI generate practice exams?",
+        answer:
+          "Yes. AI can generate practice questions from material you provide. Treat them as revision material rather than predictions of your real exam, and verify the answer key against reliable course sources."
+      },
+      {
+        question: "Should I use AI summaries to prepare for exams?",
+        answer:
+          "AI summaries can help organize material, but they should not be your only study method. Verify the summary and then use activities that require you to retrieve, explain, or apply the information without looking."
+      },
+      {
+        question: "Can AI identify my weak topics?",
+        answer:
+          "AI can help group your mistakes from quizzes or practice questions by topic. The quality of that analysis depends on the questions and source material, so combine it with your own confidence and performance."
+      },
+      {
+        question: "Is it okay to use AI for exam preparation?",
+        answer:
+          "AI can be used as a study aid for activities such as organization, explanation, and practice, but rules differ between institutions and assessments. Follow the AI policies that apply to your course and never assume that permitted revision use means AI is allowed during an assessment."
+      },
+      {
+        question: "Can I use AI the night before an exam?",
+        answer:
+          "You can use AI for focused review, but avoid creating huge amounts of new material. Prioritize verified concepts, known weak areas, short retrieval practice, and your existing mistakes or error log."
       }
     ]
   },
