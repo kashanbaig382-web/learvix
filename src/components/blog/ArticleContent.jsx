@@ -1,4 +1,3 @@
-import { publishedArticles } from "@/data/articles";
 export default function ArticleContent({ content }) {
   return (
     <div className="article-content">

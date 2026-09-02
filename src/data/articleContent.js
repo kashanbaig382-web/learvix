@@ -698,4 +698,370 @@ Keep the answer key separate at the end.`
       }
     ]
   },
+  "summarize-lecture-notes-with-ai": {
+    introduction: [
+      "AI can turn long lecture notes into shorter, more organized summaries in seconds. But a shorter version of your notes is not automatically a better study resource.",
+      "A useful AI summary should preserve the important concepts, definitions, processes, formulas, and examples from your lecture while removing unnecessary repetition. It should also be checked against the original material before you rely on it for revision.",
+      "In this guide, you will learn a practical workflow for summarizing lecture notes with AI, verifying the result, improving weak sections, and turning the finished summary into something you can actively study."
+    ],
+
+    sections: [
+      {
+        heading: "Quick Answer: How to Summarize Lecture Notes With AI",
+        paragraphs: [
+          "Start with one lecture or topic, clean up unclear parts of your notes, and give the material to an AI tool. Ask for a structured summary based only on the information you provide. Then compare the generated summary with your original notes before using it for revision."
+        ],
+        list: [
+          "Choose one lecture, chapter, or topic.",
+          "Clean up unclear abbreviations and incomplete sentences.",
+          "Paste or upload the notes to a suitable AI tool.",
+          "Tell the AI what type of summary you want.",
+          "Ask it to preserve important definitions, processes, formulas, and examples.",
+          "Compare the summary with your original notes.",
+          "Correct missing, misleading, or invented information.",
+          "Turn the final summary into questions, flashcards, or a practice quiz."
+        ],
+        note:
+          "Think of the AI-generated summary as a first draft. Your original lecture material remains the source you should use to verify important information."
+      },
+
+      {
+        heading: "Why Use AI to Summarize Lecture Notes?",
+        paragraphs: [
+          "Lecture notes are often written quickly. They may contain repeated ideas, shorthand, unfinished sentences, examples, definitions, and comments from different parts of a lesson.",
+          "AI can help reorganize this material into a clearer structure. For example, it can group related concepts, separate definitions from examples, and convert a long block of notes into headings and bullet points.",
+          "The main benefit is not simply making your notes shorter. A good summary should make the structure of the topic easier to see while keeping the information you actually need to understand."
+        ],
+        note:
+          "Do not use summarization only to avoid reading your original notes. Reviewing the source is especially important when the subject contains technical details or when the AI output seems uncertain."
+      },
+
+      {
+        heading: "Step 1: Prepare Your Lecture Notes",
+        paragraphs: [
+          "AI can only work with the information and context it receives. Before generating a summary, spend a few minutes preparing your notes.",
+          "You do not need to rewrite the entire lecture. Focus on correcting parts that could easily be misunderstood."
+        ],
+        list: [
+          "Work with one lecture or clearly defined topic at a time.",
+          "Keep useful headings and subheadings.",
+          "Expand abbreviations that may be unclear.",
+          "Keep important definitions.",
+          "Include formulas and explain what their variables represent.",
+          "Keep examples that help explain difficult concepts.",
+          "Remove unrelated reminders or duplicated text.",
+          "Mark incomplete information instead of guessing what it means."
+        ],
+        example: `Messy note:
+
+mito -> 2 same cells
+growth + repair
+46 -> 46
+
+Clearer note:
+
+Mitosis is a type of cell division that produces two genetically identical daughter cells. It is important for growth and tissue repair. In human somatic cells, the daughter cells retain the same chromosome number as the parent cell.`,
+        note:
+          "Cleaning unclear shorthand before summarization reduces the chance that the AI will misinterpret what you originally meant."
+      },
+
+      {
+        heading: "Step 2: Choose an AI Tool",
+        paragraphs: [
+          "You can use a general AI assistant that accepts text, or a study-focused tool designed to work with notes and documents. Some tools also support PDF or document uploads.",
+          "The best option depends on your material. The important features are the ability to provide your own notes, control the instructions, and review the generated result.",
+          "Before uploading class material, consider whether the notes contain personal, confidential, or otherwise sensitive information."
+        ],
+        list: [
+          "Can you paste your own notes?",
+          "Can the tool read the file type you use?",
+          "Can you give detailed summarization instructions?",
+          "Can you ask follow-up questions?",
+          "Can you edit or copy the final summary?",
+          "Can you compare the output with your original material?"
+        ]
+      },
+
+      {
+        heading: "Step 3: Decide What Kind of Summary You Need",
+        paragraphs: [
+          "Do not simply tell AI to \"summarize these notes.\" Decide what you want the finished summary to help you do.",
+          "A short overview may be useful before a lecture or quick review, while a detailed study summary may need definitions, examples, processes, formulas, and relationships between concepts."
+        ],
+        list: [
+          "Quick overview — a short explanation of the main topic.",
+          "Study summary — important concepts organized under clear headings.",
+          "Key concepts — a focused list of the ideas you need to understand.",
+          "Definitions — important terms with concise meanings.",
+          "Process summary — steps or stages arranged in the correct order.",
+          "Formula summary — equations with variables and when they are used.",
+          "Exam revision summary — important concepts plus questions you should be able to answer."
+        ],
+        note:
+          "The format should match the subject. A history lecture may need events, causes, and consequences, while a mathematics lecture may need formulas, conditions, and worked examples."
+      },
+
+      {
+        heading: "Step 4: Use a Better AI Summarization Prompt",
+        paragraphs: [
+          "Specific instructions make the output easier to control. Tell the AI what source it should use, what information it should preserve, what it should avoid doing, and how the final summary should be organized.",
+          "For study material, it is especially useful to tell the AI not to silently fill gaps with outside information."
+        ]
+      },
+
+      {
+        heading: "Copy-Paste Prompt for Summarizing Lecture Notes",
+        paragraphs: [
+          "You can use the following prompt as a starting point and adjust it for your subject."
+        ],
+        prompt: `Summarize the lecture notes below into a clear study summary.
+
+Rules:
+- Use only the information provided in my notes.
+- Do not invent missing facts.
+- Preserve the most important concepts, definitions, processes, formulas, and examples.
+- Remove unnecessary repetition.
+- Organize related information under clear headings.
+- Use concise bullet points where appropriate.
+- Keep important context instead of oversimplifying it.
+- If something in my notes is unclear or incomplete, flag it instead of guessing.
+- At the end, list 5 key ideas I should understand after studying this lecture.
+
+Lecture notes:
+[PASTE YOUR NOTES HERE]`
+      },
+
+      {
+        heading: "Step 5: Compare the Summary With Your Original Notes",
+        paragraphs: [
+          "This is one of the most important parts of the workflow. Read the generated summary while keeping your original notes open.",
+          "Check whether the AI preserved the ideas that your teacher emphasized and whether any important context disappeared when the material was shortened."
+        ],
+        list: [
+          "Check important definitions word by word when precision matters.",
+          "Verify formulas, numbers, dates, names, and technical terminology.",
+          "Look for important concepts that were omitted.",
+          "Check whether examples still support the correct concept.",
+          "Look for information that was not present in your original notes.",
+          "Check whether the AI changed the meaning while simplifying a sentence.",
+          "Mark anything you need to confirm using your official course resources."
+        ],
+        note:
+          "A polished sentence can still be wrong. Judge the summary by its accuracy, not by how confident or professional the wording sounds."
+      },
+
+      {
+        heading: "Step 6: Improve the AI Summary",
+        paragraphs: [
+          "You do not need to accept the first output. Once you identify weaknesses, give the AI focused follow-up instructions.",
+          "Specific corrections usually work better than repeatedly asking it to make the entire summary better."
+        ],
+        prompt: `Improve this study summary using my original lecture notes.
+
+Please:
+- restore any important concepts that were missed,
+- simplify explanations that are unnecessarily difficult,
+- keep important examples,
+- separate definitions from explanations,
+- preserve formulas and technical terminology accurately,
+- remove repeated information,
+- flag anything that cannot be confirmed from my notes.
+
+Do not add outside facts unless I explicitly ask for them.`,
+        note:
+          "If only one section is weak, revise that section instead of regenerating the entire summary."
+      },
+
+      {
+        heading: "Step 7: Turn the Summary Into Active Study Material",
+        paragraphs: [
+          "A summary can help you organize and understand material, but repeatedly reading a summary should not be your entire revision strategy.",
+          "Once the summary is accurate, use it as a starting point for activities that require you to recall information without looking at the answer."
+        ],
+        list: [
+          "Turn key concepts into flashcards.",
+          "Create short-answer questions.",
+          "Generate a mixed practice quiz.",
+          "Cover each section and explain it from memory.",
+          "Write questions from the headings and answer them without looking.",
+          "Identify weak concepts and return to the original lecture material."
+        ],
+        prompt: `Using this verified study summary, create 10 active-recall questions.
+
+Rules:
+- Focus on the most important concepts.
+- Include a mix of definitions, explanations, comparisons, and application questions where appropriate.
+- Do not show the answers directly after each question.
+- Put the answer key in a separate section at the end.
+- Use only information contained in the summary.`,
+        note:
+          "The summary organizes the material. Retrieval questions make you practice producing what you know."
+      },
+
+      {
+        heading: "Example: Messy Lecture Notes to AI Study Summary",
+        paragraphs: [
+          "Here is a simple example using notes about photosynthesis."
+        ],
+        example: `ORIGINAL LECTURE NOTES
+
+Photosynthesis
+plants make glucose
+light -> chem energy
+chloroplast
+chlorophyll catches light
+CO2 + water
+glucose + oxygen
+light reactions / Calvin cycle
+important because energy stored in glucose
+
+AI STUDY SUMMARY
+
+Photosynthesis
+
+Definition:
+Photosynthesis is the process by which plants convert light energy into chemical energy stored in glucose.
+
+Location:
+- It takes place in chloroplasts.
+- Chlorophyll absorbs light energy.
+
+Inputs:
+- Carbon dioxide
+- Water
+
+Products:
+- Glucose
+- Oxygen
+
+Main Stages:
+- Light reactions
+- Calvin cycle
+
+Key Idea:
+Photosynthesis allows light energy to be converted into chemical energy that can be stored in glucose.`,
+        note:
+          "The summary is easier to scan, but it should still be checked against the original lecture material before being used for revision."
+      },
+
+      {
+        heading: "How to Summarize Long Lecture Notes With AI",
+        paragraphs: [
+          "For very long lectures, avoid asking AI to summarize everything in one giant step. Breaking the material into logical sections makes the output easier to review.",
+          "You can summarize each section separately and then ask AI to combine the verified section summaries into a final overview."
+        ],
+        list: [
+          "Divide the lecture by headings or topics.",
+          "Summarize one section at a time.",
+          "Verify each section before continuing.",
+          "Keep terminology consistent between sections.",
+          "Combine the verified sections.",
+          "Ask for a final overview that removes repetition without deleting important concepts."
+        ],
+        note:
+          "Working in sections also makes it easier to identify exactly where an incorrect or missing detail came from."
+      },
+
+      {
+        heading: "How to Summarize a Lecture PDF With AI",
+        paragraphs: [
+          "If your AI tool supports PDF uploads, you may be able to provide lecture slides, handouts, or other PDF study material directly.",
+          "For a long PDF, specify the pages, chapter, or section you want summarized rather than automatically treating the entire document as one topic.",
+          "PDF extraction can sometimes misread tables, diagrams, mathematical notation, scanned pages, or unusual layouts. Check these elements against the original PDF."
+        ],
+        prompt: `Summarize this PDF section for studying.
+
+Focus on:
+- main concepts,
+- important definitions,
+- processes or steps,
+- formulas and variables,
+- examples that explain key ideas.
+
+Do not add information that is not supported by the document.
+
+Flag any table, diagram, equation, or section that you cannot interpret confidently.`
+      },
+
+      {
+        heading: "Can AI Summarize Handwritten Lecture Notes?",
+        paragraphs: [
+          "Yes, if the tool can process images or if you first convert the handwriting into digital text. However, handwriting recognition introduces another opportunity for errors.",
+          "Before asking for a summary, inspect the extracted text. Names, numbers, formulas, scientific symbols, abbreviations, and technical terms deserve extra attention.",
+          "If the handwriting is difficult to read, manually correcting the extracted text first can produce a more reliable summary."
+        ]
+      },
+
+      {
+        heading: "Common AI Summarization Mistakes to Avoid",
+        paragraphs: [
+          "AI summarization becomes less useful when speed becomes more important than accuracy or learning."
+        ],
+        list: [
+          "Uploading an entire course and asking for one giant summary.",
+          "Using a vague prompt with no instructions.",
+          "Assuming shorter always means better.",
+          "Allowing important examples or context to disappear.",
+          "Trusting technical details without verification.",
+          "Studying invented information that was not in the source.",
+          "Reading the summary repeatedly without testing yourself.",
+          "Using the AI summary instead of official course material when accuracy matters."
+        ]
+      },
+
+      {
+        heading: "How to Use AI Summaries Without Hurting Your Learning",
+        paragraphs: [
+          "The purpose of an AI summary should be to make your study material easier to organize and work with, not to remove your involvement from the learning process.",
+          "Read the original material, evaluate the generated summary, correct it, and then use the finished version to test your understanding.",
+          "For graded assignments or assessments, follow your school, university, teacher, or course rules regarding AI use. A tool that is acceptable for private revision may not be permitted for assessed work."
+        ],
+        note:
+          "A useful rule is: let AI reduce repetitive organization work, but keep understanding, verification, and recall practice in your hands."
+      },
+
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "AI can make lecture-note summarization faster, but the strongest workflow includes more than clicking a summarize button.",
+          "Start with clear notes, give precise instructions, verify the output against the source, improve weak sections, and then turn the finished summary into active study material.",
+          "The complete workflow is simple: notes → AI summary → verify → improve → active recall.",
+          "Used this way, AI becomes a study assistant rather than a replacement for actually learning the material."
+        ]
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can AI summarize my lecture notes?",
+        answer:
+          "Yes. You can provide lecture notes to a suitable AI tool and ask it to create a shorter, structured version. The generated summary should still be checked against your original notes for missing or inaccurate information."
+      },
+      {
+        question: "What is a good prompt for summarizing lecture notes?",
+        answer:
+          "A good prompt tells the AI to use your notes as the source, preserve important concepts and definitions, organize the material clearly, avoid inventing missing information, and flag anything that is unclear."
+      },
+      {
+        question: "Can AI summarize a lecture PDF?",
+        answer:
+          "Some AI tools support PDF uploads. For long documents, summarize one chapter or section at a time and verify important details against the original PDF, especially tables, equations, diagrams, and scanned content."
+      },
+      {
+        question: "Can AI summarize handwritten notes?",
+        answer:
+          "Yes, if your handwriting can be converted into readable digital text or the AI tool supports image input. Check the extracted text carefully before generating the summary because handwriting recognition can introduce errors."
+      },
+      {
+        question: "Should I study only from an AI-generated summary?",
+        answer:
+          "Usually not. Use the summary as a revision aid alongside your original lecture material and other official course resources. Verify important details and use active study methods such as self-testing when appropriate."
+      },
+      {
+        question: "How long should an AI lecture summary be?",
+        answer:
+          "There is no ideal length for every lecture. The summary should be short enough to remove unnecessary repetition but detailed enough to preserve the concepts, definitions, processes, formulas, and examples you need to understand the topic."
+      }
+    ]
+  },
 };
