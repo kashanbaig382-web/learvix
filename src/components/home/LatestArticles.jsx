@@ -21,7 +21,7 @@ export default function LatestArticles() {
                 </div>
 
                 <div className="articles-grid">
-                    {publishedArticles.slice(0, 3).map((article) => (
+                   {[...publishedArticles].reverse().slice(0, 3).map((article) => (
                         <article className="article-card" key={article.slug}>
                             <div className="article-card-top">
                                 <span className="article-category">{article.category}</span>
