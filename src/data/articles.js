@@ -8,6 +8,9 @@ export const articles = [
     description:
       "Learn how to turn lecture notes into flashcards with AI using a simple step-by-step workflow, ready-to-use prompt, examples, and study tips.",
     readTime: "10 min read",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-01",
+    updatedAt: "2026-09-01",
   },
   {
     slug: "create-quizzes-from-notes-using-ai",
@@ -16,6 +19,9 @@ export const articles = [
     description:
       "Learn how to transform your notes into practice questions and self-tests using AI.",
     readTime: "7 min read",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-02",
+    updatedAt: "2026-09-02",
   },
   {
     slug: "summarize-lecture-notes-with-ai",
@@ -24,6 +30,9 @@ export const articles = [
     description:
       "Use AI to organize long lecture notes into clear summaries while keeping the important ideas.",
     readTime: "6 min read",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-02",
+    updatedAt: "2026-09-02",
   },
   {
     slug: "turn-a-pdf-into-flashcards-with-ai",
@@ -32,6 +41,9 @@ export const articles = [
     description:
       "Learn how to turn a PDF into accurate AI flashcards using a step-by-step workflow for generation, verification, active recall, and smarter revision.",
     readTime: "11 min read",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-02",
+    updatedAt: "2026-09-02",
   },
   {
     slug: "make-a-study-guide-from-notes-with-ai",
@@ -40,6 +52,9 @@ export const articles = [
     description:
       "Learn how to turn your notes into a structured AI study guide, verify the content, find weak areas, and build an active revision plan.",
     readTime: "12 min read",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-02",
+    updatedAt: "2026-09-02",
   },
   {
     slug: "use-ai-to-study-for-exams",
@@ -48,6 +63,9 @@ export const articles = [
     description:
       "Learn how to use AI for exam preparation with diagnostic quizzes, weak-area analysis, active recall, revision planning, and mock exams.",
     readTime: "14 min read",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-02",
+    updatedAt: "2026-09-02",
   },
 ];
 

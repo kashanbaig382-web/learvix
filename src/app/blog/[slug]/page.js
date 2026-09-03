@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { articles } from "@/data/articles";
@@ -24,20 +25,31 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-  title: article.title,
-  description: article.description,
-
-  alternates: {
-    canonical: `/blog/${article.slug}`,
-  },
-
-  openGraph: {
     title: article.title,
     description: article.description,
-    type: "article",
-    url: `/blog/${article.slug}`,
-  },
-};
+
+    alternates: {
+      canonical: `/blog/${article.slug}`,
+    },
+
+    openGraph: {
+      title: article.title,
+      description: article.description,
+      type: "article",
+      url: `/blog/${article.slug}`,
+      publishedTime: article.publishedAt,
+      modifiedTime: article.updatedAt,
+      authors: [article.author],
+    },
+  };
+}
+
+function formatDate(date) {
+  return new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  }).format(new Date(`${date}T00:00:00`));
 }
 
 export default async function ArticlePage({ params }) {
@@ -54,6 +66,33 @@ export default async function ArticlePage({ params }) {
   if (!content) {
     notFound();
   }
+
+  const wasUpdated = article.updatedAt !== article.publishedAt;
+
+  const articleUrl = `https://learvix-ai.vercel.app/blog/${article.slug}`;
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.description,
+    url: articleUrl,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": articleUrl,
+    },
+    datePublished: article.publishedAt,
+    dateModified: article.updatedAt,
+    author: {
+      "@type": "Person",
+      name: article.author,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "LEARVIX",
+      url: "https://learvix-ai.vercel.app",
+    },
+  };
 
   return (
     <>
@@ -75,10 +114,34 @@ export default async function ArticlePage({ params }) {
               <h1>{article.title}</h1>
 
               <p>{article.description}</p>
+
+              <div className="article-author-meta">
+                <span>
+                  By <strong>{article.author}</strong>
+                </span>
+
+                <span>
+                  Published {formatDate(article.publishedAt)}
+                </span>
+
+                {wasUpdated && (
+                  <span>
+                    Updated {formatDate(article.updatedAt)}
+                  </span>
+                )}
+              </div>
             </header>
+
             <ArticleContent content={content} />
           </div>
         </article>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(articleSchema).replace(/</g, "\\u003c"),
+          }}
+        />
       </main>
 
       <Footer />

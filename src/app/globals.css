@@ -2087,3 +2087,38 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.article-author-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin-top: 18px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.article-author-meta span {
+  position: relative;
+}
+
+.article-author-meta span:not(:last-child)::after {
+  content: "•";
+  position: absolute;
+  right: -12px;
+  color: var(--border);
+}
+
+.article-author-meta strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .article-author-meta {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .article-author-meta span::after {
+    display: none;
+  }
+}
