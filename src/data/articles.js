@@ -89,6 +89,17 @@ export const articles = [
     publishedAt: "2026-09-03",
     updatedAt: "2026-09-03",
   },
+  {
+    slug: "make-a-study-schedule-with-ai",
+    category: "Productivity",
+    title: "How to Make a Study Schedule With AI That You Can Actually Follow",
+    description:
+      "Learn how to make a realistic study schedule with AI using your deadlines, available time, weak subjects, revision needs, and weekly progress.",
+    readTime: "13 min read",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-03",
+    updatedAt: "2026-09-03",
+  },
 ];
 
 export const publishedArticles = articles.filter(

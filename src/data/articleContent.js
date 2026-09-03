@@ -3375,4 +3375,420 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "make-a-study-schedule-with-ai": {
+    introduction: [
+      "AI can create a study timetable in seconds. The difficult part is creating one that still works after real life gets involved.",
+      "A generic prompt such as “make me a study schedule” may produce an organized-looking plan, but AI does not automatically know your exam dates, weak subjects, classes, work, sleep, family commitments, or how many hours you can realistically study.",
+      "A better approach is to give AI your real constraints, use the first schedule as a draft, and keep adjusting the plan based on your progress. In this guide, you will learn how to build an AI-assisted study schedule that is realistic, flexible, and connected to what you actually need to learn."
+    ],
+
+    sections: [
+      {
+        heading: "Quick Answer: How Do You Make a Study Schedule With AI?",
+        paragraphs: [
+          "Start by listing your subjects, exam dates, deadlines, weak topics, fixed commitments, and the time you can realistically study each day.",
+          "Give that information to AI and ask it to prioritize urgent and difficult material, divide large goals into specific study tasks, include revision sessions, and leave some flexible time for unexpected changes.",
+          "Then review the generated schedule yourself. Remove unrealistic sessions, adjust the workload, follow the plan for several days, and update it based on what you actually complete."
+        ],
+        note:
+          "Treat an AI-generated schedule as a first draft, not a command. A realistic plan you can follow is more useful than a perfect-looking timetable you abandon."
+      },
+
+      {
+        heading: "The LEARVIX AI Study Schedule Workflow",
+        paragraphs: [
+          "A useful AI study schedule can be built with this workflow:"
+        ],
+        list: [
+          "List subjects and deadlines",
+          "Block fixed commitments",
+          "Calculate realistic study time",
+          "Identify weak and important topics",
+          "Break subjects into specific tasks",
+          "Generate an AI schedule",
+          "Reality-check the first draft",
+          "Add review and practice",
+          "Track what you complete",
+          "Re-plan every week"
+        ],
+        paragraphsAfter: [
+          "The purpose of AI is to reduce planning friction. It should not create more work by giving you a schedule that is impossible to maintain."
+        ]
+      },
+
+      {
+        heading: "Step 1: List Every Subject, Exam, and Important Deadline",
+        paragraphs: [
+          "Before asking AI to plan anything, collect the dates that control your workload.",
+          "Include exams, tests, assignments, presentations, projects, and other academic deadlines that may compete for your study time.",
+          "Exact dates are much more useful than vague statements such as “my exams are next month.”"
+        ],
+        example:
+          "Mathematics exam — September 18. Biology exam — September 22. Computer Science project — September 15. Statistics quiz — September 10."
+      },
+
+      {
+        heading: "Step 2: Add Your Fixed Commitments First",
+        paragraphs: [
+          "Your study schedule should fit around your real life instead of pretending that every hour of the day is available.",
+          "Tell AI about classes, work, commute, meals, exercise, family responsibilities, regular activities, and other commitments that cannot simply be replaced by study sessions.",
+          "Do not sacrifice necessary sleep just to make an AI timetable look more productive."
+        ],
+        prompt:
+          "These are my fixed weekly commitments: [list classes, work, commute, activities, and other unavailable times]. Do not schedule study sessions during these periods."
+      },
+
+      {
+        heading: "Step 3: Calculate How Much Time You Can Actually Study",
+        paragraphs: [
+          "Students often build schedules around the time they wish they had instead of the time they actually have.",
+          "If you can realistically study for two hours on a weekday, telling AI that you have five hours available will create a plan that fails before it starts.",
+          "Give AI a day-by-day study budget."
+        ],
+        example:
+          "Monday: 2 hours. Tuesday: 90 minutes. Wednesday: 2 hours. Thursday: 1 hour. Friday: unavailable. Saturday: 4 hours. Sunday: 3 hours."
+      },
+
+      {
+        heading: "Step 4: Identify Your Weak Subjects and Topics",
+        paragraphs: [
+          "Equal time for every subject is not always the best use of limited study time.",
+          "Tell AI which subjects are difficult, which topics you repeatedly get wrong, and which areas already feel comfortable.",
+          "You can use a simple confidence scale to make this easier."
+        ],
+        list: [
+          "1 — Very weak",
+          "2 — Weak",
+          "3 — Moderate",
+          "4 — Comfortable",
+          "5 — Strong"
+        ],
+        prompt:
+          "My confidence ratings are: Mathematics 2/5, Biology 3/5, Computer Science 4/5, and English 5/5. Give more attention to weak subjects while still keeping enough review time for the others."
+      },
+
+      {
+        heading: "Step 5: Consider Importance as Well as Difficulty",
+        paragraphs: [
+          "A difficult topic is important, but difficulty should not be the only priority signal.",
+          "An upcoming high-value exam may deserve more study time than a difficult topic that will not be assessed soon.",
+          "Give AI information about exam dates, topic importance, syllabus coverage, or assessment weighting when you know it."
+        ],
+        note:
+          "A useful priority system considers urgency, importance, weakness, and the amount of work remaining—not just which subject feels hardest."
+      },
+
+      {
+        heading: "Step 6: Break Large Subjects Into Specific Study Tasks",
+        paragraphs: [
+          "Tasks such as “study biology” or “revise math” are too broad to schedule well.",
+          "Break subjects into smaller actions that can fit inside a study block."
+        ],
+        list: [
+          "Review cell structure notes",
+          "Learn membrane transport",
+          "Complete 15 algebra questions",
+          "Review incorrect statistics problems",
+          "Create flashcards for Chapter 4",
+          "Attempt one practice essay outline",
+          "Complete a 30-minute recall quiz"
+        ],
+        prompt:
+          "Break these subjects and topics into specific study tasks that can usually fit into 30–60 minute study blocks. Avoid vague tasks such as 'study biology.'"
+      },
+
+      {
+        heading: "Step 7: Give AI All the Information in One Strong Prompt",
+        paragraphs: [
+          "Once you have your constraints, combine them into one structured request.",
+          "The more clearly you define the inputs, the less likely you are to receive a generic timetable."
+        ],
+        prompt:
+          "Help me create a realistic weekly study schedule. My subjects and deadlines are: [list]. My fixed commitments are: [list]. My available study time each day is: [list]. My weakest subjects/topics are: [list]. My strongest subjects/topics are: [list]. Prioritize upcoming deadlines and weak areas, divide broad goals into specific study tasks, include review and practice sessions, include reasonable breaks, and do not schedule more time than I actually have. Leave some flexible time for missed tasks. Format the result as a day-by-day plan."
+      },
+
+      {
+        heading: "Step 8: Reality-Check the AI Schedule",
+        paragraphs: [
+          "Do not immediately copy the first output into your calendar.",
+          "Read the entire plan and ask whether you could realistically follow it on a normal week."
+        ],
+        list: [
+          "Does it exceed your available hours?",
+          "Are difficult subjects scheduled when you can actually focus?",
+          "Are sessions unrealistically long?",
+          "Does it ignore meals, commute, or other commitments?",
+          "Is every minute scheduled with no flexibility?",
+          "Does one subject receive too much or too little attention?",
+          "Are revision and practice included?",
+          "Is there enough time before important deadlines?"
+        ],
+        note:
+          "AI knows the information you give it. It does not automatically know that Tuesday evening usually leaves you exhausted or that a particular chapter takes you twice as long as expected."
+      },
+
+      {
+        heading: "Step 9: Use Flexible Study Blocks Instead of Scheduling Every Minute",
+        paragraphs: [
+          "A schedule can become too rigid when every task is assigned an exact minute.",
+          "If one topic takes longer than expected, the rest of the day can immediately fall apart.",
+          "For many students, broader study blocks are easier to maintain."
+        ],
+        example:
+          "More flexible: 7:00–8:00 PM — Algebra practice. Overly rigid: 7:00–7:17 equations, 7:17–7:34 examples, 7:34–7:51 practice set."
+      },
+
+      {
+        heading: "Step 10: Add Breaks and Buffer Time",
+        paragraphs: [
+          "Do not fill every available hour with planned work.",
+          "Some tasks will take longer than expected. You may miss a session, receive a new assignment, or simply have a lower-energy day.",
+          "Keeping some unscheduled or flexible time makes it easier to recover without rebuilding the entire week."
+        ],
+        prompt:
+          "Revise this schedule so it includes reasonable breaks and some buffer time for tasks that take longer than expected. Do not fill every available hour."
+      },
+
+      {
+        heading: "Step 11: Schedule What You Will Do, Not Just What You Will Read",
+        paragraphs: [
+          "A timetable should describe useful study actions rather than only listing subjects.",
+          "Whenever possible, include tasks such as practice questions, active recall, flashcards, problem solving, mock tests, or explaining concepts from memory."
+        ],
+        example:
+          "Weak block: 'Biology — 60 minutes.' Better block: 'Biology — review respiration for 20 minutes, then answer recall questions for 30 minutes and record weak areas for 10 minutes.'"
+      },
+
+      {
+        heading: "Step 12: Build Review Sessions Into the Schedule",
+        paragraphs: [
+          "Studying a topic once and never returning to it can make a timetable look efficient while leaving little opportunity for later retrieval.",
+          "Plan return visits to important material across different study sessions rather than placing all review immediately before the exam.",
+          "Spacing learning across time is a well-established principle in learning research."
+        ],
+        prompt:
+          "Add follow-up review sessions for important topics across the week instead of scheduling each topic only once. Prioritize material that I find difficult."
+      },
+
+      {
+        heading: "Step 13: Use Active Recall Inside Your Study Blocks",
+        paragraphs: [
+          "Your schedule decides when to study. It should also leave room for effective study methods.",
+          "Instead of filling every block with rereading, include opportunities to retrieve information from memory through questions, flashcards, practice problems, or explanation prompts.",
+          "If you already use an AI active recall workflow, the schedule can tell you when those recall sessions should happen."
+        ],
+        note:
+          "Planning and studying are different skills. A good timetable creates time for learning methods—it does not replace them."
+      },
+
+      {
+        heading: "Step 14: Work Backward From Important Exams",
+        paragraphs: [
+          "For major exams, avoid planning only from today forward.",
+          "Start with the exam date and work backward. Reserve time near the exam for practice, correction of weak areas, and final review, then place learning and earlier revision before that.",
+          "This makes it easier to see whether your current workload is realistic before you reach the final few days."
+        ],
+        prompt:
+          "My exam is on [date]. Work backward from the exam and create study phases for learning remaining material, active review, practice questions or mock exams, weak-area correction, and final revision."
+      },
+
+      {
+        heading: "Step 15: Ask AI to Re-plan When You Miss a Study Day",
+        paragraphs: [
+          "Missing one day should not destroy the entire schedule.",
+          "Instead of trying to double the next day's workload, give AI the unfinished tasks and your remaining availability."
+        ],
+        prompt:
+          "I missed today's study sessions. These tasks remain unfinished: [list]. My remaining available study time this week is: [list]. Re-plan the unfinished work without exceeding my available hours. Protect the highest-priority tasks first and move or reduce lower-priority work if necessary."
+      },
+
+      {
+        heading: "Do Not Ask AI to Simply 'Catch Everything Up'",
+        paragraphs: [
+          "If you miss several hours, those hours do not magically reappear.",
+          "A bad re-plan may move every unfinished task to tomorrow and create an impossible day.",
+          "A better re-plan should make trade-offs: protect important work, delay lower-priority tasks when possible, and acknowledge when the original plan is no longer achievable."
+        ],
+        note:
+          "A realistic schedule sometimes says that something must be reduced, moved, or deprioritized. That is better than pretending everything still fits."
+      },
+
+      {
+        heading: "Step 16: Review the Schedule Every Week",
+        paragraphs: [
+          "Your first schedule is based on estimates. After using it, you have better information.",
+          "At the end of the week, compare what you planned with what actually happened."
+        ],
+        list: [
+          "Which sessions did you complete?",
+          "Which tasks took longer than expected?",
+          "Which topics remain weak?",
+          "Which deadlines are now closer?",
+          "Did you schedule too many hours?",
+          "Which times of day worked best?",
+          "What new assignments or commitments appeared?"
+        ],
+        prompt:
+          "Here was my planned schedule: [schedule]. Here is what I actually completed: [results]. These topics are still weak: [list]. Build next week's schedule using this information and make it more realistic than the previous plan."
+      },
+
+      {
+        heading: "Example: A Student With Four Subjects",
+        paragraphs: [
+          "Imagine a student has Mathematics, Biology, Computer Science, and English.",
+          "Mathematics is the weakest subject, Biology has the nearest major exam, Computer Science has a project deadline, and English is currently the strongest subject.",
+          "The student has two hours available on most weekdays and more time on the weekend.",
+          "A sensible AI schedule would not divide time equally into four identical sections. It could give Biology extra attention because of the approaching exam, Mathematics repeated practice because it is weak, dedicated blocks for the Computer Science project, and lighter maintenance sessions for English.",
+          "After several days, if Mathematics improves but Biology remains difficult, the next schedule can shift again."
+        ]
+      },
+
+      {
+        heading: "Example 7-Day AI Study Schedule",
+        paragraphs: [
+          "A simplified week might look like this:"
+        ],
+        list: [
+          "Monday — Mathematics practice + Biology recall",
+          "Tuesday — Biology difficult topics + Computer Science project",
+          "Wednesday — Mathematics weak areas + short Biology review",
+          "Thursday — Computer Science project + Mathematics practice",
+          "Friday — Light review or recovery session",
+          "Saturday — Longer Biology session + practice questions + project work",
+          "Sunday — Mixed review + weak-area retest + plan next week"
+        ],
+        paragraphsAfter: [
+          "This is only an example. Your actual schedule should be based on your own subjects, deadlines, available hours, and learning needs."
+        ]
+      },
+
+      {
+        heading: "How to Make an AI Study Schedule for Exams",
+        paragraphs: [
+          "When exams are approaching, your schedule should gradually move from covering material toward retrieving, applying, and testing it.",
+          "As the exam gets closer, you may spend more time on practice questions, mock exams, error review, and weak topics rather than continuously producing new notes."
+        ],
+        prompt:
+          "Create an exam-preparation schedule from today until [exam date]. Include remaining content coverage, active recall, practice questions, weak-area review, at least one realistic practice or mock session when appropriate, and final revision. Work within these available hours: [list]."
+      },
+
+      {
+        heading: "How to Make a Study Schedule When You Have Very Little Time",
+        paragraphs: [
+          "If the exam is close, AI cannot create extra time. The schedule needs stronger prioritization.",
+          "Focus first on high-priority syllabus areas, known weak topics, teacher-emphasized material, and realistic practice.",
+          "Avoid pretending you can deeply master an entire course in a few hours."
+        ],
+        prompt:
+          "I have [number] days until my exam and [number] total study hours available. These are the topics: [list]. These are my weakest areas: [list]. Help me prioritize the highest-value work and create a realistic plan. Clearly identify anything that may not fit instead of overloading the schedule."
+      },
+
+      {
+        heading: "Common Mistakes When Making a Study Schedule With AI",
+        list: [
+          "Using a vague prompt",
+          "Giving AI unrealistic available hours",
+          "Forgetting classes and other commitments",
+          "Giving every subject equal time",
+          "Using broad tasks such as 'study chemistry'",
+          "Scheduling every minute of the day",
+          "Leaving no buffer time",
+          "Planning only passive rereading",
+          "Ignoring weak areas",
+          "Never returning to previously studied material",
+          "Trying to double tomorrow's workload after missing a day",
+          "Creating the schedule once and never updating it"
+        ]
+      },
+
+      {
+        heading: "What AI Cannot Know About Your Schedule",
+        paragraphs: [
+          "AI can organize the information you provide, but it cannot perfectly predict your energy, motivation, unexpected responsibilities, how difficult a chapter will feel, or how quickly you personally learn.",
+          "That is why the human review step matters.",
+          "If the schedule looks unrealistic, change it. The goal is not to obey AI. The goal is to use AI to make planning easier."
+        ]
+      },
+
+      {
+        heading: "How to Use AI Study Planning Responsibly",
+        paragraphs: [
+          "Using AI to organize personal study time is different from asking AI to complete assessed academic work.",
+          "However, your school, university, or course may still have its own AI policies. Follow those requirements whenever AI is used with course materials or academic tasks.",
+          "Do not upload confidential, private, copyrighted, or restricted course materials to third-party AI tools unless you are permitted to do so."
+        ]
+      },
+
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "The best AI study schedule is not the most detailed one. It is the one that matches your real deadlines, available time, weaknesses, and actual progress.",
+          "Give AI accurate constraints, break large goals into specific tasks, include review and active practice, leave room for real life, and treat the first output as a draft.",
+          "Then keep improving the schedule using what you learn about your workload each week. AI can help organize the plan, but you are still the person who decides what is realistic and does the studying."
+        ]
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "use-ai-for-active-recall",
+        category: "Productivity",
+        title: "How to Use AI for Active Recall: A Smarter Study Workflow",
+        description:
+          "Use AI to generate retrieval questions, identify weak areas, and build a smarter active recall loop."
+      },
+      {
+        slug: "use-ai-to-study-for-exams",
+        category: "Exam Prep",
+        title: "How to Use AI to Study for Exams",
+        description:
+          "Build an AI-assisted exam workflow using diagnostics, targeted revision, active recall, and mock exams."
+      },
+      {
+        slug: "make-a-study-guide-from-notes-with-ai",
+        category: "Study Guides",
+        title: "How to Make a Study Guide From Notes With AI",
+        description:
+          "Turn your notes into a structured, verified study guide and create a practical revision workflow."
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can AI make a study schedule for me?",
+        answer:
+          "Yes. AI can organize your subjects, deadlines, available hours, priorities, and weak areas into a draft study schedule. You should review and adjust the output before relying on it."
+      },
+      {
+        question: "What information should I give AI for a study schedule?",
+        answer:
+          "Provide your subjects, exam and assignment dates, fixed commitments, available study hours, weak and strong topics, important syllabus areas, and any preferences or limits that affect when you can study."
+      },
+      {
+        question: "What is a good AI prompt for a study schedule?",
+        answer:
+          "A strong prompt includes your real deadlines, daily availability, fixed commitments, weak subjects, priorities, and a request for specific study tasks, review sessions, breaks, and flexible time."
+      },
+      {
+        question: "Should every subject get equal study time?",
+        answer:
+          "Not necessarily. Available time can be prioritized according to factors such as upcoming deadlines, assessment importance, remaining workload, and the subjects or topics you find difficult."
+      },
+      {
+        question: "What should I do if I miss a day in my study schedule?",
+        answer:
+          "Re-plan the remaining tasks using the time you still have. Protect high-priority work first rather than automatically doubling the next day's workload."
+      },
+      {
+        question: "How often should I update an AI study schedule?",
+        answer:
+          "A weekly review is a useful starting point, but you can update the schedule sooner when deadlines, available time, or priorities change significantly."
+      },
+      {
+        question: "Can AI create an exam revision timetable?",
+        answer:
+          "Yes. Give AI your exam dates, syllabus or topic list, weak areas, available study hours, and current progress. Ask it to include content review, retrieval practice, practice questions, weak-area correction, and final revision."
+      }
+    ]
+  },
 };
