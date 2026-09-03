@@ -67,6 +67,17 @@ export const articles = [
     publishedAt: "2026-09-02",
     updatedAt: "2026-09-02",
   },
+  {
+    slug: "turn-a-pdf-into-study-notes-with-ai",
+    category: "Notes & PDFs",
+    title: "How to Turn a PDF Into Study Notes With AI",
+    description:
+      "Learn how to turn a PDF into structured study notes with AI, verify the output against the source, simplify difficult concepts, and create revision-ready notes.",
+    readTime: "12 min read",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-03",
+    updatedAt: "2026-09-03",
+  },
 ];
 
 export const publishedArticles = articles.filter(
