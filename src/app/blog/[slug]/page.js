@@ -37,8 +37,8 @@ export async function generateMetadata({ params }) {
       description: article.description,
       type: "article",
       url: `/blog/${article.slug}`,
-      publishedTime: article.publishedAt,
-      modifiedTime: article.updatedAt,
+      publishedTime: `${article.publishedAt}T00:00:00+05:00`,
+      modifiedTime: `${article.updatedAt}T00:00:00+05:00`,
       authors: [article.author],
     },
   };
@@ -81,8 +81,8 @@ export default async function ArticlePage({ params }) {
       "@type": "WebPage",
       "@id": articleUrl,
     },
-    datePublished: article.publishedAt,
-    dateModified: article.updatedAt,
+    datePublished: `${article.publishedAt}T00:00:00+05:00`,
+    dateModified: `${article.updatedAt}T00:00:00+05:00`,
     author: {
       "@type": "Person",
       name: article.author,
