@@ -1,5 +1,6 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import ContactForm from "@/components/contact/ContactForm";
 
 export const metadata = {
   title: "Contact",
@@ -48,51 +49,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <form className="contact-form">
-              <div className="form-group">
-                <label htmlFor="name">Name</label>
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  placeholder="Your name"
-                />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="you@example.com"
-                />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="subject">Subject</label>
-                <input
-                  id="subject"
-                  name="subject"
-                  type="text"
-                  placeholder="How can we help?"
-                />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="7"
-                  placeholder="Write your message..."
-                ></textarea>
-              </div>
-
-              <button type="submit" className="primary-btn contact-submit">
-                Send Message
-              </button>
-            </form>
+            <ContactForm />
           </div>
         </section>
       </main>
