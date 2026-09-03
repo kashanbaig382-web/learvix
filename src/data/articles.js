@@ -100,6 +100,17 @@ export const articles = [
     publishedAt: "2026-09-03",
     updatedAt: "2026-09-03",
   },
+  {
+    slug: "best-free-ai-note-taking-tools-for-students",
+    category: "AI Tools",
+    title: "Best Free AI Note-Taking Tools for Students in 2026",
+    description:
+      "Compare the best free AI note-taking tools for students in 2026 for PDFs, lectures, flashcards, organization, revision, and source-grounded studying.",
+    readTime: "14 min read",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-03",
+    updatedAt: "2026-09-03",
+  },
 ];
 
 export const publishedArticles = articles.filter(
