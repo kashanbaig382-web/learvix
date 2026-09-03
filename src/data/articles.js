@@ -78,6 +78,17 @@ export const articles = [
     publishedAt: "2026-09-03",
     updatedAt: "2026-09-03",
   },
+  {
+    slug: "use-ai-for-active-recall",
+    category: "Productivity",
+    title: "How to Use AI for Active Recall: A Smarter Study Workflow",
+    description:
+      "Learn how to use AI for active recall by generating questions, testing yourself from memory, finding weak areas, and building a smarter revision loop.",
+    readTime: "12 min read",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-03",
+    updatedAt: "2026-09-03",
+  },
 ];
 
 export const publishedArticles = articles.filter(
