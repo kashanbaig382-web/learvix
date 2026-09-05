@@ -4138,6 +4138,13 @@ Keep the final review manageable.`,
         title: "How to Use AI for Active Recall: A Smarter Study Workflow",
         description:
           "Use AI to create retrieval opportunities, find weak areas, and build a stronger revision loop."
+      },
+      {
+        slug: "use-ai-for-academic-research-without-cheating",
+        category: "Research & Writing",
+        title: "How to Use AI for Academic Research Without Cheating",
+        description:
+          "Learn how to verify sources, evaluate evidence, check citations, and use AI responsibly during academic research."
       }
     ],
 
