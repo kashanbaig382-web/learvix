@@ -144,6 +144,17 @@ export const articles = [
     publishedAt: "2026-09-05",
     updatedAt: "2026-09-05",
   },
+  {
+    slug: "check-ai-answers-before-using-them-for-study",
+    category: "Study Guides",
+    title: "How to Check AI Answers Before Using Them for Study",
+    description:
+      "Learn how to verify AI answers before studying them by checking claims, sources, citations, dates, numbers, calculations, and course material.",
+    readTime: "14 min read",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-05",
+    updatedAt: "2026-09-05",
+  },
 ];
 
 export const publishedArticles = articles.filter(

@@ -5558,4 +5558,454 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "check-ai-answers-before-using-them-for-study": {
+    introduction: [
+      "AI can explain a topic in seconds, but a confident answer is not automatically a correct answer.",
+      "For students, this matters because one incorrect definition, invented citation, wrong formula, outdated fact, or misleading explanation can become part of your notes and eventually appear in your exam preparation or academic work.",
+      "The solution is not to distrust every AI answer. It is to develop a repeatable verification process so you know which information is supported, which needs more checking, and which should not be used."
+    ],
+
+    sections: [
+      {
+        heading: "Quick Answer: How Do You Check an AI Answer?",
+        paragraphs: [
+          "Break the answer into individual claims, identify the details that would cause problems if they were wrong, and verify those details against appropriate sources.",
+          "Check that cited sources actually exist and that they support the specific claim being made. Verify important dates, statistics, definitions, formulas, quotations, and calculations separately.",
+          "If the AI answer conflicts with your course material, investigate the disagreement instead of automatically choosing whichever explanation sounds better."
+        ],
+        note:
+          "LEARVIX rule: Confidence is not evidence. Verify before you memorize."
+      },
+
+      {
+        heading: "The LEARVIX AI Answer Verification Workflow",
+        paragraphs: [
+          "Use this workflow before turning an important AI response into study material:"
+        ],
+        list: [
+          "Identify the claims",
+          "Mark high-risk details",
+          "Find the original or trusted source",
+          "Confirm the source actually exists",
+          "Check whether it supports the claim",
+          "Verify dates, numbers, definitions, and formulas",
+          "Test calculations and examples",
+          "Compare with your course material",
+          "Investigate disagreements",
+          "Label information as verified or unverified",
+          "Only then add it to your study material"
+        ],
+        paragraphsAfter: [
+          "You do not need to verify every harmless sentence with the same intensity. Focus most of your attention on information that affects what you will learn, submit, cite, calculate, or remember."
+        ]
+      },
+
+      {
+        heading: "Step 1: Break the AI Answer Into Checkable Claims",
+        paragraphs: [
+          "A long AI response can contain many different claims. Checking the answer as one block makes it difficult to notice which part is unsupported.",
+          "Separate factual statements, definitions, dates, statistics, formulas, quotations, interpretations, and recommendations."
+        ],
+        prompt:
+          "Break your previous answer into individual factual claims that I can verify. Separate facts from explanations, interpretations, examples, and suggestions."
+      },
+
+      {
+        heading: "Step 2: Identify the Highest-Risk Information",
+        paragraphs: [
+          "Not every sentence deserves the same verification effort.",
+          "Prioritize details where an error could directly damage your understanding, assignment, research, or exam preparation."
+        ],
+        list: [
+          "Definitions you plan to memorize",
+          "Formulas and equations",
+          "Dates and historical facts",
+          "Statistics and numerical claims",
+          "Direct quotations",
+          "Research findings",
+          "Named theories or laws",
+          "References and citations",
+          "Technical procedures",
+          "Claims that seem surprising or unusually specific"
+        ]
+      },
+
+      {
+        heading: "Step 3: Find an Appropriate Source",
+        paragraphs: [
+          "Verification requires evidence outside the AI answer itself.",
+          "The best source depends on what you are checking. For course-specific information, your instructor materials and assigned textbook may be the most relevant references. For technical or factual claims, official documentation, primary sources, reputable academic material, or other authoritative references may be more appropriate."
+        ],
+        list: [
+          "Course textbook",
+          "Instructor notes and slides",
+          "Official documentation",
+          "Primary sources",
+          "Peer-reviewed research when relevant",
+          "University or institutional resources",
+          "Government or official organization websites when relevant"
+        ],
+        note:
+          "A search result snippet can help you locate a source, but the underlying source is what you should inspect."
+      },
+
+      {
+        heading: "Step 4: Check Whether the Source Actually Exists",
+        paragraphs: [
+          "AI systems can sometimes provide references that look legitimate but cannot be found.",
+          "Never assume a citation is real because it contains an author name, journal title, publication year, DOI-like string, or professional formatting.",
+          "Search for the actual paper, book, report, webpage, or document."
+        ],
+        prompt:
+          "List the sources behind these claims. For each source, give me enough bibliographic information to locate it independently. If you are uncertain that a source exists, say so clearly."
+      },
+
+      {
+        heading: "A Real Source Can Still Be Used Incorrectly",
+        paragraphs: [
+          "Finding the source is only the first check.",
+          "A real article or webpage does not automatically prove the AI's claim. The source may discuss a related topic without supporting the exact statement, or the AI may misrepresent the conclusion.",
+          "Open the source and inspect the relevant section yourself."
+        ]
+      },
+
+      {
+        heading: "Step 5: Check Whether the Source Supports the Claim",
+        paragraphs: [
+          "Compare the AI's statement with what the source actually says.",
+          "Pay attention to conditions, limitations, population, context, definitions, and wording. A small difference can completely change the meaning of a claim."
+        ],
+        prompt:
+          "For each claim in your answer, tell me which source supposedly supports it and what section I should inspect. Do not treat the source as verified—I will check it myself."
+      },
+
+      {
+        heading: "Step 6: Verify Definitions Before Memorizing Them",
+        paragraphs: [
+          "Definitions are easy to memorize incorrectly because AI may simplify them until an important condition disappears.",
+          "Compare important definitions with the terminology used in your course or an authoritative source.",
+          "If a simplified explanation helps you understand the concept, keep it as an explanation rather than replacing the formal definition."
+        ],
+        prompt:
+          "Separate the formal definition of [concept] from your simplified explanation. Tell me which parts of the formal definition must not be removed."
+      },
+
+      {
+        heading: "Step 7: Verify Dates, Names, and Historical Claims",
+        paragraphs: [
+          "Specific dates, names, events, titles, and sequences should be checked directly.",
+          "This is particularly important when an AI answer combines several historical events into a smooth narrative, because a fluent explanation can hide a small factual error."
+        ],
+        prompt:
+          "Extract every date, person, event, title, and chronological claim from this answer into a checklist so I can verify them independently."
+      },
+
+      {
+        heading: "Step 8: Verify Statistics and Numerical Claims",
+        paragraphs: [
+          "A precise number can make an answer appear trustworthy even when the figure is outdated, taken from the wrong population, or unsupported.",
+          "For important statistics, check the original source, publication date, population, measurement, units, and context."
+        ],
+        list: [
+          "What exactly was measured?",
+          "Who or what was included?",
+          "When was the data collected?",
+          "What unit is being used?",
+          "Is the number current enough for your purpose?",
+          "Does the source report the same figure?",
+          "Has important context been removed?"
+        ]
+      },
+
+      {
+        heading: "Step 9: Check Formulas and Mathematical Reasoning",
+        paragraphs: [
+          "Do not verify a mathematics answer only by checking whether the final number looks reasonable.",
+          "Inspect the formula, assumptions, substitutions, units, intermediate steps, and final result.",
+          "If possible, solve the problem independently or compare the method with a worked example from your course."
+        ],
+        prompt:
+          "Audit this solution step by step. Identify the formula used, assumptions, substitutions, units, and calculations. Do not simply repeat the final answer."
+      },
+
+      {
+        heading: "Step 10: Recalculate Numerical Answers",
+        paragraphs: [
+          "For calculations, independently reproduce the arithmetic when practical.",
+          "A correct method with one arithmetic error can still produce the wrong answer, while a correct final number can occasionally come from faulty reasoning.",
+          "Check both the process and the result."
+        ]
+      },
+
+      {
+        heading: "Step 11: Test Examples Instead of Assuming They Work",
+        paragraphs: [
+          "AI-generated examples can contain contradictions or fail to satisfy the concept they are supposed to demonstrate.",
+          "Apply the definition or rule to the example yourself."
+        ],
+        prompt:
+          "Check whether this example actually satisfies every requirement of [concept]. List each requirement and test the example against it."
+      },
+
+      {
+        heading: "Step 12: Compare the Answer With Your Course Material",
+        paragraphs: [
+          "For studying, correctness is not the only consideration. You also need alignment with what your course teaches.",
+          "Terminology, notation, definitions, assumptions, or methods may differ between sources.",
+          "Compare important AI explanations with your textbook, lecture notes, slides, instructor guidance, and syllabus."
+        ],
+        note:
+          "For an exam, know the framework and terminology your course expects unless your instructor tells you otherwise."
+      },
+
+      {
+        heading: "Step 13: Investigate Conflicts Instead of Picking a Side",
+        paragraphs: [
+          "If AI says one thing and your textbook says another, do not immediately assume either one is wrong.",
+          "The difference may come from context, definitions, editions, assumptions, simplification, or genuinely conflicting interpretations.",
+          "Identify the exact point of disagreement first."
+        ],
+        prompt:
+          "My course material says: [text]. Your answer says: [text]. Identify the exact disagreement, possible reasons for it, and what I should verify in the original sources. Do not simply declare one side correct."
+      },
+
+      {
+        heading: "Step 14: Be Careful With Outdated Information",
+        paragraphs: [
+          "Some facts change over time.",
+          "Software features, prices, laws, statistics, scientific guidance, product specifications, policies, and current events may become outdated.",
+          "When freshness matters, check when the source was published or updated."
+        ],
+        prompt:
+          "Which claims in this answer are time-sensitive and could have changed? Turn them into a checklist for current-source verification."
+      },
+
+      {
+        heading: "Step 15: Do Not Treat Another AI's Agreement as Proof",
+        paragraphs: [
+          "Asking a second AI system can expose differences, but agreement between two models does not independently prove a claim.",
+          "Both systems may reproduce the same common error or rely on similar information.",
+          "Use model comparison to discover what needs checking, then verify the important claim against inspectable evidence."
+        ],
+        note:
+          "Two confident AI answers are still AI answers."
+      },
+
+      {
+        heading: "A Better Way to Use a Second AI",
+        prompt:
+          "Critique this answer rather than simply answering the same question again. Identify claims that need external verification, possible missing context, assumptions, and places where the explanation may be misleading."
+      },
+
+      {
+        heading: "Step 16: Use a Verified / Unverified System",
+        paragraphs: [
+          "When researching a difficult topic, it helps to keep track of what you have actually checked.",
+          "Mark claims rather than relying on memory."
+        ],
+        list: [
+          "Verified — checked against an appropriate source",
+          "Partially verified — source supports only part of the claim",
+          "Unverified — not checked yet",
+          "Conflicting — reliable sources or course materials disagree",
+          "Incorrect — evidence contradicts the AI answer"
+        ]
+      },
+
+      {
+        heading: "Step 17: Only Then Add the Information to Your Notes",
+        paragraphs: [
+          "Once an important claim has survived the appropriate checks, you can incorporate it into your study material.",
+          "Keep the distinction between source material and your own simplified explanation clear.",
+          "For academic writing, return to and cite the original source rather than citing an AI-generated description of that source unless your required citation rules specifically say otherwise."
+        ]
+      },
+
+      {
+        heading: "Example: Verifying an AI-Generated Definition",
+        paragraphs: [
+          "Imagine AI gives you a short definition of a statistical concept.",
+          "The definition sounds clear, so instead of immediately copying it into your notes, you compare it with your textbook.",
+          "You discover that the AI explanation captured the general idea but omitted an important condition.",
+          "You keep the simple version as an intuition aid, add the missing condition, and memorize the formal course definition."
+        ]
+      },
+
+      {
+        heading: "Example: Verifying an AI Citation",
+        paragraphs: [
+          "Suppose AI provides an academic-looking citation to support a claim.",
+          "First search for the exact paper. If you cannot locate it through appropriate scholarly or publisher sources, do not use it.",
+          "If the paper exists, open it and inspect the relevant section. Check whether the study actually supports the claim, whether the population and context match, and whether limitations have been omitted.",
+          "Only after those checks should the source influence your research or notes."
+        ]
+      },
+
+      {
+        heading: "Example: Checking an AI Math Answer",
+        paragraphs: [
+          "Suppose AI solves a problem and gives a final answer of 24.",
+          "Do not ask only whether 24 is correct. Identify the formula, check whether it applies, reproduce the substitutions, verify units, calculate each step independently, and compare the reasoning with your course method.",
+          "This can reveal a conceptual mistake even when the final number happens to be correct."
+        ]
+      },
+
+      {
+        heading: "How Much Verification Is Enough?",
+        paragraphs: [
+          "Verification effort should match the risk of being wrong.",
+          "A casual example used only to build intuition may need less checking than a formula you will use on an exam or a research claim you plan to cite.",
+          "Increase verification when information is specific, consequential, surprising, disputed, technical, numerical, or difficult for you to evaluate independently."
+        ]
+      },
+
+      {
+        heading: "A Fast 60-Second AI Answer Check",
+        paragraphs: [
+          "When you need a quick first-pass check, ask yourself:"
+        ],
+        list: [
+          "What are the main factual claims?",
+          "Which claim would hurt me most if it were wrong?",
+          "Is there an identifiable source?",
+          "Does the source actually support the claim?",
+          "Are dates or numbers current and accurate?",
+          "Does this match my course material?",
+          "Can I explain the reasoning myself?"
+        ],
+        paragraphsAfter: [
+          "This quick check does not replace deeper verification for high-stakes academic work, but it can prevent you from automatically accepting an answer."
+        ]
+      },
+
+      {
+        heading: "Red Flags in AI Answers",
+        list: [
+          "A very specific claim with no source",
+          "A citation you cannot locate",
+          "A source that exists but does not support the statement",
+          "Precise statistics without context or date",
+          "A quotation you cannot find in the original source",
+          "A formula used without explaining its assumptions",
+          "A confident answer to a disputed question with no nuance",
+          "A technical explanation that contradicts your course material",
+          "Changing answers when you ask the same factual question differently",
+          "An answer that cannot distinguish evidence from speculation"
+        ]
+      },
+
+      {
+        heading: "Useful Verification Prompts for Students",
+        paragraphs: [
+          "AI can help organize the verification process, but it should not become the final judge of its own accuracy."
+        ],
+        list: [
+          "Which claims in your answer require external verification?",
+          "Which parts of this answer are you least certain about?",
+          "Separate facts from interpretations.",
+          "What original source should I inspect for this claim?",
+          "What assumptions does this answer depend on?",
+          "Which parts could be outdated?",
+          "Turn all dates and statistics into a verification checklist.",
+          "What evidence would prove this answer wrong?",
+          "Identify possible counterexamples.",
+          "What should I compare with my textbook?"
+        ]
+      },
+
+      {
+        heading: "AI Verification for Research vs Everyday Studying",
+        paragraphs: [
+          "The basic habit is the same, but research usually requires a stricter standard.",
+          "For everyday learning, you may primarily verify important concepts against course material. Academic research can require locating original studies, evaluating evidence, checking citations, comparing sources, and following disclosure or AI-use rules.",
+          "If you are using AI during academic research, use a dedicated research workflow rather than treating verification as a final checkbox."
+        ]
+      },
+
+      {
+        heading: "Responsible Use of AI for Studying",
+        paragraphs: [
+          "Verification does not override your institution's AI policy.",
+          "Follow the rules for your course, assignment, exam, or research project. If AI use must be disclosed, disclose it according to the applicable instructions.",
+          "Also avoid sharing confidential, private, restricted, or unpublished material with third-party AI systems unless you have permission and understand how the service handles the data."
+        ]
+      },
+
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "The biggest danger of a wrong AI answer is not always receiving it. It is learning it without checking.",
+          "Build a habit of separating claims, prioritizing high-risk details, finding appropriate sources, checking citations, verifying calculations, comparing with course material, and marking uncertainty.",
+          "AI becomes much more useful for studying when you treat its output as something to evaluate rather than something to automatically memorize."
+        ]
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "use-ai-to-explain-difficult-concepts",
+        category: "Study Guides",
+        title: "How to Use AI to Explain Difficult Concepts You Don't Understand",
+        description:
+          "Use AI to build understanding through simpler explanations, examples, questions, application, and verification."
+      },
+      {
+        slug: "use-ai-for-academic-research-without-cheating",
+        category: "Research & Writing",
+        title: "How to Use AI for Academic Research Without Cheating",
+        description:
+          "Use AI responsibly during research while verifying sources, evidence, citations, and your own reasoning."
+      },
+      {
+        slug: "use-ai-for-active-recall",
+        category: "Productivity",
+        title: "How to Use AI for Active Recall: A Smarter Study Workflow",
+        description:
+          "Turn verified study material into retrieval questions and test what you can remember without looking."
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can AI give wrong answers?",
+        answer:
+          "Yes. AI can produce inaccurate, incomplete, outdated, or unsupported information, even when the response sounds confident."
+      },
+      {
+        question: "How can I verify an AI answer?",
+        answer:
+          "Break the answer into claims and check important details against appropriate sources such as course material, official documentation, primary sources, or reliable academic resources."
+      },
+      {
+        question: "Can AI create fake citations?",
+        answer:
+          "AI can produce references that appear legitimate but are inaccurate or nonexistent. Locate the original source independently before relying on or citing it."
+      },
+      {
+        question: "Is a citation enough to prove an AI answer is correct?",
+        answer:
+          "No. Confirm that the source exists and then check whether it actually supports the specific claim in the context presented."
+      },
+      {
+        question: "Should I ask another AI to fact-check an answer?",
+        answer:
+          "A second AI can help identify possible problems, but agreement between AI systems is not proof. Important claims should be checked against independent, inspectable sources."
+      },
+      {
+        question: "How do I verify an AI math answer?",
+        answer:
+          "Check the formula, assumptions, substitutions, units, intermediate calculations, and final result. When possible, solve the problem independently or compare it with your course method."
+      },
+      {
+        question: "Should I trust AI answers that match my textbook?",
+        answer:
+          "Matching your textbook increases confidence for course-specific studying, but important details should still be understood in context rather than copied blindly."
+      },
+      {
+        question: "Do I need to verify every AI response?",
+        answer:
+          "Not with the same level of effort. Verification should become stronger when a claim is important, technical, numerical, surprising, consequential, or something you plan to memorize, submit, or cite."
+      }
+    ]
+  },
 };
