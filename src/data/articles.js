@@ -122,6 +122,17 @@ export const articles = [
     publishedAt: "2026-09-05",
     updatedAt: "2026-09-05",
   },
+  {
+    slug: "use-ai-to-explain-difficult-concepts",
+    category: "Study Guides",
+    title: "How to Use AI to Explain Difficult Concepts You Don't Understand",
+    description:
+      "Learn how to use AI to understand difficult concepts through simpler explanations, examples, analogies, questions, teach-back, practice, and verification.",
+    readTime: "13 min read",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-05",
+    updatedAt: "2026-09-05",
+  },
 ];
 
 export const publishedArticles = articles.filter(
