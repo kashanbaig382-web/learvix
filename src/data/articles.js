@@ -155,6 +155,17 @@ export const articles = [
     publishedAt: "2026-09-05",
     updatedAt: "2026-09-05",
   },
+  {
+    slug: "best-free-ai-quiz-generators-for-students",
+    category: "AI Tools",
+    title: "Best Free AI Quiz Generators for Students in 2026",
+    description:
+      "Compare free AI quiz generators for students in 2026, including their study-material inputs, question types, customization, feedback, free-plan limits, and best use cases.",
+    readTime: "13 min read",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-05",
+    updatedAt: "2026-09-05",
+  },
 ];
 
 export const publishedArticles = articles.filter(
