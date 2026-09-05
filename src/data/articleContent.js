@@ -5085,4 +5085,477 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "study-a-long-pdf-with-ai": {
+    introduction: [
+      "A 100-page PDF can feel impossible to study when you do not know which sections matter, where important concepts are located, or how much time each chapter deserves.",
+      "AI can make a long document easier to navigate, but the goal should not be to replace the entire PDF with one generated summary. A better approach is to use AI to map the document, identify relevant sections, break the material into manageable chunks, clarify difficult ideas, generate questions, and support review while you continue checking important information against the original source.",
+      "This guide shows you a practical workflow for studying long PDFs without treating every page as equally important."
+    ],
+
+    sections: [
+      {
+        heading: "Quick Answer: How Do You Study a Long PDF With AI?",
+        paragraphs: [
+          "Start by defining what you need to learn from the PDF. Then use its table of contents, headings, or document structure to build a map of the material.",
+          "Prioritize the sections connected to your learning goal, study those sections in manageable chunks, use AI to clarify and question the material, and verify important claims against the PDF itself.",
+          "Finish by testing yourself from memory and returning to weak sections instead of repeatedly rereading the entire document."
+        ],
+        note:
+          "LEARVIX rule: Use AI to navigate the PDF—not to avoid understanding the source."
+      },
+
+      {
+        heading: "The LEARVIX Long-PDF Study Workflow",
+        paragraphs: [
+          "Instead of uploading a long document and asking for one giant summary, use this workflow:"
+        ],
+        list: [
+          "Define your study goal",
+          "Map the PDF structure",
+          "Prioritize relevant sections",
+          "Split the document into manageable chunks",
+          "Get a high-level overview",
+          "Study important sections carefully",
+          "Ask targeted questions",
+          "Verify answers against the PDF",
+          "Use active recall",
+          "Review weak sections"
+        ],
+        paragraphsAfter: [
+          "The purpose of the workflow is to reduce wasted reading while keeping the original document at the center of your studying."
+        ]
+      },
+
+      {
+        heading: "Step 1: Decide What You Need From the PDF",
+        paragraphs: [
+          "Do not begin with the assumption that every page deserves the same amount of attention.",
+          "A textbook chapter, research report, lecture handout, and exam reading may all require different study strategies.",
+          "Before using AI, define the outcome you need."
+        ],
+        list: [
+          "Understand the main concepts",
+          "Prepare for an exam",
+          "Find information for an assignment",
+          "Review a chapter",
+          "Learn definitions or formulas",
+          "Compare arguments",
+          "Understand a research paper"
+        ],
+        prompt:
+          "I need to study this PDF for [exam/assignment/topic]. My goal is to understand [specific goal]. Help me create a study plan for the document, but do not assume every section is equally important."
+      },
+
+      {
+        heading: "Step 2: Map the PDF Before Reading It",
+        paragraphs: [
+          "Long documents become easier to manage when you can see their structure.",
+          "Before reading page by page, inspect the table of contents, chapter titles, headings, subheadings, introduction, conclusion, and other structural signals.",
+          "If your AI tool can work directly with the PDF, ask it to create a document map. Then compare that map with the actual headings in the file."
+        ],
+        prompt:
+          "Map this PDF into its main sections and subsections. For each section, briefly state its apparent purpose. Keep the original section names and page references where available."
+      },
+
+      {
+        heading: "What Should a Useful PDF Map Show?",
+        list: [
+          "Major chapters or sections",
+          "Important subsections",
+          "Approximate page ranges",
+          "Definitions or theory sections",
+          "Worked examples",
+          "Case studies",
+          "Exercises or review questions",
+          "Conclusions or summaries",
+          "Appendices or reference material"
+        ],
+        paragraphsAfter: [
+          "A map is not the same as a summary. Its job is to help you decide where to spend your attention."
+        ]
+      },
+
+      {
+        heading: "Step 3: Prioritize the Sections That Matter",
+        paragraphs: [
+          "Once the document is mapped, connect each section to your study goal.",
+          "If you have a syllabus, learning objectives, exam outline, assignment question, or instructor guidance, use that information when deciding what deserves deeper study.",
+          "Do not ask AI to declare sections unimportant without giving it the context needed to make that recommendation."
+        ],
+        prompt:
+          "My learning objectives are: [objectives]. Based on the PDF structure, group the sections into high, medium, and low study priority. Explain the reason for each recommendation and point me back to the relevant sections."
+      },
+
+      {
+        heading: "Do Not Automatically Skip Low-Priority Pages",
+        paragraphs: [
+          "Priority is a study-management tool, not permission to ignore course requirements.",
+          "A section that looks minor to an AI system may contain something your instructor expects you to know.",
+          "Use your syllabus, teacher guidance, assessment instructions, and your own judgment as the final authority."
+        ]
+      },
+
+      {
+        heading: "Step 4: Break the PDF Into Study Chunks",
+        paragraphs: [
+          "Trying to process a very long document in one interaction can produce shallow or overly compressed output.",
+          "Instead, work through meaningful sections or subsections.",
+          "A useful chunk is usually based on a complete idea rather than an arbitrary number of pages."
+        ],
+        prompt:
+          "Break this section into logical study chunks based on concepts and headings. Give each chunk a short label and tell me what I should understand before moving to the next one."
+      },
+
+      {
+        heading: "Why Concept-Based Chunks Are Better Than Random Page Ranges",
+        paragraphs: [
+          "A concept may begin on one page and continue across several others.",
+          "Splitting only by page count can separate definitions from examples or arguments from their evidence.",
+          "Whenever possible, keep related material together."
+        ]
+      },
+
+      {
+        heading: "Step 5: Get a High-Level Overview Before Deep Reading",
+        paragraphs: [
+          "Before studying a difficult section in detail, get a short orientation.",
+          "The overview should tell you what the section is trying to teach, which ideas are central, and how they connect.",
+          "It should not become a substitute for reading important material."
+        ],
+        prompt:
+          "Give me a high-level overview of this section before I study it. Identify the main question, core concepts, and how the ideas connect. Keep it brief and point me to the relevant parts of the PDF."
+      },
+
+      {
+        heading: "Step 6: Read the Important Parts Yourself",
+        paragraphs: [
+          "Once you know where the important material is, read those sections directly.",
+          "AI can reduce navigation time, but important definitions, arguments, equations, evidence, examples, and exceptions should still be examined in their original context.",
+          "This is especially important when exact wording or interpretation matters."
+        ],
+        note:
+          "Efficiency should remove unnecessary searching—not necessary learning."
+      },
+
+      {
+        heading: "Step 7: Ask Targeted Questions While You Study",
+        paragraphs: [
+          "Avoid vague prompts such as 'Explain the whole PDF.'",
+          "Ask questions tied to a specific section, term, equation, argument, or point of confusion."
+        ],
+        list: [
+          "What does this term mean in this section?",
+          "How does this idea connect to the previous section?",
+          "Why does the author make this argument?",
+          "What assumption is being used here?",
+          "What is the difference between these two concepts?",
+          "Can you walk through this example step by step?",
+          "Which part of the PDF supports this answer?"
+        ]
+      },
+
+      {
+        heading: "A Better Prompt for Source-Grounded Questions",
+        prompt:
+          "Using the PDF as the primary source, answer this question: [question]. Point me to the relevant section or page when possible. If the PDF does not contain enough information, tell me instead of filling the gap with an unsupported answer."
+      },
+
+      {
+        heading: "Step 8: Separate Explanation From Source Content",
+        paragraphs: [
+          "Sometimes you need AI to add an explanation that is not explicitly written in the PDF.",
+          "That can be useful, but you should know when the AI is explaining and when it is reporting what the document actually says."
+        ],
+        prompt:
+          "Explain this passage to me. Clearly separate what the PDF states from any additional explanation, analogy, or background knowledge you provide."
+      },
+
+      {
+        heading: "Step 9: Verify Important AI Answers Against the PDF",
+        paragraphs: [
+          "An AI answer can sound precise even when it misreads a section, misses a qualification, or invents a detail.",
+          "Whenever an answer matters to your understanding, assessment, research, or citation, go back to the source."
+        ],
+        list: [
+          "Check quoted wording",
+          "Check definitions",
+          "Check formulas and symbols",
+          "Check numerical values",
+          "Check dates and names",
+          "Check page references",
+          "Check claims attributed to an author",
+          "Check conclusions and limitations"
+        ],
+        note:
+          "A page citation generated by AI is a clue to check—not proof that the claim is correct."
+      },
+
+      {
+        heading: "Step 10: Be Careful With Tables, Diagrams, and Formulas",
+        paragraphs: [
+          "PDFs are not always plain text.",
+          "Important information may appear inside charts, tables, diagrams, equations, footnotes, or multi-column layouts. An AI tool may not interpret every element correctly.",
+          "Inspect these elements yourself, particularly when a visual relationship or exact numerical value matters."
+        ],
+        prompt:
+          "Explain what this table, diagram, or formula appears to show, but distinguish direct observations from your interpretation. I will verify the explanation against the original page."
+      },
+
+      {
+        heading: "Step 11: Watch for Scanned or Image-Based PDFs",
+        paragraphs: [
+          "Some PDFs contain scanned page images instead of clean selectable text.",
+          "In those cases, the tool may rely on optical character recognition, often called OCR, to extract the text.",
+          "OCR can misread characters, numbers, symbols, formulas, headings, or unusual formatting."
+        ],
+        list: [
+          "Check whether text can be selected normally",
+          "Compare extracted text with the page image",
+          "Double-check equations and numbers",
+          "Watch for missing columns or footnotes",
+          "Verify unusual names and technical terms"
+        ]
+      },
+
+      {
+        heading: "Step 12: Turn Each Chunk Into Questions",
+        paragraphs: [
+          "After understanding a section, stop rereading and start retrieving.",
+          "Ask AI to create questions from the material, but answer them without looking at the PDF or generated answers."
+        ],
+        prompt:
+          "Create 8 questions from this section: 3 recall questions, 3 conceptual questions, and 2 application questions. Do not show the answers until I attempt them."
+      },
+
+      {
+        heading: "Step 13: Use Your Mistakes to Find Weak Sections",
+        paragraphs: [
+          "Your incorrect or incomplete answers tell you where to return in the PDF.",
+          "Instead of rereading the entire document, build a targeted review loop."
+        ],
+        prompt:
+          "Based on my answers, identify which concepts I am weak in. Point me back to the relevant sections of the PDF and give me one follow-up question for each weak area."
+      },
+
+      {
+        heading: "Step 14: Create a Final Review Map",
+        paragraphs: [
+          "After studying the important chunks, compress your navigation—not necessarily the knowledge itself.",
+          "Create a final map showing the major ideas, their relationships, and where to return when something needs review."
+        ],
+        prompt:
+          "Create a final review map for this PDF. Include the major concepts, how they connect, my weak areas, and the sections I should revisit. Keep page or section references where possible."
+      },
+
+      {
+        heading: "Step 15: Review From Memory Before Reopening the PDF",
+        paragraphs: [
+          "When you return for revision, do not immediately reread everything.",
+          "First try to reconstruct the main ideas from memory.",
+          "Then use the PDF to check what you forgot or misunderstood."
+        ],
+        prompt:
+          "Quiz me on the major ideas from this PDF one question at a time. Do not reveal answers before I respond. Prioritize concepts I previously struggled with."
+      },
+
+      {
+        heading: "Example: Studying a 120-Page Exam PDF",
+        paragraphs: [
+          "Imagine you have a 120-page course PDF and an exam in one week.",
+          "First, you provide the learning objectives and map the document into chapters and subsections.",
+          "You discover that several chapters directly match the exam objectives, while other pages contain supplementary examples and reference material.",
+          "Instead of asking for a 120-page summary, you study the high-priority chapters in concept-based chunks.",
+          "For each chunk, you get a brief overview, read the important pages, ask targeted questions, verify the explanations, and then answer recall and application questions.",
+          "At the end of each study session, your mistakes determine which sections you revisit.",
+          "By the final review, you are working from a map of concepts and weak areas rather than starting again from page one."
+        ]
+      },
+
+      {
+        heading: "Example: Studying a Long Research Report",
+        paragraphs: [
+          "A research report may require a different workflow.",
+          "You might first identify the research question, methodology, major findings, limitations, and conclusion.",
+          "Then you read those sections directly and use AI to clarify terminology or compare findings.",
+          "If you plan to cite the report, you return to the original pages and verify every claim, quotation, number, and citation rather than citing an AI summary."
+        ]
+      },
+
+      {
+        heading: "Should You Ask AI to Summarize the Entire PDF?",
+        paragraphs: [
+          "A whole-document summary can be useful as an initial orientation, but it is a weak replacement for studying a complex document.",
+          "Long summaries may compress away examples, conditions, exceptions, evidence, and relationships that matter.",
+          "Use the overview to decide where to look next, then work with the important sections directly."
+        ]
+      },
+
+      {
+        heading: "When Should You Turn the PDF Into Study Notes?",
+        paragraphs: [
+          "If your goal is specifically to transform the document into structured revision notes, that is a separate workflow.",
+          "First decide which parts of the long PDF matter. Then convert the relevant material into study notes rather than producing notes from every page automatically."
+        ],
+        relatedAfter: {
+          slug: "turn-a-pdf-into-study-notes-with-ai",
+          category: "Notes & PDFs",
+          title: "How to Turn a PDF Into Study Notes With AI",
+          description:
+            "Use the dedicated workflow for turning relevant PDF material into structured, revision-ready notes."
+        }
+      },
+
+      {
+        heading: "When Should You Turn the PDF Into Flashcards?",
+        paragraphs: [
+          "Flashcards are useful when the selected material contains facts, definitions, relationships, or concepts that benefit from repeated retrieval.",
+          "They should come after you identify and understand the important content—not as an automatic conversion of every sentence."
+        ],
+        relatedAfter: {
+          slug: "turn-a-pdf-into-flashcards-with-ai",
+          category: "Notes & PDFs",
+          title: "How to Turn a PDF Into Flashcards With AI",
+          description:
+            "Turn selected PDF content into verified flashcards for active recall and spaced review."
+        }
+      },
+
+      {
+        heading: "How to Study a Long PDF When You Have Very Little Time",
+        paragraphs: [
+          "When time is limited, prioritization becomes even more important.",
+          "Start with your learning objectives or assessment requirements, map the document, identify the sections most directly connected to those goals, and focus your limited time there.",
+          "Use AI for navigation and clarification, but do not replace high-value reading with a generated summary simply because the deadline is close."
+        ],
+        list: [
+          "Define what must be learned",
+          "Map the document",
+          "Prioritize high-value sections",
+          "Read those sections directly",
+          "Ask targeted questions",
+          "Test yourself",
+          "Return only to weak areas"
+        ]
+      },
+
+      {
+        heading: "Common Mistakes When Studying PDFs With AI",
+        list: [
+          "Uploading the PDF and asking for one giant summary",
+          "Treating every page as equally important",
+          "Letting AI decide what matters without giving course context",
+          "Reading AI summaries instead of important source sections",
+          "Trusting generated page references without checking them",
+          "Ignoring tables, diagrams, formulas, and footnotes",
+          "Failing to notice OCR errors in scanned PDFs",
+          "Creating notes or flashcards before understanding the material",
+          "Never testing yourself from memory",
+          "Using AI answers without checking the original document"
+        ]
+      },
+
+      {
+        heading: "What Kind of AI Tool Works Best for Long PDFs?",
+        paragraphs: [
+          "The best tool depends on the document and your workflow rather than one brand name.",
+          "For long-document studying, useful capabilities can include direct PDF support, source-grounded answers, visible citations or references, reliable handling of longer documents, and the ability to work with specific sections.",
+          "If the PDF is scanned, OCR quality also matters. If the document contains private or restricted information, review the tool's privacy practices and your institution's rules before uploading it."
+        ],
+        list: [
+          "PDF upload or document support",
+          "Source-grounded responses",
+          "Section or page references",
+          "Long-document handling",
+          "Good table and layout handling",
+          "OCR when required",
+          "Clear privacy controls",
+          "Useful export or note organization"
+        ]
+      },
+
+      {
+        heading: "Protect Private and Restricted Documents",
+        paragraphs: [
+          "Do not upload confidential, personal, unpublished, copyrighted, institution-restricted, or otherwise sensitive documents to a third-party AI service unless you have permission to do so.",
+          "Check your institution's rules and the tool's privacy terms before working with material that is not meant for public sharing."
+        ]
+      },
+
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "Studying a long PDF efficiently does not mean finding a tool that lets you ignore the document.",
+          "Use AI to understand the structure, prioritize your attention, navigate sections, clarify difficult ideas, generate questions, and identify weak areas.",
+          "Keep returning to the original PDF for important information. The goal is to spend less time searching and rereading—and more time understanding, retrieving, and applying what actually matters."
+        ]
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "turn-a-pdf-into-study-notes-with-ai",
+        category: "Notes & PDFs",
+        title: "How to Turn a PDF Into Study Notes With AI",
+        description:
+          "Turn selected PDF content into structured notes and verify the result against the original source."
+      },
+      {
+        slug: "turn-a-pdf-into-flashcards-with-ai",
+        category: "Notes & PDFs",
+        title: "How to Turn a PDF Into Flashcards With AI",
+        description:
+          "Convert important PDF material into verified flashcards for active recall and spaced review."
+      },
+      {
+        slug: "use-ai-for-active-recall",
+        category: "Productivity",
+        title: "How to Use AI for Active Recall: A Smarter Study Workflow",
+        description:
+          "Use questions and retrieval practice to test what you can remember without looking at your notes."
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can AI help me study a long PDF?",
+        answer:
+          "Yes. AI can help map a document, identify relevant sections, explain difficult material, generate questions, and support review. Important information should still be checked against the original PDF."
+      },
+      {
+        question: "Do I need to read every page of a long PDF?",
+        answer:
+          "Not necessarily for every study goal. Use your syllabus, learning objectives, assignment requirements, and instructor guidance to decide which sections require deep reading. Do not let AI alone decide what can be skipped."
+      },
+      {
+        question: "Should I summarize an entire PDF with AI?",
+        answer:
+          "A whole-document summary can provide an overview, but it may remove important details and context. For serious studying, work through relevant sections and verify important information against the source."
+      },
+      {
+        question: "How should I split a long PDF for studying?",
+        answer:
+          "Prefer logical chunks based on chapters, headings, concepts, or arguments rather than arbitrary page counts. Keep related definitions, examples, and evidence together when possible."
+      },
+      {
+        question: "Can AI read scanned PDFs?",
+        answer:
+          "Some AI tools can process scanned PDFs using OCR, but extraction errors can occur. Check numbers, formulas, technical terms, tables, and unusual formatting against the original page."
+      },
+      {
+        question: "Can I trust AI citations or page references from a PDF?",
+        answer:
+          "Treat them as references to verify. Open the cited page or section and confirm that it actually supports the AI's claim."
+      },
+      {
+        question: "How can I remember what I read in a long PDF?",
+        answer:
+          "After understanding each important section, close the material and answer recall, conceptual, and application questions from memory. Use mistakes to decide what to review."
+      },
+      {
+        question: "Is it safe to upload any PDF to an AI tool?",
+        answer:
+          "No. Avoid uploading confidential, restricted, personal, unpublished, or otherwise sensitive material unless you have permission and understand the tool's privacy practices."
+      }
+    ]
+  },
 };

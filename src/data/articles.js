@@ -133,6 +133,17 @@ export const articles = [
     publishedAt: "2026-09-05",
     updatedAt: "2026-09-05",
   },
+  {
+    slug: "study-a-long-pdf-with-ai",
+    category: "Notes & PDFs",
+    title: "How to Study a Long PDF With AI Without Reading Every Page",
+    description:
+      "Learn how to study a long PDF with AI by mapping the document, prioritizing important sections, studying in chunks, asking questions, verifying answers, and reviewing with active recall.",
+    readTime: "14 min read",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-05",
+    updatedAt: "2026-09-05",
+  },
 ];
 
 export const publishedArticles = articles.filter(
