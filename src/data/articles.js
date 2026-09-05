@@ -111,6 +111,17 @@ export const articles = [
     publishedAt: "2026-09-03",
     updatedAt: "2026-09-03",
   },
+  {
+    slug: "use-ai-for-academic-research-without-cheating",
+    category: "Research & Writing",
+    title: "How to Use AI for Academic Research Without Cheating",
+    description:
+      "Learn how to use AI for academic research responsibly to find research directions, understand papers, verify sources, organize evidence, and protect academic integrity.",
+    readTime: "14 min read",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-05",
+    updatedAt: "2026-09-05",
+  },
 ];
 
 export const publishedArticles = articles.filter(

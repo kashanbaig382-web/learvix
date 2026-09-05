@@ -4184,4 +4184,447 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "use-ai-for-academic-research-without-cheating": {
+    introduction: [
+      "AI can make academic research faster, but using it responsibly is very different from asking it to do the research for you.",
+      "A useful AI research workflow can help you brainstorm questions, discover search terms, understand difficult papers, organize evidence, compare studies, and review your own writing. The research decisions, source verification, interpretation, argument, and final academic work should still remain yours.",
+      "The exact boundary between acceptable assistance and academic misconduct depends on your institution, course, instructor, assignment, journal, or research policy. Always check those rules before using AI."
+    ],
+
+    sections: [
+      {
+        heading: "Quick Answer: How Can You Use AI for Academic Research Without Cheating?",
+        paragraphs: [
+          "Use AI as a research assistant rather than as the author of your work.",
+          "Start with your own research problem, use AI to explore keywords and possible directions, find real academic sources through appropriate databases or research tools, read the original sources yourself, verify every important claim, organize the evidence, and build your own interpretation.",
+          "Never assume an AI-generated citation is real. Do not submit generated analysis or writing as your own when that use is prohibited, and disclose AI assistance whenever your institution or publication requires it."
+        ],
+        note:
+          "LEARVIX rule: AI may help you navigate the research process. It should not replace the intellectual work the assignment is designed to assess."
+      },
+
+      {
+        heading: "The LEARVIX Responsible AI Research Workflow",
+        paragraphs: [
+          "A safer academic research workflow looks like this:"
+        ],
+        list: [
+          "Check the AI policy",
+          "Define your research question",
+          "Generate search terms and research directions",
+          "Find real scholarly sources",
+          "Verify that every source exists",
+          "Read the original papers",
+          "Extract evidence and limitations",
+          "Compare findings across sources",
+          "Develop your own argument",
+          "Write the work yourself",
+          "Check every citation",
+          "Disclose AI use when required"
+        ],
+        paragraphsAfter: [
+          "Notice that AI assistance sits around the research process. It does not remove the student's responsibility for evaluating evidence and producing the final intellectual contribution."
+        ]
+      },
+
+      {
+        heading: "Step 1: Check Your Course or Institution's AI Policy First",
+        paragraphs: [
+          "There is no universal rule saying that every use of AI in academic work is either allowed or prohibited.",
+          "A university may provide general guidance while an individual instructor sets stricter rules for a particular course or assignment.",
+          "Before using AI, check the syllabus, assignment instructions, academic-integrity policy, and any specific AI guidance provided by your instructor."
+        ],
+        list: [
+          "Is AI allowed for this assignment?",
+          "Which AI-assisted tasks are permitted?",
+          "Can you use AI for brainstorming?",
+          "Can you use it to summarize material?",
+          "Can it review your own draft?",
+          "Must AI use be disclosed?",
+          "Does your institution specify how disclosure or citation should be formatted?"
+        ],
+        note:
+          "If the rules are unclear, ask the instructor. Do not assume that because AI was allowed in one class it is automatically allowed in another."
+      },
+
+      {
+        heading: "Step 2: Begin With Your Own Research Question",
+        paragraphs: [
+          "Do not begin by asking AI to invent an entire paper.",
+          "Start with the subject you are studying, the assignment requirements, and the problem you genuinely want to investigate.",
+          "AI can then help you explore the boundaries of that problem or turn an overly broad idea into possible research directions."
+        ],
+        prompt:
+          "I am researching [topic]. My assignment requires [requirements]. Do not write the paper for me. Help me identify several narrower research questions I could investigate, and explain what kind of evidence each question would require."
+      },
+
+      {
+        heading: "Step 3: Use AI to Generate Search Terms, Not Fake Sources",
+        paragraphs: [
+          "One of the safest ways to use a general AI assistant during early research is to generate vocabulary for searching.",
+          "A topic may have technical terms, synonyms, related theories, or alternative phrases that you do not know yet.",
+          "Ask AI for those terms, then use them in scholarly databases, your university library, Google Scholar, or another appropriate research system."
+        ],
+        prompt:
+          "My research question is: [question]. Generate academic search terms, synonyms, related concepts, and Boolean search combinations that could help me search scholarly databases. Do not invent citations."
+      },
+
+      {
+        heading: "Step 4: Find Real Academic Sources",
+        paragraphs: [
+          "A general chatbot should not be treated as your academic database.",
+          "Use appropriate scholarly search systems and library resources to locate papers, books, conference proceedings, reports, or other sources relevant to your field.",
+          "AI-powered research tools can help with discovery, but you should still open the underlying source and evaluate it yourself."
+        ],
+        list: [
+          "University library databases",
+          "Google Scholar",
+          "Subject-specific scholarly databases",
+          "Publisher and journal websites",
+          "Institutional repositories",
+          "AI research tools that link back to identifiable academic sources"
+        ],
+        note:
+          "The goal is not to collect the largest number of references. It is to find credible sources that actually help answer your research question."
+      },
+
+      {
+        heading: "Step 5: Never Trust an AI-Generated Citation Automatically",
+        paragraphs: [
+          "Generative AI can produce references that look completely believable even when the paper, title, author combination, journal details, or DOI is incorrect.",
+          "That makes citation verification a mandatory step rather than an optional quality check.",
+          "If an AI system suggests a source, search for it independently and confirm the bibliographic details."
+        ],
+        list: [
+          "Confirm the paper actually exists",
+          "Check the exact title",
+          "Check the authors",
+          "Check the publication or journal",
+          "Check the year",
+          "Check the DOI or stable source link when available",
+          "Open the original source",
+          "Confirm it actually supports the claim you want to make"
+        ],
+        note:
+          "A real citation can still be a bad citation if the paper does not support the statement attached to it."
+      },
+
+      {
+        heading: "Step 6: Read the Original Source Yourself",
+        paragraphs: [
+          "An AI summary can help you approach a difficult paper, but it should not become a substitute for reading the material you intend to rely on.",
+          "At minimum, inspect the relevant sections of the original source and understand what the researchers actually did, found, and concluded.",
+          "Pay attention to methodology, sample, context, limitations, and whether the evidence is being described more strongly than the paper supports."
+        ],
+        prompt:
+          "I am reading this paper. Help me understand the following section in simpler language: [section]. Separate the authors' findings from your explanation, and do not add claims that are not supported by the provided text."
+      },
+
+      {
+        heading: "Step 7: Use AI to Interrogate a Paper, Not Just Summarize It",
+        paragraphs: [
+          "A generic summary may compress a paper without helping you think critically about it.",
+          "More useful questions ask about the research design, evidence, limitations, assumptions, and relationship between the findings and your research question."
+        ],
+        prompt:
+          "Based only on the paper I provide, identify its research question, methodology, sample, main findings, limitations, and conclusions. For each point, tell me where in the paper I should verify it. If the paper does not provide something, say that it is not stated."
+      },
+
+      {
+        heading: "Step 8: Build an Evidence Table",
+        paragraphs: [
+          "As the number of papers grows, it becomes easy to forget which source supports which idea.",
+          "Create a research table or literature matrix and record the information you verified from each source."
+        ],
+        list: [
+          "Full source or citation details",
+          "Research question",
+          "Methodology",
+          "Sample or dataset",
+          "Main findings",
+          "Relevant evidence",
+          "Limitations",
+          "How the source relates to your research question",
+          "Your own notes"
+        ],
+        note:
+          "Where possible, record page numbers or exact source locations while reading. This makes later verification much easier."
+      },
+
+      {
+        heading: "Step 9: Compare Multiple Sources Instead of Asking AI for 'The Answer'",
+        paragraphs: [
+          "Academic research often contains disagreement, different methodologies, different populations, and different interpretations.",
+          "Do not ask AI to flatten that complexity into one confident answer.",
+          "Instead, use your evidence table to compare what the sources actually say."
+        ],
+        prompt:
+          "Using only the verified notes I provide from these papers, help me organize areas of agreement, disagreement, methodological differences, and research gaps. Do not introduce evidence from sources outside my notes."
+      },
+
+      {
+        heading: "Step 10: Separate Evidence From Your Interpretation",
+        paragraphs: [
+          "One of the most important research skills is distinguishing what a source reports from what you infer from it.",
+          "Your literature may provide evidence, but your argument should emerge from your own evaluation of that evidence.",
+          "AI can challenge your reasoning or suggest questions, but it should not silently become the author of your intellectual contribution."
+        ],
+        prompt:
+          "Here is my interpretation of the evidence: [your reasoning]. Challenge it. Identify assumptions, possible counterarguments, and evidence I may need to investigate. Do not rewrite my argument for submission."
+      },
+
+      {
+        heading: "Step 11: Use AI to Find Gaps in Your Reasoning",
+        paragraphs: [
+          "AI can be useful as a critical conversation partner after you have developed an initial position.",
+          "Ask it to identify questions you have not answered, alternative explanations, missing definitions, or claims that require stronger evidence.",
+          "Then investigate those issues yourself."
+        ],
+        prompt:
+          "Act as a critical reviewer of this research outline. Identify unsupported claims, missing counterarguments, ambiguous concepts, and places where stronger evidence is needed. Do not write replacement paragraphs."
+      },
+
+      {
+        heading: "Step 12: Write From Your Evidence, Not From AI Output",
+        paragraphs: [
+          "Once you understand the sources and have formed your argument, write from your research notes and evidence.",
+          "This keeps the structure and reasoning connected to what you actually learned rather than to text produced by a model.",
+          "If your course permits AI-assisted editing, you can later use AI for narrowly defined feedback without handing over authorship."
+        ],
+        note:
+          "If an assignment is assessing your ability to analyze, synthesize, or write, replacing that work with generated output may defeat the learning objective even if the text sounds polished."
+      },
+
+      {
+        heading: "Step 13: Use AI for Feedback on Your Own Draft",
+        paragraphs: [
+          "When permitted, AI can review writing you have already produced and point out problems such as unclear transitions, repetition, weak organization, or unsupported claims.",
+          "Ask for diagnosis before asking for rewriting. That keeps you in control of the final language."
+        ],
+        prompt:
+          "Review this paragraph that I wrote. Identify unclear reasoning, repetition, weak transitions, and claims that appear to need evidence. Explain the problems, but do not rewrite the paragraph for me."
+      },
+
+      {
+        heading: "Step 14: Verify Every Citation Before Submission",
+        paragraphs: [
+          "Before submitting your work, inspect the reference list one source at a time.",
+          "Confirm that every cited source exists, the bibliographic information is accurate, and the source actually supports the statement for which you cited it.",
+          "Citation managers can help with formatting, but automated formatting does not replace verification."
+        ],
+        list: [
+          "Every in-text citation has a matching reference",
+          "Every reference cited in the bibliography is actually used",
+          "Author names are correct",
+          "Titles are correct",
+          "Years and publication details are correct",
+          "DOIs or URLs point to the intended source",
+          "Claims accurately represent the original source"
+        ]
+      },
+
+      {
+        heading: "Step 15: Disclose AI Use When Required",
+        paragraphs: [
+          "AI disclosure requirements vary across institutions, courses, publishers, and citation styles.",
+          "If disclosure is required, explain specifically what tool you used and what role it played rather than simply writing that 'AI was used.'",
+          "Follow the exact instructions provided by your institution or publisher."
+        ],
+        example:
+          "A disclosure might describe that an AI tool was used to brainstorm database search terms or provide feedback on clarity, while source selection, verification, analysis, argument development, and final writing were completed by the student. Use this only as a conceptual example; follow your institution's required wording and format."
+      },
+
+      {
+        heading: "Keep a Record of How You Used AI",
+        paragraphs: [
+          "For substantial academic work, keeping a simple AI-use log can make your process more transparent.",
+          "Record the tool, date, purpose, important prompts, and what you did with the output.",
+          "This can also help you distinguish your own reasoning from AI suggestions when returning to a long research project."
+        ],
+        list: [
+          "AI tool used",
+          "Date",
+          "Purpose",
+          "Important prompt",
+          "Output used or rejected",
+          "How the information was verified"
+        ]
+      },
+
+      {
+        heading: "Protect Private and Unpublished Research",
+        paragraphs: [
+          "Do not paste confidential research data, participant information, unpublished findings, proprietary material, restricted course content, or personally identifiable information into a consumer AI tool without appropriate permission.",
+          "Research involving human participants may have additional institutional, ethical, or legal requirements.",
+          "Check your institution's approved tools and data-handling rules before uploading sensitive material."
+        ]
+      },
+
+      {
+        heading: "AI Research Assistance vs AI Cheating",
+        paragraphs: [
+          "The boundary depends on the rules governing your work, but a useful distinction is whether AI supports your learning or replaces the work you are expected to perform."
+        ],
+        list: [
+          "Usually lower-risk when permitted — brainstorming search terms",
+          "Usually lower-risk when permitted — explaining a difficult concept",
+          "Usually lower-risk when permitted — organizing your own verified research notes",
+          "Usually lower-risk when permitted — giving feedback on your own draft",
+          "Higher-risk — inventing or supplying unverified citations",
+          "Higher-risk — generating analysis you present as your own",
+          "Higher-risk — paraphrasing sources you never read",
+          "Higher-risk — generating the assignment when the task assesses your own writing or reasoning",
+          "Prohibited — any AI use that violates the explicit rules of your course, institution, assessment, or publication"
+        ],
+        note:
+          "These categories are guidance, not universal policy. Your actual academic rules always take priority."
+      },
+
+      {
+        heading: "Example: Using AI for a Literature Review Responsibly",
+        paragraphs: [
+          "Imagine you are researching whether retrieval practice improves student learning.",
+          "First, define the research question yourself. Ask AI for alternative academic search terms such as retrieval practice, practice testing, testing effect, and active recall.",
+          "Use those terms in scholarly databases and collect relevant papers. Verify every source and read the important sections yourself.",
+          "Record each paper's methodology, sample, findings, and limitations in a literature matrix.",
+          "You can then ask AI to help organize only your verified notes into possible themes or point out disagreements worth investigating.",
+          "Finally, decide what the literature means, construct the argument, and write the review yourself. Check every citation before submission and disclose AI assistance if required."
+        ]
+      },
+
+      {
+        heading: "Can AI Summarize Research Papers?",
+        paragraphs: [
+          "Yes, AI can help explain or summarize research papers, especially when the language is technical.",
+          "But a summary can omit qualifications, misunderstand methodology, or overstate a finding.",
+          "Use the summary to help navigate the paper, then verify important details in the original source before relying on them."
+        ]
+      },
+
+      {
+        heading: "Can AI Find Sources for a Research Paper?",
+        paragraphs: [
+          "AI can help discover search terms and some research-focused systems can surface scholarly literature.",
+          "However, general chatbots can produce incorrect or fabricated references.",
+          "Treat every suggested reference as an unverified lead until you locate and inspect the real source."
+        ]
+      },
+
+      {
+        heading: "Can AI Write Your Literature Review?",
+        paragraphs: [
+          "AI can technically generate literature-review-style text, but whether using that text is permitted depends on your academic rules.",
+          "More importantly, a literature review requires source selection, evaluation, comparison, synthesis, and judgment.",
+          "A stronger learning workflow is to perform those steps yourself and use AI only for permitted support tasks."
+        ]
+      },
+
+      {
+        heading: "Common Mistakes When Using AI for Academic Research",
+        list: [
+          "Using AI before checking the assignment policy",
+          "Treating a chatbot as an academic source",
+          "Copying citations without confirming they exist",
+          "Citing papers without reading them",
+          "Trusting an AI summary instead of checking the original paper",
+          "Uploading confidential or restricted data",
+          "Letting AI create the argument instead of evaluating the evidence yourself",
+          "Using generated prose where original writing is required",
+          "Ignoring conflicting research",
+          "Failing to disclose AI assistance when required",
+          "Assuming polished AI output is automatically accurate"
+        ]
+      },
+
+      {
+        heading: "A Final Pre-Submission Checklist",
+        list: [
+          "I followed the AI rules for this assignment",
+          "I personally reviewed the sources I rely on",
+          "Every citation is real and verified",
+          "My claims accurately represent the sources",
+          "My argument reflects my own reasoning",
+          "I did not upload restricted or confidential material improperly",
+          "I checked AI-assisted output for errors and bias",
+          "I disclosed AI assistance where required"
+        ]
+      },
+
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "Responsible AI research is not about finding a way for AI to complete academic work while avoiding detection.",
+          "It is about using technology to reduce research friction while preserving the parts that make research meaningful: questioning, reading, evaluating evidence, reasoning, and forming your own conclusions.",
+          "Use AI to help you navigate the process, verify everything important against real sources, follow the rules governing your work, and keep ownership of the intellectual work."
+        ]
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "use-ai-for-active-recall",
+        category: "Productivity",
+        title: "How to Use AI for Active Recall: A Smarter Study Workflow",
+        description:
+          "Use AI to create retrieval questions, identify weak areas, and build a smarter revision loop."
+      },
+      {
+        slug: "summarize-lecture-notes-with-ai",
+        category: "Study Guides",
+        title: "How to Summarize Lecture Notes With AI",
+        description:
+          "Use AI to create useful summaries while verifying important information against your original notes."
+      },
+      {
+        slug: "best-free-ai-note-taking-tools-for-students",
+        category: "AI Tools",
+        title: "Best Free AI Note-Taking Tools for Students in 2026",
+        description:
+          "Compare free AI tools for source-based studying, notes, organization, flashcards, and revision."
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Is using AI for academic research cheating?",
+        answer:
+          "Not automatically. Whether AI use is permitted depends on your institution, instructor, assignment, or publication rules. Using AI for permitted support tasks is different from submitting AI-generated intellectual work as your own."
+      },
+      {
+        question: "Can I use AI to find academic sources?",
+        answer:
+          "AI can help generate search terms and research-focused tools can help discover literature, but every source should be independently verified and the original material should be reviewed before you rely on it."
+      },
+      {
+        question: "Can AI generate fake academic citations?",
+        answer:
+          "Yes. General generative AI systems can produce convincing references that are inaccurate or nonexistent. Verify titles, authors, publication details, DOI information, and the original source."
+      },
+      {
+        question: "Can I use AI to summarize a research paper?",
+        answer:
+          "AI can help explain or summarize a paper when permitted, but important findings, methods, and limitations should be checked against the original paper."
+      },
+      {
+        question: "Should I disclose that I used AI in my research?",
+        answer:
+          "Follow the requirements of your institution, instructor, journal, publisher, or citation style. When disclosure is required, state specifically how AI contributed to the research process."
+      },
+      {
+        question: "Can I cite a paper that AI recommends without reading it?",
+        answer:
+          "You should not rely on a paper simply because AI recommended it. Locate the real source, confirm that it exists, read the relevant material, and verify that it supports your claim."
+      },
+      {
+        question: "Can I upload research data to an AI tool?",
+        answer:
+          "Be cautious. Confidential, personally identifiable, proprietary, unpublished, or restricted research material may have privacy, ethical, contractual, or institutional requirements. Use only approved tools and workflows for sensitive data."
+      },
+      {
+        question: "What is the safest role for AI in academic research?",
+        answer:
+          "A useful approach is to treat AI as an assistant for tasks such as brainstorming search terms, explaining difficult material, organizing your verified notes, or reviewing your own draft while keeping source evaluation, reasoning, argument development, and final responsibility with you."
+      }
+    ]
+  },
 };
