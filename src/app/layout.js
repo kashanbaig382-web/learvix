@@ -1,4 +1,6 @@
 import { Inter, Manrope } from "next/font/google";
+import Script from "next/script";
+
 import "./globals.css";
 
 const inter = Inter({
@@ -14,9 +16,11 @@ const manrope = Manrope({
 
 export const metadata = {
   metadataBase: new URL("https://learvix-ai.vercel.app"),
+
   verification: {
     google: "ZHGMlJyEfoAgAckEEC9z_HfWEKZA_SSr2QBuTUkKGYU",
   },
+
   title: {
     default: "LEARVIX — Study Smarter With AI",
     template: "%s | LEARVIX",
@@ -55,6 +59,7 @@ export const metadata = {
     follow: true,
   },
 };
+
 export const viewport = {
   width: "device-width",
   initialScale: 1,
@@ -63,7 +68,17 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={manrope.variable}>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Script
+          id="adsense-script"
+          async
+          strategy="afterInteractive"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2788908795904447"
+          crossOrigin="anonymous"
+        />
+
+        {children}
+      </body>
     </html>
   );
 }
