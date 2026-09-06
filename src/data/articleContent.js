@@ -8503,4 +8503,161 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "how-to-use-ai-as-a-personal-tutor": {
+    intro:
+      "AI can be a powerful personal tutor, but only if you use it to support your thinking instead of replacing it. Rather than asking for instant answers, you can make AI question you, give hints, check your reasoning, create practice problems, and gradually reduce its help as you improve.",
+
+    sections: [
+      {
+        heading: "Turn AI Into Tutor Mode",
+        content: [
+          "The biggest difference between using AI as an answer machine and using it as a tutor is how you instruct it to respond.",
+          "A useful AI tutor should avoid immediately solving the problem for you. It should first understand what you already know, identify where you are stuck, and guide you toward the answer."
+        ]
+      },
+
+      {
+        heading: "The Tutor Mode Prompt",
+        content: [
+          "Instead of repeatedly explaining how you want AI to teach you, start your study session with one reusable instruction."
+        ],
+        prompt:
+          "Act as my personal tutor for [subject/topic]. Do not immediately give me the final answer. First ask me what I already understand. Then guide me using one question or hint at a time. If I make a mistake, explain why without solving everything for me. Give me more help only when I need it. After I understand the topic, test me with a new question that I must solve without your help."
+      },
+
+      {
+        heading: "What a Good AI Tutoring Session Looks Like",
+        content: [
+          "Imagine you are learning probability and you cannot understand how to calculate the probability of two independent events occurring together.",
+          "Instead of typing 'solve this probability question,' start Tutor Mode and describe exactly where you are confused."
+        ],
+        example: [
+          "Student: I understand the probability of one event, but I get confused when two independent events are involved.",
+          "AI Tutor: Good. Before we calculate anything, what do you think independent events means?",
+          "Student: One event does not change the probability of the other.",
+          "AI Tutor: Exactly. If event A has probability 1/2 and event B has probability 1/3, what operation do you think we could use to find the chance that both happen?",
+          "Student: Maybe multiply them?",
+          "AI Tutor: Correct. Now calculate 1/2 × 1/3 yourself."
+        ]
+      },
+
+      {
+        heading: "Use the Hint Ladder When You Get Stuck",
+        content: [
+          "You do not have to choose between getting no help and seeing the complete solution. Ask AI to increase its help gradually.",
+          "A simple hint ladder can keep you thinking while still giving you support when you genuinely need it."
+        ],
+        items: [
+          "Level 1 — Ask AI to point out what concept you should think about.",
+          "Level 2 — Ask for a small hint without any calculation or final answer.",
+          "Level 3 — Ask AI to show the next step only.",
+          "Level 4 — Ask for a similar worked example instead of your exact problem.",
+          "Level 5 — Only after trying yourself, review the full solution and compare it with your attempt."
+        ]
+      },
+
+      {
+        heading: "Make AI Question You, Not Just Teach You",
+        content: [
+          "A useful tutoring session should include moments where you have to retrieve information and explain your reasoning.",
+          "Ask the AI tutor to challenge statements such as 'I understand it.' Have it request an explanation, example, comparison, or solution before accepting that you know the topic."
+        ],
+        prompt:
+          "Do not assume I understand something because I say I do. Ask me to explain the idea in my own words or apply it to a new example before moving on."
+      },
+
+      {
+        heading: "The AI-Off Test",
+        content: [
+          "The most important part of an AI tutoring session happens when you stop using AI.",
+          "After studying a concept, close the AI conversation and try to reproduce the idea from memory. Explain it on paper, solve a fresh problem, or answer several questions without assistance.",
+          "If you cannot do that, return to Tutor Mode and work specifically on the part you could not recall. The goal is not to become good at asking AI questions. The goal is to become able to solve the problem when AI is unavailable."
+        ]
+      },
+
+      {
+        heading: "Watch for AI Dependency",
+        content: [
+          "AI assistance becomes less useful when you automatically open it before attempting a task yourself.",
+          "A warning sign is needing AI for problems that you previously could solve independently. Another is understanding an AI explanation while reading it but being unable to reproduce the reasoning afterward.",
+          "When this happens, reduce the amount of help you request. Attempt the problem first, use hints second, and check the final answer last."
+        ]
+      },
+
+      {
+        heading: "AI Tutors Can Still Be Wrong",
+        content: [
+          "An AI response can sound confident and still contain incorrect reasoning, invented details, or an inappropriate method.",
+          "For important academic facts, formulas, quotations, or references, verify the information against your textbook, lecture material, instructor guidance, or reliable academic sources.",
+          "Treat AI feedback as something to evaluate rather than automatically accept."
+        ]
+      },
+
+      {
+        heading: "A Simple 30-Minute AI Tutoring Routine",
+        items: [
+          "5 minutes — Try to recall the topic and identify what you do not understand.",
+          "10 minutes — Use Tutor Mode and work through questions or hints.",
+          "5 minutes — Ask AI for one or two new practice problems.",
+          "5 minutes — Turn AI off and solve or explain the topic independently.",
+          "5 minutes — Check your work, identify mistakes, and decide what needs another study session."
+        ]
+      },
+
+      {
+        heading: "The Goal Is Independence",
+        content: [
+          "The best AI tutor should gradually become less necessary. Use it to expose gaps in your understanding, receive targeted hints, practice difficult ideas, and get feedback on your reasoning.",
+          "If every study session ends with you being able to do slightly more without AI than before, the tool is supporting your learning rather than replacing it."
+        ]
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can I use ChatGPT or another AI as a personal tutor?",
+        answer:
+          "Yes. General-purpose AI assistants can be instructed to ask questions, provide hints, generate practice problems, and give feedback. Their answers can still be inaccurate, so important academic information should be verified."
+      },
+      {
+        question: "How do I stop relying too much on AI while studying?",
+        answer:
+          "Attempt tasks before asking AI for help, request hints before complete solutions, and regularly complete practice without AI. You should be able to explain or apply what you learned independently."
+      },
+      {
+        question: "Should I let AI give me the answer when I am stuck?",
+        answer:
+          "Not immediately. Start with a small hint or ask for a similar example. If you still cannot progress after making a genuine attempt, study the solution and then solve a new problem without assistance."
+      },
+      {
+        question: "Is using an AI tutor considered cheating?",
+        answer:
+          "Using AI for learning and practice is different from submitting AI-generated work as your own. Rules vary between schools and courses, so always follow your institution's academic integrity and AI-use policies."
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "how-to-use-ai-to-explain-difficult-concepts",
+        category: "AI Tools",
+        title: "How to Use AI to Explain Difficult Concepts",
+        description:
+          "Learn how to use AI to break down difficult topics into simpler explanations, examples, and study-friendly steps."
+      },
+      {
+        slug: "how-to-use-ai-for-active-recall",
+        category: "Study Guides",
+        title: "How to Use AI for Active Recall",
+        description:
+          "Use AI to test your memory, generate recall questions, and strengthen what you actually remember."
+      },
+      {
+        slug: "how-to-check-if-an-ai-answer-is-correct",
+        category: "Research & Writing",
+        title: "How to Check If an AI Answer Is Correct",
+        description:
+          "Learn a practical process for verifying AI answers before trusting them for study or academic work."
+      }
+    ]
+  },
 };

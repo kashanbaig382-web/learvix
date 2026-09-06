@@ -1,10 +1,12 @@
 import Link from "next/link";
 
 export default function ArticleContent({ content }) {
-  const introduction = Array.isArray(content.introduction)
-    ? content.introduction
-    : content.introduction
-      ? [content.introduction]
+  const rawIntroduction = content.introduction || content.intro;
+
+  const introduction = Array.isArray(rawIntroduction)
+    ? rawIntroduction
+    : rawIntroduction
+      ? [rawIntroduction]
       : [];
 
   return (
@@ -22,13 +24,13 @@ export default function ArticleContent({ content }) {
         >
           <h2>{section.heading}</h2>
 
-          {section.paragraphs?.map((paragraph, index) => (
+          {(section.paragraphs || section.content)?.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
 
-          {section.list && (
+          {(section.list || section.items) && (
             <ul className="article-list">
-              {section.list.map((item, index) => (
+              {(section.list || section.items).map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>
@@ -44,7 +46,14 @@ export default function ArticleContent({ content }) {
           {section.example && (
             <div className="article-example">
               <span>Example</span>
-              <p>{section.example}</p>
+
+              {Array.isArray(section.example) ? (
+                section.example.map((line, index) => (
+                  <p key={index}>{line}</p>
+                ))
+              ) : (
+                <p>{section.example}</p>
+              )}
             </div>
           )}
 

@@ -221,6 +221,17 @@ export const articles = [
     publishedAt: "2026-09-07",
     updatedAt: "2026-09-07",
   },
+  {
+    slug: "how-to-use-ai-as-a-personal-tutor",
+    category: "AI Tools",
+    title: "How to Use AI as a Personal Tutor Without Becoming Dependent on It",
+    description:
+      "Learn how to use AI as a personal tutor that guides you with questions, hints, practice, and feedback instead of simply giving you answers.",
+    readTime: "9 min",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-07",
+    updatedAt: "2026-09-07",
+  },
 ];
 
 export const publishedArticles = articles.filter(
