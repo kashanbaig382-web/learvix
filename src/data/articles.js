@@ -199,6 +199,17 @@ export const articles = [
     publishedAt: "2026-09-07",
     updatedAt: "2026-09-07",
   },
+  {
+    slug: "turn-youtube-lectures-into-notes-with-ai",
+    category: "AI Tools",
+    title: "How to Turn a YouTube Lecture Into Study Notes With AI",
+    description:
+      "Learn how to turn a YouTube lecture into useful study notes with AI using transcripts, timestamps, structured summaries, verification, and active recall.",
+    readTime: "14 min read",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-07",
+    updatedAt: "2026-09-07",
+  },
 ];
 
 export const publishedArticles = articles.filter(
