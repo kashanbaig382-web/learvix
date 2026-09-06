@@ -20,6 +20,9 @@ export const metadata = {
   verification: {
     google: "ZHGMlJyEfoAgAckEEC9z_HfWEKZA_SSr2QBuTUkKGYU",
   },
+  other: {
+    "google-adsense-account": "ca-pub-2788908795904447",
+  },
 
   title: {
     default: "LEARVIX — Study Smarter With AI",
