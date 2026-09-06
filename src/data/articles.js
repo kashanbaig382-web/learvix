@@ -188,6 +188,17 @@ export const articles = [
     publishedAt: "2026-09-07",
     updatedAt: "2026-09-07",
   },
+  {
+    slug: "use-ai-to-stop-procrastinating-and-start-studying",
+    category: "Productivity",
+    title: "How to Use AI to Stop Procrastinating and Start Studying",
+    description:
+      "Learn how to use AI to overcome study procrastination by identifying what is blocking you, shrinking the first step, reducing decisions, and starting a focused study session.",
+    readTime: "13 min read",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-07",
+    updatedAt: "2026-09-07",
+  },
 ];
 
 export const publishedArticles = articles.filter(
