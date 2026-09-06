@@ -6316,4 +6316,420 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "summarize-a-research-paper-with-ai": {
+    introduction: [
+      "Research papers are difficult to summarize because the most important information is rarely contained in one paragraph. The research question may appear in the introduction, methods in another section, results in tables, and important limitations near the end.",
+      "AI can help you navigate and understand a paper, but asking for a one-click summary can remove context, exaggerate findings, or overlook limitations.",
+      "A better workflow is to extract each part of the study separately, verify it against the original paper, and only then combine those pieces into a useful summary."
+    ],
+
+    sections: [
+      {
+        heading: "Quick Answer: How Do You Summarize a Research Paper With AI?",
+        paragraphs: [
+          "Start by identifying why you are reading the paper. Then inspect the abstract and structure before asking AI for a summary.",
+          "Extract the research question, methodology, sample or data, main findings, limitations, and implications separately. Ask AI to point you back to the relevant parts of the paper whenever possible.",
+          "Finally, verify the important details against the original research paper and write a summary that clearly distinguishes what the authors found from additional AI interpretation."
+        ],
+        note:
+          "LEARVIX rule: AI summary = reading aid. Original research paper = source."
+      },
+
+      {
+        heading: "The LEARVIX Research Paper Summary Workflow",
+        list: [
+          "Define why you are reading the paper",
+          "Read the abstract yourself",
+          "Map the paper's structure",
+          "Identify the research question",
+          "Extract the methodology",
+          "Identify the sample or data",
+          "Extract the main findings",
+          "Find limitations and qualifications",
+          "Separate authors' claims from AI interpretation",
+          "Verify important details against the paper",
+          "Write the final summary in your own words",
+          "Cite the original research paper"
+        ],
+        paragraphsAfter: [
+          "This workflow takes longer than clicking a summarize button, but it gives you much more control over what enters your notes or academic work."
+        ]
+      },
+
+      {
+        heading: "Step 1: Decide Why You Are Reading the Paper",
+        paragraphs: [
+          "A useful summary depends on your purpose.",
+          "You may need a paper for a literature review, assignment, class discussion, exam, research proposal, or simply to understand a topic.",
+          "Tell AI your purpose so it can help organize the information without deciding what matters entirely on its own."
+        ],
+        prompt:
+          "I am reading this research paper for [purpose]. Help me identify the information I should pay closest attention to, but keep the paper itself as the primary source."
+      },
+
+      {
+        heading: "Step 2: Read the Abstract Before Asking AI to Summarize",
+        paragraphs: [
+          "The abstract gives you an initial map of the study: its purpose, approach, major results, and conclusion.",
+          "Read it yourself first. This gives you enough context to notice when a later AI explanation appears inconsistent with the paper.",
+          "Do not assume the abstract contains every limitation, methodological detail, or qualification you need."
+        ]
+      },
+
+      {
+        heading: "Step 3: Map the Structure of the Paper",
+        paragraphs: [
+          "Before extracting details, identify how the paper is organized.",
+          "Many empirical papers contain sections such as introduction, literature review, methods, results, discussion, conclusion, and references, although the exact structure varies by field and publication.",
+          "A document map helps you know where each type of evidence is likely to appear."
+        ],
+        prompt:
+          "Map this research paper by section. Keep the authors' original section headings and briefly state what information each section contains. Include page references when available."
+      },
+
+      {
+        heading: "Step 4: Identify the Research Question",
+        paragraphs: [
+          "A summary becomes much easier once you understand what the researchers were trying to investigate.",
+          "Look for the research question, objective, hypothesis, or problem statement. Do not let AI invent a formal research question if the authors did not state one explicitly."
+        ],
+        prompt:
+          "What research question, objective, or hypothesis does this paper investigate? Quote or point me to the relevant section where possible. If the authors do not state a formal research question, say so instead of inventing one."
+      },
+
+      {
+        heading: "Step 5: Extract the Methodology",
+        paragraphs: [
+          "Knowing what researchers did is essential for interpreting what their findings mean.",
+          "Identify the study design, procedure, measurements, tools, analytical methods, or other relevant methodological details.",
+          "The amount of methodological detail you need depends on your purpose."
+        ],
+        prompt:
+          "Summarize the methodology of this paper. Separate study design, procedure, measurements, and analysis. Point me to the relevant methods section so I can verify each part."
+      },
+
+      {
+        heading: "Step 6: Identify the Sample, Participants, or Data",
+        paragraphs: [
+          "A finding can be misleading when separated from the population or data it came from.",
+          "Check who or what was studied, sample size when relevant, important characteristics, location or setting, and any selection criteria that affect interpretation."
+        ],
+        prompt:
+          "Extract the sample, participants, dataset, or other study material used in this research. Include the size and important characteristics only when the paper reports them."
+      },
+
+      {
+        heading: "Step 7: Extract the Main Findings",
+        paragraphs: [
+          "Ask what the study actually found rather than what AI thinks the findings mean.",
+          "Keep results separate from interpretation at first.",
+          "For quantitative studies, important findings may appear in tables, figures, statistical results, or supplementary material rather than only in the prose."
+        ],
+        prompt:
+          "List the main findings reported by the authors. Separate directly reported results from interpretation. Point me to the relevant result sections, tables, or figures when possible."
+      },
+
+      {
+        heading: "Do Not Turn Association Into Causation",
+        paragraphs: [
+          "One of the easiest ways to distort research is to make a stronger claim than the study supports.",
+          "If a study reports an association or correlation, do not automatically rewrite it as proof that one variable caused another.",
+          "Check the study design and the authors' own language before describing causal conclusions."
+        ],
+        note:
+          "Your summary should preserve the strength of the original claim—not upgrade it."
+      },
+
+      {
+        heading: "Step 8: Find the Limitations",
+        paragraphs: [
+          "A useful research summary should not contain only positive findings.",
+          "Look for limitations identified by the authors, such as sample restrictions, measurement issues, study design constraints, uncertainty, generalizability problems, or missing data.",
+          "Limitations may appear in the discussion rather than in the abstract."
+        ],
+        prompt:
+          "What limitations do the authors explicitly acknowledge? Separate those from additional limitations you think may exist. Point me to the relevant section."
+      },
+
+      {
+        heading: "Step 9: Identify the Authors' Interpretation",
+        paragraphs: [
+          "Results and discussion are not the same thing.",
+          "The results tell you what was observed or measured. The discussion often explains how the authors interpret those findings and connect them to previous research.",
+          "Your summary should preserve that distinction."
+        ],
+        prompt:
+          "Separate this paper into: (1) findings directly reported in the results, (2) the authors' interpretation in the discussion, and (3) any additional interpretation you are adding yourself."
+      },
+
+      {
+        heading: "Step 10: Check Tables and Figures Yourself",
+        paragraphs: [
+          "Do not rely entirely on an AI-generated description of a table, graph, figure, or equation.",
+          "Inspect important visuals in the original paper, especially when your summary includes numerical findings.",
+          "Check labels, units, sample sizes, footnotes, confidence intervals, statistical significance, and other context relevant to your field."
+        ]
+      },
+
+      {
+        heading: "Step 11: Verify Numbers and Statistics",
+        paragraphs: [
+          "Specific numbers deserve extra attention because a small transcription or interpretation error can change the meaning of a finding.",
+          "Compare important sample sizes, percentages, effect estimates, dates, and statistical values directly with the paper."
+        ],
+        prompt:
+          "Create a verification checklist containing every important numerical claim in this summary and tell me where each number appears in the paper."
+      },
+
+      {
+        heading: "Step 12: Separate the Paper From Outside Knowledge",
+        paragraphs: [
+          "AI may know background information related to the topic and blend it into the summary.",
+          "That can make it difficult to tell what the authors actually wrote.",
+          "When summarizing a specific paper, explicitly ask the AI to distinguish source-derived information from additional explanation."
+        ],
+        prompt:
+          "Use this paper as the primary source. Clearly label anything you add from general background knowledge rather than presenting it as something the authors stated."
+      },
+
+      {
+        heading: "Step 13: Build a Structured Research Summary",
+        paragraphs: [
+          "Once each component has been checked, combine the information into a structured summary.",
+          "A useful template is:"
+        ],
+        list: [
+          "Research topic or problem",
+          "Research question or objective",
+          "Methodology",
+          "Sample or data",
+          "Main findings",
+          "Authors' interpretation",
+          "Limitations",
+          "Implications",
+          "Questions or uncertainties that remain"
+        ],
+        prompt:
+          "Using only the information we have verified from the paper, create a structured summary with: research question, methods, sample/data, main findings, authors' interpretation, limitations, and implications. Do not add unsupported details."
+      },
+
+      {
+        heading: "Step 14: Write the Final Summary in Your Own Words",
+        paragraphs: [
+          "Do not treat the AI-generated structured summary as the final academic output.",
+          "Close or minimize the AI response and write what you understood in your own words.",
+          "Then compare your version with the paper to make sure you did not accidentally change the meaning."
+        ],
+        note:
+          "If you cannot explain the study without copying the AI summary, you probably need another reading pass."
+      },
+
+      {
+        heading: "Step 15: Cite the Original Research Paper",
+        paragraphs: [
+          "When the information comes from the research paper, cite the research paper according to the citation style and rules required for your work.",
+          "Do not replace the original scholarly source with an AI-generated summary of that source.",
+          "If your institution requires disclosure or citation of AI assistance, follow those rules separately."
+        ]
+      },
+
+      {
+        heading: "A Master Prompt for Summarizing a Research Paper",
+        prompt:
+          "Help me understand this research paper without replacing the original source. First identify the research question or objective, methodology, sample/data, main findings, authors' interpretation, limitations, and implications. Keep reported findings separate from your own explanation. Point me to relevant sections, pages, tables, or figures when possible. If something is not stated in the paper, say so rather than inventing it. I will verify important details against the original paper."
+      },
+
+      {
+        heading: "Example: Summarizing an Experimental Study",
+        paragraphs: [
+          "Imagine you are reading a study that compares two learning methods.",
+          "Instead of asking AI for a generic summary, you first identify the research question and study design.",
+          "Next, you check how participants were assigned, what each group did, how learning was measured, and what results were reported.",
+          "You then inspect the limitations and discussion before writing your own summary.",
+          "This prevents a simple statement such as 'Method A is better' from replacing the actual conditions and evidence reported by the researchers."
+        ]
+      },
+
+      {
+        heading: "Example: Summarizing a Literature Review",
+        paragraphs: [
+          "A literature review requires a different approach from an experiment.",
+          "Instead of looking for participants and an intervention, identify the review question, how literature was selected, the major themes or findings, areas of agreement or disagreement, and limitations of the review process.",
+          "Do not force every research paper into the same template."
+        ]
+      },
+
+      {
+        heading: "Example: Summarizing a Qualitative Study",
+        paragraphs: [
+          "For qualitative research, pay attention to the research question, participants or data sources, collection methods, analytical approach, themes, participant context, and limitations.",
+          "Avoid reducing nuanced qualitative findings to a few numerical-style conclusions simply because that format looks cleaner."
+        ]
+      },
+
+      {
+        heading: "Should You Upload the Entire Research Paper to AI?",
+        paragraphs: [
+          "That depends on the tool, your access rights, the paper, and the rules governing your work.",
+          "Do not upload confidential, restricted, unpublished, personal, or institution-protected material to a third-party AI service unless you are permitted to do so.",
+          "For copyrighted material, use tools and workflows consistent with your access rights and applicable policies."
+        ]
+      },
+
+      {
+        heading: "What If the Research Paper Is Very Long?",
+        paragraphs: [
+          "Do not automatically ask for one massive summary.",
+          "Map the document first and work through relevant sections in logical chunks. Keep track of how each section contributes to the research question.",
+          "For a broader long-document workflow, use a dedicated PDF study process."
+        ]
+      },
+
+      {
+        heading: "What If You Do Not Understand the Methodology?",
+        paragraphs: [
+          "Ask AI to explain the unfamiliar method separately instead of allowing it to simplify the entire paper.",
+          "Request definitions, examples, assumptions, and limitations, then return to the methods section and reread it with that context."
+        ],
+        prompt:
+          "I do not understand [method]. Explain what this method generally does, then help me interpret how the authors use it in this specific paper. Clearly separate general explanation from what the paper itself states."
+      },
+
+      {
+        heading: "How to Check Whether Your Summary Is Accurate",
+        list: [
+          "Does the research question match the paper?",
+          "Is the methodology described correctly?",
+          "Is the sample or dataset accurate?",
+          "Do numerical claims match the original tables or text?",
+          "Did you preserve association versus causation?",
+          "Are the authors' conclusions represented fairly?",
+          "Did you include important limitations?",
+          "Did you accidentally add outside information?",
+          "Can you locate the evidence behind each important claim?",
+          "Did you cite the original paper?"
+        ]
+      },
+
+      {
+        heading: "Common Mistakes When Summarizing Research Papers With AI",
+        list: [
+          "Using only the abstract",
+          "Requesting one giant summary and never opening the paper again",
+          "Ignoring methodology",
+          "Leaving out the sample or data",
+          "Reporting findings without limitations",
+          "Turning correlation into causation",
+          "Trusting numerical claims without checking tables",
+          "Mixing AI background knowledge with the authors' claims",
+          "Copying AI wording into academic work",
+          "Citing the AI summary instead of the original paper",
+          "Ignoring course or institutional AI policies"
+        ]
+      },
+
+      {
+        heading: "Research Paper Summary vs PDF Summary",
+        paragraphs: [
+          "A generic PDF summary focuses on compressing a document.",
+          "A research paper summary needs to preserve the logic of the research: what was investigated, how it was investigated, what was found, what the authors concluded, and what limitations affect those conclusions.",
+          "That is why a research-specific workflow is more useful for academic papers than a generic summarize button."
+        ]
+      },
+
+      {
+        heading: "Research Paper Summary vs Literature Review",
+        paragraphs: [
+          "Summarizing one paper and writing a literature review are different tasks.",
+          "A paper summary helps you understand one source. A literature review requires comparing and synthesizing evidence across multiple sources to answer a broader research question.",
+          "Do not combine several AI-generated paper summaries and assume you automatically have a literature review."
+        ]
+      },
+
+      {
+        heading: "Use AI Responsibly During Academic Research",
+        paragraphs: [
+          "AI policies vary between institutions, courses, journals, and assignments.",
+          "Check the rules that apply to your work before using AI with academic material. Disclose AI assistance when required.",
+          "Never use AI to fabricate citations, evidence, data, quotations, or research findings."
+        ]
+      },
+
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "AI can make research papers easier to navigate, but speed should not come at the cost of accuracy.",
+          "Extract the study piece by piece, keep findings separate from interpretation, check methods and limitations, verify important numbers and claims, and return to the original paper whenever something matters.",
+          "The best AI-assisted summary should make the research paper easier to understand—not make the paper unnecessary."
+        ]
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "use-ai-for-academic-research-without-cheating",
+        category: "Research & Writing",
+        title: "How to Use AI for Academic Research Without Cheating",
+        description:
+          "Use AI responsibly across the research process while verifying sources, evidence, citations, and your own reasoning."
+      },
+      {
+        slug: "study-a-long-pdf-with-ai",
+        category: "Notes & PDFs",
+        title: "How to Study a Long PDF With AI Without Reading Every Page",
+        description:
+          "Map and prioritize long PDFs, study important sections, ask targeted questions, and verify answers against the source."
+      },
+      {
+        slug: "check-ai-answers-before-using-them-for-study",
+        category: "Study Guides",
+        title: "How to Check AI Answers Before Using Them for Study",
+        description:
+          "Verify AI-generated claims, sources, citations, numbers, and explanations before adding them to your study material."
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can AI summarize a research paper?",
+        answer:
+          "Yes. AI can help extract and organize information from a research paper, but important details should be checked against the original paper."
+      },
+      {
+        question: "What should a research paper summary include?",
+        answer:
+          "Depending on the type of research, a useful summary commonly includes the research question or objective, methodology, sample or data, main findings, authors' interpretation, limitations, and implications."
+      },
+      {
+        question: "Can I use only the abstract to summarize a paper?",
+        answer:
+          "The abstract is useful for orientation, but it may omit methodological details, limitations, qualifications, and other information needed for a reliable summary."
+      },
+      {
+        question: "How do I know if an AI research summary is accurate?",
+        answer:
+          "Compare its important claims with the original paper, including the methods, results, tables, figures, numerical values, discussion, and limitations."
+      },
+      {
+        question: "Should I cite AI or the original research paper?",
+        answer:
+          "When a claim comes from the research paper, cite the original paper according to the required citation style. Follow any separate rules your institution has for disclosing or citing AI assistance."
+      },
+      {
+        question: "Can AI summarize tables and figures in research papers?",
+        answer:
+          "AI may help explain them, but you should inspect important tables and figures yourself because labels, numbers, footnotes, and statistical context can be misinterpreted."
+      },
+      {
+        question: "Can I use an AI-generated research summary in an assignment?",
+        answer:
+          "That depends on your course or institution's AI policy. Even when AI assistance is allowed, you should understand the paper yourself, verify the information, and follow any disclosure or citation requirements."
+      },
+      {
+        question: "Is summarizing a paper the same as writing a literature review?",
+        answer:
+          "No. A paper summary focuses on one source, while a literature review compares and synthesizes evidence across multiple sources around a broader question."
+      }
+    ]
+  },
 };

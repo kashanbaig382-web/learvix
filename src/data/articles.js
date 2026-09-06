@@ -166,6 +166,17 @@ export const articles = [
     publishedAt: "2026-09-05",
     updatedAt: "2026-09-05",
   },
+  {
+    slug: "summarize-a-research-paper-with-ai",
+    category: "Research & Writing",
+    title: "How to Summarize a Research Paper With AI Without Missing Important Details",
+    description:
+      "Learn how to summarize a research paper with AI by extracting the research question, methods, sample, findings, limitations, and implications while verifying everything against the original paper.",
+    readTime: "14 min read",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-07",
+    updatedAt: "2026-09-07",
+  },
 ];
 
 export const publishedArticles = articles.filter(
