@@ -62,6 +62,26 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
+        <div className="about-item">
+          <span>04</span>
+
+          <div>
+            <h2>Who Creates LEARVIX?</h2>
+
+            <p>
+              LEARVIX is created and maintained by Mirza Kashan, with a focus on
+              practical ways students can use AI for studying, research, exam
+              preparation, note-taking, and productivity.
+            </p>
+
+            <p>
+              LEARVIX guides are designed around a simple principle: AI should help
+              students understand, organize, and practice their learning—not replace
+              their own thinking. Important information, tool features, and AI-generated
+              outputs should always be verified when accuracy matters.
+            </p>
+          </div>
+        </div>
       </main>
 
       <Footer />
