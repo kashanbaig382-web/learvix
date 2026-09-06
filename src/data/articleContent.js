@@ -708,6 +708,13 @@ Keep the answer key separate at the end.`
         title: "How to Turn Lecture Notes Into Flashcards With AI",
         description:
           "Convert lecture notes into focused active-recall flashcards for revision."
+      },
+      {
+        slug: "best-free-ai-quiz-generators-for-students",
+        category: "AI Tools",
+        title: "Best Free AI Quiz Generators for Students in 2026",
+        description:
+          "Compare free AI quiz generators for creating practice questions and self-tests from your study material."
       }
     ],
 
@@ -1097,6 +1104,13 @@ Flag any table, diagram, equation, or section that you cannot interpret confiden
         title: "How to Create Quizzes From Notes Using AI",
         description:
           "Create practice quizzes from your notes and use mistakes to find weak areas."
+      },
+      {
+        slug: "turn-youtube-lectures-into-notes-with-ai",
+        category: "AI Tools",
+        title: "How to Turn a YouTube Lecture Into Study Notes With AI",
+        description:
+          "Turn a YouTube lecture into structured study notes using transcripts, timestamps, verification, and active recall."
       }
     ],
 
@@ -2631,6 +2645,13 @@ Keep the final review manageable.`,
         title: "How to Turn Lecture Notes Into Flashcards With AI",
         description:
           "Turn verified lecture notes into focused active-recall flashcards."
+      },
+      {
+        slug: "create-a-mock-exam-with-ai",
+        category: "Exam Prep",
+        title: "How to Create a Mock Exam With AI and Test Yourself Properly",
+        description:
+          "Build a realistic AI mock exam using your syllabus, exam format, marks, difficulty, and time limit."
       }
     ],
 
@@ -3750,6 +3771,13 @@ Keep the final review manageable.`,
         title: "How to Make a Study Guide From Notes With AI",
         description:
           "Turn your notes into a structured, verified study guide and create a practical revision workflow."
+      },
+      {
+        slug: "use-ai-to-stop-procrastinating-and-start-studying",
+        category: "Productivity",
+        title: "How to Use AI to Stop Procrastinating and Start Studying",
+        description:
+          "Use AI to reduce study friction, shrink the first step, and start a focused study session."
       }
     ],
 
@@ -6686,6 +6714,14 @@ Keep the final review manageable.`,
         title: "How to Check AI Answers Before Using Them for Study",
         description:
           "Verify AI-generated claims, sources, citations, numbers, and explanations before adding them to your study material."
+      },
+      {
+        slug: "compare-research-papers-with-ai",
+        category: "Research & Writing",
+        title:
+          "How to Compare Research Papers With AI Without Missing Important Differences",
+        description:
+          "Compare multiple research papers by examining their questions, methods, samples, findings, and limitations."
       }
     ],
 
