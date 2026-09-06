@@ -6732,4 +6732,448 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "create-a-mock-exam-with-ai": {
+    introduction: [
+      "A good mock exam should do more than generate a random collection of questions. It should help you practise the scope, structure, difficulty, timing, and decision-making demands of the real assessment.",
+      "AI can help create practice exams from a syllabus, notes, learning objectives, or other permitted course material. But if you simply ask it to 'make a hard test,' the result may have the wrong topic balance, unrealistic questions, inaccurate answers, or a format that does not resemble your actual exam.",
+      "The better approach is to build an exam blueprint first, generate the mock from that blueprint, check the paper before using it, sit the exam under realistic conditions, and turn your mistakes into targeted revision."
+    ],
+
+    sections: [
+      {
+        heading: "Quick Answer: How Do You Create a Mock Exam With AI?",
+        paragraphs: [
+          "Give AI the scope of your exam, the material it should use, question types, topic weightings, marks, difficulty, and time limit.",
+          "Ask it to create an exam blueprint before generating questions. Review the generated paper and answer key against your course material, then attempt the mock under realistic conditions without notes or AI assistance.",
+          "After marking the paper, classify your mistakes, revise the weak areas, and create a second targeted mock to check whether your performance improves."
+        ],
+        note:
+          "LEARVIX rule: A mock exam should simulate the assessment—not become another guided study session."
+      },
+
+      {
+        heading: "The LEARVIX AI Mock Exam Workflow",
+        list: [
+          "Define the exam scope",
+          "Collect permitted source material",
+          "Match the real exam format",
+          "Create a question blueprint",
+          "Set topic weightings",
+          "Set difficulty, marks, and time",
+          "Generate the mock exam",
+          "Check questions and marking scheme",
+          "Attempt it under exam conditions",
+          "Mark your answers",
+          "Build an error log",
+          "Revise weak areas",
+          "Take a second mock"
+        ],
+        paragraphsAfter: [
+          "The generation step is only one part of the process. The real learning comes from attempting the paper, analyzing mistakes, and adjusting your revision."
+        ]
+      },
+
+      {
+        heading: "Step 1: Define Exactly What the Exam Covers",
+        paragraphs: [
+          "Do not ask AI to create an exam before defining its boundaries.",
+          "Use your syllabus, learning objectives, instructor guidance, exam notice, course outline, or other official material to identify what can actually be assessed.",
+          "List included and excluded chapters or topics when possible."
+        ],
+        prompt:
+          "I am preparing for [exam]. The assessed topics are: [topics]. The excluded topics are: [topics, if any]. Organize the exam scope into a checklist before creating any questions."
+      },
+
+      {
+        heading: "Step 2: Give AI the Right Source Material",
+        paragraphs: [
+          "A mock based only on a broad subject name may test material your course never covered.",
+          "When permitted, provide relevant notes, learning objectives, textbook sections, slides, or syllabus information so the generated questions stay closer to your actual course.",
+          "Do not upload confidential, restricted, unpublished, or otherwise protected material unless you are allowed to share it with the AI service."
+        ]
+      },
+
+      {
+        heading: "Step 3: Copy the Real Exam Format",
+        paragraphs: [
+          "A mock becomes more useful when its structure resembles the real assessment.",
+          "Find out which question types appear, how many questions you must answer, how marks are distributed, and whether there are sections or optional questions."
+        ],
+        list: [
+          "Multiple-choice questions",
+          "Short-answer questions",
+          "Long-answer questions",
+          "Essay questions",
+          "Numerical problems",
+          "Case or scenario questions",
+          "True/false questions",
+          "Matching questions",
+          "Practical or application questions"
+        ],
+        prompt:
+          "My real exam format is: [describe format]. Create a mock structure that follows the same question types, sections, marks, and choice rules. Do not generate the questions yet."
+      },
+
+      {
+        heading: "Step 4: Build an Exam Blueprint Before Generating Questions",
+        paragraphs: [
+          "An exam blueprint is a plan showing what the paper should test before individual questions are written.",
+          "Without one, AI may generate too many questions from easy or obvious topics while barely testing important areas.",
+          "The blueprint should connect topics with question types, marks, and intended difficulty."
+        ],
+        prompt:
+          "Create an exam blueprint for [subject]. Show each topic, its percentage or mark weighting, question type, number of questions, and difficulty. Make sure the total equals [total marks]. Do not write the actual questions yet."
+      },
+
+      {
+        heading: "Step 5: Set Realistic Topic Weightings",
+        paragraphs: [
+          "Do not automatically divide the paper equally between every chapter.",
+          "If you know the official weighting, use it. If your instructor has emphasized particular learning objectives or sections, account for that.",
+          "If you do not know the real weighting, label your distribution as a practice assumption rather than pretending it represents the official exam."
+        ],
+        note:
+          "AI should not invent an 'official' exam weighting when you have not provided one."
+      },
+
+      {
+        heading: "Step 6: Define Difficulty Properly",
+        paragraphs: [
+          "A useful mock should not consist entirely of extremely difficult questions.",
+          "Real assessments often contain a mixture of straightforward recall, understanding, application, and more demanding reasoning.",
+          "If you have past papers or instructor guidance, use them to estimate the expected level."
+        ],
+        prompt:
+          "Use a balanced difficulty distribution for this practice exam: [your distribution]. Include a mix of recall, understanding, application, and reasoning appropriate to my course level."
+      },
+
+      {
+        heading: "Do Not Just Say 'Make It Hard'",
+        paragraphs: [
+          "A harder question is not automatically a better exam question.",
+          "AI can make questions difficult through obscure details, confusing wording, or material outside the syllabus.",
+          "Difficulty should come from the depth of understanding or application required—not from unnecessary tricks."
+        ]
+      },
+
+      {
+        heading: "Step 7: Set Marks and Time Limit",
+        paragraphs: [
+          "Tell AI the total marks and duration of the real assessment.",
+          "Then check whether the amount of work required is realistic for that time.",
+          "A paper containing several long calculations or essays may be impossible to complete even if the total question count looks reasonable."
+        ],
+        prompt:
+          "This mock is worth [marks] and should take [time]. Review the planned questions and estimate whether the workload is realistic. Flag any section that appears disproportionately time-consuming."
+      },
+
+      {
+        heading: "Step 8: Generate the Mock Exam",
+        paragraphs: [
+          "Once the blueprint is ready, generate the paper from it.",
+          "Ask AI to keep the answer key separate so you do not accidentally see answers before attempting the exam."
+        ],
+        prompt:
+          "Generate the mock exam using the approved blueprint. Keep the questions and marking scheme separate. Do not include hints, answers, explanations, or solution steps in the student version."
+      },
+
+      {
+        heading: "Master Prompt for Creating an AI Mock Exam",
+        prompt:
+          "Create a realistic mock exam for [subject/course] using only the permitted scope and material I provide. First follow this exam format: [format]. Total marks: [marks]. Time limit: [time]. Topic weighting: [weightings]. Difficulty: [distribution]. Include [question types]. Keep questions within the syllabus, avoid duplicates, and separate the student paper from the answer key and marking scheme. Do not reveal answers in the student version."
+      },
+
+      {
+        heading: "Step 9: Check the Questions Before Taking the Mock",
+        paragraphs: [
+          "Do not assume every generated question is valid simply because it looks professional.",
+          "AI can create ambiguous questions, incorrect premises, duplicated concepts, material outside your syllabus, or questions with more than one defensible answer.",
+          "Review the paper before treating the score as meaningful."
+        ],
+        list: [
+          "Is every question within the exam scope?",
+          "Is the wording clear?",
+          "Is enough information provided?",
+          "Is there one defensible answer where required?",
+          "Are formulas and numerical values sensible?",
+          "Are any questions duplicated?",
+          "Does the topic weighting match the blueprint?",
+          "Is the difficulty realistic?"
+        ]
+      },
+
+      {
+        heading: "Step 10: Verify the Answer Key and Marking Scheme",
+        paragraphs: [
+          "An incorrect AI-generated marking scheme can teach you the wrong answer.",
+          "Check important definitions, formulas, calculations, dates, factual claims, and course-specific terminology against trusted material.",
+          "For subjective answers, make sure the marking criteria reflect what your course expects."
+        ],
+        prompt:
+          "Audit this answer key against the source material I provided. Flag any answer that is not clearly supported, but do not invent missing information."
+      },
+
+      {
+        heading: "Step 11: Sit the Mock Like a Real Exam",
+        paragraphs: [
+          "Once the paper has been checked, stop using AI.",
+          "Set the real time limit, remove notes and study aids that would not be allowed in the assessment, and attempt the paper in one sitting when practical.",
+          "The purpose is to expose what you can do without immediate assistance."
+        ],
+        list: [
+          "Use the real time limit",
+          "Follow the real calculator or resource rules",
+          "Do not search answers",
+          "Do not ask AI for hints",
+          "Do not check notes between questions",
+          "Follow the real question-choice rules",
+          "Record where you run out of time"
+        ]
+      },
+
+      {
+        heading: "Why You Should Not Use AI During the Mock",
+        paragraphs: [
+          "AI assistance during a mock changes what you are measuring.",
+          "If the real assessment does not allow AI, using it for explanations or hints during practice can hide weaknesses that you need to discover before exam day.",
+          "Use AI before the mock to build the paper and after the mock to analyze performance—not as an invisible helper while you sit it."
+        ]
+      },
+
+      {
+        heading: "Step 12: Mark the Exam After You Finish",
+        paragraphs: [
+          "Do not check answers question by question while attempting the paper.",
+          "Finish the mock first, then mark it using the verified answer key or appropriate course criteria.",
+          "Record both your score and the type of mistakes you made."
+        ]
+      },
+
+      {
+        heading: "Step 13: Build an Error Log",
+        paragraphs: [
+          "The score tells you how you performed. The error log tells you what to do next.",
+          "For every lost mark, identify why it happened."
+        ],
+        list: [
+          "Knowledge gap — I did not know the content",
+          "Concept gap — I knew the topic but did not understand it",
+          "Recall failure — I had learned it but could not retrieve it",
+          "Application error — I could not use the concept in a new problem",
+          "Calculation error — the method was right but arithmetic failed",
+          "Misread question — I misunderstood what was being asked",
+          "Time problem — I knew the answer but ran out of time",
+          "Careless error — I made an avoidable mistake"
+        ]
+      },
+
+      {
+        heading: "Step 14: Let AI Analyze the Error Log",
+        paragraphs: [
+          "Once you have classified your mistakes, AI can help organize them into revision priorities.",
+          "Give it your error categories rather than only the final score."
+        ],
+        prompt:
+          "Here is my mock exam error log: [errors]. Group the mistakes by topic and error type. Identify the highest-priority weaknesses and suggest what I should practise next. Do not assume a low score always means a knowledge gap."
+      },
+
+      {
+        heading: "Step 15: Revise the Weak Areas",
+        paragraphs: [
+          "Do not immediately generate another full mock.",
+          "Repair the weaknesses the first paper exposed.",
+          "A concept error may need another explanation, a recall failure may need retrieval practice, and a timing problem may need timed question sets."
+        ]
+      },
+
+      {
+        heading: "Step 16: Generate a Targeted Mini-Mock",
+        paragraphs: [
+          "Before taking another full paper, test the areas you just revised.",
+          "Create a shorter assessment concentrated on weak topics while still using realistic question styles."
+        ],
+        prompt:
+          "Create a targeted mini-mock based on these weak areas: [weak areas]. Use new questions rather than repeating the previous mock. Keep the answers hidden until I finish."
+      },
+
+      {
+        heading: "Step 17: Take a Second Full Mock",
+        paragraphs: [
+          "After targeted revision, create or use another full mock with new questions.",
+          "Keep the format and difficulty comparable enough that you can evaluate whether your performance actually improved.",
+          "Compare more than the total score."
+        ],
+        list: [
+          "Overall score",
+          "Accuracy by topic",
+          "Error types",
+          "Time used",
+          "Unanswered questions",
+          "Performance on previous weak areas",
+          "Careless mistakes"
+        ]
+      },
+
+      {
+        heading: "Example: Creating a 90-Minute Biology Mock",
+        paragraphs: [
+          "Suppose your biology exam is 90 minutes and covers four units.",
+          "You first map the syllabus and use the real exam format to build a blueprint. The blueprint assigns marks according to the expected topic weightings and includes a mixture of recall, interpretation, and application questions.",
+          "AI generates the paper and a separate marking scheme. You check both against your course material before starting.",
+          "You then attempt the full paper without notes or AI assistance.",
+          "Your score is reasonable, but the error log shows repeated application mistakes in one unit and a timing problem in the final section.",
+          "Instead of rereading the whole course, you revise that unit, practise timed questions, take a targeted mini-mock, and then sit a second full paper."
+        ]
+      },
+
+      {
+        heading: "Example: Creating a Math Mock Exam",
+        paragraphs: [
+          "For mathematics, the blueprint should include the types of problems expected in your actual course and a realistic distribution of marks.",
+          "After generation, check that each problem has enough information, the formulas and notation are appropriate, and the marking scheme does not contain calculation errors.",
+          "During the mock, show your working as you would in the real exam. Afterward, separate conceptual mistakes from arithmetic and time-management errors."
+        ]
+      },
+
+      {
+        heading: "Example: Creating an Essay-Based Mock",
+        paragraphs: [
+          "For essay-heavy subjects, a mock does not need dozens of questions.",
+          "Generate a realistic set of prompts based on your syllabus and expected themes, then follow the real choice rules and time limit.",
+          "Create a marking rubric based on your course criteria where available. Evaluate argument quality, evidence, structure, relevance, and use of course concepts rather than relying only on a generic AI score."
+        ]
+      },
+
+      {
+        heading: "Mock Exam vs AI Quiz: What Is the Difference?",
+        paragraphs: [
+          "A quiz usually tests a smaller amount of material and may be used during learning.",
+          "A mock exam should imitate a broader assessment: fixed scope, realistic question mix, marks, time pressure, and delayed feedback.",
+          "Use quizzes to practise individual topics. Use mocks to test whether your preparation works when those topics are combined under exam conditions."
+        ]
+      },
+
+      {
+        heading: "How Many Mock Exams Should You Take?",
+        paragraphs: [
+          "There is no universal number.",
+          "Taking more mocks is not useful if you repeat the same mistakes without reviewing them.",
+          "A smaller number of properly analyzed mocks can be more valuable than repeatedly generating new papers simply to collect scores."
+        ],
+        note:
+          "Attempt → analyze → revise → retest is more important than mock count."
+      },
+
+      {
+        heading: "Should AI Predict What Will Be on Your Exam?",
+        paragraphs: [
+          "Do not treat AI predictions as reliable knowledge of future exam questions.",
+          "AI can generate practice based on your syllabus, learning objectives, past-paper patterns you are permitted to use, or material you provide, but that does not mean it knows what your instructor or exam board will ask.",
+          "Prepare for the assessed learning objectives rather than gambling on predicted questions."
+        ]
+      },
+
+      {
+        heading: "Common Mistakes When Creating AI Mock Exams",
+        list: [
+          "Asking AI to 'make a test' without giving the syllabus",
+          "Ignoring the real exam format",
+          "Using equal topic weighting when the real exam does not",
+          "Making every question extremely difficult",
+          "Trusting the generated answer key without checking it",
+          "Using AI hints during the timed attempt",
+          "Checking answers before finishing",
+          "Looking only at the total score",
+          "Not recording why marks were lost",
+          "Taking another mock before fixing weak areas",
+          "Treating AI predictions as real exam questions"
+        ]
+      },
+
+      {
+        heading: "Use AI Mock Exams Responsibly",
+        paragraphs: [
+          "Use only course material you are permitted to provide to an AI service and follow your institution's rules.",
+          "Do not use leaked, confidential, restricted, or unauthorized exam material to generate practice papers.",
+          "AI-generated mocks should supplement legitimate course resources and official past papers where available—not pretend to be official examinations."
+        ]
+      },
+
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "AI can make personalized mock exams much easier to create, but generation alone does not improve exam performance.",
+          "Build the paper around the real scope and format, verify the questions and answers, sit it under realistic conditions, analyze every lost mark, and let those mistakes determine what you revise next.",
+          "The most valuable mock exam is not the one that gives you the highest score. It is the one that reveals your weaknesses early enough to fix them."
+        ]
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "use-ai-to-study-for-exams",
+        category: "Exam Prep",
+        title: "How to Use AI to Study for Exams",
+        description:
+          "Build a complete exam-preparation workflow around diagnosis, weak areas, active recall, spaced review, and mock exams."
+      },
+      {
+        slug: "create-quizzes-from-notes-using-ai",
+        category: "Exam Prep",
+        title: "How to Create Quizzes From Notes Using AI",
+        description:
+          "Turn your notes into shorter practice quizzes for retrieval and targeted review."
+      },
+      {
+        slug: "check-ai-answers-before-using-them-for-study",
+        category: "Study Guides",
+        title: "How to Check AI Answers Before Using Them for Study",
+        description:
+          "Verify generated questions, answers, calculations, and claims before relying on them for studying."
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can AI create a mock exam for me?",
+        answer:
+          "Yes. AI can generate practice exams from a syllabus, notes, learning objectives, or other permitted material. The generated questions and answer key should be checked before you rely on them."
+      },
+      {
+        question: "How do I make an AI mock exam realistic?",
+        answer:
+          "Match the real exam's scope, question types, topic weightings, total marks, difficulty, time limit, and choice rules as closely as your available information allows."
+      },
+      {
+        question: "Should I use AI while taking a mock exam?",
+        answer:
+          "If AI will not be allowed in the real assessment, avoid using it for hints or answers during the mock. Otherwise you may hide weaknesses the practice exam is supposed to reveal."
+      },
+      {
+        question: "Can I trust an AI-generated answer key?",
+        answer:
+          "Not automatically. Check important answers, formulas, calculations, definitions, and factual claims against trusted course material."
+      },
+      {
+        question: "What should I do after an AI mock exam?",
+        answer:
+          "Create an error log, identify why you lost marks, revise the highest-priority weaknesses, use targeted practice, and then take another mock with new questions."
+      },
+      {
+        question: "How many mock exams should I take?",
+        answer:
+          "There is no fixed number. Focus on analyzing and correcting mistakes between mocks rather than taking many papers without targeted revision."
+      },
+      {
+        question: "Is an AI quiz the same as a mock exam?",
+        answer:
+          "No. A quiz usually covers a smaller amount of material, while a mock exam aims to simulate the broader format, timing, marks, and conditions of a real assessment."
+      },
+      {
+        question: "Can AI predict my real exam questions?",
+        answer:
+          "AI can generate practice based on patterns and material you provide, but it cannot reliably know what questions will appear on a future exam. Use it for practice rather than prediction."
+      }
+    ]
+  },
 };

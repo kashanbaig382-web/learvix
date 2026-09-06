@@ -177,6 +177,17 @@ export const articles = [
     publishedAt: "2026-09-07",
     updatedAt: "2026-09-07",
   },
+  {
+    slug: "create-a-mock-exam-with-ai",
+    category: "Exam Prep",
+    title: "How to Create a Mock Exam With AI and Test Yourself Properly",
+    description:
+      "Learn how to create a realistic mock exam with AI using your syllabus, exam format, topic weightings, marks, difficulty, and time limit, then use your mistakes to guide revision.",
+    readTime: "14 min read",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-07",
+    updatedAt: "2026-09-07",
+  },
 ];
 
 export const publishedArticles = articles.filter(
