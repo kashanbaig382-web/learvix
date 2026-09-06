@@ -8005,4 +8005,466 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "compare-research-papers-with-ai": {
+    introduction: [
+      "Comparing research papers is more difficult than summarizing them separately. Two studies can investigate similar topics while using different populations, methods, measurements, definitions, or time periods.",
+      "AI can help organize these differences into a consistent comparison, but simply asking which paper is better or which conclusion is correct can produce an oversimplified answer.",
+      "A stronger workflow summarizes each paper independently, compares the same research elements across papers, checks apparent disagreements carefully, and verifies important claims against the original studies before writing a synthesis."
+    ],
+
+    sections: [
+      {
+        heading: "Quick Answer: How Do You Compare Research Papers With AI?",
+        paragraphs: [
+          "Start with a clear comparison question and analyze each paper separately before combining them.",
+          "Extract the research question, methodology, sample or data, measurements, main findings, limitations, and conclusions from every paper using the same structure.",
+          "Then build a comparison matrix, identify agreements and differences, investigate why the results may differ, and verify important details against the original papers before writing your own synthesis."
+        ],
+        note:
+          "LEARVIX rule: Different results do not automatically mean two papers contradict each other."
+      },
+
+      {
+        heading: "The LEARVIX Research Paper Comparison Workflow",
+        list: [
+          "Define the comparison question",
+          "Select the relevant papers",
+          "Analyze each paper separately",
+          "Use the same extraction framework",
+          "Build a comparison matrix",
+          "Compare research questions",
+          "Compare samples or data",
+          "Compare methodologies",
+          "Compare measurements and outcomes",
+          "Compare findings",
+          "Compare limitations",
+          "Identify agreements and differences",
+          "Investigate apparent contradictions",
+          "Verify against the original papers",
+          "Write your own synthesis"
+        ],
+        paragraphsAfter: [
+          "The goal is not to ask AI to choose a winner. The goal is to understand how the evidence relates."
+        ]
+      },
+
+      {
+        heading: "Step 1: Define What You Are Actually Comparing",
+        paragraphs: [
+          "Do not begin with a vague instruction such as 'compare these papers.'",
+          "Decide what question the comparison should answer. You might be comparing findings, methods, populations, theoretical approaches, interventions, measurements, or limitations.",
+          "A clear question prevents the comparison from becoming a long list of unrelated similarities and differences."
+        ],
+        prompt:
+          "I want to compare these research papers to understand [comparison goal]. Help me create a focused comparison question and list the research elements I should examine."
+      },
+
+      {
+        heading: "Step 2: Make Sure the Papers Are Relevant to the Question",
+        paragraphs: [
+          "Two papers do not need to be identical to be compared, but they should have a meaningful relationship to your question.",
+          "Check their topic, population, context, variables, intervention, outcomes, or theoretical focus before spending time on detailed comparison.",
+          "If a paper answers a substantially different question, explain that difference rather than forcing it into the same category."
+        ]
+      },
+
+      {
+        heading: "Step 3: Analyze Each Paper Separately First",
+        paragraphs: [
+          "Do not immediately give several papers to AI and ask for one combined summary.",
+          "Analyze each study independently so information from one paper is less likely to become mixed with another.",
+          "Use the same extraction structure for every paper."
+        ],
+        prompt:
+          "Analyze this paper independently. Extract its research question or objective, methodology, sample/data, measurements, main findings, authors' interpretation, limitations, and conclusion. Do not compare it with another paper yet."
+      },
+
+      {
+        heading: "Step 4: Use the Same Extraction Framework for Every Paper",
+        paragraphs: [
+          "Consistent categories make meaningful comparison easier.",
+          "If you record methodology for one paper but only conclusions for another, AI may create a comparison based on incomplete information.",
+          "Create one template and apply it to every source."
+        ],
+        list: [
+          "Research question or objective",
+          "Study design",
+          "Population, sample, or dataset",
+          "Setting or context",
+          "Variables or intervention",
+          "Measurements or outcomes",
+          "Analysis method",
+          "Main findings",
+          "Authors' interpretation",
+          "Limitations",
+          "Conclusion or implications"
+        ]
+      },
+
+      {
+        heading: "Step 5: Build a Comparison Matrix",
+        paragraphs: [
+          "A comparison matrix places the same research elements side by side.",
+          "This makes differences easier to see than reading several separate summaries.",
+          "Use concise entries and keep links, page numbers, or section references where possible so you can return to the evidence."
+        ],
+        prompt:
+          "Create a comparison matrix for these papers. Use rows for research question, design, sample/data, setting, measurements, analysis, findings, limitations, and conclusions. Do not fill a cell with assumptions when a paper does not report the information."
+      },
+
+      {
+        heading: "Step 6: Compare the Research Questions",
+        paragraphs: [
+          "Studies that appear to investigate the same topic may actually ask different questions.",
+          "One may test whether an intervention works, another may examine an association, and another may explore participants' experiences.",
+          "Before comparing results, check whether the studies were trying to establish the same type of knowledge."
+        ],
+        prompt:
+          "Compare the research questions or objectives of these papers. Explain where they overlap and where they differ without assuming that similar topics mean identical research questions."
+      },
+
+      {
+        heading: "Step 7: Compare the Samples, Populations, or Data",
+        paragraphs: [
+          "Results may differ because researchers studied different people, places, datasets, or contexts.",
+          "Compare sample size when relevant, participant characteristics, inclusion criteria, geographic setting, time period, or dataset composition.",
+          "Do not assume a finding from one population automatically applies to another."
+        ],
+        prompt:
+          "Compare the samples, populations, or datasets used in these studies. Identify differences that could affect how their findings should be interpreted."
+      },
+
+      {
+        heading: "Step 8: Compare the Methodologies",
+        paragraphs: [
+          "Methodological differences can explain why studies produce different kinds of evidence.",
+          "Compare study design, data collection, experimental procedures, qualitative methods, analytical techniques, and other important methodological choices.",
+          "Do not rank methods simply by complexity. Ask whether each method is appropriate for the research question."
+        ],
+        prompt:
+          "Compare the methodologies used by these papers. Explain what each method allows the researchers to investigate and what limitations it may introduce."
+      },
+
+      {
+        heading: "Step 9: Compare What the Studies Actually Measured",
+        paragraphs: [
+          "Two papers can use the same word while measuring it differently.",
+          "Terms such as performance, engagement, stress, learning, success, or productivity can have different operational definitions.",
+          "Check how each study defines and measures its important outcomes before comparing the results."
+        ],
+        note:
+          "Same label does not always mean same measurement."
+      },
+
+      {
+        heading: "Step 10: Compare the Main Findings",
+        paragraphs: [
+          "Once the studies are aligned, compare what each actually found.",
+          "Keep reported results separate from your interpretation of why they are similar or different.",
+          "For numerical findings, verify important values against the results, tables, or figures in the original papers."
+        ],
+        prompt:
+          "Compare the main findings reported by these studies. Separate direct results from possible explanations for the similarities or differences."
+      },
+
+      {
+        heading: "Do Not Turn Different Results Into an Automatic Contradiction",
+        paragraphs: [
+          "One study finding an effect while another finds little or no effect does not automatically mean one study disproves the other.",
+          "The studies may use different populations, interventions, measurements, sample sizes, durations, contexts, or analytical methods.",
+          "Investigate these differences before labeling the evidence contradictory."
+        ]
+      },
+
+      {
+        heading: "Step 11: Compare the Strength of the Claims",
+        paragraphs: [
+          "Pay attention to what each study design can reasonably support.",
+          "An observational association should not automatically be compared as if it were equivalent to evidence from a randomized experiment.",
+          "Preserve distinctions between association, prediction, description, interpretation, and causal claims."
+        ],
+        prompt:
+          "Compare the strength and type of claims made in these papers. Flag any place where one study reports association while another supports a different type of conclusion."
+      },
+
+      {
+        heading: "Step 12: Compare the Limitations",
+        paragraphs: [
+          "A useful comparison should include what each study cannot establish.",
+          "Look for limitations acknowledged by the authors and distinguish them from additional concerns you identify yourself.",
+          "Differences in limitations may help explain why findings should not be treated as directly interchangeable."
+        ],
+        prompt:
+          "Compare the limitations explicitly acknowledged by the authors. Keep author-stated limitations separate from additional limitations you infer."
+      },
+
+      {
+        heading: "Step 13: Find Areas of Agreement",
+        paragraphs: [
+          "Look for findings, mechanisms, themes, or interpretations that are supported across multiple papers.",
+          "Agreement is more informative when you understand whether the studies reached similar conclusions using similar or different methods.",
+          "Do not claim consensus from only a small set of conveniently selected studies."
+        ]
+      },
+
+      {
+        heading: "Step 14: Find Meaningful Differences",
+        paragraphs: [
+          "Differences are not problems to remove from your synthesis.",
+          "They can reveal how context, population, methodology, measurement, or assumptions affect the evidence.",
+          "Record both what differs and the most plausible source-supported reasons for that difference."
+        ],
+        prompt:
+          "List the important differences between these papers and organize them by research question, population/data, method, measurement, findings, interpretation, and limitations."
+      },
+
+      {
+        heading: "Step 15: Investigate Apparent Contradictions",
+        paragraphs: [
+          "When findings appear inconsistent, return to the papers instead of asking AI which one is correct.",
+          "Check whether the studies used comparable outcomes, populations, time periods, interventions, and analytical methods.",
+          "Sometimes the apparent contradiction disappears once the studies are compared precisely."
+        ],
+        prompt:
+          "These papers appear to reach different conclusions about [issue]. Identify differences in their research questions, samples, methods, measurements, and contexts that could help explain the disagreement. Do not decide which paper is correct without evidence."
+      },
+
+      {
+        heading: "Step 16: Verify the Comparison Against the Original Papers",
+        paragraphs: [
+          "A polished comparison table can still contain inaccurate information.",
+          "Verify important findings, sample details, methodological claims, numerical values, and limitations against the original papers.",
+          "If AI provides page or section references, use them to locate the source rather than treating the reference itself as proof."
+        ]
+      },
+
+      {
+        heading: "A Master Prompt for Comparing Research Papers",
+        prompt:
+          "Help me compare these research papers using the original papers as the primary sources. Analyze each paper separately first, then create a comparison matrix covering research question, methodology, sample/data, setting, measurements, analysis, main findings, authors' interpretation, limitations, and conclusions. Identify agreements and differences. Do not treat different findings as contradictions until you check whether the studies are actually comparable. Clearly separate source-derived information from your own interpretation and flag anything that needs verification."
+      },
+
+      {
+        heading: "Step 17: Move From Comparison to Synthesis",
+        paragraphs: [
+          "Comparison identifies how papers are similar or different. Synthesis goes further by explaining what those relationships mean for the broader question.",
+          "Instead of writing one paragraph about Paper A and another about Paper B, organize your thinking around themes, agreements, disagreements, methodological differences, or gaps in the evidence.",
+          "Your final synthesis should reflect your understanding of the sources rather than simply combining AI-generated summaries."
+        ]
+      },
+
+      {
+        heading: "Paper-by-Paper Writing vs Synthesis",
+        paragraphs: [
+          "A paper-by-paper structure often looks like: Study A found this. Study B found that. Study C found something else.",
+          "A synthesized structure asks what the studies collectively show, where their evidence differs, and why.",
+          "The comparison matrix can help you move from a list of studies toward relationships between studies."
+        ]
+      },
+
+      {
+        heading: "Example: Two Studies With Different Populations",
+        paragraphs: [
+          "Imagine two studies investigate the same learning technique.",
+          "Study A examines university students, while Study B examines younger school students.",
+          "Even if the studies report different outcomes, you should not immediately conclude that one result is wrong.",
+          "Age, learning environment, prior knowledge, intervention design, or measurement may affect the findings.",
+          "Your comparison should preserve these contextual differences."
+        ]
+      },
+
+      {
+        heading: "Example: Similar Findings From Different Methods",
+        paragraphs: [
+          "Suppose one study uses survey data while another uses interviews.",
+          "Both may identify a similar pattern, but they provide different types of evidence.",
+          "Instead of pretending the methods are equivalent, explain how each contributes a different perspective to the shared finding."
+        ]
+      },
+
+      {
+        heading: "Example: One Study Finds an Effect and Another Does Not",
+        paragraphs: [
+          "This situation requires investigation rather than a winner.",
+          "Check sample sizes, study design, intervention duration, measurement choices, participant characteristics, statistical uncertainty, and context.",
+          "Your synthesis can explain that the evidence differs under particular conditions rather than forcing a single conclusion."
+        ]
+      },
+
+      {
+        heading: "Comparing Quantitative Research Papers",
+        paragraphs: [
+          "For quantitative studies, pay particular attention to study design, sample characteristics, variable definitions, measurement instruments, effect estimates, uncertainty, statistical methods, and reported limitations.",
+          "Do not compare percentages or effect sizes without checking whether the underlying outcomes and populations are comparable."
+        ]
+      },
+
+      {
+        heading: "Comparing Qualitative Research Papers",
+        paragraphs: [
+          "For qualitative research, compare research questions, participants or data sources, context, collection methods, analytical approaches, themes, interpretations, and limitations.",
+          "Do not force qualitative findings into a numerical-style ranking simply to make the comparison look simpler."
+        ]
+      },
+
+      {
+        heading: "Comparing a Review With an Individual Study",
+        paragraphs: [
+          "A review article and an individual empirical study operate at different levels.",
+          "A review may synthesize evidence from many studies, while an individual study contributes one piece of evidence.",
+          "Record the source type and methodology before treating their conclusions as directly equivalent."
+        ]
+      },
+
+      {
+        heading: "How Many Papers Can You Compare With AI?",
+        paragraphs: [
+          "There is no universal number. Practical limits depend on the AI tool, document length, context capacity, and complexity of your comparison.",
+          "Accuracy can also become harder to monitor as more sources are added.",
+          "For larger projects, extract information into a consistent evidence table first and compare manageable groups rather than asking for one enormous synthesis."
+        ]
+      },
+
+      {
+        heading: "Do Not Let AI Invent Missing Information",
+        paragraphs: [
+          "A comparison matrix creates pressure to fill every cell.",
+          "If a paper does not report a particular detail, record that it was not reported or that you could not locate it.",
+          "An empty or uncertain cell is better than a plausible-looking invented answer."
+        ],
+        prompt:
+          "If any comparison category is not clearly reported in a paper, write 'not clearly reported' rather than inferring or inventing the missing information."
+      },
+
+      {
+        heading: "Keep Citations Connected to Claims",
+        paragraphs: [
+          "When building comparison notes, keep track of which paper supports each statement.",
+          "Do not allow information from several papers to merge into one uncited AI-generated paragraph.",
+          "For academic writing, cite the original sources according to the required citation style and follow any rules that apply to AI assistance."
+        ]
+      },
+
+      {
+        heading: "Common Mistakes When Comparing Papers With AI",
+        list: [
+          "Comparing papers before analyzing them individually",
+          "Using different extraction categories for each paper",
+          "Treating similar topics as identical research questions",
+          "Ignoring differences in populations or datasets",
+          "Ignoring how outcomes were measured",
+          "Treating association as causation",
+          "Calling every different result a contradiction",
+          "Asking AI which paper is 'better' without criteria",
+          "Ignoring limitations",
+          "Letting AI fill missing information",
+          "Trusting a comparison table without checking the sources",
+          "Writing separate summaries instead of a synthesis"
+        ]
+      },
+
+      {
+        heading: "Comparing Research Papers vs Summarizing a Research Paper",
+        paragraphs: [
+          "Summarizing focuses on accurately understanding one paper.",
+          "Comparing requires aligning multiple papers using the same framework and examining how their questions, methods, evidence, and limitations relate.",
+          "If you cannot accurately summarize each paper individually, your comparison is built on an unstable foundation."
+        ]
+      },
+
+      {
+        heading: "Comparing Papers vs Writing a Literature Review",
+        paragraphs: [
+          "Paper comparison is one part of literature-review work, but it is not the whole process.",
+          "A literature review also involves defining a question, finding relevant literature, evaluating and organizing sources, synthesizing a broader body of evidence, and writing an argument appropriate to the assignment or research purpose.",
+          "Do not assume an AI-generated comparison matrix is a finished literature review."
+        ]
+      },
+
+      {
+        heading: "Use AI Responsibly for Academic Comparison",
+        paragraphs: [
+          "Follow the AI rules that apply to your course, institution, journal, or research project.",
+          "Do not upload confidential, restricted, unpublished, or protected research material to third-party tools unless you are permitted to do so.",
+          "Never use AI to fabricate papers, citations, data, quotations, findings, or evidence."
+        ]
+      },
+
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "AI can make research-paper comparison faster by organizing information into a consistent framework, but the quality of the comparison still depends on careful reading and verification.",
+          "Analyze each source independently, compare the same research elements, investigate why findings differ, preserve limitations and context, and return to the original papers whenever an important claim matters.",
+          "The goal is not to make several papers sound the same. It is to understand what each contributes to the evidence."
+        ]
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "summarize-a-research-paper-with-ai",
+        category: "Research & Writing",
+        title: "How to Summarize a Research Paper With AI Without Missing Important Details",
+        description:
+          "Extract the research question, methods, sample, findings, limitations, and implications from an individual research paper."
+      },
+      {
+        slug: "use-ai-for-academic-research-without-cheating",
+        category: "Research & Writing",
+        title: "How to Use AI for Academic Research Without Cheating",
+        description:
+          "Use AI responsibly during research while verifying sources, evidence, citations, and your own reasoning."
+      },
+      {
+        slug: "check-ai-answers-before-using-them-for-study",
+        category: "Study Guides",
+        title: "How to Check AI Answers Before Using Them for Study",
+        description:
+          "Verify AI-generated claims, sources, numbers, citations, and explanations before relying on them."
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can AI compare research papers?",
+        answer:
+          "Yes. AI can help organize multiple papers into a consistent comparison of research questions, methods, samples or data, findings, and limitations. Important details should still be verified against the original papers."
+      },
+      {
+        question: "What should I compare between research papers?",
+        answer:
+          "Useful categories include research questions, study designs, populations or datasets, settings, measurements, analytical methods, findings, interpretations, limitations, and conclusions."
+      },
+      {
+        question: "How do I compare two research papers with AI?",
+        answer:
+          "Analyze each paper separately using the same extraction framework, build a side-by-side comparison matrix, identify important similarities and differences, and verify the comparison against the original sources."
+      },
+      {
+        question: "Do different findings mean research papers contradict each other?",
+        answer:
+          "Not necessarily. Differences in population, methodology, measurement, context, intervention, time period, or analysis can produce different findings without the studies directly contradicting each other."
+      },
+      {
+        question: "Can AI tell me which research paper is better?",
+        answer:
+          "A paper cannot be meaningfully labeled better without clear criteria. Evaluate whether its research design, evidence, limitations, and methods are appropriate for the question you are investigating."
+      },
+      {
+        question: "Can I use AI to compare papers for a literature review?",
+        answer:
+          "AI can help build evidence tables and identify relationships between papers, but a literature review also requires source selection, evaluation, synthesis, academic writing, and compliance with applicable AI policies."
+      },
+      {
+        question: "Should I summarize papers before comparing them?",
+        answer:
+          "Yes. Understanding each paper independently helps prevent findings, methods, or limitations from different sources becoming mixed together."
+      },
+      {
+        question: "Should I cite AI or the research papers?",
+        answer:
+          "When a claim comes from a research paper, cite the original paper according to the required citation style. Follow any separate institutional or publication rules for disclosing or citing AI assistance."
+      }
+    ]
+  },
 };

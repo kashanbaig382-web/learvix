@@ -210,6 +210,17 @@ export const articles = [
     publishedAt: "2026-09-07",
     updatedAt: "2026-09-07",
   },
+  {
+    slug: "compare-research-papers-with-ai",
+    category: "Research & Writing",
+    title: "How to Compare Research Papers With AI Without Missing Important Differences",
+    description:
+      "Learn how to compare research papers with AI by examining research questions, methods, samples, findings, limitations, and differences without replacing the original sources.",
+    readTime: "14 min read",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-07",
+    updatedAt: "2026-09-07",
+  },
 ];
 
 export const publishedArticles = articles.filter(
