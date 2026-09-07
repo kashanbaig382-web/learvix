@@ -8838,4 +8838,206 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "how-to-use-feynman-technique-with-ai": {
+    introduction: [
+      "The Feynman Technique is simple: choose a concept, explain it in plain language, notice where your explanation becomes weak, review those gaps, and explain it again more clearly.",
+      "AI can make this process more interactive. Instead of asking AI to explain the topic for you, you can make AI act like a curious student who questions vague explanations, asks for examples, and points out where your reasoning is incomplete."
+    ],
+
+    sections: [
+      {
+        heading: "Step 1: Choose One Specific Concept",
+        paragraphs: [
+          "Do not start with an entire subject. Pick one concept that is small enough to explain in a few minutes.",
+          "For example, instead of choosing 'Physics,' choose 'Newton's Second Law.' Instead of choosing 'Statistics,' choose 'standard deviation.'"
+        ],
+        list: [
+          "Choose one concept, rule, process, formula, or theory.",
+          "Avoid combining several chapters into one session.",
+          "Use your syllabus or course material to decide what matters."
+        ]
+      },
+
+      {
+        heading: "Step 2: Close Your Notes and Explain It From Memory",
+        paragraphs: [
+          "Before involving AI, try to explain the concept in your own words without looking at your notes.",
+          "The goal is not to sound academic. Use simple language as if you were teaching someone who has never studied the topic before.",
+          "If you immediately need to check your notes, that is already useful information. It shows where your memory or understanding may be weak."
+        ]
+      },
+
+      {
+        heading: "Step 3: Make AI Act Like a Curious Student",
+        paragraphs: [
+          "Now give your explanation to AI, but do not ask it to rewrite or improve everything immediately.",
+          "Instead, tell it to behave like a beginner who wants to understand what you are teaching."
+        ],
+        prompt:
+          "Act like a curious student who is learning this topic from me. I will explain the concept in my own words. Do not give me the full explanation yourself. Ask me questions whenever my explanation is vague, incomplete, too technical, or missing an important connection. Make me clarify my own reasoning."
+      },
+
+      {
+        heading: "Step 4: Let AI Challenge Vague Explanations",
+        paragraphs: [
+          "Weak understanding often hides behind words that sound familiar but are not fully understood.",
+          "If you say something like 'this happens because of energy' or 'the formula works because the values are related,' a useful AI student should ask what exactly you mean.",
+          "Those follow-up questions are where the Feynman Technique becomes valuable, because they force you to explain rather than repeat memorized wording."
+        ],
+        example: [
+          "Student: Standard deviation tells us how spread out the data is.",
+          "AI: What do you mean by 'spread out'?",
+          "Student: It means how far the values are from the average.",
+          "AI: Is standard deviation just the average distance from the mean, or is there another step involved?",
+          "Student: We first look at squared differences, then calculate variance, and take the square root."
+        ]
+      },
+
+      {
+        heading: "Step 5: Mark the Exact Point Where You Get Stuck",
+        paragraphs: [
+          "Do not treat the entire topic as weak just because one part of your explanation failed.",
+          "Identify the exact sentence, relationship, formula step, or definition you could not explain clearly.",
+          "That specific point becomes your revision target."
+        ],
+        list: [
+          "A definition you cannot explain without copying it.",
+          "A formula you know but cannot justify.",
+          "A step in a process you keep skipping.",
+          "A connection between two ideas that feels unclear.",
+          "An example you cannot create yourself."
+        ]
+      },
+
+      {
+        heading: "Step 6: Review Only the Gap",
+        paragraphs: [
+          "Return to your textbook, lecture notes, trusted academic material, or teacher guidance and review the exact part that caused difficulty.",
+          "You can also ask AI for help, but keep the request narrow. Do not replace the entire Feynman session with a long AI-generated explanation."
+        ],
+        prompt:
+          "I am stuck on this specific part: [describe the gap]. Explain only this part in simple language, then give me one short example. After that, ask me to explain it back to you."
+      },
+
+      {
+        heading: "Step 7: Explain the Concept Again in Simpler Language",
+        paragraphs: [
+          "After reviewing the gap, start your explanation again.",
+          "Try to remove unnecessary technical wording while keeping the explanation accurate.",
+          "Simple language is not the same as oversimplifying. Your explanation should still preserve the important relationships and logic."
+        ]
+      },
+
+      {
+        heading: "Step 8: Create Your Own Analogy",
+        paragraphs: [
+          "A useful analogy can reveal whether you understand how a concept works, not just what its definition says.",
+          "Create the analogy yourself first. Then ask AI to challenge it and point out where the comparison stops being accurate."
+        ],
+        prompt:
+          "Here is my analogy for [concept]: [write analogy]. Do not replace it with your own analogy yet. Tell me which parts are accurate, which parts could be misleading, and what limitation I should mention."
+      },
+
+      {
+        heading: "Step 9: Ask AI for a Transfer Question",
+        paragraphs: [
+          "Being able to repeat an explanation is useful, but stronger understanding means you can apply the concept in a different context.",
+          "Ask AI for one new question that requires you to use the same idea rather than repeat the same definition."
+        ],
+        prompt:
+          "Give me one new question that tests whether I can apply this concept in a different situation. Do not give me hints or the answer until I respond."
+      },
+
+      {
+        heading: "Step 10: Do a Final Explanation Without AI",
+        paragraphs: [
+          "End the session by closing the AI chat and explaining the topic one final time from memory.",
+          "You can say it aloud, write it on a blank page, or teach it to another person.",
+          "If your final explanation is clearer, more complete, and easier to produce without help, the session has improved your understanding."
+        ]
+      },
+
+      {
+        heading: "What AI Should Not Do in a Feynman Session",
+        paragraphs: [
+          "The method becomes less useful if AI does most of the thinking for you.",
+          "Avoid asking AI to immediately rewrite your explanation into a perfect answer before you have identified your own gaps."
+        ],
+        list: [
+          "Do not ask AI to generate the full explanation before you try.",
+          "Do not copy AI wording and mistake recognition for understanding.",
+          "Do not let AI answer every follow-up question for you.",
+          "Do not skip the final no-AI explanation.",
+          "Do not trust AI corrections automatically when the topic requires authoritative academic accuracy."
+        ]
+      },
+
+      {
+        heading: "A 20-Minute Feynman + AI Study Routine",
+        list: [
+          "3 minutes — Choose one concept and explain it from memory.",
+          "5 minutes — Let AI act as a curious student and challenge unclear parts.",
+          "4 minutes — Review the specific gaps using course material.",
+          "4 minutes — Explain the concept again and create one analogy.",
+          "2 minutes — Answer one transfer question.",
+          "2 minutes — Turn AI off and explain the concept independently."
+        ]
+      },
+
+      {
+        heading: "Use AI to Expose Thinking, Not Replace It",
+        paragraphs: [
+          "The strongest use of AI in the Feynman Technique is not generating a better explanation for you. It is forcing you to notice where your own explanation becomes weak.",
+          "If AI asks better questions, you give better explanations, and you finish the session able to teach the concept without assistance, then AI is supporting active learning rather than replacing it."
+        ]
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can I use ChatGPT with the Feynman Technique?",
+        answer:
+          "Yes. You can use ChatGPT or another AI assistant as a curious student that asks questions about your explanation. The important part is that you explain the concept first instead of asking AI to do the explanation for you."
+      },
+      {
+        question: "What should I ask AI during the Feynman Technique?",
+        answer:
+          "Ask AI to question vague statements, request examples, challenge your analogies, and test whether you can apply the concept. Avoid asking it to immediately rewrite your explanation into a finished answer."
+      },
+      {
+        question: "How do I know if I actually understand the topic?",
+        answer:
+          "You should be able to explain the concept clearly in your own words, answer follow-up questions, apply it to a new example, and reproduce the explanation without AI or notes."
+      },
+      {
+        question: "Can AI give incorrect feedback during a Feynman session?",
+        answer:
+          "Yes. AI can make mistakes or misunderstand academic details. Verify important facts, formulas, definitions, and course-specific requirements against reliable course materials or authoritative sources."
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "how-to-use-ai-to-explain-difficult-concepts",
+        category: "AI Tools",
+        title: "How to Use AI to Explain Difficult Concepts",
+        description:
+          "Use AI to break difficult topics into simpler explanations, examples, and study-friendly steps."
+      },
+      {
+        slug: "how-to-use-ai-as-a-personal-tutor",
+        category: "AI Tools",
+        title: "How to Use AI as a Personal Tutor Without Becoming Dependent on It",
+        description:
+          "Turn AI into an interactive tutor that uses questions, hints, practice, and feedback instead of simply giving answers."
+      },
+      {
+        slug: "how-to-use-ai-to-find-knowledge-gaps-before-an-exam",
+        category: "Exam Prep",
+        title: "How to Use AI to Find Gaps in Your Knowledge Before an Exam",
+        description:
+          "Use AI to diagnose weak topics, uncover hidden gaps, and prioritize what to revise before an exam."
+      }
+    ]
+  },
 };

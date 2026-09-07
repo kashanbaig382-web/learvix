@@ -243,6 +243,17 @@ export const articles = [
     publishedAt: "2026-09-07",
     updatedAt: "2026-09-07",
   },
+  {
+    slug: "how-to-use-feynman-technique-with-ai",
+    category: "Study Guides",
+    title: "How to Use the Feynman Technique With AI to Understand Difficult Topics",
+    description:
+      "Learn how to combine the Feynman Technique with AI to explain difficult concepts in simple language, uncover gaps in your understanding, and study more actively.",
+    readTime: "9 min",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-08",
+    updatedAt: "2026-09-08",
+  },
 ];
 
 export const publishedArticles = articles.filter(
