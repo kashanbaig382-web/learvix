@@ -8660,4 +8660,182 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "how-to-use-ai-to-find-knowledge-gaps-before-an-exam": {
+    introduction: [
+      "Studying everything again before an exam is not always the best use of your time. The bigger challenge is figuring out what you understand well, what you only think you understand, and which topics are most likely to cause mistakes.",
+      "AI can help you run a structured knowledge-gap audit. Instead of asking it to teach the entire syllabus, you can use it to test your understanding, analyze mistakes, and turn weak areas into a focused revision plan."
+    ],
+
+    sections: [
+      {
+        heading: "Start With a Knowledge Map, Not a Study Plan",
+        paragraphs: [
+          "Before AI can help identify your weak areas, give it the topics you are expected to know. You can use your syllabus, chapter list, lecture headings, or your own topic list.",
+          "Do not ask AI to decide your official syllabus unless you have provided the relevant course material. Its job here is to organize and test the topics you give it."
+        ],
+        prompt:
+          "I am preparing for an exam in [subject]. These are the topics I need to know: [paste topic list]. Organize them into a knowledge map. Do not explain the topics yet. I want to use this map to diagnose what I understand and what I need to revise."
+      },
+
+      {
+        heading: "Rate Your Confidence Before AI Tests You",
+        paragraphs: [
+          "For each major topic, give yourself a confidence score from 1 to 5. A score of 1 means you would struggle to explain the topic, while 5 means you believe you could solve or explain it without help.",
+          "This prediction matters because one of the most useful gaps to discover is the difference between feeling confident and actually being able to answer a question."
+        ],
+        list: [
+          "1 — I barely remember this topic.",
+          "2 — I recognize it but cannot explain it clearly.",
+          "3 — I understand the basics but may struggle with application.",
+          "4 — I can usually explain or solve it correctly.",
+          "5 — I could handle a new question without notes or AI."
+        ]
+      },
+
+      {
+        heading: "Run a Diagnostic Round",
+        paragraphs: [
+          "Now ask AI to test you across the topic map. The purpose is diagnosis, not getting a high score, so answer without searching the web, checking notes, or asking AI for hints.",
+          "Start with a small number of questions across different topics. This gives you a quick picture of where deeper testing is needed."
+        ],
+        prompt:
+          "Test my understanding of these topics with one diagnostic question at a time. Mix recall, explanation, application, and problem-solving questions where appropriate. Do not give me hints before I answer. After each answer, tell me whether my reasoning is correct and record the topic as strong, uncertain, or weak."
+      },
+
+      {
+        heading: "Compare Confidence With Performance",
+        paragraphs: [
+          "After the diagnostic round, compare your original confidence scores with how you actually performed.",
+          "A topic you rated 5 but answered incorrectly deserves special attention. Overconfidence can hide a knowledge gap because you may otherwise skip that topic during revision.",
+          "A topic you rated 2 but answered correctly may need less revision than you expected."
+        ],
+        list: [
+          "High confidence + correct answer → likely strong.",
+          "High confidence + wrong answer → hidden knowledge gap.",
+          "Low confidence + correct answer → confidence gap; verify with another question.",
+          "Low confidence + wrong answer → clear revision priority."
+        ]
+      },
+
+      {
+        heading: "Build an Error Log From Your Mistakes",
+        paragraphs: [
+          "Do not record only whether an answer was right or wrong. Record why you missed it. Two wrong answers can require completely different revision strategies.",
+          "Ask AI to help classify each mistake, but check its judgment against your course material when necessary."
+        ],
+        list: [
+          "Knowledge gap — you did not know or remember the required information.",
+          "Concept gap — you remembered information but misunderstood the idea.",
+          "Application gap — you knew the concept but could not use it in a new situation.",
+          "Process error — you knew the method but made a mistake while applying it.",
+          "Question-reading error — you misunderstood what the question was asking."
+        ],
+        prompt:
+          "Review my incorrect answers. For each one, classify the main problem as a knowledge, concept, application, process, or question-reading gap. Briefly explain why you chose that category. Do not create a revision plan yet."
+      },
+
+      {
+        heading: "Turn the Results Into a Priority Matrix",
+        paragraphs: [
+          "Not every weak topic deserves equal study time. Prioritize topics using both your diagnostic performance and their importance to your exam.",
+          "If you know which topics or learning objectives receive more emphasis in your course, include that information. Do not ask AI to invent exam weightings."
+        ],
+        list: [
+          "Priority 1 — Important topic + weak performance.",
+          "Priority 2 — Important topic + uncertain performance.",
+          "Priority 3 — Lower-priority topic + weak performance.",
+          "Maintenance — Strong topics that only need brief retrieval practice."
+        ]
+      },
+
+      {
+        heading: "Revise the Gap, Then Retest It",
+        paragraphs: [
+          "Finding a weakness is useful only if you test whether the weakness has actually improved.",
+          "After revising one gap using your notes, textbook, teacher material, or an AI tutoring session, ask for a fresh question that tests the same concept in a different way.",
+          "Avoid simply repeating the original question. Remembering its answer can create the impression that you fixed the underlying gap."
+        ],
+        prompt:
+          "I have revised [topic]. Give me a new question that tests the same underlying knowledge or skill in a different context. Do not copy the previous question and do not provide the answer until I attempt it."
+      },
+
+      {
+        heading: "Create Your Final Revision Dashboard",
+        paragraphs: [
+          "Once you have tested and retested the important topics, reduce everything to a simple revision dashboard. You do not need complicated software; a document, spreadsheet, or notebook is enough."
+        ],
+        list: [
+          "Strong — answered correctly more than once without help.",
+          "Improving — previously weak but passed the latest retest.",
+          "Uncertain — inconsistent answers or incomplete reasoning.",
+          "Weak — still unable to answer independently.",
+          "Not tested — needs a diagnostic question before the exam."
+        ]
+      },
+
+      {
+        heading: "Do a Final No-AI Check",
+        paragraphs: [
+          "Before considering a topic exam-ready, test yourself without AI. Use practice questions, blank-page recall, flashcards, past papers, or explain the topic from memory.",
+          "If your understanding disappears as soon as AI is unavailable, the gap has not been fully closed. AI should help you discover and repair weaknesses, not become something you need beside you to answer every question."
+        ]
+      },
+
+      {
+        heading: "Keep the Audit Grounded in Your Real Course",
+        paragraphs: [
+          "AI does not automatically know what your teacher covered, what your exam will emphasize, or which answer format your course requires.",
+          "Use your syllabus, lecture notes, textbooks, past papers, marking guidance, and instructor instructions as the source of truth. AI is most useful here as a diagnostic and feedback tool around those materials.",
+          "For graded work and assessments, follow your institution's rules on acceptable AI use."
+        ]
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can AI tell me what I need to study for an exam?",
+        answer:
+          "AI can help identify weak areas by testing you on the topics you provide. Your syllabus, teacher guidance, course materials, and official exam information should determine what you are actually required to study."
+      },
+      {
+        question: "How can I find topics I think I know but actually do not?",
+        answer:
+          "Rate your confidence before answering diagnostic questions, then compare your prediction with your actual performance. High confidence combined with an incorrect or incomplete answer can reveal a hidden knowledge gap."
+      },
+      {
+        question: "Should I ask AI to explain every answer I get wrong?",
+        answer:
+          "First identify why the answer was wrong. A missing fact, misunderstood concept, application problem, and careless process error require different responses. Then revise the specific weakness and retest it with a new question."
+      },
+      {
+        question: "How often should I repeat a knowledge-gap audit?",
+        answer:
+          "You can run a broad audit early in your revision and shorter diagnostic checks as the exam approaches. Focus repeated testing on uncertain and previously weak topics rather than constantly retesting everything."
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "how-to-use-ai-for-exam-preparation",
+        category: "Exam Prep",
+        title: "How to Use AI for Exam Preparation",
+        description:
+          "Learn practical ways to use AI throughout your exam preparation while keeping your own learning at the center."
+      },
+      {
+        slug: "how-to-create-a-mock-exam-with-ai",
+        category: "Exam Prep",
+        title: "How to Create a Mock Exam With AI",
+        description:
+          "Turn your study material into a realistic practice exam and use it to test your readiness."
+      },
+      {
+        slug: "how-to-use-ai-as-a-personal-tutor",
+        category: "AI Tools",
+        title: "How to Use AI as a Personal Tutor Without Becoming Dependent on It",
+        description:
+          "Use questions, hints, practice, and feedback to make AI support your understanding instead of replacing it."
+      }
+    ]
+  },
 };

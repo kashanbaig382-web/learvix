@@ -232,6 +232,17 @@ export const articles = [
     publishedAt: "2026-09-07",
     updatedAt: "2026-09-07",
   },
+  {
+    slug: "how-to-use-ai-to-find-knowledge-gaps-before-an-exam",
+    category: "Exam Prep",
+    title: "How to Use AI to Find Gaps in Your Knowledge Before an Exam",
+    description:
+      "Learn how to use AI to identify weak topics, test your understanding, prioritize knowledge gaps, and build a focused revision plan before an exam.",
+    readTime: "9 min",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-07",
+    updatedAt: "2026-09-07",
+  },
 ];
 
 export const publishedArticles = articles.filter(
