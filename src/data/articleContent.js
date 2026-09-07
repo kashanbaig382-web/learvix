@@ -9040,4 +9040,209 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "how-to-use-ai-to-create-a-research-question": {
+    introduction: [
+      "A research project often starts with an idea that is too broad to investigate effectively. Topics such as social media, artificial intelligence, climate change, or student stress may be interesting, but they are not yet focused research questions.",
+      "AI can help you explore possible directions, narrow the scope, and test different versions of a question. The final research question, however, should still be based on your assignment requirements, available evidence, and your own academic judgment."
+    ],
+
+    sections: [
+      {
+        heading: "Start With the Broad Topic You Actually Care About",
+        paragraphs: [
+          "Begin with your real area of interest instead of asking AI to randomly choose a research topic for you.",
+          "Write the topic in simple language and briefly explain why you are interested in it. This gives AI useful context without handing over the entire decision."
+        ],
+        example:
+          "Broad topic: The effect of social media on university students."
+      },
+
+      {
+        heading: "Break the Topic Into Possible Research Angles",
+        paragraphs: [
+          "A broad topic usually contains several possible questions. AI can help you expose those directions before you choose one.",
+          "Ask for angles rather than finished research questions at this stage."
+        ],
+        prompt:
+          "My broad research topic is: [topic]. Help me explore it without choosing the final question for me. Suggest several distinct research angles, such as behavior, outcomes, comparisons, experiences, causes, or relationships. Briefly explain what each angle would investigate."
+      },
+
+      {
+        heading: "Choose the Angle Before Narrowing the Wording",
+        paragraphs: [
+          "Review the suggested angles and choose the one that genuinely matches your assignment and interests.",
+          "For example, a project about social media and students could focus on academic performance, sleep, concentration, mental well-being, study habits, or differences between platforms.",
+          "Trying to investigate all of these in one question would usually make the project too broad."
+        ]
+      },
+
+      {
+        heading: "Add Boundaries to the Topic",
+        paragraphs: [
+          "A focused research question often becomes clearer when you define who, what, where, or under which conditions you want to investigate.",
+          "You do not need every possible boundary. Add only the details that are meaningful to your research."
+        ],
+        list: [
+          "Population — Who are you studying?",
+          "Context — Where or in what situation?",
+          "Phenomenon — What behavior, experience, or issue?",
+          "Outcome — What effect or relationship interests you?",
+          "Comparison — Are two groups, approaches, or conditions being compared?",
+          "Time frame — Does a specific period matter?"
+        ]
+      },
+
+      {
+        heading: "Watch the Topic Become More Focused",
+        paragraphs: [
+          "Suppose you begin with 'social media and university students.' After choosing an angle and adding useful boundaries, the idea can become much more researchable."
+        ],
+        list: [
+          "Broad topic — Social media and university students.",
+          "Chosen angle — Social media use and concentration.",
+          "Population — Undergraduate students.",
+          "Context — Studying for exams.",
+          "Focused idea — Relationship between social media use and concentration while undergraduate students prepare for exams."
+        ]
+      },
+
+      {
+        heading: "Ask AI for Candidate Questions, Not the Final Answer",
+        paragraphs: [
+          "Once the scope is clearer, AI can generate several versions of the research question.",
+          "Comparing alternatives is more useful than accepting the first polished sentence AI produces."
+        ],
+        prompt:
+          "Using this focused research idea: [paste idea], generate five possible research questions. Make each version meaningfully different in scope or angle. Do not tell me which one to choose. After each question, briefly identify what that version would require me to investigate."
+      },
+
+      {
+        heading: "Stress-Test Each Candidate Question",
+        paragraphs: [
+          "A question can sound academic while still being difficult or impossible to research. Before selecting one, challenge it.",
+          "Use AI to help identify possible weaknesses, but make the final feasibility judgment yourself."
+        ],
+        list: [
+          "Is the question specific enough to guide research?",
+          "Is it too narrow to find meaningful evidence?",
+          "Can it realistically be investigated with your available time and resources?",
+          "Are the important terms clear?",
+          "Does it require information or participants you cannot access?",
+          "Can credible sources or appropriate data help answer it?",
+          "Does it match the type of research your assignment requires?"
+        ],
+        prompt:
+          "Stress-test this proposed research question: [question]. Do not rewrite it yet. Identify possible problems with scope, clarity, feasibility, assumptions, evidence requirements, or ambiguous terms. Separate serious problems from minor wording issues."
+      },
+
+      {
+        heading: "Do Not Let AI Invent Feasibility",
+        paragraphs: [
+          "AI cannot know whether you actually have access to a particular database, population, laboratory, dataset, supervisor, or research method unless you provide that information.",
+          "If AI claims a question is easy to research, verify that claim yourself. Search academic databases, inspect available literature, and check your course requirements before committing to the topic."
+        ]
+      },
+
+      {
+        heading: "Refine the Question Without Making It Artificially Complex",
+        paragraphs: [
+          "Academic writing does not require turning a clear question into complicated language.",
+          "Ask AI to identify ambiguity or unnecessary wording while preserving the meaning you selected."
+        ],
+        prompt:
+          "Review the wording of this research question: [question]. Keep the research meaning unchanged. Point out vague, unnecessary, or overly broad wording first. Then suggest one clearer version in straightforward academic language."
+      },
+
+      {
+        heading: "Check the Question Against Existing Research",
+        paragraphs: [
+          "Before finalizing your question, search for academic literature related to it.",
+          "This helps you see whether the terminology makes sense, whether useful evidence exists, and whether your question needs further refinement.",
+          "Do not rely on AI-generated citations as proof that literature exists. Verify papers, authors, publication details, and sources directly through reliable academic databases or publisher pages."
+        ]
+      },
+
+      {
+        heading: "Run the One-Sentence Purpose Test",
+        paragraphs: [
+          "A useful final check is whether you can explain what the research question is trying to discover in one simple sentence.",
+          "If you need several unrelated sentences to explain the purpose, the question may still contain too many ideas."
+        ],
+        example:
+          "Purpose: I want to investigate whether patterns of social media use are related to students' ability to concentrate while preparing for exams."
+      },
+
+      {
+        heading: "Use Your Assignment Requirements as the Final Filter",
+        paragraphs: [
+          "A research question that works for one assignment may be unsuitable for another.",
+          "Check the expected research method, word count, academic level, required sources, ethics requirements, and instructor guidance before finalizing the question.",
+          "If your institution restricts the use of generative AI during research or assessment, follow those rules even if AI would otherwise be useful during brainstorming."
+        ]
+      },
+
+      {
+        heading: "The Complete Topic-to-Question Workflow",
+        list: [
+          "1 — Write your broad topic.",
+          "2 — Use AI to explore several possible angles.",
+          "3 — Choose the angle yourself.",
+          "4 — Add meaningful population, context, outcome, or comparison boundaries.",
+          "5 — Generate several candidate questions.",
+          "6 — Stress-test their scope and feasibility.",
+          "7 — Check relevant academic literature.",
+          "8 — Refine the wording without changing the intended meaning.",
+          "9 — Compare the question with your assignment requirements.",
+          "10 — Finalize the question using your own academic judgment."
+        ]
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can AI generate a research question for me?",
+        answer:
+          "AI can generate candidate research questions and help you explore different angles, but you should evaluate and refine them yourself. The final question needs to fit your assignment, available evidence, research resources, and academic requirements."
+      },
+      {
+        question: "How do I narrow a broad research topic with AI?",
+        answer:
+          "Ask AI to separate the topic into possible angles, then choose one and add meaningful boundaries such as population, context, outcome, comparison, or time frame. Generate candidate questions only after the scope becomes clearer."
+      },
+      {
+        question: "How do I know if my research question is too broad?",
+        answer:
+          "A question may be too broad if it contains several major issues at once, requires evidence from many unrelated areas, or cannot realistically be investigated within your assignment's time and length limits."
+      },
+      {
+        question: "Should I trust research sources suggested by AI?",
+        answer:
+          "Do not trust a citation simply because AI generated it. Verify the title, author, publication, DOI or URL, and actual contents through reliable academic databases, libraries, or publisher websites before using the source."
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "how-to-use-ai-for-academic-research-without-cheating",
+        category: "Research & Writing",
+        title: "How to Use AI for Academic Research Without Cheating",
+        description:
+          "Use AI responsibly during academic research while keeping verification, original thinking, and academic integrity at the center."
+      },
+      {
+        slug: "how-to-summarize-a-research-paper-with-ai",
+        category: "Research & Writing",
+        title: "How to Summarize a Research Paper With AI",
+        description:
+          "Use AI to understand and summarize research papers while checking important claims against the original source."
+      },
+      {
+        slug: "how-to-compare-research-papers-with-ai",
+        category: "Research & Writing",
+        title: "How to Compare Research Papers With AI",
+        description:
+          "Compare research papers more systematically by examining their questions, methods, findings, and limitations."
+      }
+    ]
+  },
 };

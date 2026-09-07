@@ -254,6 +254,17 @@ export const articles = [
     publishedAt: "2026-09-08",
     updatedAt: "2026-09-08",
   },
+  {
+    slug: "how-to-use-ai-to-create-a-research-question",
+    category: "Research & Writing",
+    title: "How to Use AI to Turn a Broad Topic Into a Research Question",
+    description:
+      "Learn how to use AI to narrow a broad topic, explore useful angles, and develop a focused research question without letting AI replace your academic judgment.",
+    readTime: "9 min",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-08",
+    updatedAt: "2026-09-08",
+  },
 ];
 
 export const publishedArticles = articles.filter(
