@@ -9960,4 +9960,247 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "how-to-break-down-assignments-with-ai": {
+    introduction: [
+      "A large assignment can feel difficult before you even begin. Instructions, research, reading, writing, revision, and deadlines can appear as one enormous task instead of a sequence of smaller decisions.",
+      "AI can help you turn that vague workload into a practical action plan. The useful role for AI is not to complete the assignment for you. It is to help you understand the work, divide it into manageable steps, estimate what needs attention first, and adjust the plan as you make progress."
+    ],
+
+    sections: [
+      {
+        heading: "Start With the Actual Assignment Instructions",
+        paragraphs: [
+          "Do not begin by asking AI how to complete a generic essay, report, project, or presentation.",
+          "First collect the real instructions provided by your instructor. Your plan should be based on the actual requirements rather than assumptions made by an AI system."
+        ],
+        list: [
+          "Assignment instructions",
+          "Rubric or marking criteria",
+          "Required format",
+          "Word or time limit",
+          "Submission deadline",
+          "Required sources or readings",
+          "Milestones set by your instructor"
+        ]
+      },
+
+      {
+        heading: "Ask AI to Extract Requirements, Not Do the Assignment",
+        paragraphs: [
+          "The first useful AI task is requirement extraction.",
+          "Ask AI to separate what you must produce, what constraints you must follow, and what remains unclear. Then compare the result with the original instructions yourself."
+        ],
+        prompt:
+          "Read these assignment instructions and turn them into a requirements checklist. Separate deliverables, formatting requirements, research requirements, marking criteria, deadlines, and anything that appears unclear. Do not write any part of the assignment for me."
+      },
+
+      {
+        heading: "Define What 'Finished' Actually Means",
+        paragraphs: [
+          "A task such as 'finish my assignment' is too vague to act on.",
+          "Define the final deliverable clearly before breaking the work apart."
+        ],
+        example: [
+          "Vague: Finish history assignment.",
+          "Clearer: Submit a 1,500-word referenced essay answering the assigned question, following the required citation style and rubric."
+        ]
+      },
+
+      {
+        heading: "Break the Assignment Into Milestones",
+        paragraphs: [
+          "Now divide the project into major stages. These milestones should represent meaningful progress rather than tiny actions.",
+          "The exact stages depend on the type of assignment."
+        ],
+        prompt:
+          "I need to complete this assignment by [deadline]. Based only on the instructions I provided, divide the work into logical milestones. Keep research, planning, drafting, checking requirements, revision, and final submission separate where relevant."
+      },
+
+      {
+        heading: "Turn Each Milestone Into Actions You Can Start",
+        paragraphs: [
+          "A milestone can still be too large. 'Research the topic' may require several separate actions.",
+          "Break milestones down until the next action is clear enough that you could begin it without another planning session."
+        ],
+        example: [
+          "Milestone: Complete research",
+          "Task 1: Identify three search terms",
+          "Task 2: Find relevant academic sources",
+          "Task 3: Read and annotate the strongest sources",
+          "Task 4: Record evidence relevant to the assignment question"
+        ],
+        prompt:
+          "Break this milestone into small, concrete actions. Each task should describe something I can actually start and finish. Avoid vague tasks such as 'work on assignment' or 'do research.'"
+      },
+
+      {
+        heading: "Identify Dependencies Between Tasks",
+        paragraphs: [
+          "Some assignment tasks cannot realistically begin until another task is complete.",
+          "For example, you may need to understand the rubric before outlining, collect evidence before drafting an analysis, or finish data collection before interpreting results.",
+          "AI can help expose these dependencies so that your plan follows a sensible order."
+        ],
+        prompt:
+          "Review these assignment tasks and identify dependencies. Show which tasks must happen before others, which can happen in parallel, and which have no dependency. Explain the reasoning briefly."
+      },
+
+      {
+        heading: "Estimate Effort Instead of Pretending Every Task Is Equal",
+        paragraphs: [
+          "A five-minute formatting check and a two-hour research session should not occupy the same mental space in your plan.",
+          "Use rough effort categories rather than relying on AI to predict exact completion times."
+        ],
+        list: [
+          "Quick — small administrative or checking task",
+          "Focused — requires a meaningful block of concentration",
+          "Deep — research, problem solving, drafting, analysis, or another demanding task"
+        ]
+      },
+
+      {
+        heading: "Work Backward From the Deadline",
+        paragraphs: [
+          "Once you know the tasks and their order, work backward from the submission deadline.",
+          "Do not schedule the final draft to finish minutes before submission. Leave space for checking requirements, technical problems, corrections, and unexpected delays."
+        ],
+        prompt:
+          "My assignment is due on [date and time]. These are my tasks and rough effort levels. I can work on it during [available times]. Create a realistic plan working backward from the deadline. Include buffer time before submission and do not schedule every free minute."
+      },
+
+      {
+        heading: "Choose the Next Action, Not the Entire Project",
+        paragraphs: [
+          "When a project feels overwhelming, looking at twenty unfinished tasks can create more friction.",
+          "At the beginning of a work session, identify the one concrete action that should happen next."
+        ],
+        prompt:
+          "Here is my assignment plan and current progress. I have [available time] right now. Choose the highest-priority task I can realistically make progress on during this session. Explain why it should come next."
+      },
+
+      {
+        heading: "Use a Minimum-Progress Version on Difficult Days",
+        paragraphs: [
+          "A perfect study session is not always realistic.",
+          "If you have little time or energy, identify a smaller action that still moves the assignment forward instead of abandoning the project for the day."
+        ],
+        example: [
+          "Full task: Read and annotate three research papers.",
+          "Minimum-progress version: Read the abstract and conclusion of one promising paper and decide whether it deserves a full read."
+        ]
+      },
+
+      {
+        heading: "Update the Plan When Reality Changes",
+        paragraphs: [
+          "A useful plan is allowed to change.",
+          "If research takes longer than expected, you miss a study session, or an instructor changes a requirement, revise the remaining plan instead of pretending the original schedule still works."
+        ],
+        prompt:
+          "This was my original assignment plan. These tasks are complete: [tasks]. These tasks took longer than expected: [tasks]. I now have until [deadline]. Rebuild only the remaining plan while protecting the most important requirements."
+      },
+
+      {
+        heading: "Use the Rubric as a Final Task Map",
+        paragraphs: [
+          "Before considering the assignment complete, return to the rubric or marking criteria.",
+          "Convert each requirement into a final check. This helps prevent a completed draft from being mistaken for a completed assignment."
+        ],
+        prompt:
+          "Using this rubric and my completed draft checklist, create a final quality-control checklist. Do not rewrite my work. Show what I need to verify myself before submission."
+      },
+
+      {
+        heading: "Do Not Let Planning Become Another Form of Procrastination",
+        paragraphs: [
+          "AI can generate increasingly detailed plans forever. At some point, more planning stops helping.",
+          "Once the next action is clear, stop prompting and begin the work.",
+          "A short plan that you execute is more useful than a sophisticated project system you spend the entire study session designing."
+        ]
+      },
+
+      {
+        heading: "Keep the Academic Work Yours",
+        paragraphs: [
+          "Task planning and assignment completion are different things.",
+          "Your institution may permit AI for planning while restricting its use for writing, solving assessed problems, generating code, analyzing data, or producing other submitted work.",
+          "Follow your course and institution's AI rules. When the assignment is meant to assess your knowledge or skill, AI should not replace that work."
+        ]
+      },
+
+      {
+        heading: "A 10-Minute Assignment Breakdown",
+        list: [
+          "2 minutes — Read the instructions and rubric.",
+          "2 minutes — Extract the actual requirements.",
+          "2 minutes — Divide the assignment into milestones.",
+          "2 minutes — Turn the first milestone into concrete tasks.",
+          "1 minute — Choose the next action.",
+          "1 minute — Put that action into your schedule and start."
+        ]
+      },
+
+      {
+        heading: "A Simple AI Assignment Planning Workflow",
+        list: [
+          "1 — Gather the real assignment instructions.",
+          "2 — Extract and verify the requirements.",
+          "3 — Define the finished deliverable.",
+          "4 — Divide the project into milestones.",
+          "5 — Break milestones into concrete actions.",
+          "6 — Identify dependencies and effort levels.",
+          "7 — Work backward from the deadline.",
+          "8 — Choose one next action for each work session.",
+          "9 — Adjust the remaining plan when circumstances change.",
+          "10 — Check the final work against the rubric yourself."
+        ]
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can AI break an assignment into smaller tasks?",
+        answer:
+          "Yes. If you provide the assignment requirements, AI can help organize the work into milestones and smaller actions. You should verify the plan against the original instructions and complete the assessed work yourself."
+      },
+      {
+        question: "Can AI create an assignment schedule?",
+        answer:
+          "AI can help build a schedule from your deadline, tasks, dependencies, and available study time. Treat the schedule as adjustable because actual tasks may take more or less time than expected."
+      },
+      {
+        question: "How small should assignment tasks be?",
+        answer:
+          "A useful task is usually specific enough that you know exactly what action to take next. If a task such as 'research' or 'write report' still feels unclear, break it down further."
+      },
+      {
+        question: "Is using AI to plan an assignment cheating?",
+        answer:
+          "Rules vary by institution and course. Planning assistance may be treated differently from using AI to generate assessed work, so check the rules that apply to your assignment."
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "how-to-use-ai-to-stop-procrastinating",
+        category: "Productivity",
+        title: "How to Use AI to Stop Procrastinating",
+        description:
+          "Use AI to reduce friction, identify the next action, and build a practical system for starting your study work."
+      },
+      {
+        slug: "create-ai-study-schedule",
+        category: "Productivity",
+        title: "How to Create an AI Study Schedule",
+        description:
+          "Build a realistic AI-assisted schedule around your subjects, deadlines, available time, and study priorities."
+      },
+      {
+        slug: "how-to-use-ai-for-spaced-repetition",
+        category: "Productivity",
+        title: "How to Use AI for Spaced Repetition When Studying",
+        description:
+          "Organize repeated review sessions around retrieval performance and weak topics."
+      }
+    ]
+  },
 };

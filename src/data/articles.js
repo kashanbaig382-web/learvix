@@ -298,6 +298,17 @@ export const articles = [
     publishedAt: "2026-09-11",
     updatedAt: "2026-09-11",
   },
+  {
+    slug: "how-to-break-down-assignments-with-ai",
+    category: "Productivity",
+    title: "How to Use AI to Break Down Big Assignments Into Manageable Tasks",
+    description:
+      "Learn how to use AI to break large assignments into clear tasks, plan realistic deadlines, prioritize your work, and make steady progress without outsourcing the learning.",
+    readTime: "9 min",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-11",
+    updatedAt: "2026-09-11",
+  },
 ];
 
 export const publishedArticles = articles.filter(
