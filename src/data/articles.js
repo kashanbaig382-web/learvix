@@ -309,6 +309,17 @@ export const articles = [
     publishedAt: "2026-09-11",
     updatedAt: "2026-09-11",
   },
+  {
+    slug: "turn-syllabus-into-study-plan-with-ai",
+    category: "Productivity",
+    title: "How to Turn Your Syllabus Into a Study Plan With AI",
+    description:
+      "Learn how to use AI to turn a course syllabus into a practical study plan with deadlines, priorities, weekly tasks, exam preparation, and realistic review sessions.",
+    readTime: "10 min",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-11",
+    updatedAt: "2026-09-11",
+  },
 ];
 
 export const publishedArticles = articles.filter(

@@ -10203,4 +10203,267 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "turn-syllabus-into-study-plan-with-ai": {
+  introduction: [
+    "A course syllabus contains much more than administrative information. It may tell you what you will study, when assignments are due, how assessments are weighted, which readings matter, and when major exams or projects will happen.",
+    "AI can help turn that information into a practical semester roadmap. Instead of repeatedly scanning a long document for dates and requirements, you can extract the important information, verify it, organize the workload, and decide what needs attention each week.",
+    "The important step is verification. A syllabus is the authoritative source for the course; an AI-generated plan is only a working interpretation of it."
+  ],
+
+  sections: [
+    {
+      heading: "Start With the Official Syllabus",
+      paragraphs: [
+        "Use the syllabus supplied by your instructor or institution whenever possible.",
+        "If the course information is spread across a syllabus, learning platform, assignment sheets, and instructor announcements, remember that the syllabus may not contain every later change."
+      ],
+      list: [
+        "Course topics or weekly modules",
+        "Assignment deadlines",
+        "Quiz and exam dates",
+        "Project milestones",
+        "Required readings",
+        "Assessment weights",
+        "Attendance or participation requirements",
+        "Course-specific AI policies"
+      ]
+    },
+
+    {
+      heading: "Check Whether You Can Upload the Document",
+      paragraphs: [
+        "Before uploading a syllabus to an AI service, consider whether the document contains information you should not share with a third-party tool.",
+        "If necessary, remove personal details or paste only the sections needed for planning. Also follow any institutional rules that apply to external AI tools."
+      ]
+    },
+
+    {
+      heading: "Extract the Important Dates First",
+      paragraphs: [
+        "Do not ask AI to create the entire semester plan in one step.",
+        "First extract dates and graded events into a simple structure. This makes mistakes easier to spot before they enter your calendar."
+      ],
+      prompt:
+        "Using only this syllabus, extract every explicit assignment deadline, quiz date, exam date, project milestone, presentation date, and other graded deadline. Put them in chronological order. Include the original wording where useful. If a date is missing or ambiguous, mark it as unclear instead of guessing."
+    },
+
+    {
+      heading: "Verify Every Extracted Date",
+      paragraphs: [
+        "This is one of the most important steps in the workflow.",
+        "Compare the extracted dates with the syllabus yourself. A single incorrect deadline can damage the usefulness of the entire plan.",
+        "Pay particular attention to tables, footnotes, recurring assignments, dates written indirectly, and any distinction between due dates and class dates."
+      ]
+    },
+
+    {
+      heading: "Extract Assessment Weight and Requirements",
+      paragraphs: [
+        "Deadlines alone do not tell you how important each task is.",
+        "If your syllabus provides grading weights or point values, extract those separately. This can help you see which assessments require substantial preparation."
+      ],
+      prompt:
+        "From this syllabus, create a table of graded assessments. Include the assessment name, weight or points if explicitly provided, due or exam date if available, and any stated requirements. Do not estimate missing values."
+    },
+
+    {
+      heading: "Map the Course Topics Across the Semester",
+      paragraphs: [
+        "Next, identify what content is expected during each week, unit, or module.",
+        "This creates the academic side of the plan rather than a calendar containing only deadlines."
+      ],
+      prompt:
+        "Using the course schedule in this syllabus, organize the topics, chapters, readings, or learning units by week or module. Preserve the syllabus order. Flag any week where the required material is unclear."
+    },
+
+    {
+      heading: "Connect Assessments to Relevant Course Material",
+      paragraphs: [
+        "When the syllabus clearly indicates which topics belong to an exam, assignment, or project, connect those items.",
+        "Do not let AI invent an exam scope that the syllabus does not specify."
+      ],
+      example: [
+        "Known from syllabus: Midterm covers Units 1–4.",
+        "Useful plan: Schedule review of Units 1–4 before the midterm.",
+        "Unsupported assumption: Predicting which exact Unit 1–4 questions will appear."
+      ]
+    },
+
+    {
+      heading: "Find Heavy Weeks Before They Arrive",
+      paragraphs: [
+        "Once deadlines are collected, look for weeks containing several major tasks or assessments.",
+        "A semester can appear manageable overall while still containing a few unusually demanding periods."
+      ],
+      prompt:
+        "Using these verified deadlines, identify weeks where multiple assessments or major tasks occur close together. Do not change any dates. Show me which periods may require earlier preparation and explain why."
+    },
+
+    {
+      heading: "Work Backward From Major Assessments",
+      paragraphs: [
+        "A deadline tells you when work ends, not when preparation should begin.",
+        "For major exams, papers, presentations, or projects, create preparation milestones before the final date."
+      ],
+      prompt:
+        "This assessment is due on [date]. These are the official requirements: [requirements]. Break the preparation into realistic milestones leading up to the deadline. Leave buffer time and do not complete any assessed work for me."
+    },
+
+    {
+      heading: "Build a Weekly Study Roadmap",
+      paragraphs: [
+        "After verifying the semester structure, turn it into a weekly roadmap.",
+        "The goal is not to predict exactly what you will do every hour for the entire semester. Plans created months in advance will need adjustment.",
+        "Instead, decide what each week should accomplish."
+      ],
+      prompt:
+        "Using these verified course topics, assessments, and deadlines, create a weekly study roadmap. For each week, show the main course material, upcoming assessment preparation, and important tasks. Keep the plan flexible and do not invent requirements that are not in the syllabus."
+    },
+
+    {
+      heading: "Convert Only the Near Future Into Detailed Tasks",
+      paragraphs: [
+        "A semester overview is useful, but planning every study session months in advance can create unnecessary maintenance.",
+        "Keep later weeks at milestone level. Turn the next one or two weeks into concrete tasks based on your actual availability."
+      ],
+      prompt:
+        "Here is my semester roadmap and my availability for the next seven days: [availability]. Turn only this week into concrete study tasks. Prioritize approaching deadlines while keeping regular course review in the plan."
+    },
+
+    {
+      heading: "Prioritize With More Than the Due Date",
+      paragraphs: [
+        "The nearest deadline is not automatically the only important task.",
+        "Consider urgency together with assessment importance, expected effort, dependencies, and your current level of preparation."
+      ],
+      list: [
+        "How soon the task is due",
+        "How much it contributes to the course grade, if known",
+        "How much work remains",
+        "Whether another task depends on it",
+        "How weak or prepared you currently are",
+        "Whether delaying it creates a future workload problem"
+      ]
+    },
+
+    {
+      heading: "Create an Exam Preparation Ramp",
+      paragraphs: [
+        "If an exam date is known early, use that information to avoid concentrating all preparation into the final days.",
+        "Begin with ordinary course learning, then gradually introduce retrieval practice, mixed questions, weak-area review, and realistic exam practice as the assessment approaches."
+      ],
+      prompt:
+        "My exam is on [date], and the verified scope is [topics]. Create a preparation ramp leading to the exam. Include learning, retrieval practice, weak-area review, and independent practice. Do not predict exam questions."
+    },
+
+    {
+      heading: "Update the Plan When the Course Changes",
+      paragraphs: [
+        "A syllabus-based plan is not permanent.",
+        "Instructors may change deadlines, readings, assessment details, or the pace of the course. Update the affected part of your roadmap whenever official information changes."
+      ],
+      prompt:
+        "My original course plan was based on this syllabus. The instructor has now announced these changes: [changes]. Update only the affected deadlines and study milestones. Show what changed so I can verify it."
+    },
+
+    {
+      heading: "Run a Weekly Syllabus Check",
+      paragraphs: [
+        "Once a week, compare your plan with the latest official course information.",
+        "This prevents an old AI-generated schedule from quietly becoming more trusted than the course itself."
+      ],
+      list: [
+        "Check upcoming deadlines.",
+        "Check instructor announcements.",
+        "Confirm next week's topics or readings.",
+        "Review unfinished tasks.",
+        "Adjust preparation for major assessments.",
+        "Remove or update outdated information."
+      ]
+    },
+
+    {
+      heading: "Do Not Let AI Invent Missing Course Information",
+      paragraphs: [
+        "A syllabus may leave some details undecided. AI should not fill those gaps with plausible-looking dates, requirements, readings, or assessment scopes.",
+        "When something is unclear, mark it as a question to verify with the official course source or instructor."
+      ]
+    },
+
+    {
+      heading: "A 15-Minute Syllabus-to-Plan Setup",
+      list: [
+        "3 minutes — Extract deadlines and assessments.",
+        "3 minutes — Verify every important date.",
+        "2 minutes — Extract weekly topics and readings.",
+        "2 minutes — Identify heavy workload periods.",
+        "3 minutes — Create major preparation milestones.",
+        "2 minutes — Turn the current week into actionable tasks."
+      ]
+    },
+
+    {
+      heading: "A Simple AI Syllabus Planning Workflow",
+      list: [
+        "1 — Start with the official syllabus.",
+        "2 — Extract dates without guessing missing information.",
+        "3 — Verify every important deadline.",
+        "4 — Extract assessment weights and requirements.",
+        "5 — Map topics across the semester.",
+        "6 — Identify unusually busy periods.",
+        "7 — Work backward from major assessments.",
+        "8 — Create a flexible weekly roadmap.",
+        "9 — Turn only near-term weeks into detailed tasks.",
+        "10 — Update the plan whenever official course information changes."
+      ]
+    }
+  ],
+
+  faqs: [
+    {
+      question: "Can AI turn a syllabus into a study plan?",
+      answer:
+        "Yes. AI can help extract deadlines, organize course topics, identify busy periods, and turn verified information into a weekly study roadmap. You should check all important information against the official syllabus."
+    },
+    {
+      question: "Can I upload a syllabus PDF to AI?",
+      answer:
+        "Some AI tools support PDF uploads, but you should consider privacy, institutional rules, and the information contained in the document before uploading it. You can also provide only the relevant text."
+    },
+    {
+      question: "Can AI automatically find assignment deadlines in a syllabus?",
+      answer:
+        "AI can often extract dates from syllabus text, but it can miss or misinterpret information. Verify every important deadline manually before relying on the resulting schedule."
+    },
+    {
+      question: "Should I plan my entire semester in detail?",
+      answer:
+        "A semester overview is useful, but detailed daily planning is usually more practical for the near future. Keep later periods flexible so the plan can adapt to course changes and your actual progress."
+    }
+  ],
+
+  relatedGuides: [
+    {
+      slug: "create-ai-study-schedule",
+      category: "Productivity",
+      title: "How to Create an AI Study Schedule",
+      description:
+        "Turn your available time and study priorities into a realistic weekly schedule."
+    },
+    {
+      slug: "how-to-break-down-assignments-with-ai",
+      category: "Productivity",
+      title: "How to Use AI to Break Down Big Assignments Into Manageable Tasks",
+      description:
+        "Turn individual large assignments into milestones, concrete actions, and realistic deadlines."
+    },
+    {
+      slug: "use-ai-to-study-for-exams",
+      category: "Exam Prep",
+      title: "How to Use AI to Study for Exams",
+      description:
+        "Use AI for active exam preparation while keeping retrieval, verification, and independent practice central."
+    }
+  ]
+},
 };
