@@ -9474,4 +9474,235 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "how-to-use-ai-for-spaced-repetition": {
+    introduction: [
+      "Studying something once can create the feeling that you know it, but remembering it days or weeks later is a different challenge. Spaced repetition tackles this problem by revisiting material across separate study sessions instead of concentrating all review into one sitting.",
+      "AI can help you organize those reviews, generate retrieval questions, track the topics you struggle with, and vary your practice. The goal is not to let AI remember the material for you. The goal is to make your own retrieval practice more structured."
+    ],
+
+    sections: [
+      {
+        heading: "What Is Spaced Repetition?",
+        paragraphs: [
+          "Spaced repetition means reviewing information again after time has passed instead of repeatedly studying it in one session.",
+          "The exact interval does not need to be identical for every student or every topic. Difficult material may need to return sooner, while material you can retrieve confidently may be reviewed after a longer gap.",
+          "AI can help organize this process, but your actual ability to recall the material should determine what needs more attention."
+        ]
+      },
+
+      {
+        heading: "Start With the Material You Actually Need to Learn",
+        paragraphs: [
+          "Before asking AI to build a revision system, define what belongs in it.",
+          "Use your syllabus, class notes, learning objectives, textbook chapters, teacher guidance, or other trusted course material. This keeps your review focused on what you are actually expected to learn."
+        ],
+        list: [
+          "List the topics you need to study.",
+          "Mark any important exam or assessment dates.",
+          "Identify topics you have already studied.",
+          "Separate familiar topics from weak or unfamiliar ones.",
+          "Keep trusted course material available for checking AI-generated content."
+        ]
+      },
+
+      {
+        heading: "Create a Simple Review Queue",
+        paragraphs: [
+          "Instead of asking AI for a huge timetable immediately, start with a review queue.",
+          "A review queue is simply a list of topics that need to return in future study sessions. AI can help organize that list according to your available time and your current confidence."
+        ],
+        prompt:
+          "I am studying [subject]. These are the topics I need to learn: [topics]. My exam is on [date], and I can study for [time] each day. Help me create a flexible spaced-review queue. Prioritize weak topics and include regular retrieval practice. Do not assume I have mastered a topic just because I reviewed it once."
+      },
+
+      {
+        heading: "Review by Retrieving, Not Just Rereading",
+        paragraphs: [
+          "Spacing alone is not enough if every review session consists of rereading the same notes.",
+          "When a topic returns, first try to retrieve what you know without looking at the answer. You might explain the concept, solve a problem, answer a question, draw a process from memory, or list the important points.",
+          "Only after making an attempt should you check your notes or other trusted material."
+        ],
+        prompt:
+          "Test my memory of [topic]. Ask me one question at a time without showing the answer. After I respond, tell me what was correct, what may be missing, and what I should verify in my course material. Then ask the next question."
+      },
+
+      {
+        heading: "Use Your Performance to Decide What Returns",
+        paragraphs: [
+          "A useful spaced-repetition system should respond to your performance.",
+          "If you cannot explain a concept without help, it should return sooner. If you can retrieve and apply it confidently, you may be able to leave a longer gap before reviewing it again.",
+          "Avoid treating confidence alone as proof of mastery. Whenever possible, combine confidence with an actual retrieval question or practice problem."
+        ]
+      },
+
+      {
+        heading: "Use a Simple Confidence Scale",
+        paragraphs: [
+          "You do not need a complicated algorithm to begin. A small rating system can help you decide what needs attention."
+        ],
+        list: [
+          "0 — I could not recall the idea.",
+          "1 — I remembered only a small part.",
+          "2 — I understood the basic idea but needed help.",
+          "3 — I recalled it correctly with minor gaps.",
+          "4 — I explained or applied it correctly without help."
+        ],
+        paragraphsAfter: [
+          "Topics rated 0 or 1 should usually return to your study queue sooner than topics you can retrieve independently.",
+          "The scale is a planning tool rather than a scientific formula. Adjust your review schedule according to your subject, assessment format, available time, and actual performance."
+        ]
+      },
+
+      {
+        heading: "Ask AI to Track Patterns in Your Weak Areas",
+        paragraphs: [
+          "After several review sessions, AI becomes more useful when you give it your results rather than simply asking for more content.",
+          "Keep a small log containing the topic, the question or task, whether you answered independently, and what went wrong."
+        ],
+        prompt:
+          "Here is my review log from several study sessions. Identify topics I repeatedly fail to retrieve or apply correctly. Separate occasional mistakes from repeated weaknesses. Recommend what should return sooner in my next review sessions. Base your recommendation only on the results I provide."
+      },
+
+      {
+        heading: "Do Not Repeat Identical Questions Every Time",
+        paragraphs: [
+          "Memorizing the wording of a question is not the same as understanding the underlying concept.",
+          "Once you can answer a basic retrieval question, ask AI to vary the format while keeping the learning objective consistent."
+        ],
+        prompt:
+          "I am reviewing [concept]. Create four different retrieval tasks for the same concept: one short-answer question, one application question, one explain-in-your-own-words task, and one comparison or scenario question. Do not provide answers until I attempt them."
+      },
+
+      {
+        heading: "Mix Older Topics With Newer Ones",
+        paragraphs: [
+          "As your review queue grows, avoid making every session about only one recently studied topic.",
+          "Mixing selected topics can force you to decide which knowledge or method applies instead of simply repeating the same procedure.",
+          "AI can help create these mixed sessions, but the questions should remain aligned with material you have actually studied."
+        ],
+        prompt:
+          "Create a mixed retrieval session using these topics I have already studied: [topics]. Give me 8 questions in a mixed order. Do not label which topic each question tests and do not show answers until I respond."
+      },
+
+      {
+        heading: "Turn Mistakes Into Future Review Tasks",
+        paragraphs: [
+          "A mistake is useful when it changes what you do next.",
+          "When you miss a question, identify whether the problem came from missing knowledge, misunderstanding, weak recall, or difficulty applying the concept.",
+          "Then convert that weakness into a specific future task instead of writing something vague such as 'review chapter again.'"
+        ],
+        example: [
+          "Weak task: Review photosynthesis.",
+          "Better task: Explain the relationship between the light-dependent reactions and the Calvin cycle without notes, then answer one application question."
+        ]
+      },
+
+      {
+        heading: "Use AI to Build a Weekly Review Checkpoint",
+        paragraphs: [
+          "At the end of the week, test whether material from earlier sessions is still retrievable.",
+          "This checkpoint should include older topics as well as recent ones so that temporarily forgotten material becomes visible."
+        ],
+        prompt:
+          "Using my completed topics and review log, create a short weekly retention check. Include older and newer material, prioritize concepts I previously struggled with, and make me answer before showing feedback."
+      },
+
+      {
+        heading: "Keep Some Review Sessions AI-Free",
+        paragraphs: [
+          "If every retrieval attempt happens inside an AI conversation, it can become difficult to tell how independently you know the material.",
+          "Regularly close the AI tool and test yourself with blank paper, flashcards, practice problems, past papers, or verbal explanations.",
+          "AI-free retrieval is an important reality check because the final assessment may require you to perform without hints or conversational assistance."
+        ]
+      },
+
+      {
+        heading: "Verify AI-Generated Study Material",
+        paragraphs: [
+          "AI can generate inaccurate explanations, misleading questions, or answers that do not match your course requirements.",
+          "Check important content against trusted sources such as your notes, textbook, syllabus, official answer keys, or instructor guidance.",
+          "If your institution has rules about generative AI, follow those rules when uploading materials or using AI-generated study resources."
+        ]
+      },
+
+      {
+        heading: "A 30-Minute AI + Spaced Repetition Session",
+        list: [
+          "5 minutes — Retrieve an older topic without notes.",
+          "5 minutes — Check your answer and record the gaps.",
+          "8 minutes — Answer several retrieval or application questions.",
+          "5 minutes — Revisit one previously weak topic.",
+          "4 minutes — Record mistakes and confidence ratings.",
+          "3 minutes — Decide what should return in a future session."
+        ],
+        paragraphsAfter: [
+          "The times are only an example. A mathematics problem set, language review, essay-based subject, or medical course may require a different structure.",
+          "What matters is the cycle: retrieve, check, identify weakness, practise, and return to the material later."
+        ]
+      },
+
+      {
+        heading: "A Simple AI Spaced-Repetition Workflow",
+        list: [
+          "1 — Define what you need to learn using trusted course material.",
+          "2 — Create a flexible queue of topics to review.",
+          "3 — Attempt retrieval before opening notes or explanations.",
+          "4 — Check important answers against reliable material.",
+          "5 — Record which concepts were difficult to retrieve.",
+          "6 — Bring weaker topics back sooner.",
+          "7 — Vary questions so you learn the concept rather than the wording.",
+          "8 — Mix older and newer material.",
+          "9 — Run weekly retention checks.",
+          "10 — Regularly test yourself without AI."
+        ]
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can AI be used for spaced repetition?",
+        answer:
+          "Yes. AI can help organize review sessions, generate retrieval questions, analyze your study log, and create additional practice for weak areas. Your own retrieval performance should still guide what needs more review."
+      },
+      {
+        question: "How often should I review something with spaced repetition?",
+        answer:
+          "There is no single interval that works for every learner and subject. Material you struggle to retrieve generally needs attention sooner than material you can recall and apply independently."
+      },
+      {
+        question: "Is spaced repetition the same as using flashcards?",
+        answer:
+          "No. Flashcards are one way to use spaced repetition, but the same principle can be applied to practice questions, problem solving, explanations, diagrams, vocabulary, and other retrieval tasks."
+      },
+      {
+        question: "Should AI decide when I have mastered a topic?",
+        answer:
+          "No. AI can help interpret the evidence you provide, but mastery should be demonstrated through independent retrieval and application and checked against reliable course material."
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "how-to-use-ai-for-active-recall",
+        category: "Study Guides",
+        title: "How to Use AI for Active Recall",
+        description:
+          "Use AI to turn passive studying into retrieval practice that makes you actively recall what you have learned."
+      },
+      {
+        slug: "create-ai-study-schedule",
+        category: "Productivity",
+        title: "How to Create an AI Study Schedule",
+        description:
+          "Build a realistic AI-assisted study schedule around your subjects, available time, and learning priorities."
+      },
+      {
+        slug: "how-to-use-ai-to-find-knowledge-gaps-before-an-exam",
+        category: "Exam Prep",
+        title: "How to Use AI to Find Gaps in Your Knowledge Before an Exam",
+        description:
+          "Identify weak areas before an exam and use them to prioritize your revision."
+      }
+    ]
+  },
 };

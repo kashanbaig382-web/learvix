@@ -276,6 +276,17 @@ export const articles = [
     publishedAt: "2026-09-11",
     updatedAt: "2026-09-11",
   },
+  {
+    slug: "how-to-use-ai-for-spaced-repetition",
+    category: "Productivity",
+    title: "How to Use AI for Spaced Repetition When Studying",
+    description:
+      "Learn how to use AI with spaced repetition to plan review sessions, practise active recall, identify weak topics, and remember what you study for longer.",
+    readTime: "10 min",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-11",
+    updatedAt: "2026-09-11",
+  },
 ];
 
 export const publishedArticles = articles.filter(
