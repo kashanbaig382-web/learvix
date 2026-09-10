@@ -9705,4 +9705,259 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "how-to-create-concept-maps-with-ai": {
+    introduction: [
+      "Long notes can tell you many individual facts without making the relationships between them obvious. A concept map approaches the same material differently: it places important ideas into a structure and shows how those ideas connect.",
+      "AI can help create the first version of that structure from your notes, textbook material, lecture content, or a topic you are studying. But an automatically generated map should be treated as a draft. The real learning happens when you check the concepts, question the connections, and use the map to test your own understanding."
+    ],
+
+    sections: [
+      {
+        heading: "What Is a Concept Map?",
+        paragraphs: [
+          "A concept map is a visual representation of concepts and the relationships between them.",
+          "Instead of storing information only as paragraphs or bullet points, you identify major concepts, connect related ideas, and describe how one concept relates to another.",
+          "For studying, this can be especially useful when a topic contains processes, causes and effects, categories, systems, theories, or ideas that depend on one another."
+        ]
+      },
+
+      {
+        heading: "Start With Trusted Study Material",
+        paragraphs: [
+          "The quality of an AI-generated concept map depends heavily on the material you give it.",
+          "Whenever possible, begin with your own course material rather than asking AI to create an entire academic map from general knowledge."
+        ],
+        list: [
+          "Lecture notes",
+          "Teacher-provided slides",
+          "A textbook section",
+          "Your syllabus",
+          "A study guide",
+          "A PDF or reading assigned in your course"
+        ]
+      },
+
+      {
+        heading: "Choose the Scope Before Creating the Map",
+        paragraphs: [
+          "Trying to map an entire subject at once can produce a crowded and shallow result.",
+          "Choose a manageable unit such as one chapter, process, theory, lecture, or connected group of concepts."
+        ],
+        example: [
+          "Too broad: Biology",
+          "Better: Cellular respiration",
+          "More focused: How glycolysis, the Krebs cycle, and oxidative phosphorylation connect"
+        ]
+      },
+
+      {
+        heading: "Ask AI to Extract Concepts Before Mapping Them",
+        paragraphs: [
+          "Before generating a visual structure, first identify what actually belongs in the map.",
+          "This makes it easier to catch missing or irrelevant concepts before relationships are added."
+        ],
+        prompt:
+          "Using only the study material I provide, identify the major concepts and important supporting concepts for [topic]. Do not create the concept map yet. Group related concepts and flag anything you are uncertain about."
+      },
+
+      {
+        heading: "Create the First Concept Map Structure",
+        paragraphs: [
+          "Once the concept list looks accurate, ask AI to organize it into a map.",
+          "The output does not need to be a graphical image. A hierarchical text structure can be easier to inspect and edit before you move it into a visual mapping tool."
+        ],
+        prompt:
+          "Using the verified concepts above, create a concept-map structure for [topic]. Start with the central concept, add major branches, then supporting concepts. For every connection, include a short relationship label explaining how the two concepts are connected. Base the map only on the material I provided."
+      },
+
+      {
+        heading: "Relationship Labels Matter More Than Pretty Branches",
+        paragraphs: [
+          "A useful concept map should do more than place related words near each other.",
+          "Ask what each connecting line actually means. Relationships such as 'causes,' 'requires,' 'produces,' 'contrasts with,' 'is part of,' or 'leads to' force you to think about how the ideas interact."
+        ],
+        example: [
+          "Weak connection: Photosynthesis → Glucose",
+          "Stronger connection: Photosynthesis → produces → glucose"
+        ]
+      },
+
+      {
+        heading: "Verify Every Important Connection",
+        paragraphs: [
+          "AI can create connections that sound reasonable but are incomplete or incorrect.",
+          "Compare important branches against your notes, textbook, instructor material, or another trusted academic source.",
+          "If the AI output conflicts with your course material, do not automatically assume the AI version is correct."
+        ],
+        prompt:
+          "Review this concept map against the source material I provided. For each major connection, show the specific information in the source that supports it. Flag any connection that cannot be supported instead of guessing."
+      },
+
+      {
+        heading: "Look for Missing Cross-Connections",
+        paragraphs: [
+          "Some of the most useful relationships in a concept map are not parent-to-child branches. They are connections between ideas in different parts of the map.",
+          "Finding these cross-connections can reveal whether you understand the topic as an interconnected system rather than as isolated definitions."
+        ],
+        prompt:
+          "Look at these branches of my concept map. Identify meaningful relationships between concepts that appear in different branches. Explain each proposed connection briefly and do not add one unless it can be supported by my study material."
+      },
+
+      {
+        heading: "Edit the AI Map Yourself",
+        paragraphs: [
+          "Do not stop when AI produces a clean-looking map.",
+          "Rename unclear concepts, remove unnecessary branches, correct relationships, add missing ideas, and reorganize the structure in a way that makes sense to you.",
+          "This review stage is important because automatically generating a finished diagram can otherwise become another form of passive studying."
+        ]
+      },
+
+      {
+        heading: "Rebuild Part of the Map From Memory",
+        paragraphs: [
+          "Once you have studied the map, hide it and try to recreate one section without looking.",
+          "Start with the central concept, recall its major branches, and then reconstruct the relationships between them.",
+          "Afterward, compare your version with the verified map and identify what you forgot or connected incorrectly."
+        ]
+      },
+
+      {
+        heading: "Turn the Concept Map Into Questions",
+        paragraphs: [
+          "A concept map becomes more powerful when it stops being something you only look at.",
+          "Each node and connection can become a retrieval question."
+        ],
+        example: [
+          "Map connection: Insulin → lowers → blood glucose",
+          "Retrieval question: How does insulin affect blood glucose, and why?"
+        ],
+        prompt:
+          "Using this verified concept map, create 10 retrieval questions that test the relationships between concepts rather than simple definitions. Ask the questions without showing the answers."
+      },
+
+      {
+        heading: "Use Blank-Map Practice",
+        paragraphs: [
+          "Another option is to remove selected concepts or relationship labels and fill them in from memory.",
+          "Start with a mostly complete map, then gradually remove more information as your understanding improves."
+        ],
+        prompt:
+          "Turn this concept map into a practice version. Remove several important concepts and relationship labels and replace them with blanks. Do not reveal the missing information until I submit my answers."
+      },
+
+      {
+        heading: "Use the Map to Find Knowledge Gaps",
+        paragraphs: [
+          "Difficulty explaining a connection can expose a gap that ordinary rereading may hide.",
+          "Mark branches you cannot reconstruct or explain independently. Those areas can then become priorities for targeted revision."
+        ]
+      },
+
+      {
+        heading: "Connect Concept Mapping With Spaced Review",
+        paragraphs: [
+          "Do not create a concept map once and forget about it.",
+          "Return to important maps later and try to reconstruct them again. Weak branches can return sooner, while well-understood sections can be reviewed after a longer interval.",
+          "This turns the map from a static summary into a reusable retrieval tool."
+        ]
+      },
+
+      {
+        heading: "When Concept Maps Are Most Useful",
+        list: [
+          "Understanding processes with multiple stages",
+          "Comparing related theories or models",
+          "Seeing cause-and-effect relationships",
+          "Connecting ideas across several lectures",
+          "Organizing a complex chapter",
+          "Preparing a high-level overview before deeper revision",
+          "Finding relationships you cannot yet explain"
+        ]
+      },
+
+      {
+        heading: "When a Concept Map May Not Be Enough",
+        paragraphs: [
+          "Concept mapping is not a replacement for every study activity.",
+          "Subjects involving calculations, programming, writing, proofs, or other performance-based skills still require direct practice.",
+          "Use a concept map to understand the structure of the knowledge, then combine it with appropriate problems, retrieval questions, past papers, writing practice, or other tasks."
+        ]
+      },
+
+      {
+        heading: "A 20-Minute AI Concept Mapping Routine",
+        list: [
+          "3 minutes — Choose one focused topic and gather trusted material.",
+          "3 minutes — Ask AI to extract the key concepts.",
+          "4 minutes — Generate and inspect the first map structure.",
+          "4 minutes — Verify and correct relationships.",
+          "3 minutes — Hide the map and reconstruct part of it.",
+          "3 minutes — Turn weak connections into retrieval questions."
+        ]
+      },
+
+      {
+        heading: "A Simple AI Concept Map Workflow",
+        list: [
+          "1 — Choose one focused topic.",
+          "2 — Provide trusted study material.",
+          "3 — Extract important concepts first.",
+          "4 — Organize them into a map.",
+          "5 — Label the relationships between concepts.",
+          "6 — Verify important connections.",
+          "7 — Add useful cross-connections.",
+          "8 — Edit the AI-generated structure yourself.",
+          "9 — Reconstruct sections from memory.",
+          "10 — Turn weak connections into future review tasks."
+        ]
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can AI create concept maps from notes?",
+        answer:
+          "Yes. AI tools can identify concepts in notes and organize them into a map or structured outline. You should still review the result because important concepts or relationships may be missing or incorrect."
+      },
+      {
+        question: "Are AI-generated concept maps accurate?",
+        answer:
+          "Not always. AI can misunderstand source material or create plausible but unsupported relationships. Important connections should be checked against trusted course material."
+      },
+      {
+        question: "Are concept maps the same as mind maps?",
+        answer:
+          "They are related visual techniques, but concept maps usually place greater emphasis on explicitly showing and labeling relationships between concepts. Mind maps often use a more radial hierarchy around one central idea."
+      },
+      {
+        question: "How should I study with a concept map?",
+        answer:
+          "Do more than reread it. Reconstruct sections from memory, explain relationships aloud, remove labels and fill them back in, and turn connections into retrieval questions."
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "how-to-use-ai-to-explain-difficult-concepts",
+        category: "Study Guides",
+        title: "How to Use AI to Explain Difficult Concepts",
+        description:
+          "Use AI to break down difficult ideas while checking whether you can explain them independently."
+      },
+      {
+        slug: "how-to-use-ai-for-active-recall",
+        category: "Study Guides",
+        title: "How to Use AI for Active Recall",
+        description:
+          "Turn study material into active retrieval practice instead of passive rereading."
+      },
+      {
+        slug: "how-to-use-ai-for-spaced-repetition",
+        category: "Productivity",
+        title: "How to Use AI for Spaced Repetition When Studying",
+        description:
+          "Use AI-assisted spaced review to bring weak topics back and strengthen long-term learning."
+      }
+    ]
+  },
 };

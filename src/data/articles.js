@@ -287,6 +287,17 @@ export const articles = [
     publishedAt: "2026-09-11",
     updatedAt: "2026-09-11",
   },
+  {
+    slug: "how-to-create-concept-maps-with-ai",
+    category: "Study Guides",
+    title: "How to Use AI to Create Concept Maps for Studying",
+    description:
+      "Learn how to use AI to turn study material into accurate concept maps, understand relationships between ideas, and use the maps for active study.",
+    readTime: "9 min",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-11",
+    updatedAt: "2026-09-11",
+  },
 ];
 
 export const publishedArticles = articles.filter(
