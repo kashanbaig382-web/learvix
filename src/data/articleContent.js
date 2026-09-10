@@ -9244,5 +9244,234 @@ Keep the final review manageable.`,
           "Compare research papers more systematically by examining their questions, methods, findings, and limitations."
       }
     ]
+  }, "how-to-use-ai-with-past-papers": {
+    introduction: [
+      "Past papers can show you how knowledge is tested, not just what appears in your notes. When used properly, they can help you practise question interpretation, recall, application, timing, and exam technique.",
+      "AI can make past-paper practice more useful by helping you organize questions, identify recurring skills, analyze your mistakes, and create fresh practice around weak areas. It should not be used to predict the exact questions that will appear on your next exam."
+    ],
+
+    sections: [
+      {
+        heading: "Start With Real Past Papers",
+        paragraphs: [
+          "Begin with past papers provided by your school, university, examination board, instructor, or another legitimate source.",
+          "If possible, keep the official mark scheme, answer key, or examiner guidance alongside the paper. These materials are more authoritative than an AI-generated answer."
+        ],
+        list: [
+          "Past exam paper",
+          "Official mark scheme or answer key",
+          "Your syllabus or topic list",
+          "Your own attempted answers",
+          "Examiner reports or teacher guidance, if available"
+        ]
+      },
+
+      {
+        heading: "Do Not Ask AI to Predict the Next Exam",
+        paragraphs: [
+          "Seeing a topic repeatedly in previous papers does not guarantee that it will appear again.",
+          "AI may identify patterns in the material you provide, but those patterns should guide practice rather than become predictions.",
+          "Use past papers to understand question styles, recurring skills, and areas worth practising — not to gamble your revision on supposedly guaranteed questions."
+        ]
+      },
+
+      {
+        heading: "Build a Past-Paper Question Map",
+        paragraphs: [
+          "Instead of immediately solving every paper from beginning to end, first map what the questions are testing.",
+          "Give AI the relevant questions and your syllabus or topic list, then ask it to classify them."
+        ],
+        prompt:
+          "I am analysing past papers for [subject]. Using only the questions and topic list I provide, classify each question by topic, skill being tested, question type, and difficulty. Do not predict future exam questions. If a question could belong to more than one topic, say so instead of forcing one category."
+      },
+
+      {
+        heading: "Look for Patterns Without Turning Them Into Predictions",
+        paragraphs: [
+          "Once several papers are classified, you can compare them for useful patterns.",
+          "A pattern might show that a concept is frequently tested through application rather than definition, or that certain topics often appear in longer questions.",
+          "That is useful information about how to practise. It is not evidence that the same question will return."
+        ],
+        list: [
+          "Topics appearing across multiple papers",
+          "Common question formats",
+          "Recall versus application questions",
+          "Frequently tested skills",
+          "Topics appearing in high-mark questions",
+          "Question types you personally struggle with"
+        ]
+      },
+
+      {
+        heading: "Attempt the Question Before Asking AI",
+        paragraphs: [
+          "Past-paper practice loses much of its value if AI solves the question before you try.",
+          "Attempt the question under realistic conditions first. Record your reasoning even when you are unsure.",
+          "Your own attempt gives AI something useful to analyse and gives you evidence about what you can actually do without assistance."
+        ]
+      },
+
+      {
+        heading: "Use the Official Mark Scheme First",
+        paragraphs: [
+          "When an official mark scheme or answer key exists, use it as your primary reference for checking the answer.",
+          "AI can help explain why your response missed a point or how your reasoning differed, but it should not silently replace official marking guidance."
+        ],
+        prompt:
+          "Here is the exam question, my answer, and the official mark scheme. Compare my answer with the mark scheme. Identify what I did correctly, what I missed, and where my reasoning became unclear. Do not invent additional marking criteria."
+      },
+
+      {
+        heading: "Create a Mistake Profile",
+        paragraphs: [
+          "After several questions, stop looking at mistakes individually and search for patterns in your own performance.",
+          "This can reveal whether your problem is missing knowledge, misunderstanding questions, weak application, poor structure, calculation errors, or time pressure."
+        ],
+        list: [
+          "Knowledge error — I did not know the required information.",
+          "Concept error — I misunderstood the underlying idea.",
+          "Application error — I knew the concept but could not use it correctly.",
+          "Question-reading error — I answered something different from what was asked.",
+          "Process error — I knew the method but made an error while using it.",
+          "Exam-technique issue — My answer structure, depth, or time use was weak."
+        ],
+        prompt:
+          "Here are several past-paper questions I attempted, along with my answers and corrections. Look for repeated patterns in my mistakes. Group them by type and show which problems appear more than once. Base your analysis only on the evidence I provide."
+      },
+
+      {
+        heading: "Turn Weak Areas Into Targeted Practice",
+        paragraphs: [
+          "Once a repeated weakness appears, you do not necessarily need another full past paper immediately.",
+          "Use the weak skill or concept as the basis for a smaller practice set. This lets you repair the problem before testing yourself again under full exam conditions."
+        ],
+        prompt:
+          "I repeatedly struggle with [specific topic or skill] in these past-paper questions. Create three new practice questions that test the same underlying skill but use different wording or situations. Do not copy the original questions. Give me the questions first and wait for my answers before explaining them."
+      },
+
+      {
+        heading: "Separate Topic Weakness From Exam-Technique Weakness",
+        paragraphs: [
+          "A wrong answer does not always mean you need to relearn the chapter.",
+          "You may understand the topic but misread command words, provide too little explanation, spend too long on low-mark questions, or fail to show necessary working.",
+          "Separating these problems prevents you from wasting revision time on material you already understand."
+        ]
+      },
+
+      {
+        heading: "Use Multiple Papers, Not One Paper",
+        paragraphs: [
+          "One past paper provides a very small sample of how a course can be assessed.",
+          "When available, compare several legitimate past papers across different sessions or years.",
+          "This gives you a broader view of question styles and reduces the temptation to treat one paper as a blueprint for the next exam."
+        ]
+      },
+
+      {
+        heading: "Run a Timed Paper Without AI",
+        paragraphs: [
+          "After targeted practice, complete another suitable past paper under realistic conditions.",
+          "Keep AI, notes, explanations, and answer keys closed while attempting it. Follow the real time limit where practical.",
+          "This no-AI attempt is the test of whether your revision has transferred into independent exam performance."
+        ]
+      },
+
+      {
+        heading: "Compare Your First and Latest Attempts",
+        paragraphs: [
+          "Do not measure progress only by whether the latest score is higher.",
+          "Compare the types of mistakes you make, the questions you leave incomplete, your reasoning quality, and how confidently you work within the time available."
+        ],
+        prompt:
+          "Compare these two past-paper attempts. Identify which previous weaknesses improved, which still appear, and whether any new pattern emerged. Do not judge progress from the total score alone."
+      },
+
+      {
+        heading: "Build a Final Revision Priority List",
+        paragraphs: [
+          "Past-paper analysis should eventually lead to decisions about what to revise next.",
+          "Prioritize repeated weaknesses and important skills rather than simply rereading every topic."
+        ],
+        list: [
+          "Fix — repeated errors that still affect performance.",
+          "Practise — concepts understood in notes but weak in exam questions.",
+          "Maintain — strong areas that need occasional retrieval practice.",
+          "Verify — areas where AI feedback conflicts with official material.",
+          "Retest — weaknesses you revised but have not yet tested independently."
+        ]
+      },
+
+      {
+        heading: "Keep AI Grounded in Official Exam Material",
+        paragraphs: [
+          "AI can misread a question, make factual mistakes, produce incorrect calculations, or invent marking expectations.",
+          "Where official syllabi, mark schemes, examiner reports, teacher guidance, or answer keys exist, use them to verify important feedback.",
+          "Also follow your institution or examination body's rules about uploading exam materials and using generative AI."
+        ]
+      },
+
+      {
+        heading: "A Simple Past Paper + AI Workflow",
+        list: [
+          "1 — Collect legitimate past papers and official marking material.",
+          "2 — Map questions by topic, skill, and format.",
+          "3 — Look for patterns without treating them as predictions.",
+          "4 — Attempt questions yourself before using AI.",
+          "5 — Check answers against official guidance.",
+          "6 — Use AI to analyse repeated mistakes.",
+          "7 — Generate targeted practice for specific weak areas.",
+          "8 — Revise those weaknesses using trusted course material.",
+          "9 — Complete another timed paper without AI.",
+          "10 — Compare performance and update your revision priorities."
+        ]
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can AI analyse past exam papers?",
+        answer:
+          "Yes. AI can help classify questions, identify patterns in the papers you provide, compare your attempts, and organize recurring mistakes. Important conclusions should still be checked against official course and examination material."
+      },
+      {
+        question: "Can AI predict questions from past papers?",
+        answer:
+          "AI can identify patterns in previous papers, but it cannot reliably guarantee which questions will appear on a future exam. Use patterns to guide practice rather than treating them as predictions."
+      },
+      {
+        question: "Should I ask AI to solve past-paper questions for me?",
+        answer:
+          "Attempt the question yourself first. Afterward, AI can help explain mistakes or compare your reasoning with an official mark scheme. Seeing the solution before attempting the question reduces the value of the practice."
+      },
+      {
+        question: "How many past papers should I practise?",
+        answer:
+          "There is no universal number. Use enough legitimate papers to experience different question styles and identify recurring weaknesses, while leaving time to revise and retest the problems those papers reveal."
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "use-ai-to-study-for-exams",
+        category: "Exam Prep",
+        title: "How to Use AI to Study for Exams",
+        description:
+          "Build a practical AI-assisted exam preparation workflow using active study, practice, and targeted revision."
+      },
+      {
+        slug: "how-to-create-a-mock-exam-with-ai",
+        category: "Exam Prep",
+        title: "How to Create a Mock Exam With AI",
+        description:
+          "Create realistic practice exams with AI and use them to test your knowledge before the real exam."
+      },
+      {
+        slug: "how-to-use-ai-to-find-knowledge-gaps-before-an-exam",
+        category: "Exam Prep",
+        title: "How to Use AI to Find Gaps in Your Knowledge Before an Exam",
+        description:
+          "Diagnose weak topics, uncover hidden knowledge gaps, and prioritize what to revise before an exam."
+      }
+    ]
   },
 };
