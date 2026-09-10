@@ -320,6 +320,17 @@ export const articles = [
     publishedAt: "2026-09-11",
     updatedAt: "2026-09-11",
   },
+  {
+    slug: "how-to-use-ai-for-literature-review",
+    category: "Research & Writing",
+    title: "How to Use AI for a Literature Review Without Losing Academic Rigor",
+    description:
+      "Learn how to use AI to find, organize, compare, and synthesize academic sources for a literature review while verifying evidence and keeping the scholarly judgment yours.",
+    readTime: "12 min",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-11",
+    updatedAt: "2026-09-11",
+  },
 ];
 
 export const publishedArticles = articles.filter(

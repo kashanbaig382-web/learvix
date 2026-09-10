@@ -10204,266 +10204,553 @@ Keep the final review manageable.`,
     ]
   },
   "turn-syllabus-into-study-plan-with-ai": {
-  introduction: [
-    "A course syllabus contains much more than administrative information. It may tell you what you will study, when assignments are due, how assessments are weighted, which readings matter, and when major exams or projects will happen.",
-    "AI can help turn that information into a practical semester roadmap. Instead of repeatedly scanning a long document for dates and requirements, you can extract the important information, verify it, organize the workload, and decide what needs attention each week.",
-    "The important step is verification. A syllabus is the authoritative source for the course; an AI-generated plan is only a working interpretation of it."
-  ],
+    introduction: [
+      "A course syllabus contains much more than administrative information. It may tell you what you will study, when assignments are due, how assessments are weighted, which readings matter, and when major exams or projects will happen.",
+      "AI can help turn that information into a practical semester roadmap. Instead of repeatedly scanning a long document for dates and requirements, you can extract the important information, verify it, organize the workload, and decide what needs attention each week.",
+      "The important step is verification. A syllabus is the authoritative source for the course; an AI-generated plan is only a working interpretation of it."
+    ],
 
-  sections: [
-    {
-      heading: "Start With the Official Syllabus",
-      paragraphs: [
-        "Use the syllabus supplied by your instructor or institution whenever possible.",
-        "If the course information is spread across a syllabus, learning platform, assignment sheets, and instructor announcements, remember that the syllabus may not contain every later change."
-      ],
-      list: [
-        "Course topics or weekly modules",
-        "Assignment deadlines",
-        "Quiz and exam dates",
-        "Project milestones",
-        "Required readings",
-        "Assessment weights",
-        "Attendance or participation requirements",
-        "Course-specific AI policies"
-      ]
-    },
+    sections: [
+      {
+        heading: "Start With the Official Syllabus",
+        paragraphs: [
+          "Use the syllabus supplied by your instructor or institution whenever possible.",
+          "If the course information is spread across a syllabus, learning platform, assignment sheets, and instructor announcements, remember that the syllabus may not contain every later change."
+        ],
+        list: [
+          "Course topics or weekly modules",
+          "Assignment deadlines",
+          "Quiz and exam dates",
+          "Project milestones",
+          "Required readings",
+          "Assessment weights",
+          "Attendance or participation requirements",
+          "Course-specific AI policies"
+        ]
+      },
 
-    {
-      heading: "Check Whether You Can Upload the Document",
-      paragraphs: [
-        "Before uploading a syllabus to an AI service, consider whether the document contains information you should not share with a third-party tool.",
-        "If necessary, remove personal details or paste only the sections needed for planning. Also follow any institutional rules that apply to external AI tools."
-      ]
-    },
+      {
+        heading: "Check Whether You Can Upload the Document",
+        paragraphs: [
+          "Before uploading a syllabus to an AI service, consider whether the document contains information you should not share with a third-party tool.",
+          "If necessary, remove personal details or paste only the sections needed for planning. Also follow any institutional rules that apply to external AI tools."
+        ]
+      },
 
-    {
-      heading: "Extract the Important Dates First",
-      paragraphs: [
-        "Do not ask AI to create the entire semester plan in one step.",
-        "First extract dates and graded events into a simple structure. This makes mistakes easier to spot before they enter your calendar."
-      ],
-      prompt:
-        "Using only this syllabus, extract every explicit assignment deadline, quiz date, exam date, project milestone, presentation date, and other graded deadline. Put them in chronological order. Include the original wording where useful. If a date is missing or ambiguous, mark it as unclear instead of guessing."
-    },
+      {
+        heading: "Extract the Important Dates First",
+        paragraphs: [
+          "Do not ask AI to create the entire semester plan in one step.",
+          "First extract dates and graded events into a simple structure. This makes mistakes easier to spot before they enter your calendar."
+        ],
+        prompt:
+          "Using only this syllabus, extract every explicit assignment deadline, quiz date, exam date, project milestone, presentation date, and other graded deadline. Put them in chronological order. Include the original wording where useful. If a date is missing or ambiguous, mark it as unclear instead of guessing."
+      },
 
-    {
-      heading: "Verify Every Extracted Date",
-      paragraphs: [
-        "This is one of the most important steps in the workflow.",
-        "Compare the extracted dates with the syllabus yourself. A single incorrect deadline can damage the usefulness of the entire plan.",
-        "Pay particular attention to tables, footnotes, recurring assignments, dates written indirectly, and any distinction between due dates and class dates."
-      ]
-    },
+      {
+        heading: "Verify Every Extracted Date",
+        paragraphs: [
+          "This is one of the most important steps in the workflow.",
+          "Compare the extracted dates with the syllabus yourself. A single incorrect deadline can damage the usefulness of the entire plan.",
+          "Pay particular attention to tables, footnotes, recurring assignments, dates written indirectly, and any distinction between due dates and class dates."
+        ]
+      },
 
-    {
-      heading: "Extract Assessment Weight and Requirements",
-      paragraphs: [
-        "Deadlines alone do not tell you how important each task is.",
-        "If your syllabus provides grading weights or point values, extract those separately. This can help you see which assessments require substantial preparation."
-      ],
-      prompt:
-        "From this syllabus, create a table of graded assessments. Include the assessment name, weight or points if explicitly provided, due or exam date if available, and any stated requirements. Do not estimate missing values."
-    },
+      {
+        heading: "Extract Assessment Weight and Requirements",
+        paragraphs: [
+          "Deadlines alone do not tell you how important each task is.",
+          "If your syllabus provides grading weights or point values, extract those separately. This can help you see which assessments require substantial preparation."
+        ],
+        prompt:
+          "From this syllabus, create a table of graded assessments. Include the assessment name, weight or points if explicitly provided, due or exam date if available, and any stated requirements. Do not estimate missing values."
+      },
 
-    {
-      heading: "Map the Course Topics Across the Semester",
-      paragraphs: [
-        "Next, identify what content is expected during each week, unit, or module.",
-        "This creates the academic side of the plan rather than a calendar containing only deadlines."
-      ],
-      prompt:
-        "Using the course schedule in this syllabus, organize the topics, chapters, readings, or learning units by week or module. Preserve the syllabus order. Flag any week where the required material is unclear."
-    },
+      {
+        heading: "Map the Course Topics Across the Semester",
+        paragraphs: [
+          "Next, identify what content is expected during each week, unit, or module.",
+          "This creates the academic side of the plan rather than a calendar containing only deadlines."
+        ],
+        prompt:
+          "Using the course schedule in this syllabus, organize the topics, chapters, readings, or learning units by week or module. Preserve the syllabus order. Flag any week where the required material is unclear."
+      },
 
-    {
-      heading: "Connect Assessments to Relevant Course Material",
-      paragraphs: [
-        "When the syllabus clearly indicates which topics belong to an exam, assignment, or project, connect those items.",
-        "Do not let AI invent an exam scope that the syllabus does not specify."
-      ],
-      example: [
-        "Known from syllabus: Midterm covers Units 1–4.",
-        "Useful plan: Schedule review of Units 1–4 before the midterm.",
-        "Unsupported assumption: Predicting which exact Unit 1–4 questions will appear."
-      ]
-    },
+      {
+        heading: "Connect Assessments to Relevant Course Material",
+        paragraphs: [
+          "When the syllabus clearly indicates which topics belong to an exam, assignment, or project, connect those items.",
+          "Do not let AI invent an exam scope that the syllabus does not specify."
+        ],
+        example: [
+          "Known from syllabus: Midterm covers Units 1–4.",
+          "Useful plan: Schedule review of Units 1–4 before the midterm.",
+          "Unsupported assumption: Predicting which exact Unit 1–4 questions will appear."
+        ]
+      },
 
-    {
-      heading: "Find Heavy Weeks Before They Arrive",
-      paragraphs: [
-        "Once deadlines are collected, look for weeks containing several major tasks or assessments.",
-        "A semester can appear manageable overall while still containing a few unusually demanding periods."
-      ],
-      prompt:
-        "Using these verified deadlines, identify weeks where multiple assessments or major tasks occur close together. Do not change any dates. Show me which periods may require earlier preparation and explain why."
-    },
+      {
+        heading: "Find Heavy Weeks Before They Arrive",
+        paragraphs: [
+          "Once deadlines are collected, look for weeks containing several major tasks or assessments.",
+          "A semester can appear manageable overall while still containing a few unusually demanding periods."
+        ],
+        prompt:
+          "Using these verified deadlines, identify weeks where multiple assessments or major tasks occur close together. Do not change any dates. Show me which periods may require earlier preparation and explain why."
+      },
 
-    {
-      heading: "Work Backward From Major Assessments",
-      paragraphs: [
-        "A deadline tells you when work ends, not when preparation should begin.",
-        "For major exams, papers, presentations, or projects, create preparation milestones before the final date."
-      ],
-      prompt:
-        "This assessment is due on [date]. These are the official requirements: [requirements]. Break the preparation into realistic milestones leading up to the deadline. Leave buffer time and do not complete any assessed work for me."
-    },
+      {
+        heading: "Work Backward From Major Assessments",
+        paragraphs: [
+          "A deadline tells you when work ends, not when preparation should begin.",
+          "For major exams, papers, presentations, or projects, create preparation milestones before the final date."
+        ],
+        prompt:
+          "This assessment is due on [date]. These are the official requirements: [requirements]. Break the preparation into realistic milestones leading up to the deadline. Leave buffer time and do not complete any assessed work for me."
+      },
 
-    {
-      heading: "Build a Weekly Study Roadmap",
-      paragraphs: [
-        "After verifying the semester structure, turn it into a weekly roadmap.",
-        "The goal is not to predict exactly what you will do every hour for the entire semester. Plans created months in advance will need adjustment.",
-        "Instead, decide what each week should accomplish."
-      ],
-      prompt:
-        "Using these verified course topics, assessments, and deadlines, create a weekly study roadmap. For each week, show the main course material, upcoming assessment preparation, and important tasks. Keep the plan flexible and do not invent requirements that are not in the syllabus."
-    },
+      {
+        heading: "Build a Weekly Study Roadmap",
+        paragraphs: [
+          "After verifying the semester structure, turn it into a weekly roadmap.",
+          "The goal is not to predict exactly what you will do every hour for the entire semester. Plans created months in advance will need adjustment.",
+          "Instead, decide what each week should accomplish."
+        ],
+        prompt:
+          "Using these verified course topics, assessments, and deadlines, create a weekly study roadmap. For each week, show the main course material, upcoming assessment preparation, and important tasks. Keep the plan flexible and do not invent requirements that are not in the syllabus."
+      },
 
-    {
-      heading: "Convert Only the Near Future Into Detailed Tasks",
-      paragraphs: [
-        "A semester overview is useful, but planning every study session months in advance can create unnecessary maintenance.",
-        "Keep later weeks at milestone level. Turn the next one or two weeks into concrete tasks based on your actual availability."
-      ],
-      prompt:
-        "Here is my semester roadmap and my availability for the next seven days: [availability]. Turn only this week into concrete study tasks. Prioritize approaching deadlines while keeping regular course review in the plan."
-    },
+      {
+        heading: "Convert Only the Near Future Into Detailed Tasks",
+        paragraphs: [
+          "A semester overview is useful, but planning every study session months in advance can create unnecessary maintenance.",
+          "Keep later weeks at milestone level. Turn the next one or two weeks into concrete tasks based on your actual availability."
+        ],
+        prompt:
+          "Here is my semester roadmap and my availability for the next seven days: [availability]. Turn only this week into concrete study tasks. Prioritize approaching deadlines while keeping regular course review in the plan."
+      },
 
-    {
-      heading: "Prioritize With More Than the Due Date",
-      paragraphs: [
-        "The nearest deadline is not automatically the only important task.",
-        "Consider urgency together with assessment importance, expected effort, dependencies, and your current level of preparation."
-      ],
-      list: [
-        "How soon the task is due",
-        "How much it contributes to the course grade, if known",
-        "How much work remains",
-        "Whether another task depends on it",
-        "How weak or prepared you currently are",
-        "Whether delaying it creates a future workload problem"
-      ]
-    },
+      {
+        heading: "Prioritize With More Than the Due Date",
+        paragraphs: [
+          "The nearest deadline is not automatically the only important task.",
+          "Consider urgency together with assessment importance, expected effort, dependencies, and your current level of preparation."
+        ],
+        list: [
+          "How soon the task is due",
+          "How much it contributes to the course grade, if known",
+          "How much work remains",
+          "Whether another task depends on it",
+          "How weak or prepared you currently are",
+          "Whether delaying it creates a future workload problem"
+        ]
+      },
 
-    {
-      heading: "Create an Exam Preparation Ramp",
-      paragraphs: [
-        "If an exam date is known early, use that information to avoid concentrating all preparation into the final days.",
-        "Begin with ordinary course learning, then gradually introduce retrieval practice, mixed questions, weak-area review, and realistic exam practice as the assessment approaches."
-      ],
-      prompt:
-        "My exam is on [date], and the verified scope is [topics]. Create a preparation ramp leading to the exam. Include learning, retrieval practice, weak-area review, and independent practice. Do not predict exam questions."
-    },
+      {
+        heading: "Create an Exam Preparation Ramp",
+        paragraphs: [
+          "If an exam date is known early, use that information to avoid concentrating all preparation into the final days.",
+          "Begin with ordinary course learning, then gradually introduce retrieval practice, mixed questions, weak-area review, and realistic exam practice as the assessment approaches."
+        ],
+        prompt:
+          "My exam is on [date], and the verified scope is [topics]. Create a preparation ramp leading to the exam. Include learning, retrieval practice, weak-area review, and independent practice. Do not predict exam questions."
+      },
 
-    {
-      heading: "Update the Plan When the Course Changes",
-      paragraphs: [
-        "A syllabus-based plan is not permanent.",
-        "Instructors may change deadlines, readings, assessment details, or the pace of the course. Update the affected part of your roadmap whenever official information changes."
-      ],
-      prompt:
-        "My original course plan was based on this syllabus. The instructor has now announced these changes: [changes]. Update only the affected deadlines and study milestones. Show what changed so I can verify it."
-    },
+      {
+        heading: "Update the Plan When the Course Changes",
+        paragraphs: [
+          "A syllabus-based plan is not permanent.",
+          "Instructors may change deadlines, readings, assessment details, or the pace of the course. Update the affected part of your roadmap whenever official information changes."
+        ],
+        prompt:
+          "My original course plan was based on this syllabus. The instructor has now announced these changes: [changes]. Update only the affected deadlines and study milestones. Show what changed so I can verify it."
+      },
 
-    {
-      heading: "Run a Weekly Syllabus Check",
-      paragraphs: [
-        "Once a week, compare your plan with the latest official course information.",
-        "This prevents an old AI-generated schedule from quietly becoming more trusted than the course itself."
-      ],
-      list: [
-        "Check upcoming deadlines.",
-        "Check instructor announcements.",
-        "Confirm next week's topics or readings.",
-        "Review unfinished tasks.",
-        "Adjust preparation for major assessments.",
-        "Remove or update outdated information."
-      ]
-    },
+      {
+        heading: "Run a Weekly Syllabus Check",
+        paragraphs: [
+          "Once a week, compare your plan with the latest official course information.",
+          "This prevents an old AI-generated schedule from quietly becoming more trusted than the course itself."
+        ],
+        list: [
+          "Check upcoming deadlines.",
+          "Check instructor announcements.",
+          "Confirm next week's topics or readings.",
+          "Review unfinished tasks.",
+          "Adjust preparation for major assessments.",
+          "Remove or update outdated information."
+        ]
+      },
 
-    {
-      heading: "Do Not Let AI Invent Missing Course Information",
-      paragraphs: [
-        "A syllabus may leave some details undecided. AI should not fill those gaps with plausible-looking dates, requirements, readings, or assessment scopes.",
-        "When something is unclear, mark it as a question to verify with the official course source or instructor."
-      ]
-    },
+      {
+        heading: "Do Not Let AI Invent Missing Course Information",
+        paragraphs: [
+          "A syllabus may leave some details undecided. AI should not fill those gaps with plausible-looking dates, requirements, readings, or assessment scopes.",
+          "When something is unclear, mark it as a question to verify with the official course source or instructor."
+        ]
+      },
 
-    {
-      heading: "A 15-Minute Syllabus-to-Plan Setup",
-      list: [
-        "3 minutes — Extract deadlines and assessments.",
-        "3 minutes — Verify every important date.",
-        "2 minutes — Extract weekly topics and readings.",
-        "2 minutes — Identify heavy workload periods.",
-        "3 minutes — Create major preparation milestones.",
-        "2 minutes — Turn the current week into actionable tasks."
-      ]
-    },
+      {
+        heading: "A 15-Minute Syllabus-to-Plan Setup",
+        list: [
+          "3 minutes — Extract deadlines and assessments.",
+          "3 minutes — Verify every important date.",
+          "2 minutes — Extract weekly topics and readings.",
+          "2 minutes — Identify heavy workload periods.",
+          "3 minutes — Create major preparation milestones.",
+          "2 minutes — Turn the current week into actionable tasks."
+        ]
+      },
 
-    {
-      heading: "A Simple AI Syllabus Planning Workflow",
-      list: [
-        "1 — Start with the official syllabus.",
-        "2 — Extract dates without guessing missing information.",
-        "3 — Verify every important deadline.",
-        "4 — Extract assessment weights and requirements.",
-        "5 — Map topics across the semester.",
-        "6 — Identify unusually busy periods.",
-        "7 — Work backward from major assessments.",
-        "8 — Create a flexible weekly roadmap.",
-        "9 — Turn only near-term weeks into detailed tasks.",
-        "10 — Update the plan whenever official course information changes."
-      ]
-    }
-  ],
+      {
+        heading: "A Simple AI Syllabus Planning Workflow",
+        list: [
+          "1 — Start with the official syllabus.",
+          "2 — Extract dates without guessing missing information.",
+          "3 — Verify every important deadline.",
+          "4 — Extract assessment weights and requirements.",
+          "5 — Map topics across the semester.",
+          "6 — Identify unusually busy periods.",
+          "7 — Work backward from major assessments.",
+          "8 — Create a flexible weekly roadmap.",
+          "9 — Turn only near-term weeks into detailed tasks.",
+          "10 — Update the plan whenever official course information changes."
+        ]
+      }
+    ],
 
-  faqs: [
-    {
-      question: "Can AI turn a syllabus into a study plan?",
-      answer:
-        "Yes. AI can help extract deadlines, organize course topics, identify busy periods, and turn verified information into a weekly study roadmap. You should check all important information against the official syllabus."
-    },
-    {
-      question: "Can I upload a syllabus PDF to AI?",
-      answer:
-        "Some AI tools support PDF uploads, but you should consider privacy, institutional rules, and the information contained in the document before uploading it. You can also provide only the relevant text."
-    },
-    {
-      question: "Can AI automatically find assignment deadlines in a syllabus?",
-      answer:
-        "AI can often extract dates from syllabus text, but it can miss or misinterpret information. Verify every important deadline manually before relying on the resulting schedule."
-    },
-    {
-      question: "Should I plan my entire semester in detail?",
-      answer:
-        "A semester overview is useful, but detailed daily planning is usually more practical for the near future. Keep later periods flexible so the plan can adapt to course changes and your actual progress."
-    }
-  ],
+    faqs: [
+      {
+        question: "Can AI turn a syllabus into a study plan?",
+        answer:
+          "Yes. AI can help extract deadlines, organize course topics, identify busy periods, and turn verified information into a weekly study roadmap. You should check all important information against the official syllabus."
+      },
+      {
+        question: "Can I upload a syllabus PDF to AI?",
+        answer:
+          "Some AI tools support PDF uploads, but you should consider privacy, institutional rules, and the information contained in the document before uploading it. You can also provide only the relevant text."
+      },
+      {
+        question: "Can AI automatically find assignment deadlines in a syllabus?",
+        answer:
+          "AI can often extract dates from syllabus text, but it can miss or misinterpret information. Verify every important deadline manually before relying on the resulting schedule."
+      },
+      {
+        question: "Should I plan my entire semester in detail?",
+        answer:
+          "A semester overview is useful, but detailed daily planning is usually more practical for the near future. Keep later periods flexible so the plan can adapt to course changes and your actual progress."
+      }
+    ],
 
-  relatedGuides: [
-    {
-      slug: "create-ai-study-schedule",
-      category: "Productivity",
-      title: "How to Create an AI Study Schedule",
-      description:
-        "Turn your available time and study priorities into a realistic weekly schedule."
-    },
-    {
-      slug: "how-to-break-down-assignments-with-ai",
-      category: "Productivity",
-      title: "How to Use AI to Break Down Big Assignments Into Manageable Tasks",
-      description:
-        "Turn individual large assignments into milestones, concrete actions, and realistic deadlines."
-    },
-    {
-      slug: "use-ai-to-study-for-exams",
-      category: "Exam Prep",
-      title: "How to Use AI to Study for Exams",
-      description:
-        "Use AI for active exam preparation while keeping retrieval, verification, and independent practice central."
-    }
-  ]
-},
+    relatedGuides: [
+      {
+        slug: "create-ai-study-schedule",
+        category: "Productivity",
+        title: "How to Create an AI Study Schedule",
+        description:
+          "Turn your available time and study priorities into a realistic weekly schedule."
+      },
+      {
+        slug: "how-to-break-down-assignments-with-ai",
+        category: "Productivity",
+        title: "How to Use AI to Break Down Big Assignments Into Manageable Tasks",
+        description:
+          "Turn individual large assignments into milestones, concrete actions, and realistic deadlines."
+      },
+      {
+        slug: "use-ai-to-study-for-exams",
+        category: "Exam Prep",
+        title: "How to Use AI to Study for Exams",
+        description:
+          "Use AI for active exam preparation while keeping retrieval, verification, and independent practice central."
+      }
+    ]
+  },
+  "how-to-use-ai-for-literature-review": {
+    introduction: [
+      "A literature review is not simply a collection of paper summaries. It requires you to find relevant scholarship, evaluate sources, understand how studies relate to one another, identify patterns and disagreements, and build a defensible account of what the literature says.",
+      "AI can support several parts of that process. It can help generate search terms, organize information from papers you have actually found, compare studies, and reveal possible themes. But it can also invent citations, misrepresent findings, flatten important differences between studies, or produce confident synthesis that is not supported by the original research.",
+      "The safest approach is to use AI as a research assistant around the literature while keeping source verification, interpretation, and final scholarly judgment with you."
+    ],
+
+    sections: [
+      {
+        heading: "Start With a Focused Research Question",
+        paragraphs: [
+          "Searching becomes difficult when your topic is too broad. Before collecting papers, define what the literature review is actually trying to understand.",
+          "If you already have an approved research question, use that rather than allowing AI to silently replace it with a different question."
+        ],
+        prompt:
+          "My research topic is [topic] and my current research question is [question]. Help me identify the main concepts contained in this question and possible boundaries such as population, context, outcome, time period, or type of evidence. Do not change the research question unless you clearly label the suggestion."
+      },
+
+      {
+        heading: "Turn the Question Into Search Concepts",
+        paragraphs: [
+          "Academic databases may not use the same wording as your research question.",
+          "AI can help brainstorm synonyms, related terminology, spelling variants, broader terms, and narrower terms before you build your database searches."
+        ],
+        prompt:
+          "For this research question, create groups of possible academic search terms. Separate synonyms, broader terms, narrower terms, and related terminology. Do not claim that a term is used in the literature unless it can be verified."
+      },
+
+      {
+        heading: "Build Search Strings, Then Test Them Yourself",
+        paragraphs: [
+          "Once you have candidate terms, combine them into search strings appropriate for the database you are using.",
+          "Do not assume an AI-generated search string is automatically good. Run it, inspect the results, and revise it according to what the database actually retrieves."
+        ],
+        example: [
+          "Concept A: generative AI OR large language model",
+          "Concept B: students OR higher education",
+          "Concept C: academic writing OR research writing"
+        ]
+      },
+
+      {
+        heading: "Search Scholarly Sources, Not Just the AI Chat",
+        paragraphs: [
+          "A chatbot response is not a substitute for a literature search.",
+          "Use appropriate scholarly databases, your university library, citation indexes, or academic search systems relevant to your field.",
+          "AI-assisted discovery tools can supplement that process, but important sources should still be located and inspected as real publications."
+        ]
+      },
+
+      {
+        heading: "Never Trust a Citation Until You Verify It",
+        paragraphs: [
+          "Generative AI can produce references that look completely legitimate even when the publication does not exist or the bibliographic details are wrong.",
+          "Before adding a source to your review, verify that you can locate the real publication and confirm its authors, title, publication venue, year, and other required citation details."
+        ],
+        list: [
+          "Can you locate the actual paper?",
+          "Do the authors match?",
+          "Does the title match?",
+          "Is the publication venue real?",
+          "Does the year match?",
+          "Does the DOI or stable identifier resolve, if one is provided?",
+          "Does the paper actually support the claim for which you plan to cite it?"
+        ]
+      },
+
+      {
+        heading: "Screen Sources for Relevance Yourself",
+        paragraphs: [
+          "Finding a paper containing your keywords does not automatically make it relevant.",
+          "Read the title and abstract and apply the inclusion or exclusion criteria appropriate to your assignment or review.",
+          "AI can help organize your reasoning, but you should be able to explain why each included source belongs in the review."
+        ],
+        prompt:
+          "Here are my research question, inclusion criteria, and the abstract of one paper. Based only on this information, identify which criteria appear to be met, which appear not to be met, and which cannot be determined from the abstract. Do not make the final inclusion decision for me."
+      },
+
+      {
+        heading: "Read the Important Papers",
+        paragraphs: [
+          "AI summaries can help you navigate a paper, but they should not become a replacement for reading the primary source.",
+          "For sources that matter to your argument, inspect the actual paper and pay attention to the research question, methods, sample or data, results, limitations, and context.",
+          "A polished summary can hide methodological weaknesses or important qualifications."
+        ]
+      },
+
+      {
+        heading: "Create a Literature Matrix",
+        paragraphs: [
+          "Once you begin collecting sources, a literature matrix can prevent your notes from becoming a pile of disconnected summaries.",
+          "Use consistent fields for each paper so that later comparisons are easier."
+        ],
+        list: [
+          "Full citation",
+          "Research question or objective",
+          "Context or population",
+          "Methodology",
+          "Sample or data",
+          "Key findings",
+          "Important limitations",
+          "Relevance to your research question",
+          "Themes or concepts",
+          "Your own notes"
+        ],
+        prompt:
+          "Using only the paper text or notes I provide, extract information for these literature-matrix fields: objective, context, method, sample or data, key findings, limitations, and relevance to my research question. Write 'not established from the provided material' whenever the information is unavailable."
+      },
+
+      {
+        heading: "Keep AI Extraction Traceable to the Source",
+        paragraphs: [
+          "When AI extracts a finding or limitation, you should be able to return to the original paper and confirm it.",
+          "Where possible, record page numbers, section names, tables, or other source locations in your own research notes.",
+          "Traceability becomes especially important once you are working across many papers."
+        ]
+      },
+
+      {
+        heading: "Compare Papers Along Meaningful Dimensions",
+        paragraphs: [
+          "A literature review becomes analytical when you move beyond describing one paper after another.",
+          "Compare studies according to dimensions that matter to your research question, such as methodology, population, context, theoretical approach, measurement, findings, or limitations."
+        ],
+        prompt:
+          "Using only these verified notes from the papers, compare the studies by research question, methodology, context, sample, findings, and limitations. Do not add information that is absent from my notes. Highlight both similarities and important differences."
+      },
+
+      {
+        heading: "Look for Themes Across Multiple Sources",
+        paragraphs: [
+          "Themes should emerge from the evidence rather than from whichever categories an AI model finds convenient.",
+          "AI can propose possible groupings, but test each theme by returning to the papers that supposedly support it."
+        ],
+        prompt:
+          "Based only on this literature matrix, suggest possible themes that appear across multiple sources. For each theme, list which papers support it and what evidence from my notes connects them. Flag weak themes supported by too little evidence."
+      },
+
+      {
+        heading: "Look for Disagreement, Not Just Agreement",
+        paragraphs: [
+          "A useful literature review should not make a research field appear more consistent than it really is.",
+          "Different studies may reach different conclusions because of population, methodology, definitions, measurements, context, or other factors.",
+          "Those differences can be more informative than a generic statement that several papers discuss the same topic."
+        ],
+        prompt:
+          "Identify places where these studies appear to disagree or produce different findings. Using only my verified notes, suggest possible methodological or contextual differences I should investigate. Clearly separate evidence from possible explanations."
+      },
+
+      {
+        heading: "Be Careful When Claiming a Research Gap",
+        paragraphs: [
+          "AI can quickly produce statements such as 'few studies have examined...' even when that claim has not been established by a comprehensive search.",
+          "A research gap should be supported by your actual literature search and analysis.",
+          "Treat AI-generated gap suggestions as questions to investigate, not discoveries to report."
+        ],
+        prompt:
+          "Based only on this literature matrix, identify possible unanswered questions, underrepresented contexts, methodological limitations, or inconsistencies worth investigating. Label every suggestion as a possible gap rather than an established gap."
+      },
+
+      {
+        heading: "Build a Synthesis Outline Before Drafting",
+        paragraphs: [
+          "Avoid structuring the review as Paper A, then Paper B, then Paper C unless the assignment specifically requires that approach.",
+          "A synthesis outline can organize sections around themes, debates, methods, chronology, theories, or another logic appropriate to the literature."
+        ],
+        prompt:
+          "Using my verified literature matrix and selected themes, propose three possible structures for the literature review: thematic, methodological, and chronological where appropriate. For each structure, explain what each section would accomplish. Do not write the review itself."
+      },
+
+      {
+        heading: "Draft From Sources, Not From AI Memory",
+        paragraphs: [
+          "When you begin writing, keep the original sources and your verified notes available.",
+          "Do not ask a general-purpose AI model to generate factual paragraphs about papers it has not been given and then attach citations afterward.",
+          "Every scholarly claim should remain traceable to evidence you have actually checked."
+        ]
+      },
+
+      {
+        heading: "Audit Every Citation Before Submission",
+        paragraphs: [
+          "A final citation audit can catch one of the most serious risks of AI-assisted research writing.",
+          "For every citation in your draft, ask whether the source exists, whether you read enough of it to use it responsibly, and whether it supports the exact statement attached to it."
+        ],
+        list: [
+          "Source exists and bibliographic details are correct.",
+          "Citation is attached to the correct claim.",
+          "The source actually supports that claim.",
+          "Important qualifications have not been removed.",
+          "Paraphrasing accurately represents the source.",
+          "Required citation style is applied correctly."
+        ]
+      },
+
+      {
+        heading: "Check Your Institution's AI Rules",
+        paragraphs: [
+          "Rules for AI-assisted academic work vary between institutions, courses, assignments, journals, and research contexts.",
+          "Some may permit brainstorming or search support while restricting AI-generated writing. Others may require disclosure of the tool and how it was used.",
+          "Follow the rules that apply to your work rather than assuming one universal policy."
+        ]
+      },
+
+      {
+        heading: "A 30-Minute Literature Review Work Session",
+        list: [
+          "5 minutes — Refine one search concept or database query.",
+          "7 minutes — Screen promising titles and abstracts.",
+          "8 minutes — Read one high-priority source.",
+          "5 minutes — Add verified information to your literature matrix.",
+          "3 minutes — Compare it with existing sources.",
+          "2 minutes — Record the next research action."
+        ]
+      },
+
+      {
+        heading: "A Responsible AI Literature Review Workflow",
+        list: [
+          "1 — Define the research question and scope.",
+          "2 — Generate and test search terminology.",
+          "3 — Search appropriate scholarly sources.",
+          "4 — Verify every publication before using it.",
+          "5 — Screen sources according to clear criteria.",
+          "6 — Read important primary sources.",
+          "7 — Build a traceable literature matrix.",
+          "8 — Compare studies and identify evidence-based themes.",
+          "9 — Investigate disagreements and possible gaps.",
+          "10 — Build a synthesis structure.",
+          "11 — Write from verified evidence.",
+          "12 — Audit citations and AI use before submission."
+        ]
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can I use AI for a literature review?",
+        answer:
+          "AI can support tasks such as brainstorming search terms, organizing verified notes, comparing studies, and exploring possible themes. Whether a particular use is allowed depends on your institution, course, assignment, or publication rules."
+      },
+      {
+        question: "Can AI find research papers for me?",
+        answer:
+          "AI-assisted research tools can help with discovery, but you should verify every paper as a real publication and use appropriate scholarly databases and library resources rather than relying on a chatbot-generated reference list."
+      },
+      {
+        question: "Can AI write my literature review?",
+        answer:
+          "Having AI generate the review can create problems with accuracy, unsupported synthesis, fabricated citations, and academic integrity. A safer workflow uses AI to support research organization while you evaluate the sources and produce the final scholarly argument."
+      },
+      {
+        question: "How do I stop AI from inventing citations?",
+        answer:
+          "Do not treat AI-generated references as verified sources. Locate every publication independently, confirm its bibliographic information, read the relevant material, and make sure it supports the claim before citing it."
+      },
+      {
+        question: "What is a literature matrix?",
+        answer:
+          "A literature matrix is a structured table or set of notes that records comparable information from multiple sources, such as methods, samples, findings, limitations, and relevance to your research question."
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "how-to-use-ai-for-academic-research-without-cheating",
+        category: "Research & Writing",
+        title: "How to Use AI for Academic Research Without Cheating",
+        description:
+          "Use AI to support academic research while protecting source quality, verification, and academic integrity."
+      },
+      {
+        slug: "how-to-compare-research-papers-with-ai",
+        category: "Research & Writing",
+        title: "How to Compare Research Papers With AI",
+        description:
+          "Compare methods, findings, limitations, and evidence across research papers without losing important differences."
+      },
+      {
+        slug: "how-to-use-ai-to-create-a-research-question",
+        category: "Research & Writing",
+        title: "How to Use AI to Turn a Broad Topic Into a Research Question",
+        description:
+          "Narrow a broad research topic into a focused, feasible question while keeping the research judgment yours."
+      }
+    ]
+  },
 };
