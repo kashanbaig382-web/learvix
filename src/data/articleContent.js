@@ -2868,7 +2868,25 @@ Keep the final review manageable.`,
         note:
           "If your goal is an exam, ask for study notes rather than only asking AI to summarize the PDF."
       },
-
+      {
+        heading: "How to Turn a PDF Into a Study Guide With AI",
+        paragraphs: [
+          "If you need more than study notes, you can turn the verified information from your PDF into a complete study guide. A study guide combines the most important material into a structured resource designed for learning, review, and self-testing.",
+          "Start with the verified notes you created from the PDF rather than asking AI to generate a study guide from the document blindly. Then organize the material around the topics you need to learn and add useful study elements such as key concepts, definitions, questions, examples, and a final review checklist."
+        ],
+        list: [
+          "Main topics and learning objectives",
+          "Key concepts from the PDF",
+          "Important definitions",
+          "Processes, formulas, or relationships",
+          "Useful examples from the source",
+          "Short explanations of difficult ideas",
+          "Practice questions for active recall",
+          "A final must-review checklist"
+        ],
+        prompt:
+          "Using these verified notes from my PDF, turn them into a structured study guide. Organize the guide by topic and include key concepts, important definitions, processes or formulas when relevant, source-supported examples, and practice questions. Finish with a short must-review checklist. Use only the information supported by the PDF and clearly mark anything that cannot be verified."
+      },
       {
         heading: "What If the PDF Is Scanned or Image-Based?",
         paragraphs: [
@@ -3021,6 +3039,11 @@ Keep the final review manageable.`,
         question: "What should I do after AI creates my study notes?",
         answer:
           "Verify the notes against the source, correct weak or missing information, simplify difficult concepts, create a shorter revision version, and then use active recall or practice questions to test yourself."
+      },
+      {
+        question: "Can AI turn a PDF into a study guide?",
+        answer:
+          "Yes. AI can help organize verified PDF content into a study guide containing key concepts, definitions, explanations, examples, and practice questions. Check the generated guide against the original PDF before relying on it for revision."
       }
     ]
   },
