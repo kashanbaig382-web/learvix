@@ -11088,4 +11088,300 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "turn-lecture-slides-into-study-notes-with-ai": {
+    introduction: [
+      "Lecture slides are designed to support a presentation, not necessarily to work as complete study notes. A slide may contain only a few keywords, a diagram, a formula, or a short bullet that made sense while the lecturer was explaining it.",
+      "AI can help reorganize slide decks into structured notes, but it cannot automatically recover everything your lecturer said in class. If information is missing from the slides, an AI-generated explanation may introduce background knowledge that was never actually part of the lecture.",
+      "A better workflow keeps slide content, your own lecture notes, and any AI-added explanations clearly separated while turning the material into something you can understand and revise."
+    ],
+
+    sections: [
+      {
+        heading: "Quick Answer: How Do You Turn Lecture Slides Into Notes With AI?",
+        paragraphs: [
+          "Upload or provide the relevant PowerPoint, PPTX, exported PDF, or slide text to an AI tool that can read the format. Ask it to organize the material into headings, key concepts, definitions, processes, formulas, examples, and important relationships.",
+          "Keep slide numbers or titles where possible, flag missing context instead of letting AI silently invent it, and verify important information against the original deck and your own class notes.",
+          "Once the notes are accurate, turn them into questions or another active study format instead of only rereading them."
+        ]
+      },
+
+      {
+        heading: "Why Lecture Slides Are Different From Normal Notes",
+        paragraphs: [
+          "Slides often contain compressed information because the lecturer supplies additional explanation while presenting.",
+          "A short phrase on a slide may represent several minutes of explanation. Diagrams may also depend on narration, and abbreviations may only make sense within the course.",
+          "This means the goal is not simply to copy every bullet into a prettier document."
+        ]
+      },
+
+      {
+        heading: "Start With One Lecture or Topic",
+        paragraphs: [
+          "Avoid combining an entire semester of slide decks into one request when you are first creating notes.",
+          "Working with one lecture, chapter, or topic at a time makes the output easier to verify and keeps unrelated material from being mixed together."
+        ],
+        example: [
+          "Too broad: Turn all 14 weeks of biology slides into notes.",
+          "Better: Turn Lecture 5 on cellular respiration into structured study notes."
+        ]
+      },
+
+      {
+        heading: "Keep Slide Numbers or Titles",
+        paragraphs: [
+          "Source markers make AI-generated notes easier to check.",
+          "If the tool can identify slide numbers or slide titles, ask it to preserve them alongside important concepts. This lets you quickly return to the original deck when something looks incomplete or inaccurate."
+        ],
+        prompt:
+          "Turn these lecture slides into structured study notes. Preserve slide numbers or slide titles wherever possible so I can trace important information back to the original deck. Do not invent slide references."
+      },
+
+      {
+        heading: "Extract the Slide Content Before Expanding It",
+        paragraphs: [
+          "A useful way to reduce unsupported additions is to separate extraction from explanation.",
+          "First ask AI to identify what is explicitly present in the slides. After checking that information, decide which sections genuinely need additional explanation."
+        ],
+        prompt:
+          "Using only these lecture slides, extract the main topics, key terms, definitions, formulas, processes, examples, and claims explicitly shown in the deck. Do not add outside explanations yet. Mark any slide whose meaning appears incomplete without lecturer context."
+      },
+
+      {
+        heading: "Turn Fragmented Bullets Into Structured Notes",
+        paragraphs: [
+          "Once the extracted material is correct, reorganize related bullets into a structure that is easier to study.",
+          "Keep distinctions between concepts rather than compressing everything into a generic summary."
+        ],
+        list: [
+          "Main topic",
+          "Key concepts",
+          "Important definitions",
+          "Processes or sequences",
+          "Formulas and variables",
+          "Examples shown in the slides",
+          "Relationships between ideas",
+          "Important diagrams or figures",
+          "Questions or unclear points to verify"
+        ],
+        prompt:
+          "Organize the verified slide content into student-friendly study notes with clear headings and subheadings. Preserve important definitions, formulas, processes, examples, and relationships. Keep anything uncertain in a separate 'Needs Verification' section."
+      },
+
+      {
+        heading: "Do Not Let AI Pretend It Heard the Lecture",
+        paragraphs: [
+          "AI may be able to infer what a short bullet probably means, but that does not prove the lecturer explained it in that way.",
+          "When the slide is incomplete, distinguish between information explicitly supported by the deck and additional background explanation."
+        ],
+        prompt:
+          "This slide contains limited information. Explain what is explicitly supported by the slide first. If you provide additional background to help me understand it, label that section 'Background — Verify With Course Material.' Do not present inferred information as something my lecturer said."
+      },
+
+      {
+        heading: "Add Your Own Lecture Notes When Available",
+        paragraphs: [
+          "If you took notes during class, they can supply context that the slide deck does not contain.",
+          "Combine them carefully rather than asking AI to overwrite one source with the other."
+        ],
+        prompt:
+          "Here are the lecture slides and my notes from the same class. Combine them into structured study notes. Clearly distinguish information from my notes when it adds context not present on the slides. Flag contradictions instead of silently choosing one version."
+      },
+
+      {
+        heading: "Handle Diagrams Separately",
+        paragraphs: [
+          "A diagram can carry more information than the surrounding slide text.",
+          "If the AI tool can interpret images, ask it to explain what the diagram shows and then verify that explanation yourself. If it cannot reliably interpret the image, do not let a text-only extraction pretend the diagram was understood."
+        ],
+        list: [
+          "Check labels",
+          "Check arrows and direction",
+          "Check legends or keys",
+          "Check units",
+          "Check stages in a process",
+          "Check relationships between components"
+        ]
+      },
+
+      {
+        heading: "Be Extra Careful With Formulas and Technical Slides",
+        paragraphs: [
+          "Mathematical notation, chemical symbols, subscripts, superscripts, and specialist terminology can be damaged during file extraction.",
+          "Compare formulas and technical details directly with the original slide before studying from the generated notes."
+        ]
+      },
+
+      {
+        heading: "Identify Slides That Need More Explanation",
+        paragraphs: [
+          "Not every slide needs expansion. Some may already contain enough information, while others are little more than prompts for the lecturer.",
+          "Ask AI to identify incomplete areas rather than automatically making every section longer."
+        ],
+        prompt:
+          "Review these extracted slide notes and identify which concepts appear complete from the slides and which appear to depend on missing context. For incomplete concepts, create a list of questions I should answer using my textbook, lecture recording, instructor notes, or another approved course source."
+      },
+
+      {
+        heading: "Verify AI-Added Explanations",
+        paragraphs: [
+          "If you use AI to explain something missing from a slide, check whether that explanation matches your course.",
+          "A generally correct explanation may still use different terminology, notation, assumptions, or depth from what your instructor expects."
+        ]
+      },
+
+      {
+        heading: "Create a Short Revision Version",
+        paragraphs: [
+          "Detailed notes are useful for learning, but you may want a shorter version later for revision.",
+          "Only compress the material after the detailed notes have been checked."
+        ],
+        prompt:
+          "Turn these verified lecture notes into a concise revision sheet. Keep the key concepts, must-know definitions, formulas, processes, examples, and important distinctions. Do not introduce new information."
+      },
+
+      {
+        heading: "Turn Slide Notes Into Active Recall Questions",
+        paragraphs: [
+          "Reading cleaned-up notes repeatedly can still remain passive.",
+          "Use the verified notes to create questions that force you to retrieve and explain the material without looking."
+        ],
+        prompt:
+          "Using only these verified lecture notes, create 12 active-recall questions. Include definitions, explanations, relationships, processes, and application questions where the source supports them. Show the questions first and wait for my answers."
+      },
+
+      {
+        heading: "Use a Slide-by-Slide Self-Test",
+        paragraphs: [
+          "Another useful method is to hide the content of a slide and ask yourself what you remember from its title or main topic.",
+          "Then reopen the slide and compare your explanation with the original material and your verified notes."
+        ]
+      },
+
+      {
+        heading: "What If You Also Have the Lecture Recording?",
+        paragraphs: [
+          "A recording can contain explanations that are absent from the slides.",
+          "If your institution allows you to process the recording with AI, you can compare a transcript with the slide deck to create richer notes.",
+          "Keep the sources traceable so you know whether an important point came from the slide, the lecturer's spoken explanation, or an AI-added background explanation."
+        ]
+      },
+
+      {
+        heading: "Common Mistakes When Turning Slides Into Notes",
+        list: [
+          "Treating slides as a complete transcript of the lecture",
+          "Allowing AI to silently fill missing context",
+          "Removing slide references that would help verification",
+          "Ignoring diagrams and figures",
+          "Trusting extracted formulas without checking them",
+          "Mixing AI background knowledge with instructor material",
+          "Generating extremely long notes from every bullet",
+          "Creating notes but never testing yourself"
+        ]
+      },
+
+      {
+        heading: "A 20-Minute Slides-to-Notes Workflow",
+        list: [
+          "3 minutes — Choose one lecture and inspect the deck.",
+          "4 minutes — Extract explicit concepts and source markers.",
+          "5 minutes — Organize the content into structured notes.",
+          "3 minutes — Check diagrams, formulas, and unclear slides.",
+          "3 minutes — Verify important explanations.",
+          "2 minutes — Create several active-recall questions."
+        ]
+      },
+
+      {
+        heading: "A Simple AI Lecture Slides Workflow",
+        list: [
+          "1 — Choose one lecture or focused topic.",
+          "2 — Preserve slide numbers or titles.",
+          "3 — Extract what the slides explicitly contain.",
+          "4 — Verify the extraction.",
+          "5 — Organize the material into structured notes.",
+          "6 — Add your own lecture notes where relevant.",
+          "7 — Flag missing context instead of inventing it.",
+          "8 — Verify diagrams, formulas, and added explanations.",
+          "9 — Create a shorter revision version.",
+          "10 — Test yourself without looking at the slides."
+        ]
+      },
+
+      {
+        heading: "Use AI With Course Slides Responsibly",
+        paragraphs: [
+          "Lecture slides may be copyrighted course material or contain information your institution does not permit you to upload to external services.",
+          "Follow your instructor's and institution's rules before uploading class material.",
+          "AI should help you organize and understand the course material, not misrepresent generated background information as your instructor's teaching."
+        ]
+      },
+
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "AI can make lecture slides much easier to study from, especially when a deck contains fragmented bullets, definitions, diagrams, and technical material.",
+          "The strongest workflow does not blindly expand every slide. It preserves the source, identifies missing context, organizes what is actually there, verifies important details, and then turns the finished notes into active practice.",
+          "Your slides remain the course source. AI helps turn them into a more usable study resource."
+        ]
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can AI turn PowerPoint slides into notes?",
+        answer:
+          "Yes. AI tools can extract and organize content from PowerPoint or other lecture slides into structured notes. Check important information against the original deck because extraction and AI-generated explanations can contain errors."
+      },
+      {
+        question: "Can AI make notes from PPTX files?",
+        answer:
+          "Some AI tools accept PPTX files directly, while others require the presentation to be exported as a PDF or provided as text. The available formats depend on the tool you use."
+      },
+      {
+        question: "How do I turn lecture slides into study notes?",
+        answer:
+          "Work with one lecture at a time, extract what the slides explicitly contain, preserve slide references, organize the content into structured notes, add verified context where needed, and finish by testing yourself on the material."
+      },
+      {
+        question: "Can AI explain information missing from lecture slides?",
+        answer:
+          "AI can provide background explanations, but it cannot know exactly what your lecturer said unless that information is supplied. Label added explanations separately and verify them against approved course material."
+      },
+      {
+        question: "Should I upload all my lecture slides at once?",
+        answer:
+          "Usually it is easier to work lecture by lecture or topic by topic. Smaller batches are easier to verify and reduce the chance that unrelated concepts become mixed together."
+      },
+      {
+        question: "Can I turn lecture slides into quiz questions too?",
+        answer:
+          "Yes. Once the notes are verified, you can turn the material into active-recall questions, quizzes, or flashcards. Keep the questions grounded in the course material."
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "summarize-lecture-notes-with-ai",
+        category: "Study Guides",
+        title: "How to Summarize Lecture Notes With AI",
+        description:
+          "Turn existing lecture notes into a concise, accurate summary while keeping important course context."
+      },
+      {
+        slug: "turn-youtube-lecture-into-notes-with-ai",
+        category: "Notes & PDFs",
+        title: "How to Turn a YouTube Lecture Into Notes With AI",
+        description:
+          "Convert lecture video content into structured notes while checking transcripts and important explanations."
+      },
+      {
+        slug: "turn-a-pdf-into-study-notes-with-ai",
+        category: "Notes & PDFs",
+        title: "How to Turn a PDF Into Study Notes With AI",
+        description:
+          "Convert long PDF material into verified, structured study notes and revision resources."
+      }
+    ]
+  },
 };

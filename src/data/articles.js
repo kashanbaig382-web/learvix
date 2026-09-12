@@ -342,6 +342,17 @@ export const articles = [
     publishedAt: "2026-09-12",
     updatedAt: "2026-09-12",
   },
+  {
+    slug: "turn-lecture-slides-into-study-notes-with-ai",
+    category: "Notes & PDFs",
+    title: "How to Turn Lecture Slides Into Study Notes With AI",
+    description:
+      "Learn how to turn PowerPoint and lecture slides into accurate AI study notes while preserving slide context, verifying explanations, and preparing the material for active revision.",
+    readTime: "10 min",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-12",
+    updatedAt: "2026-09-12",
+  },
 ];
 
 export const publishedArticles = articles.filter(
