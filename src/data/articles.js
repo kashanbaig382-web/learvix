@@ -386,6 +386,17 @@ export const articles = [
     publishedAt: "2026-09-12",
     updatedAt: "2026-09-12",
   },
+  {
+    slug: "use-ai-to-find-credible-research-sources",
+    category: "Research & Writing",
+    title: "How to Use AI to Find Credible Sources for Research",
+    description:
+      "Learn how to use AI to discover research sources, verify citations, judge credibility, and build a reliable source list without trusting fabricated references.",
+    readTime: "10 min",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-12",
+    updatedAt: "2026-09-12",
+  },
 ];
 
 export const publishedArticles = articles.filter(

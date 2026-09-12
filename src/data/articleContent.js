@@ -12327,4 +12327,359 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "use-ai-to-find-credible-research-sources": {
+    introduction: [
+      "Finding sources is one of the first difficult parts of academic research. A broad search can return thousands of results, while a narrow search may miss important papers.",
+      "AI can help you generate search terms, identify related concepts, and organize potential sources, but it should not be trusted to invent or verify citations by itself.",
+      "A stronger workflow uses AI to improve the search process while academic databases, publisher pages, library tools, and DOI records remain the places where sources are confirmed."
+    ],
+
+    sections: [
+      {
+        heading: "Quick Answer: How Can AI Help You Find Credible Research Sources?",
+        paragraphs: [
+          "Start with a clear research question or topic. Ask AI to identify the main concepts, synonyms, related terms, and possible search combinations.",
+          "Use those terms in academic databases, Google Scholar, library search systems, or publisher platforms. Verify that every source really exists before adding it to your research notes.",
+          "Then evaluate relevance, authority, evidence, publication quality, and limitations instead of treating every search result as equally useful."
+        ]
+      },
+
+      {
+        heading: "Do Not Ask AI to Invent a Reference List",
+        paragraphs: [
+          "One of the biggest risks is asking a chatbot for ten academic references and assuming the citations are real.",
+          "AI can produce realistic-looking author names, titles, journals, page numbers, and DOIs that cannot be verified.",
+          "Use AI to improve your search strategy, not as the final authority on whether a paper exists."
+        ]
+      },
+
+      {
+        heading: "Start With a Clear Research Question",
+        paragraphs: [
+          "Source discovery becomes easier when the topic is specific enough to search.",
+          "If your question is still broad, first break it into population, topic, context, outcome, time period, or other relevant dimensions."
+        ],
+        prompt:
+          "My research question is: [insert question]. Break it into the main searchable concepts. For each concept, suggest synonyms, related terms, broader terms, and narrower terms. Do not provide citations yet."
+      },
+
+      {
+        heading: "Build a Keyword Map",
+        paragraphs: [
+          "Different researchers may use different words for the same concept.",
+          "A keyword map reduces the chance that your search depends on one phrase."
+        ],
+        list: [
+          "Main concept",
+          "Synonyms",
+          "Related academic terms",
+          "Broader terms",
+          "Narrower terms",
+          "Alternative spellings",
+          "Common abbreviations"
+        ]
+      },
+
+      {
+        heading: "Turn Keywords Into Search Strings",
+        paragraphs: [
+          "Once the concepts are clear, combine them using Boolean operators or other search features supported by the database you are using.",
+          "Start with a few strong combinations rather than creating one extremely complicated search."
+        ],
+        prompt:
+          "Using these research concepts and synonyms, create several database search strings using AND, OR, and quotation marks where appropriate. Keep the strings readable and explain what each one is designed to find."
+      },
+
+      {
+        heading: "Use Academic Search Tools for the Actual Discovery",
+        paragraphs: [
+          "After AI helps with the wording, run the searches in academic search systems.",
+          "Depending on your subject, this may include your university library, Google Scholar, subject-specific databases, publisher websites, or other scholarly indexes.",
+          "The database record gives you a stronger basis for confirming that the source exists."
+        ]
+      },
+
+      {
+        heading: "Verify Every Citation",
+        paragraphs: [
+          "Before saving a paper as a source, confirm the bibliographic information.",
+          "Check the title, authors, year, journal or publisher, volume, issue, page range, and DOI when available."
+        ],
+        list: [
+          "Does the paper exist?",
+          "Do the authors match?",
+          "Is the title exact?",
+          "Is the journal or publisher correct?",
+          "Does the DOI resolve to the same work?",
+          "Does the year match the official record?"
+        ]
+      },
+
+      {
+        heading: "Use AI to Screen Titles and Abstracts",
+        paragraphs: [
+          "Once you have a real list of papers, AI can help you organize screening notes.",
+          "Provide verified titles and abstracts rather than asking it to guess what unseen papers contain."
+        ],
+        prompt:
+          "Here are verified titles and abstracts from my search. Group them as Highly Relevant, Possibly Relevant, or Unclear based on my research question. Explain the reason briefly using only the information in the abstracts."
+      },
+
+      {
+        heading: "Do Not Treat Relevance as Credibility",
+        paragraphs: [
+          "A source can be highly relevant to your topic while still being weak evidence.",
+          "Relevance asks whether the source addresses your question. Credibility asks whether the information is trustworthy enough for the role you want it to play."
+        ]
+      },
+
+      {
+        heading: "Check Who Produced the Source",
+        paragraphs: [
+          "Look at the authors, institution, journal, publisher, organization, or other responsible body.",
+          "Credentials alone do not guarantee quality, but knowing who produced the work helps you understand the source."
+        ]
+      },
+
+      {
+        heading: "Check the Type of Evidence",
+        paragraphs: [
+          "Different source types serve different purposes.",
+          "A systematic review, randomized trial, survey, theoretical article, case study, policy report, and opinion piece should not automatically be treated as equivalent evidence."
+        ],
+        prompt:
+          "Based only on the source information I provide, identify the study or publication type and explain what kind of evidence it appears to provide. If the type cannot be determined, say so instead of guessing."
+      },
+
+      {
+        heading: "Check the Research Methods",
+        paragraphs: [
+          "For empirical research, inspect how the study was conducted.",
+          "Important questions may include sample selection, data collection, measures, comparison groups, analysis, and limitations."
+        ],
+        list: [
+          "Who or what was studied?",
+          "How large was the sample?",
+          "How were participants or cases selected?",
+          "What data were collected?",
+          "How were outcomes measured?",
+          "What limitations were reported?"
+        ]
+      },
+
+      {
+        heading: "Check Whether the Conclusions Match the Evidence",
+        paragraphs: [
+          "A paper may be credible overall while still making claims that should be interpreted cautiously.",
+          "Compare the results with the conclusions and watch for stronger language than the evidence supports."
+        ],
+        prompt:
+          "Using the results and conclusion sections I provide, compare the strength of the evidence with the claims being made. Point out where the wording appears appropriately cautious or potentially stronger than the reported evidence."
+      },
+
+      {
+        heading: "Check the Publication Date in Context",
+        paragraphs: [
+          "Newer is not always better, and older is not always outdated.",
+          "Fast-moving topics may require recent sources, while foundational theories or landmark studies may remain important years later.",
+          "Decide whether currency matters for your specific research question."
+        ]
+      },
+
+      {
+        heading: "Use Citation Trails to Find More Sources",
+        paragraphs: [
+          "A strong paper can lead you to other relevant research.",
+          "Look backward at its reference list and forward at newer papers that cite it.",
+          "This can reveal influential studies and later developments that a simple keyword search may miss."
+        ]
+      },
+
+      {
+        heading: "Ask AI to Suggest Search Directions, Not Fake Citations",
+        paragraphs: [
+          "If your current sources reveal a new concept, AI can suggest what to search next.",
+          "Ask for keywords, theories, methods, populations, or debates rather than requesting specific references that may be fabricated."
+        ],
+        prompt:
+          "Based on these verified source notes, suggest five additional search directions I could investigate. Give me concepts and search terms, not invented citations."
+      },
+
+      {
+        heading: "Build a Source Screening Table",
+        paragraphs: [
+          "A table helps you compare potential sources consistently.",
+          "This is especially useful once your search returns more papers than you can read deeply."
+        ],
+        list: [
+          "Citation",
+          "Research topic",
+          "Source type",
+          "Population or context",
+          "Method",
+          "Main finding",
+          "Relevance",
+          "Limitations",
+          "Decision: include, exclude, or review"
+        ]
+      },
+
+      {
+        heading: "Use AI to Detect Gaps in Your Source List",
+        paragraphs: [
+          "After you collect several sources, check whether your evidence is too narrow.",
+          "You may have many papers from one population, one method, one country, or one viewpoint."
+        ],
+        prompt:
+          "Review this source table and identify possible coverage gaps. Look for patterns such as repeated populations, methods, dates, locations, or perspectives. Do not claim that a missing category is necessary unless my research question makes it relevant."
+      },
+
+      {
+        heading: "Separate Primary and Secondary Sources",
+        paragraphs: [
+          "Some assignments require specific types of evidence.",
+          "Keep original research, reviews, textbooks, reports, and other source types clearly labeled so you do not accidentally rely on the wrong material."
+        ]
+      },
+
+      {
+        heading: "Do Not Use Citation Count Alone as a Quality Score",
+        paragraphs: [
+          "Highly cited research may be influential, but citation counts can be affected by age, field size, controversy, and other factors.",
+          "Use citations as one signal rather than proof that a source is correct or suitable."
+        ]
+      },
+
+      {
+        heading: "Watch for Predatory or Suspicious Publications",
+        paragraphs: [
+          "Not every website that looks like an academic journal has the same editorial standards.",
+          "Check the journal or publisher, indexing information, editorial transparency, peer-review claims, contact information, and other warning signs when a publication seems unfamiliar."
+        ]
+      },
+
+      {
+        heading: "Keep a Search Log",
+        paragraphs: [
+          "A search log helps you remember what you tried and makes the research process easier to reproduce.",
+          "Record the database, date, search string, filters, and useful results."
+        ],
+        list: [
+          "Database or platform",
+          "Search date",
+          "Search terms",
+          "Filters",
+          "Number of results",
+          "Useful sources found",
+          "What to try next"
+        ]
+      },
+
+      {
+        heading: "Common Mistakes When Using AI to Find Sources",
+        list: [
+          "Asking AI for references and never verifying them",
+          "Searching with only one keyword",
+          "Using web results when scholarly sources are required",
+          "Assuming relevance means credibility",
+          "Reading only titles",
+          "Ignoring methods and limitations",
+          "Using publication date as the only quality signal",
+          "Collecting many papers without organizing them",
+          "Failing to document search terms"
+        ]
+      },
+
+      {
+        heading: "A Simple AI-Assisted Source Discovery Workflow",
+        list: [
+          "1 — Define the research question.",
+          "2 — Break it into searchable concepts.",
+          "3 — Generate synonyms and related terms.",
+          "4 — Build several search strings.",
+          "5 — Search academic databases.",
+          "6 — Verify every citation.",
+          "7 — Screen titles and abstracts.",
+          "8 — Evaluate credibility and relevance.",
+          "9 — Follow citation trails.",
+          "10 — Record decisions in a source table."
+        ]
+      },
+
+      {
+        heading: "Use AI for Source Discovery Responsibly",
+        paragraphs: [
+          "AI can make searching more efficient, but it should not replace source verification or academic judgment.",
+          "Follow your institution's requirements for databases, source types, AI use, and research documentation.",
+          "You remain responsible for checking that every source exists and accurately represents the evidence you cite."
+        ]
+      },
+
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "AI is most useful in research discovery when it helps you ask better search questions rather than pretending to be the database itself.",
+          "Use it to expand keywords, create search combinations, organize verified results, and identify areas that need further searching.",
+          "Then rely on real scholarly records and careful evaluation to decide which sources deserve a place in your research."
+        ]
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can AI find academic sources for research?",
+        answer:
+          "AI can help generate search terms and organize potential sources, but specific citations should be verified through academic databases, publisher pages, DOI records, or library systems."
+      },
+      {
+        question: "Can AI give fake research citations?",
+        answer:
+          "Yes. AI systems can generate references that look realistic but do not exist or contain incorrect bibliographic details. Verify every citation independently."
+      },
+      {
+        question: "How do I know if a research source is credible?",
+        answer:
+          "Check who produced it, the publication venue, study type, methods, evidence, limitations, relevance to your question, and whether important claims are supported by the source."
+      },
+      {
+        question: "Is Google Scholar enough for academic research?",
+        answer:
+          "Google Scholar can be useful for discovery, but your course or field may also require library databases or subject-specific indexes. Evaluate each source rather than assuming every indexed result is equally suitable."
+      },
+      {
+        question: "Should I use the newest research only?",
+        answer:
+          "Not always. Recent research may matter for fast-changing topics, while older foundational studies can still be important. Choose sources according to the needs of your research question."
+      },
+      {
+        question: "Can AI help me build search strings?",
+        answer:
+          "Yes. AI can help identify synonyms, related concepts, and Boolean combinations such as AND and OR that you can then use in academic databases."
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "use-ai-for-academic-research-without-cheating",
+        category: "Research & Writing",
+        title: "How to Use AI for Academic Research Without Cheating",
+        description:
+          "Use AI throughout academic research while keeping verification and your own reasoning central."
+      },
+      {
+        slug: "how-to-use-ai-to-create-a-research-question",
+        category: "Research & Writing",
+        title: "How to Use AI to Turn a Broad Topic Into a Research Question",
+        description:
+          "Narrow a broad research topic into a focused, feasible question before searching for sources."
+      },
+      {
+        slug: "how-to-use-ai-for-literature-review",
+        category: "Research & Writing",
+        title: "How to Use AI for a Literature Review Without Losing Academic Rigor",
+        description:
+          "Organize and synthesize verified academic sources into a rigorous literature review."
+      }
+    ]
+  },
 };
