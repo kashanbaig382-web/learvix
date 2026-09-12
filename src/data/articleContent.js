@@ -11697,4 +11697,320 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "create-an-annotated-bibliography-with-ai": {
+    introduction: [
+      "An annotated bibliography is more than a list of references. Each source is followed by a short annotation that may summarize the source, evaluate its quality, explain its relevance, or combine several of these purposes depending on the assignment.",
+      "AI can help organize source information, identify key points, and improve the structure of an annotation. However, it can also invent citations, misrepresent a paper, overlook limitations, or make weak evidence sound more convincing than it really is.",
+      "A reliable workflow starts with real sources that you have found and checked yourself. AI then helps you analyze and organize those sources without replacing the reading, evaluation, or verification that academic work requires."
+    ],
+
+    sections: [
+      {
+        heading: "Quick Answer: How Do You Create an Annotated Bibliography With AI?",
+        paragraphs: [
+          "Start with real academic sources that you have already located and verified. Record the correct citation information and read enough of each source to understand its purpose, methods, findings, and relevance.",
+          "Then use AI to help organize your notes into an annotation containing the elements required by your assignment, such as summary, evaluation, and relevance.",
+          "Finally, compare every AI-generated statement with the original source and check the citation before submitting."
+        ]
+      },
+
+      {
+        heading: "What Is an Annotated Bibliography?",
+        paragraphs: [
+          "An annotated bibliography combines a citation with a short note about the source.",
+          "The exact content of the annotation depends on your course requirements. Some assignments mainly ask for a summary, while others expect evaluation, relevance to a research question, methodological comments, or limitations."
+        ],
+        list: [
+          "Full citation",
+          "Purpose or research question",
+          "Main argument or findings",
+          "Methods when relevant",
+          "Strengths",
+          "Limitations",
+          "Relevance to your topic",
+          "How you may use the source"
+        ]
+      },
+
+      {
+        heading: "Check the Assignment Requirements First",
+        paragraphs: [
+          "Do not ask AI to generate annotations before checking the marking rubric or instructions.",
+          "Your instructor may require a specific citation style, word count, number of sources, source types, evaluation criteria, or annotation structure."
+        ],
+        prompt:
+          "These are the instructions for my annotated bibliography. Extract the required citation style, word count, number and type of sources, and what each annotation must include. Do not write any annotations yet."
+      },
+
+      {
+        heading: "Find Real Sources Before Asking AI to Write Anything",
+        paragraphs: [
+          "Do not begin by asking a general chatbot to invent a list of references.",
+          "AI systems can generate citations that look realistic but cannot be verified. Use library databases, Google Scholar, publisher websites, academic search tools, or sources recommended by your instructor to locate real material.",
+          "Once you have a source, record its DOI, publisher page, database entry, or other reliable identifier."
+        ]
+      },
+
+      {
+        heading: "Verify the Citation Before Creating the Annotation",
+        paragraphs: [
+          "A polished annotation is useless if the source itself is incorrectly cited or does not exist.",
+          "Check the author names, title, year, journal or publisher, volume, issue, page range, DOI, and other required metadata against an authoritative record."
+        ],
+        prompt:
+          "Here is the citation information I collected from the publisher or database. Check whether any fields appear incomplete or inconsistent. Do not invent missing details. Tell me exactly what I still need to verify."
+      },
+
+      {
+        heading: "Read the Source Before You Ask AI to Summarize It",
+        paragraphs: [
+          "An annotated bibliography usually requires enough understanding to explain what a source actually contributes.",
+          "At minimum, inspect the abstract, introduction, methods when relevant, key findings, discussion, and conclusion. For important sources, read more deeply rather than depending on a short abstract."
+        ]
+      },
+
+      {
+        heading: "Create a Source Notes Template",
+        paragraphs: [
+          "Before drafting the annotation, collect the information you may need in a structured format.",
+          "This gives AI better evidence to work with and makes it easier for you to catch unsupported claims."
+        ],
+        list: [
+          "Research purpose",
+          "Main argument",
+          "Method",
+          "Sample or data",
+          "Key findings",
+          "Important evidence",
+          "Limitations stated by the authors",
+          "Your evaluation",
+          "Connection to your research question"
+        ]
+      },
+
+      {
+        heading: "Ask AI to Separate Summary From Evaluation",
+        paragraphs: [
+          "One common problem is mixing what the source says with your judgment of the source.",
+          "Keeping summary and evaluation separate at first can make the final annotation clearer."
+        ],
+        prompt:
+          "Using only the source notes I provide, create two separate sections: Summary and Evaluation. In Summary, explain the source's purpose, method, and main findings. In Evaluation, identify strengths, limitations, and relevance based only on the information I provide. Do not add facts from outside the source."
+      },
+
+      {
+        heading: "Write an Accurate Summary of the Source",
+        paragraphs: [
+          "The summary should represent the source fairly rather than exaggerating its claims.",
+          "Be careful with words such as proves, confirms, or demonstrates if the study only suggests an association or reports limited findings."
+        ],
+        prompt:
+          "Summarize this source in 80 to 100 words using cautious academic language. Preserve the difference between correlation, association, evidence, and causation. Do not claim more than the authors support."
+      },
+
+      {
+        heading: "Evaluate the Source Instead of Only Describing It",
+        paragraphs: [
+          "Many annotated bibliography assignments expect some evaluation rather than a summary alone.",
+          "Evaluation may consider the quality of the evidence, research design, relevance, authority, limitations, or how useful the source is for your particular question."
+        ],
+        list: [
+          "Is the source directly relevant?",
+          "Is the methodology appropriate?",
+          "Is the sample suitable?",
+          "Are important limitations acknowledged?",
+          "Are the conclusions supported by the evidence?",
+          "Is the source current enough for the topic?",
+          "Does it contribute something different from your other sources?"
+        ]
+      },
+
+      {
+        heading: "Do Not Let AI Invent Criticism",
+        paragraphs: [
+          "AI can produce generic criticism that sounds academic but is not actually supported by the paper.",
+          "For example, it may claim that a sample is too small without understanding the research design, or criticize the age of a source even when it is a foundational study.",
+          "Use the authors' own limitations and your course concepts as the starting point for evaluation."
+        ],
+        prompt:
+          "Identify possible limitations only from the source information I provide. Separate limitations explicitly stated by the authors from questions I may need to investigate myself. Do not invent weaknesses."
+      },
+
+      {
+        heading: "Explain Why the Source Matters to Your Research",
+        paragraphs: [
+          "An annotation becomes more useful when it explains how the source connects to your question or project.",
+          "This is especially important when several papers cover similar topics."
+        ],
+        prompt:
+          "My research question is: [insert question]. Based only on the source notes I provide, explain how this source is relevant to the question and what role it could play in my research. Do not claim relevance that the source does not support."
+      },
+
+      {
+        heading: "Combine Summary, Evaluation, and Relevance",
+        paragraphs: [
+          "After checking each part separately, combine the strongest points into the format required by your assignment.",
+          "Keep the annotation focused rather than trying to include every detail from the paper."
+        ],
+        prompt:
+          "Using my verified summary, evaluation, and relevance notes, draft one concise annotation in formal academic language. Keep it within [word count] words. Do not introduce new claims or citation details."
+      },
+
+      {
+        heading: "Check That the Annotation Matches the Source",
+        paragraphs: [
+          "Compare the final annotation line by line with the original source and your notes.",
+          "Pay special attention to numbers, sample sizes, research methods, conclusions, and statements about limitations."
+        ],
+        list: [
+          "Is the purpose represented correctly?",
+          "Are the findings accurate?",
+          "Is the method described correctly?",
+          "Are limitations supported?",
+          "Is the relevance statement reasonable?",
+          "Did AI add anything I cannot find in the source?"
+        ]
+      },
+
+      {
+        heading: "Avoid Fake or Hallucinated References",
+        paragraphs: [
+          "Never assume that a citation exists because it contains a realistic author name, journal title, volume number, or DOI.",
+          "Verify every reference through a publisher, academic database, DOI record, library system, or another trustworthy source before including it."
+        ]
+      },
+
+      {
+        heading: "Keep Citation Formatting Separate From Source Verification",
+        paragraphs: [
+          "Correct APA, MLA, Chicago, Harvard, or another citation format does not prove that the source exists or that its metadata is accurate.",
+          "First verify the bibliographic information. Then format it according to the required style."
+        ]
+      },
+
+      {
+        heading: "Use AI to Check Consistency Across Annotations",
+        paragraphs: [
+          "Once all annotations are drafted, AI can help identify inconsistent structure, excessive repetition, or missing required elements.",
+          "This kind of final check is safer than asking AI to replace the substance of the research."
+        ],
+        prompt:
+          "Review these annotations for consistency. Check whether each one includes the required summary, evaluation, and relevance elements, follows a similar level of detail, and stays within the required word count. Do not rewrite the source claims."
+      },
+
+      {
+        heading: "Build a Literature Review From the Bibliography Later",
+        paragraphs: [
+          "A strong annotated bibliography can become useful preparation for a literature review because you have already recorded what each source contributes.",
+          "However, a literature review requires synthesis across sources rather than presenting one source at a time."
+        ]
+      },
+
+      {
+        heading: "Common Mistakes When Using AI for an Annotated Bibliography",
+        list: [
+          "Asking AI to invent sources",
+          "Using citations without verifying them",
+          "Summarizing only the abstract",
+          "Letting AI exaggerate findings",
+          "Writing only summaries when evaluation is required",
+          "Inventing weaknesses that are not supported",
+          "Using the same generic evaluation for every paper",
+          "Ignoring the assignment rubric",
+          "Submitting AI text without checking it against the source"
+        ]
+      },
+
+      {
+        heading: "A Simple AI Annotated Bibliography Workflow",
+        list: [
+          "1 — Read the assignment requirements.",
+          "2 — Find real, relevant sources.",
+          "3 — Verify the citation metadata.",
+          "4 — Read and take source notes.",
+          "5 — Summarize the source accurately.",
+          "6 — Evaluate strengths and limitations.",
+          "7 — Explain relevance to your research question.",
+          "8 — Draft the annotation.",
+          "9 — Compare every important claim with the source.",
+          "10 — Check citation style and consistency."
+        ]
+      },
+
+      {
+        heading: "Use AI for Annotated Bibliographies Responsibly",
+        paragraphs: [
+          "Your institution may restrict whether AI can be used to draft, edit, summarize, or evaluate material for assessed work.",
+          "Follow the rules for your course and disclose AI use when required.",
+          "AI should support your reading and organization. You remain responsible for understanding each source, checking every citation, and making your own academic judgments."
+        ]
+      },
+
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "AI can make the annotated bibliography process more organized, but it should not be used as a shortcut around reading and evaluating sources.",
+          "A stronger workflow starts with verified references and your own source notes. AI can then help separate summary from evaluation, improve structure, check consistency, and reveal where more verification is needed.",
+          "The final bibliography should represent what the sources actually say, not what an AI system guesses they might say."
+        ]
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can AI create an annotated bibliography?",
+        answer:
+          "AI can help organize and draft annotations from sources you provide, but you should verify every citation and compare every important claim with the original source before using it."
+      },
+      {
+        question: "Can ChatGPT write an annotated bibliography?",
+        answer:
+          "It can help draft annotations from verified source information, but it may generate inaccurate summaries or fabricated citation details if you rely on it without checking the original sources."
+      },
+      {
+        question: "What should an annotated bibliography include?",
+        answer:
+          "Requirements vary, but an annotation may include a summary of the source, an evaluation of its quality or limitations, and an explanation of how it relates to your research topic."
+      },
+      {
+        question: "How long should an annotated bibliography annotation be?",
+        answer:
+          "The required length depends on the assignment. Follow your instructor's word limit or rubric rather than using one universal length."
+      },
+      {
+        question: "How do I know if an AI-generated citation is real?",
+        answer:
+          "Verify the source through an academic database, publisher website, DOI record, library catalog, or another authoritative source before including it."
+      },
+      {
+        question: "Can I use an annotated bibliography for a literature review?",
+        answer:
+          "Yes. It can help you organize individual sources before synthesis, but a literature review must compare and connect sources rather than simply listing separate annotations."
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "use-ai-for-academic-research-without-cheating",
+        category: "Research & Writing",
+        title: "How to Use AI for Academic Research Without Cheating",
+        description:
+          "Use AI to support academic research while keeping sources, verification, and your own reasoning at the center."
+      },
+      {
+        slug: "summarize-a-research-paper-with-ai",
+        category: "Research & Writing",
+        title: "How to Summarize a Research Paper With AI",
+        description:
+          "Create accurate research paper summaries while preserving methods, findings, and limitations."
+      },
+      {
+        slug: "how-to-use-ai-for-literature-review",
+        category: "Research & Writing",
+        title: "How to Use AI for a Literature Review Without Losing Academic Rigor",
+        description:
+          "Build a rigorous literature review workflow using verified sources, synthesis, and citation checking."
+      }
+    ]
+  },
 };

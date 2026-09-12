@@ -364,6 +364,17 @@ export const articles = [
     publishedAt: "2026-09-12",
     updatedAt: "2026-09-12",
   },
+  {
+    slug: "create-an-annotated-bibliography-with-ai",
+    category: "Research & Writing",
+    title: "How to Create an Annotated Bibliography With AI",
+    description:
+      "Learn how to use AI to create an annotated bibliography while verifying sources, citations, summaries, evaluations, and academic relevance.",
+    readTime: "11 min",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-12",
+    updatedAt: "2026-09-12",
+  },
 ];
 
 export const publishedArticles = articles.filter(
