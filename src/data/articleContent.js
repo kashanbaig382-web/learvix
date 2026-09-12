@@ -10776,4 +10776,316 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "turn-a-pdf-into-a-quiz-with-ai": {
+    introduction: [
+      "A long PDF can contain everything you need for an exam while still being difficult to study actively. Reading and highlighting may help you become familiar with the material, but familiarity is not the same as being able to recall or apply it without looking.",
+      "AI can turn material from a PDF into practice questions so that the document becomes something you can test yourself with. The useful part is not simply generating a large number of questions. The questions need to match the source, cover important concepts, use appropriate difficulty, and give you a way to identify what you still need to review.",
+      "In this guide, you will build a PDF-to-quiz workflow that keeps the original document as the source of truth."
+    ],
+
+    sections: [
+      {
+        heading: "Quick Answer: How Do You Turn a PDF Into a Quiz With AI?",
+        paragraphs: [
+          "Choose the pages or chapter you actually need to study, give that material to an AI tool that can work with documents, and ask it to create questions using only the PDF.",
+          "Use a mix of question types, attempt the quiz without seeing the answers, then verify questionable answers against the original document.",
+          "Finally, use your mistakes to decide which parts of the PDF need another review."
+        ]
+      },
+
+      {
+        heading: "Start With the Right Part of the PDF",
+        paragraphs: [
+          "Do not automatically turn an entire textbook or very large PDF into one quiz.",
+          "A narrower scope usually produces a more useful practice set because you can control which chapter, lecture, topic, or page range is being tested."
+        ],
+        example: [
+          "Too broad: Create a quiz from this 400-page textbook.",
+          "Better: Create a quiz from Chapter 6, pages 112–138, covering cell division."
+        ]
+      },
+
+      {
+        heading: "Make Sure the PDF Content Can Be Read Correctly",
+        paragraphs: [
+          "Some PDFs contain selectable text, while others are scanned pages or images.",
+          "If text extraction is poor, quiz questions may be based on missing words, incorrect symbols, or broken formatting.",
+          "Check important formulas, tables, technical terms, diagrams, and names before relying on generated questions."
+        ]
+      },
+
+      {
+        heading: "Ask AI to Use Only the PDF",
+        paragraphs: [
+          "If your goal is to test material from a specific document, the quiz should remain grounded in that document rather than drifting into general knowledge.",
+          "Tell the AI not to add unsupported facts and to flag anything that cannot be confirmed."
+        ],
+        prompt:
+          "Using only the PDF content I provide, create a quiz on this material. Do not add facts that are not supported by the document. If a question or answer cannot be clearly supported by the PDF, leave it out."
+      },
+
+      {
+        heading: "Choose What the Quiz Should Test",
+        paragraphs: [
+          "Before generating questions, decide whether you want to test factual recall, understanding, application, comparison, processes, calculations, or a combination.",
+          "A quiz made only from simple definitions may feel productive while failing to test deeper understanding."
+        ],
+        list: [
+          "Key concepts",
+          "Important definitions",
+          "Processes and sequences",
+          "Cause-and-effect relationships",
+          "Comparisons",
+          "Formulas or calculations",
+          "Application of ideas",
+          "Important exceptions or limitations"
+        ]
+      },
+
+      {
+        heading: "Use a Mix of Question Types",
+        paragraphs: [
+          "Different question formats can test different aspects of your knowledge.",
+          "Do not use multiple-choice questions exclusively unless that matches the assessment you are preparing for."
+        ],
+        list: [
+          "Multiple choice",
+          "True or false",
+          "Fill in the blank",
+          "Short answer",
+          "Explain in your own words",
+          "Application questions",
+          "Scenario questions"
+        ],
+        prompt:
+          "Create 12 questions from this PDF section. Include 4 multiple-choice questions, 2 true-or-false questions, 3 short-answer questions, and 3 application questions. Use only the provided material and do not show the answers yet."
+      },
+
+      {
+        heading: "Do Not Show the Answers Immediately",
+        paragraphs: [
+          "A quiz becomes much less useful if you can see the answer while trying to retrieve it.",
+          "Ask AI to present questions first and wait for your responses before revealing explanations or correct answers."
+        ],
+        prompt:
+          "Ask me one question at a time from this PDF. Wait for my answer before giving feedback. Do not reveal future answers."
+      },
+
+      {
+        heading: "Verify the Answer Key Against the PDF",
+        paragraphs: [
+          "AI-generated quiz answers can still be wrong even when the question itself sounds reasonable.",
+          "Check important answers against the actual page or section of the PDF before memorizing them."
+        ],
+        prompt:
+          "For each quiz answer, show which page, section heading, or part of the provided PDF supports it when that information can be identified. Do not invent page references."
+      },
+
+      {
+        heading: "Check the Quality of Multiple-Choice Questions",
+        paragraphs: [
+          "Poor multiple-choice questions can accidentally reveal the correct answer through wording, length, or obviously unrealistic alternatives.",
+          "Good distractors should be plausible enough that you need to understand the material rather than simply recognize the only sensible option."
+        ],
+        prompt:
+          "Review these multiple-choice questions for quality. Check whether any correct answer is too obvious, whether distractors are unrealistic, and whether more than one option could reasonably be correct. Base the correct answer only on the PDF."
+      },
+
+      {
+        heading: "Increase the Difficulty Gradually",
+        paragraphs: [
+          "Start with basic retrieval if the material is new, then move toward explanation and application.",
+          "Making every question difficult immediately can make it harder to tell whether the problem is missing foundational knowledge or difficulty applying it."
+        ],
+        list: [
+          "Level 1 — Recognize or recall key information",
+          "Level 2 — Explain concepts in your own words",
+          "Level 3 — Compare or connect ideas",
+          "Level 4 — Apply the material to a new example or scenario"
+        ]
+      },
+
+      {
+        heading: "Turn Wrong Answers Into a Review List",
+        paragraphs: [
+          "The most valuable part of a quiz is often the questions you get wrong.",
+          "Instead of immediately generating another random quiz, record what the mistake tells you about your knowledge."
+        ],
+        list: [
+          "I did not remember the information.",
+          "I misunderstood the concept.",
+          "I confused two similar ideas.",
+          "I knew the concept but could not apply it.",
+          "I misread the question.",
+          "The AI-generated question or answer may be inaccurate."
+        ]
+      },
+
+      {
+        heading: "Ask AI to Build a Targeted Second Quiz",
+        paragraphs: [
+          "Once your weak areas are clear, create a shorter follow-up quiz focused on those topics.",
+          "This is more useful than repeatedly generating entirely new quizzes that spend equal time on material you already know."
+        ],
+        prompt:
+          "These are the questions I answered incorrectly and the relevant PDF sections. Create a new 8-question quiz focused on the same underlying concepts but use different wording and examples. Keep every question grounded in the PDF."
+      },
+
+      {
+        heading: "Use the PDF When You Need to Correct a Mistake",
+        paragraphs: [
+          "When you answer incorrectly, return to the relevant section of the original PDF instead of relying only on an AI explanation.",
+          "Read the source, identify why your answer was wrong, and then attempt a new question without looking."
+        ]
+      },
+
+      {
+        heading: "Turn a PDF Study Guide Into a Final Quiz",
+        paragraphs: [
+          "If you have already turned the PDF into verified study notes or a study guide, you can generate a final quiz from that organized material.",
+          "This can be especially useful near an exam because the study guide has already separated high-value concepts, definitions, processes, and examples."
+        ],
+        prompt:
+          "Using this verified study guide created from my PDF, create a final mixed quiz covering the most important concepts. Include recall, explanation, comparison, and application questions. Do not reveal the answers until I finish."
+      },
+
+      {
+        heading: "Create a Timed Practice Version",
+        paragraphs: [
+          "Once you understand the material reasonably well, try completing a question set under a time limit.",
+          "Timed practice can show whether you can retrieve and apply knowledge efficiently rather than only when you have unlimited time."
+        ]
+      },
+
+      {
+        heading: "When a PDF Quiz Is Most Useful",
+        list: [
+          "After reading a textbook chapter",
+          "After reviewing lecture slides",
+          "Before an exam",
+          "After creating study notes",
+          "When checking whether you actually remember a long reading",
+          "When revisiting material after several days",
+          "When identifying which topics need more revision"
+        ]
+      },
+
+      {
+        heading: "Common Mistakes When Creating AI Quizzes From PDFs",
+        list: [
+          "Generating questions from an entire large document without choosing a scope",
+          "Letting AI add information outside the PDF",
+          "Seeing the answers before attempting the questions",
+          "Using only easy multiple-choice questions",
+          "Failing to verify the answer key",
+          "Ignoring diagrams, tables, or formulas",
+          "Repeating the same questions until you memorize their wording",
+          "Taking quizzes without reviewing why answers were wrong"
+        ]
+      },
+
+      {
+        heading: "A 20-Minute PDF-to-Quiz Study Session",
+        list: [
+          "3 minutes — Select the PDF section you want to study.",
+          "3 minutes — Generate a grounded mixed quiz.",
+          "8 minutes — Answer the questions without notes.",
+          "3 minutes — Verify incorrect or uncertain answers.",
+          "2 minutes — Record weak concepts.",
+          "1 minute — Decide what needs another review."
+        ]
+      },
+
+      {
+        heading: "A Simple PDF-to-Quiz Workflow",
+        list: [
+          "1 — Choose the relevant PDF pages or chapter.",
+          "2 — Confirm that the document content is readable.",
+          "3 — Tell AI to remain grounded in the PDF.",
+          "4 — Choose the concepts and skills you want to test.",
+          "5 — Generate mixed question types.",
+          "6 — Attempt questions before seeing answers.",
+          "7 — Verify important answers against the source.",
+          "8 — Record repeated weaknesses.",
+          "9 — Generate targeted follow-up questions.",
+          "10 — Retest yourself later without the PDF open."
+        ]
+      },
+
+      {
+        heading: "Use AI-Generated PDF Quizzes Responsibly",
+        paragraphs: [
+          "Use AI quizzes as a study aid rather than assuming they perfectly represent your course or future exam.",
+          "Your instructor's material, syllabus, official past papers, and course requirements remain more authoritative than automatically generated questions.",
+          "Also follow your school or university's rules about uploading course documents to external AI tools."
+        ]
+      },
+
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "Turning a PDF into a quiz can transform passive reading into active practice, but question quality and source accuracy matter.",
+          "A stronger workflow is to select the right material, generate grounded questions, hide the answers, verify important information, study your mistakes, and then retest the weak areas.",
+          "The goal is not to generate as many questions as possible. It is to discover what you can actually recall and understand without looking at the source."
+        ]
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can AI turn a PDF into a quiz?",
+        answer:
+          "Yes. AI tools can use PDF content to generate multiple-choice, true-or-false, short-answer, and other practice questions. Important answers should still be checked against the original document."
+      },
+      {
+        question: "Can AI make a quiz from a textbook PDF?",
+        answer:
+          "Yes, but it is usually better to work with one chapter or relevant page range at a time rather than generating questions from an entire textbook."
+      },
+      {
+        question: "How do I make quiz questions from a PDF?",
+        answer:
+          "Provide the relevant PDF content, tell the AI to use only that source, specify the question types and difficulty you want, hide the answers until you respond, and verify the final answer key against the document."
+      },
+      {
+        question: "Can AI create multiple-choice questions from a PDF?",
+        answer:
+          "Yes. Ask for multiple-choice questions with plausible distractors and then check that only one answer is clearly supported by the PDF."
+      },
+      {
+        question: "Are AI-generated PDF quizzes accurate?",
+        answer:
+          "They can be useful, but accuracy is not guaranteed. Poor text extraction, ambiguous source material, or AI errors can produce incorrect questions or answers, so verification is important."
+      },
+      {
+        question: "Should I use PDF quizzes instead of reading the material?",
+        answer:
+          "No. A quiz works best after you have learned or reviewed the material. Use it to test retrieval and expose weak areas rather than as a replacement for understanding the source."
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "turn-a-pdf-into-study-notes-with-ai",
+        category: "Notes & PDFs",
+        title: "How to Turn a PDF Into Study Notes With AI",
+        description:
+          "Turn long PDF material into verified, structured study notes for learning and revision."
+      },
+      {
+        slug: "create-quizzes-from-notes-using-ai",
+        category: "Exam Prep",
+        title: "How to Create Quizzes From Notes Using AI",
+        description:
+          "Turn your existing study notes into practice questions and use them for active recall."
+      },
+      {
+        slug: "turn-a-pdf-into-flashcards-with-ai",
+        category: "Notes & PDFs",
+        title: "How to Turn a PDF Into Flashcards With AI",
+        description:
+          "Convert PDF content into accurate flashcards for repeated retrieval practice."
+      }
+    ]
+  },
 };

@@ -331,6 +331,17 @@ export const articles = [
     publishedAt: "2026-09-11",
     updatedAt: "2026-09-11",
   },
+  {
+    slug: "turn-a-pdf-into-a-quiz-with-ai",
+    category: "Notes & PDFs",
+    title: "How to Turn a PDF Into a Quiz With AI",
+    description:
+      "Learn how to turn a PDF into an AI-generated quiz with accurate questions, mixed question types, source verification, and active recall for better studying.",
+    readTime: "10 min",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-12",
+    updatedAt: "2026-09-12",
+  },
 ];
 
 export const publishedArticles = articles.filter(
