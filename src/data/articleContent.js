@@ -12013,4 +12013,318 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "use-ai-to-prepare-for-an-open-book-exam": {
+    introduction: [
+      "An open-book exam may allow you to use notes, textbooks, or other approved materials, but that does not automatically make the exam easy. If every answer requires searching through dozens of pages, you can quickly lose time.",
+      "AI can help you prepare by organizing approved course material, identifying relationships between concepts, creating a faster reference system, and generating practice questions that require more than simple lookup.",
+      "The goal is not to let AI answer the exam for you. Preparation should help you understand the material well enough to know what information you need, where to find it, and how to apply it under time pressure."
+    ],
+
+    sections: [
+      {
+        heading: "Quick Answer: How Can AI Help You Prepare for an Open-Book Exam?",
+        paragraphs: [
+          "Start by checking exactly which resources are allowed in the exam. Organize those materials by topic, create a concise index showing where important information can be found, and identify concepts that require understanding rather than simple lookup.",
+          "Then use AI before the exam to generate application and comparison questions from your approved material. Practice answering them under a time limit while using the same resources you expect to have during the real assessment.",
+          "Your final system should make your materials easier to navigate without replacing your understanding of them."
+        ]
+      },
+
+      {
+        heading: "First, Check What 'Open Book' Actually Means",
+        paragraphs: [
+          "Open-book rules vary between courses and assessments. Some exams allow a physical textbook, some allow personal notes, and others provide specific digital resources.",
+          "Do not assume that access to a computer means AI tools are permitted during the exam. Check the official assessment instructions."
+        ],
+        list: [
+          "Which books are allowed?",
+          "Are personal notes allowed?",
+          "Can notes be digital?",
+          "Is internet access permitted?",
+          "Are search tools permitted?",
+          "Are AI tools explicitly permitted or prohibited?",
+          "Are there restrictions on prepared materials?"
+        ]
+      },
+
+      {
+        heading: "Do Not Prepare as If the Exam Is a Search Competition",
+        paragraphs: [
+          "Open-book exams can still test understanding, interpretation, comparison, calculation, or application.",
+          "If you depend on finding every answer word-for-word during the assessment, unfamiliar questions can become difficult even when the relevant information is somewhere in your notes.",
+          "Learn the major concepts first and use your resources as support."
+        ]
+      },
+
+      {
+        heading: "Build a Map of the Course Material",
+        paragraphs: [
+          "Before making condensed notes, identify how the course is organized.",
+          "A topic map gives you a mental picture of where concepts belong and makes your reference material easier to navigate."
+        ],
+        prompt:
+          "Using only the course material I provide, organize the content into major topics and subtopics. Under each topic, list the important concepts, definitions, formulas, cases, or processes that appear in the source. Do not add outside information."
+      },
+
+      {
+        heading: "Create a Fast Reference Index",
+        paragraphs: [
+          "Instead of trying to compress an entire course onto one page, create an index that tells you where important information lives.",
+          "Your index might point to a textbook page, lecture number, note heading, formula sheet section, or other approved resource."
+        ],
+        list: [
+          "Topic",
+          "Key term",
+          "Where to find it",
+          "Important formula or rule",
+          "Related concept",
+          "Common confusion"
+        ],
+        prompt:
+          "Turn these verified course notes into a compact reference index. For each major topic, show the key concept and the page, lecture, heading, or source location I provide. Do not invent source locations."
+      },
+
+      {
+        heading: "Keep Definitions Easy to Locate",
+        paragraphs: [
+          "Definitions may still matter even when you can access your notes.",
+          "Group important terms in a predictable place so you do not repeatedly search through full chapters."
+        ]
+      },
+
+      {
+        heading: "Organize Formulas With Their Meaning",
+        paragraphs: [
+          "A formula sheet is more useful when you understand what each formula is for rather than only seeing the equation.",
+          "For each formula, record the variables, conditions, units when relevant, and a short reminder of when the formula applies."
+        ],
+        prompt:
+          "Using only the formulas in my course material, create a reference table showing each formula, what its variables mean, when it is used, and any conditions explicitly stated in the source. Do not invent formulas or conditions."
+      },
+
+      {
+        heading: "Identify Concepts That Cannot Be Solved by Simple Lookup",
+        paragraphs: [
+          "Some topics require you to connect several pieces of information rather than find one definition.",
+          "These are high-value areas for practice because access to a textbook may not help if you do not understand how the concepts relate."
+        ],
+        prompt:
+          "Review these course topics and identify which ones appear to require explanation, comparison, reasoning, calculation, or application rather than simple factual recall. Base the classification only on the material I provide."
+      },
+
+      {
+        heading: "Practice Application Questions",
+        paragraphs: [
+          "Open-book preparation should include questions where the answer is not copied directly from one paragraph.",
+          "Practice applying principles to examples, cases, problems, or unfamiliar scenarios when that matches your course."
+        ],
+        prompt:
+          "Create 8 application questions using only the course material I provide. The questions should require me to use or connect the concepts rather than simply copy a definition. Do not show the answers until I respond."
+      },
+
+      {
+        heading: "Practice Comparison Questions",
+        paragraphs: [
+          "Comparison questions can expose whether you understand the differences between concepts that look similar in your notes.",
+          "Create a small comparison table during preparation, then practice reconstructing the important differences without looking."
+        ],
+        prompt:
+          "Identify concepts in these notes that could reasonably be compared. Ask me to explain their similarities, differences, uses, or limitations based only on the provided material."
+      },
+
+      {
+        heading: "Practice Finding Information Quickly",
+        paragraphs: [
+          "Your reference system should be tested before the exam.",
+          "Choose random concepts and time how long it takes to locate the relevant page or section. If finding something repeatedly takes too long, improve the index rather than adding more pages of notes."
+        ]
+      },
+
+      {
+        heading: "Use a Two-Step Answer Method",
+        paragraphs: [
+          "When practicing, first decide what the question is asking before opening your resources.",
+          "Then identify the concept you need and use your reference material to confirm details.",
+          "This reduces aimless searching because you have already formed a direction for the answer."
+        ]
+      },
+
+      {
+        heading: "Create Questions That Combine Multiple Topics",
+        paragraphs: [
+          "A useful test of understanding is whether you can connect ideas from different parts of the course.",
+          "Once individual topics are comfortable, practice questions that require more than one concept."
+        ],
+        prompt:
+          "Using only my course material, create 5 questions that require me to connect two or more related concepts. Tell me which topics were being tested only after I answer."
+      },
+
+      {
+        heading: "Practice Under a Realistic Time Limit",
+        paragraphs: [
+          "Having access to notes can create a false sense that you have unlimited time to search.",
+          "During practice, use a timer and the same type of approved resources you expect to use in the exam.",
+          "Record whether time was lost because you did not know the concept or because your materials were difficult to navigate."
+        ]
+      },
+
+      {
+        heading: "Track Why You Lose Time",
+        list: [
+          "I did not understand the question.",
+          "I could not identify the relevant concept.",
+          "I knew the concept but could not locate the detail.",
+          "My notes were poorly organized.",
+          "I spent too long reading unnecessary material.",
+          "I found the information but could not apply it."
+        ]
+      },
+
+      {
+        heading: "Improve the Reference System After Each Practice Round",
+        paragraphs: [
+          "Your first index does not have to be perfect.",
+          "When a practice question exposes a slow lookup, confusing heading, or missing cross-reference, fix that specific problem.",
+          "Over time, your materials become easier to navigate because the system is based on actual practice rather than guesswork."
+        ]
+      },
+
+      {
+        heading: "Do a Closed-Book Check Too",
+        paragraphs: [
+          "Even for an open-book assessment, try explaining the major concepts without looking at your materials.",
+          "You do not need to memorize every detail, but you should know enough to recognize what a question is testing and where supporting information belongs."
+        ],
+        prompt:
+          "Ask me 10 short conceptual questions from this material without letting me use my notes initially. After each answer, tell me whether I should know the concept directly or whether checking a specific detail in my approved resources would be reasonable."
+      },
+
+      {
+        heading: "Run a Mock Open-Book Exam",
+        paragraphs: [
+          "Near the assessment, combine realistic questions into a timed practice session.",
+          "Use only the resources that will actually be permitted and avoid using AI during the simulation unless your assessment explicitly allows it."
+        ],
+        prompt:
+          "Using the course material I provide, create a mock open-book exam containing a mix of explanation, comparison, application, and problem-solving questions appropriate to the material. Do not provide answers until I finish."
+      },
+
+      {
+        heading: "Review the Mock Exam",
+        paragraphs: [
+          "After the simulation, separate knowledge problems from navigation problems.",
+          "A wrong answer may mean you need to relearn a concept, while a slow correct answer may mean your reference system needs improvement."
+        ],
+        list: [
+          "Concept not understood",
+          "Important detail missed",
+          "Resource difficult to navigate",
+          "Wrong source used",
+          "Too much time spent searching",
+          "Concept understood but poorly applied"
+        ]
+      },
+
+      {
+        heading: "Common Mistakes in Open-Book Exam Preparation",
+        list: [
+          "Assuming an open-book exam requires little preparation",
+          "Trying to create notes for every sentence",
+          "Using materials that are not permitted",
+          "Relying on search instead of understanding concepts",
+          "Building a reference system but never testing it",
+          "Practicing only definition questions",
+          "Ignoring application and comparison questions",
+          "Using AI during the actual exam without explicit permission"
+        ]
+      },
+
+      {
+        heading: "A 30-Minute AI Open-Book Preparation Session",
+        list: [
+          "5 minutes — Review one topic and its course materials.",
+          "5 minutes — Improve your topic index or reference sheet.",
+          "10 minutes — Answer application or comparison questions.",
+          "5 minutes — Check answers against the source.",
+          "3 minutes — Record knowledge or navigation problems.",
+          "2 minutes — Fix the highest-priority problem."
+        ]
+      },
+
+      {
+        heading: "Use AI for Open-Book Exam Preparation Responsibly",
+        paragraphs: [
+          "Using AI while preparing for an exam does not mean it is permitted during the exam itself.",
+          "Follow your institution's assessment rules exactly. If AI use is prohibited during the assessment, close it before beginning and use only the resources you are allowed to access.",
+          "AI is most useful here as a preparation tool for organizing material and creating practice, while you remain responsible for understanding and applying the course content."
+        ]
+      },
+
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "Open-book exams reward more than access to information. You still need to recognize what a question is asking, understand the relevant concepts, locate supporting details efficiently, and apply them within the available time.",
+          "AI can help you build and test a better preparation system before the exam.",
+          "Use the book as a reference, not as a replacement for learning."
+        ]
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Are open-book exams easier?",
+        answer:
+          "Not necessarily. They may still test application, analysis, comparison, or problem-solving, and searching through poorly organized materials can consume valuable exam time."
+      },
+      {
+        question: "Can I use AI during an open-book exam?",
+        answer:
+          "Only if the assessment rules explicitly allow it. An exam being open-book does not automatically mean internet access or AI tools are permitted."
+      },
+      {
+        question: "How should I organize notes for an open-book exam?",
+        answer:
+          "Create a clear topic structure and a compact index showing where important definitions, formulas, examples, and concepts can be found. Test the system during timed practice."
+      },
+      {
+        question: "Should I memorize information for an open-book exam?",
+        answer:
+          "You may not need to memorize every detail, but understanding the major concepts helps you recognize what a question is testing and locate supporting information efficiently."
+      },
+      {
+        question: "How can AI help before an open-book exam?",
+        answer:
+          "AI can help organize verified course material, build reference structures, generate practice questions, identify connections between topics, and expose weaknesses during mock practice."
+      },
+      {
+        question: "Should I practice without my notes too?",
+        answer:
+          "Yes. Closed-book concept checks can show whether you understand the core material rather than depending entirely on searching your resources."
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "use-ai-to-study-for-exams",
+        category: "Exam Prep",
+        title: "How to Use AI to Study for Exams",
+        description:
+          "Build a practical AI-assisted exam preparation workflow using active recall and targeted revision."
+      },
+      {
+        slug: "create-mock-exams-with-ai",
+        category: "Exam Prep",
+        title: "How to Create Mock Exams With AI",
+        description:
+          "Create realistic practice exams and use the results to identify weak areas."
+      },
+      {
+        slug: "how-to-use-ai-to-find-knowledge-gaps-before-an-exam",
+        category: "Exam Prep",
+        title: "How to Use AI to Find Gaps in Your Knowledge Before an Exam",
+        description:
+          "Diagnose weak areas before an exam using targeted questions and confidence checks."
+      }
+    ]
+  },
 };

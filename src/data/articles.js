@@ -375,6 +375,17 @@ export const articles = [
     publishedAt: "2026-09-12",
     updatedAt: "2026-09-12",
   },
+  {
+    slug: "use-ai-to-prepare-for-an-open-book-exam",
+    category: "Exam Prep",
+    title: "How to Use AI to Prepare for an Open-Book Exam",
+    description:
+      "Learn how to use AI to prepare for an open-book exam by organizing course material, building a fast reference system, practicing application questions, and testing retrieval.",
+    readTime: "10 min",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-12",
+    updatedAt: "2026-09-12",
+  },
 ];
 
 export const publishedArticles = articles.filter(
