@@ -397,6 +397,17 @@ export const articles = [
     publishedAt: "2026-09-12",
     updatedAt: "2026-09-12",
   },
+  {
+    slug: "use-ai-to-get-feedback-on-writing",
+    category: "AI Tools",
+    title: "How to Use AI to Get Feedback on Your Writing Without Rewriting It",
+    description:
+      "Learn how to use AI for writing feedback on clarity, structure, reasoning, and readability while keeping the actual revision and writing in your own hands.",
+    readTime: "10 min",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-12",
+    updatedAt: "2026-09-12",
+  },
 ];
 
 export const publishedArticles = articles.filter(

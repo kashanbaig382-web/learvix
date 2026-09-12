@@ -12682,4 +12682,348 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "use-ai-to-get-feedback-on-writing": {
+    introduction: [
+      "AI can rewrite a paragraph in seconds, but a polished rewrite does not necessarily help you become a better writer. If the tool replaces your sentences before you understand what was wrong, you may end up accepting changes you cannot explain or reproduce yourself.",
+      "A more useful approach is to treat AI as a feedback partner. Instead of asking it to rewrite your work, ask it to identify unclear reasoning, weak organization, unsupported claims, repetition, confusing sentences, and other areas that deserve another look.",
+      "You then decide which feedback is valid and make the revisions yourself. This keeps your judgment and writing at the center of the process."
+    ],
+
+    sections: [
+      {
+        heading: "Quick Answer: How Do You Use AI for Writing Feedback?",
+        paragraphs: [
+          "Write your own draft first and tell AI what kind of feedback you need. Provide the assignment requirements or rubric when appropriate, then ask the tool to identify problems without rewriting the text.",
+          "Review each suggestion, compare it with your actual purpose and course requirements, and revise the draft yourself.",
+          "After revising, you can request another feedback round to check whether the specific problem improved."
+        ]
+      },
+
+      {
+        heading: "Start With Your Own Draft",
+        paragraphs: [
+          "Feedback is most useful when there is already something meaningful to evaluate.",
+          "Write the argument, paragraph, explanation, report section, or other required material yourself before using AI to critique it.",
+          "An imperfect draft gives you something to think about and improve."
+        ]
+      },
+
+      {
+        heading: "Give AI the Assignment Context",
+        paragraphs: [
+          "A paragraph cannot always be judged correctly in isolation. The purpose, audience, format, and assessment criteria may change what good writing looks like.",
+          "When your course allows it, provide the relevant requirements without sharing unnecessary personal or protected information."
+        ],
+        prompt:
+          "Here are the requirements for my writing task and my draft. Identify areas where the draft may not meet the requirements. Do not rewrite any sentences. Explain the problem and let me decide how to revise it."
+      },
+
+      {
+        heading: "Ask for Diagnosis Before Suggestions",
+        paragraphs: [
+          "If AI immediately supplies replacement sentences, it becomes easy to copy the solution without understanding the underlying problem.",
+          "Ask it to diagnose what is unclear first."
+        ],
+        prompt:
+          "Read this draft as a writing coach. Identify the three highest-priority problems. For each one, explain why it may weaken the writing. Do not rewrite the text and do not provide replacement sentences yet."
+      },
+
+      {
+        heading: "Check Whether the Main Point Is Clear",
+        paragraphs: [
+          "A grammatically correct paragraph can still be difficult to follow if its purpose is unclear.",
+          "Ask AI to tell you what it thinks your main claim is. If its interpretation differs from what you intended, your writing may need clarification."
+        ],
+        prompt:
+          "Based only on my draft, state what you think my main argument or purpose is in one sentence. Then identify any parts that make that purpose difficult to understand. Do not rewrite them."
+      },
+
+      {
+        heading: "Use AI to Check Paragraph Structure",
+        paragraphs: [
+          "Each paragraph should have a reason for being there.",
+          "AI can help you identify paragraphs that introduce several unrelated ideas, repeat earlier points, or fail to connect clearly with the argument."
+        ],
+        prompt:
+          "For each paragraph, describe its main job in a few words. Flag any paragraph that appears to contain multiple competing purposes, repeats another paragraph, or has an unclear connection to the overall argument."
+      },
+
+      {
+        heading: "Check the Flow Between Ideas",
+        paragraphs: [
+          "Good writing is not simply a collection of individually correct sentences. Readers also need to understand how one idea leads to the next.",
+          "Use feedback to identify abrupt transitions or unexplained jumps in reasoning."
+        ],
+        prompt:
+          "Identify places where the logic or topic changes abruptly. Explain what connection the reader may be missing, but do not write the transition for me."
+      },
+
+      {
+        heading: "Find Claims That Need More Support",
+        paragraphs: [
+          "AI can help flag statements that sound like factual, causal, comparative, or general claims and may therefore need evidence.",
+          "It cannot determine that a source exists simply because a claim sounds reasonable."
+        ],
+        prompt:
+          "Flag statements in my draft that appear to make factual, causal, numerical, or broad claims that may require evidence. Do not invent citations or sources."
+      },
+
+      {
+        heading: "Do Not Ask AI to Invent Citations",
+        paragraphs: [
+          "If a sentence needs evidence, find and verify a real source rather than asking AI to create a convenient reference.",
+          "AI-generated citations can contain incorrect or fabricated titles, authors, journals, dates, or identifiers."
+        ]
+      },
+
+      {
+        heading: "Check Whether Evidence Actually Supports the Claim",
+        paragraphs: [
+          "Having a citation beside a sentence does not automatically mean the source supports the sentence.",
+          "When you provide the relevant source material, AI can help you compare the wording of your claim with the evidence."
+        ],
+        prompt:
+          "Here is my claim and the relevant passage or notes from my verified source. Compare them and tell me whether my wording appears stronger, broader, or different from what the source supports. Do not add information that is not in the source."
+      },
+
+      {
+        heading: "Use AI to Find Repetition",
+        paragraphs: [
+          "During drafting, the same point can appear several times using slightly different wording.",
+          "Ask AI to identify repeated ideas rather than automatically deleting them."
+        ],
+        prompt:
+          "Identify ideas that appear to be repeated in this draft. Show me which sections overlap and explain the repetition. Do not remove or rewrite anything."
+      },
+
+      {
+        heading: "Check for Vague Language",
+        paragraphs: [
+          "Words such as things, many, significant, effective, better, or important may be appropriate in some contexts but vague in others.",
+          "AI can flag places where a reader may reasonably ask for greater precision."
+        ],
+        prompt:
+          "Highlight words or phrases that may be too vague for this context. For each one, tell me what question a reader might ask. Do not replace the wording for me."
+      },
+
+      {
+        heading: "Find Sentences That Are Difficult to Read",
+        paragraphs: [
+          "Long sentences are not automatically bad, but a sentence can become difficult when it contains too many ideas, unclear references, or complicated structure.",
+          "Ask for identification rather than an instant rewrite."
+        ],
+        prompt:
+          "Identify sentences that may be difficult to follow and explain why: too many ideas, unclear reference, excessive length, awkward structure, or another reason. Do not rewrite them."
+      },
+
+      {
+        heading: "Check Whether Your Reasoning Has Gaps",
+        paragraphs: [
+          "A draft may move from evidence to a conclusion without explaining the reasoning connecting them.",
+          "AI can act as a skeptical reader and point out assumptions that have not been explained."
+        ],
+        prompt:
+          "Act as a skeptical reader. Identify places where my conclusion seems to depend on an assumption or reasoning step that I have not clearly explained. Ask me a question that would help me examine each gap."
+      },
+
+      {
+        heading: "Ask AI Questions Instead of Asking for Answers",
+        paragraphs: [
+          "Questions can make feedback more useful because they force you to decide how the writing should improve.",
+          "This is especially valuable when the problem involves reasoning rather than grammar."
+        ],
+        prompt:
+          "Do not tell me how to rewrite this paragraph. Ask me up to five questions that would help me clarify the argument, evidence, reasoning, or organization myself."
+      },
+
+      {
+        heading: "Check Your Introduction Against the Rest of the Draft",
+        paragraphs: [
+          "Introductions often promise a focus that changes while the draft develops.",
+          "After completing the main body, check whether the introduction still accurately represents what the writing actually does."
+        ],
+        prompt:
+          "Compare my introduction with the rest of the draft. Identify promises, topics, or claims in the introduction that are not clearly developed later, and major ideas in the body that the introduction does not prepare the reader for."
+      },
+
+      {
+        heading: "Check Whether the Conclusion Actually Concludes",
+        paragraphs: [
+          "A conclusion should do more than repeat sentences from the introduction.",
+          "Ask whether it reflects the argument developed in the body and whether it introduces unsupported new claims."
+        ],
+        prompt:
+          "Evaluate my conclusion against the body of the draft. Identify important ideas it fails to bring together or new claims that appear without sufficient development. Do not rewrite the conclusion."
+      },
+
+      {
+        heading: "Use the Rubric as a Feedback Checklist",
+        paragraphs: [
+          "If your instructor provides a rubric, it can make AI feedback more relevant to the actual assessment.",
+          "Do not ask AI to guarantee a grade. Ask it to identify evidence in the draft that appears related to each criterion and areas that may need another review."
+        ],
+        prompt:
+          "Using this rubric, review my draft criterion by criterion. For each criterion, point to evidence in my draft and identify possible weaknesses. Do not predict my final grade and do not rewrite the work."
+      },
+
+      {
+        heading: "Prioritize Feedback Instead of Fixing Everything at Once",
+        paragraphs: [
+          "A long AI critique can create dozens of suggestions, but not all of them matter equally.",
+          "Address high-level issues such as argument, evidence, structure, and reasoning before spending time on minor wording."
+        ],
+        list: [
+          "1 — Purpose and argument",
+          "2 — Reasoning and evidence",
+          "3 — Organization",
+          "4 — Paragraph clarity",
+          "5 — Sentence clarity",
+          "6 — Grammar and formatting"
+        ]
+      },
+
+      {
+        heading: "Revise the Draft Yourself",
+        paragraphs: [
+          "Once you understand a problem, close or ignore the suggested wording and make the change in your own way.",
+          "This forces you to decide what you actually mean and helps preserve your own voice."
+        ]
+      },
+
+      {
+        heading: "Ask for a Second Feedback Round",
+        paragraphs: [
+          "After revising, do not simply ask whether the new version is better.",
+          "Ask whether the specific issue identified in the previous round has improved."
+        ],
+        prompt:
+          "Earlier, the problem identified was: [describe problem]. I revised the section myself. Compare the two versions only for that issue and explain whether the revision addresses it. Do not rewrite the new version."
+      },
+
+      {
+        heading: "Know When to Ignore AI Feedback",
+        paragraphs: [
+          "AI feedback is not automatically correct.",
+          "A suggestion may conflict with your assignment, discipline, intended meaning, instructor expectations, or stylistic choice.",
+          "Treat feedback as something to evaluate rather than an instruction you must follow."
+        ]
+      },
+
+      {
+        heading: "Common Mistakes When Using AI for Writing Feedback",
+        list: [
+          "Asking AI to rewrite the entire draft immediately",
+          "Accepting every suggestion automatically",
+          "Using AI-generated citations without verification",
+          "Focusing on grammar before fixing the argument",
+          "Letting feedback erase your own voice",
+          "Providing no assignment context",
+          "Asking AI to guarantee a grade",
+          "Submitting revisions you do not understand"
+        ]
+      },
+
+      {
+        heading: "A 20-Minute AI Writing Feedback Session",
+        list: [
+          "3 minutes — Choose one section and define what feedback you need.",
+          "4 minutes — Ask AI to diagnose the highest-priority problems.",
+          "4 minutes — Check the feedback against your intent and requirements.",
+          "6 minutes — Revise the section yourself.",
+          "3 minutes — Ask for a focused second review."
+        ]
+      },
+
+      {
+        heading: "A Simple AI Writing Feedback Workflow",
+        list: [
+          "1 — Write the draft yourself.",
+          "2 — Check your institution's AI rules.",
+          "3 — Provide relevant task requirements.",
+          "4 — Ask for diagnosis without rewriting.",
+          "5 — Prioritize argument, evidence, and structure.",
+          "6 — Verify factual or citation-related feedback.",
+          "7 — Decide which suggestions are valid.",
+          "8 — Revise the text yourself.",
+          "9 — Request a focused second review.",
+          "10 — Make the final decisions yourself."
+        ]
+      },
+
+      {
+        heading: "Use AI Writing Feedback Responsibly",
+        paragraphs: [
+          "Rules for AI-assisted writing differ between institutions, courses, and assignments. Some may permit feedback while restricting AI-generated wording or requiring disclosure.",
+          "Follow the rules that apply to your work and avoid uploading confidential, personal, unpublished, or protected material when you do not have permission.",
+          "The final writing and the decisions behind it should remain work you understand and can defend."
+        ]
+      },
+
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "AI does not have to rewrite your work to be useful for writing.",
+          "Used as a critical reader, it can point out unclear reasoning, weak structure, unsupported claims, repetition, and other problems that deserve your attention.",
+          "The strongest workflow keeps the difficult and valuable part with you: understanding the feedback, deciding what matters, and revising the writing yourself."
+        ]
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can AI give feedback on my writing without rewriting it?",
+        answer:
+          "Yes. Tell the AI to identify and explain problems without providing replacement sentences. You can then decide how to revise the writing yourself."
+      },
+      {
+        question: "What should I ask AI to check in my writing?",
+        answer:
+          "Useful areas include argument clarity, reasoning, evidence, organization, paragraph purpose, repetition, vague language, readability, and alignment with assignment requirements."
+      },
+      {
+        question: "Should I accept every AI writing suggestion?",
+        answer:
+          "No. AI feedback can be incorrect or inappropriate for your purpose, discipline, assignment, or intended meaning. Evaluate each suggestion before making a change."
+      },
+      {
+        question: "Can AI check my essay against a rubric?",
+        answer:
+          "AI can help identify parts of your draft that appear relevant to rubric criteria, but it cannot guarantee how an instructor will grade the work."
+      },
+      {
+        question: "Can AI check whether my evidence supports my argument?",
+        answer:
+          "It can help compare your claim with source material you provide, but you should still read and verify the original source yourself."
+      },
+      {
+        question: "Is using AI for writing feedback cheating?",
+        answer:
+          "That depends on your institution, course, and assignment rules. Check the applicable policy and disclose AI assistance when required."
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "use-ai-for-academic-research-without-cheating",
+        category: "Research & Writing",
+        title: "How to Use AI for Academic Research Without Cheating",
+        description:
+          "Use AI to support academic research while keeping verification and your own reasoning central."
+      },
+      {
+        slug: "how-to-use-ai-as-a-personal-tutor",
+        category: "AI Tools",
+        title: "How to Use AI as a Personal Tutor Without Becoming Dependent on It",
+        description:
+          "Use AI for guided learning while protecting independent thinking and understanding."
+      },
+      {
+        slug: "how-to-use-ai-to-create-a-research-question",
+        category: "Research & Writing",
+        title: "How to Use AI to Turn a Broad Topic Into a Research Question",
+        description:
+          "Turn a broad research topic into a focused and feasible question using a structured AI workflow."
+      }
+    ]
+  },
 };
