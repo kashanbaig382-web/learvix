@@ -408,6 +408,17 @@ export const articles = [
     publishedAt: "2026-09-12",
     updatedAt: "2026-09-12",
   },
+  {
+    slug: "build-a-weekly-study-review-system-with-ai",
+    category: "Productivity",
+    title: "How to Use AI to Build a Weekly Study Review System",
+    description:
+      "Learn how to use AI for a weekly study review that tracks progress, identifies weak topics, manages unfinished work, and sets better priorities for the next week.",
+    readTime: "10 min",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-12",
+    updatedAt: "2026-09-12",
+  },
 ];
 
 export const publishedArticles = articles.filter(

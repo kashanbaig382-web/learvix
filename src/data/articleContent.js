@@ -13026,4 +13026,361 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "build-a-weekly-study-review-system-with-ai": {
+    introduction: [
+      "A study plan can look perfect on Monday and become unrealistic by Friday. An assignment takes longer than expected, a difficult topic needs extra practice, or unfinished tasks quietly move into the next week.",
+      "A weekly study review gives you a regular point to check what actually happened instead of continuously adding new tasks to an outdated plan.",
+      "AI can help organize your study record, identify patterns, compare planned work with completed work, and turn that information into priorities for the next week. The important part is to give it real information rather than asking it to guess how productive you were."
+    ],
+
+    sections: [
+      {
+        heading: "Quick Answer: How Can AI Help With a Weekly Study Review?",
+        paragraphs: [
+          "At the end of each week, record what you planned, what you completed, what remains unfinished, which topics felt difficult, and any upcoming deadlines.",
+          "Give that information to AI and ask it to separate urgent work from important learning, identify recurring problems, and help you choose a small number of priorities for the next week.",
+          "Then build the next week's plan around those priorities instead of automatically carrying every unfinished task forward."
+        ]
+      },
+
+      {
+        heading: "Why Review Your Study Week?",
+        paragraphs: [
+          "Planning tells you what you intend to do. Reviewing tells you what actually happened.",
+          "Without a review, the same unrealistic workload, weak topic, or unfinished assignment can appear on your plan week after week without being addressed."
+        ]
+      },
+
+      {
+        heading: "Choose One Weekly Review Time",
+        paragraphs: [
+          "A weekly review works better when it becomes a predictable routine.",
+          "Choose a time when most of the week's study work is complete but you still have enough time to prepare for the next week.",
+          "The exact day matters less than doing the review consistently."
+        ]
+      },
+
+      {
+        heading: "Start With Evidence, Not Memory",
+        paragraphs: [
+          "Do not rely only on how productive the week felt.",
+          "Look at your calendar, task list, course platform, assignment tracker, practice results, study notes, or other records."
+        ],
+        list: [
+          "Tasks planned",
+          "Tasks completed",
+          "Tasks unfinished",
+          "Deadlines approaching",
+          "Topics studied",
+          "Practice results",
+          "Topics that felt difficult",
+          "Unexpected work or schedule changes"
+        ]
+      },
+
+      {
+        heading: "Compare Planned Work With Completed Work",
+        paragraphs: [
+          "The goal is not to punish yourself for incomplete tasks. The comparison helps you understand whether the plan matched the time and difficulty of the work.",
+          "Look for meaningful differences between what you expected and what actually happened."
+        ],
+        prompt:
+          "Here is what I planned this week and what I actually completed. Compare them without judging me. Identify completed work, unfinished work, work that took longer than expected, and any patterns that could improve next week's plan."
+      },
+
+      {
+        heading: "Do Not Automatically Move Every Unfinished Task Forward",
+        paragraphs: [
+          "A common planning mistake is copying every incomplete task into the next week.",
+          "Before carrying something forward, decide whether it is still necessary, whether its deadline changed, and whether it should be broken into a smaller action."
+        ],
+        prompt:
+          "Review these unfinished tasks. For each one, classify it as carry forward, break into smaller actions, reschedule, reconsider, or remove. Explain the reasoning based only on the deadlines and context I provide."
+      },
+
+      {
+        heading: "Separate Backlog From Current Priorities",
+        paragraphs: [
+          "A backlog is a collection of work that still exists. A priority is something that deserves attention now.",
+          "Keeping these separate prevents a long unfinished list from controlling the entire next week."
+        ]
+      },
+
+      {
+        heading: "Identify Weak Topics From Real Evidence",
+        paragraphs: [
+          "Do not label a topic weak simply because it feels difficult.",
+          "Use evidence such as incorrect practice questions, low-confidence explanations, repeated mistakes, forgotten concepts, or difficulty applying the material."
+        ],
+        prompt:
+          "Here are my practice results and study notes from this week. Identify topics that appear to need more review. For each one, state the evidence from my data that suggests it is weak. Do not invent performance information."
+      },
+
+      {
+        heading: "Separate Understanding Problems From Memory Problems",
+        paragraphs: [
+          "Different weaknesses require different responses.",
+          "If you never understood a concept, repeating flashcards may not solve the problem. If you understood it previously but cannot retrieve it, active recall or spaced review may be more appropriate."
+        ],
+        prompt:
+          "Using the study evidence I provide, classify each weak area as primarily an understanding problem, retrieval problem, application problem, or unclear. Explain why and mark uncertain cases instead of guessing."
+      },
+
+      {
+        heading: "Look for Repeated Mistakes",
+        paragraphs: [
+          "One mistake may be random. The same type of mistake appearing repeatedly is more useful information.",
+          "Review quizzes, mock exams, homework practice, or your error log for recurring patterns."
+        ],
+        list: [
+          "Same concept repeatedly forgotten",
+          "Similar calculation error",
+          "Misreading the question",
+          "Weak explanation",
+          "Confusing two concepts",
+          "Running out of time",
+          "Unable to apply a known concept"
+        ]
+      },
+
+      {
+        heading: "Review What Worked Well Too",
+        paragraphs: [
+          "A weekly review should not focus only on problems.",
+          "Identify study methods, environments, routines, or types of practice that produced useful progress so you know what to keep."
+        ],
+        prompt:
+          "Based on this week's study record, identify strategies that appear to have worked well. Use evidence from completed work or performance rather than generic productivity advice."
+      },
+
+      {
+        heading: "Check Upcoming Deadlines",
+        paragraphs: [
+          "Before choosing next week's priorities, look ahead.",
+          "Assignments, exams, presentations, readings, and other commitments can change what deserves attention."
+        ],
+        prompt:
+          "Here are my upcoming academic deadlines. Organize them by date and identify which ones require preparation during the next seven days. Do not add deadlines that I have not provided."
+      },
+
+      {
+        heading: "Estimate the Real Work Behind Each Deadline",
+        paragraphs: [
+          "A deadline may appear far away while the work required to meet it needs to begin much earlier.",
+          "Break major deliverables into milestones before deciding that they can wait."
+        ],
+        prompt:
+          "For each upcoming task I provide, break the work into concrete preparation steps and identify which steps should reasonably begin next week. Do not assume requirements that are not in my assignment information."
+      },
+
+      {
+        heading: "Choose Three Main Priorities for the Next Week",
+        paragraphs: [
+          "Trying to make everything a priority makes the word meaningless.",
+          "Choose a small number of outcomes that would make the next week academically successful."
+        ],
+        prompt:
+          "Using my deadlines, unfinished work, weak topics, and available study time, suggest three main priorities for next week. Explain why each deserves priority and which lower-priority tasks can remain in the backlog."
+      },
+
+      {
+        heading: "Turn Priorities Into Concrete Actions",
+        paragraphs: [
+          "A priority such as 'study statistics' is too broad to execute.",
+          "Convert each priority into visible actions that can be completed or checked."
+        ],
+        prompt:
+          "Turn these three weekly priorities into specific study actions. Each action should start with a verb, have a clear outcome, and be small enough to schedule."
+      },
+
+      {
+        heading: "Protect Time for Weak Areas",
+        paragraphs: [
+          "Urgent assignments can consume the entire week while important weak topics receive no attention.",
+          "When an exam or cumulative course requires continued learning, reserve some study time for those weak areas rather than waiting until the final revision period."
+        ]
+      },
+
+      {
+        heading: "Build a Realistic Next-Week Plan",
+        paragraphs: [
+          "Only after reviewing the previous week should you create the next plan.",
+          "Use your actual available time and leave room for delays instead of filling every free hour."
+        ],
+        prompt:
+          "Create a realistic seven-day study plan from these priorities and my available study times. Put deadline-sensitive work first, include targeted review of weak topics, and leave some buffer time. Do not schedule work outside the availability I provide."
+      },
+
+      {
+        heading: "Keep a Small Buffer",
+        paragraphs: [
+          "Plans often fail because they assume every task will take exactly as long as expected.",
+          "Leaving some unscheduled capacity makes it easier to absorb difficult topics, unexpected coursework, or tasks that run longer than planned."
+        ]
+      },
+
+      {
+        heading: "Create a Stop-Doing Decision",
+        paragraphs: [
+          "Improvement is not only about adding new habits.",
+          "If something repeatedly consumes time without helping your learning, decide whether it should be reduced, changed, or removed."
+        ],
+        prompt:
+          "Review the study activities I completed this week. Identify any activity that appears to consume substantial time without clear learning or deadline value. Ask me questions before recommending that I stop something if the evidence is uncertain."
+      },
+
+      {
+        heading: "Track One or Two Useful Measures",
+        paragraphs: [
+          "You do not need a complicated productivity dashboard.",
+          "Choose measures that actually help you make decisions."
+        ],
+        list: [
+          "Practice accuracy",
+          "Number of repeated errors",
+          "Topics successfully recalled",
+          "Major tasks completed",
+          "Backlog size",
+          "Planned versus completed study sessions"
+        ]
+      },
+
+      {
+        heading: "Do Not Optimize for Study Hours Alone",
+        paragraphs: [
+          "More hours do not automatically mean more learning.",
+          "A shorter session involving retrieval, problem solving, or focused revision may provide more useful evidence than several hours of passive rereading.",
+          "Use time as context rather than the only measure of success."
+        ]
+      },
+
+      {
+        heading: "Use a Weekly Review Template",
+        list: [
+          "What did I complete?",
+          "What remains unfinished?",
+          "What took longer than expected?",
+          "Which topics are weak?",
+          "What mistakes repeated?",
+          "What worked well?",
+          "What deadlines are approaching?",
+          "What are my three priorities?",
+          "What should stay in the backlog?",
+          "What should I change next week?"
+        ]
+      },
+
+      {
+        heading: "Ask AI to Challenge an Unrealistic Plan",
+        paragraphs: [
+          "AI can be useful as a second reviewer when your next-week plan contains too much work.",
+          "Instead of asking whether the plan looks good, ask it to look specifically for conflicts and overload."
+        ],
+        prompt:
+          "Stress-test this study plan. Look for overloaded days, conflicting deadlines, tasks without enough preparation time, missing buffer, and priorities that do not match the academic information I provided. Do not add new goals."
+      },
+
+      {
+        heading: "Common Weekly Study Review Mistakes",
+        list: [
+          "Planning the next week without reviewing the previous one",
+          "Carrying every unfinished task forward",
+          "Treating everything as urgent",
+          "Ignoring repeated mistakes",
+          "Measuring success only by study hours",
+          "Creating vague priorities",
+          "Filling every available hour",
+          "Ignoring upcoming deadlines",
+          "Using AI without giving it real study data"
+        ]
+      },
+
+      {
+        heading: "A 20-Minute Weekly Study Review",
+        list: [
+          "4 minutes — Check completed and unfinished work.",
+          "4 minutes — Review weak topics and repeated mistakes.",
+          "3 minutes — Check upcoming deadlines.",
+          "3 minutes — Choose three priorities.",
+          "4 minutes — Turn priorities into scheduled actions.",
+          "2 minutes — Stress-test the plan and leave buffer."
+        ]
+      },
+
+      {
+        heading: "Use AI for Weekly Planning Responsibly",
+        paragraphs: [
+          "AI can organize information and suggest priorities, but it does not know your real workload unless you provide accurate context.",
+          "Do not treat its schedule as a command. Adjust recommendations according to your course requirements, health, responsibilities, available time, and actual learning needs.",
+          "The purpose of the weekly review is to make better decisions from real evidence, not to create the most complicated productivity system possible."
+        ]
+      },
+
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "A weekly study review connects planning with reality.",
+          "Instead of repeatedly creating fresh schedules, you use the previous week's results to decide what should change.",
+          "AI can make that review faster by organizing completed work, weak topics, deadlines, and priorities, but the most important habit is simple: regularly look at what actually happened and let that evidence shape what you do next."
+        ]
+      }
+    ],
+
+    faqs: [
+      {
+        question: "What is a weekly study review?",
+        answer:
+          "A weekly study review is a short routine where you compare planned and completed work, identify weak topics and unfinished tasks, check upcoming deadlines, and decide what should receive attention next week."
+      },
+      {
+        question: "How can AI help with weekly study planning?",
+        answer:
+          "AI can organize study records, identify patterns, classify unfinished work, highlight weak areas, and help turn priorities into a realistic plan when you provide accurate information."
+      },
+      {
+        question: "Should I move every unfinished task to next week?",
+        answer:
+          "No. Check whether each task is still necessary and whether it should be completed, broken down, rescheduled, reconsidered, or removed."
+      },
+      {
+        question: "How many weekly study priorities should I have?",
+        answer:
+          "There is no universal number, but choosing a small set such as three main priorities can make trade-offs clearer than treating every task as equally important."
+      },
+      {
+        question: "Should I track how many hours I study?",
+        answer:
+          "Study time can provide useful context, but it should not be your only measure. Practice results, repeated mistakes, completed work, and successful retrieval may tell you more about actual progress."
+      },
+      {
+        question: "How often should I review my study plan?",
+        answer:
+          "A full review once per week is a practical starting point, while urgent deadlines or major schedule changes may require smaller adjustments during the week."
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "create-study-schedule-with-ai",
+        category: "Productivity",
+        title: "How to Create a Study Schedule With AI",
+        description:
+          "Build a realistic study schedule around your subjects, priorities, deadlines, and available time."
+      },
+      {
+        slug: "how-to-use-ai-for-spaced-repetition",
+        category: "Productivity",
+        title: "How to Use AI for Spaced Repetition When Studying",
+        description:
+          "Use retrieval results and confidence to decide what needs another review and when."
+      },
+      {
+        slug: "turn-syllabus-into-study-plan-with-ai",
+        category: "Productivity",
+        title: "How to Turn Your Syllabus Into a Study Plan With AI",
+        description:
+          "Convert your syllabus, assessments, and course deadlines into a practical semester roadmap."
+      }
+    ]
+  },
 };
