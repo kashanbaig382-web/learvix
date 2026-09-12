@@ -353,6 +353,17 @@ export const articles = [
     publishedAt: "2026-09-12",
     updatedAt: "2026-09-12",
   },
+  {
+    slug: "practice-for-an-oral-exam-with-ai",
+    category: "Exam Prep",
+    title: "How to Practice for an Oral Exam or Viva With AI",
+    description:
+      "Learn how to use AI to practice for an oral exam or viva with examiner-style questions, follow-ups, spoken answers, feedback, and realistic mock sessions.",
+    readTime: "10 min",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-12",
+    updatedAt: "2026-09-12",
+  },
 ];
 
 export const publishedArticles = articles.filter(

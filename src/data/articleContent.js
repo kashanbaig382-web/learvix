@@ -11384,4 +11384,317 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "practice-for-an-oral-exam-with-ai": {
+    introduction: [
+      "Preparing for an oral exam or viva requires more than recognizing information in your notes. You may need to explain an idea clearly, justify your reasoning, respond to follow-up questions, and adapt when an examiner asks the same concept in an unexpected way.",
+      "AI can help create a repeatable practice environment where you answer questions instead of only reading model responses. It can act as a mock examiner, challenge incomplete answers, ask for clarification, and help you identify topics that become difficult when you have to explain them without notes.",
+      "The goal is not to memorize AI-generated scripts. A stronger approach is to practice retrieving, explaining, defending, and correcting your own understanding."
+    ],
+
+    sections: [
+      {
+        heading: "Quick Answer: How Can You Practice for an Oral Exam With AI?",
+        paragraphs: [
+          "Give AI the syllabus, topic list, verified study notes, or other approved course material you want to practice. Ask it to act as an examiner and question you one topic at a time.",
+          "Answer each question before receiving feedback. Then let the AI ask follow-up questions, request examples, challenge unclear reasoning, and record the areas where your answers become weak.",
+          "Use those weaknesses for targeted review and repeat the mock oral exam without reading a prepared script."
+        ]
+      },
+
+      {
+        heading: "Why Oral Exam Practice Is Different From Written Revision",
+        paragraphs: [
+          "Knowing an answer when you see it on a page does not guarantee that you can explain it clearly when someone asks you unexpectedly.",
+          "An oral assessment may require you to retrieve information, organize your thoughts quickly, explain terminology, justify a choice, and respond to follow-up questions in real time.",
+          "Your practice should therefore include actually producing answers rather than only reviewing notes."
+        ]
+      },
+
+      {
+        heading: "Start With Your Real Course Material",
+        paragraphs: [
+          "The most useful mock viva should reflect what you are actually expected to know.",
+          "Use your syllabus, lecture notes, learning objectives, textbook sections, study guide, or other approved material to define the scope."
+        ],
+        prompt:
+          "I am preparing for an oral exam. Use only the course material I provide to identify the main topics I should be able to explain. Do not begin the mock exam yet and do not add unsupported topics."
+      },
+
+      {
+        heading: "Build an Oral Exam Topic Map",
+        paragraphs: [
+          "Before practicing individual questions, divide the material into topics so that you can see whether your practice is balanced.",
+          "This also prevents an AI examiner from repeatedly testing only the easiest or most obvious parts of the course."
+        ],
+        list: [
+          "Core concepts",
+          "Important definitions",
+          "Processes or mechanisms",
+          "Comparisons",
+          "Applications",
+          "Evidence or examples",
+          "Limitations and exceptions",
+          "Topics you already find difficult"
+        ]
+      },
+
+      {
+        heading: "Ask AI to Act as an Examiner, Not an Answer Generator",
+        paragraphs: [
+          "If AI gives you polished answers before you attempt the question, you can easily mistake recognition for understanding.",
+          "Tell the AI to ask first, wait for your response, and provide feedback only afterward."
+        ],
+        prompt:
+          "Act as a mock oral examiner using the course material I provided. Ask one question at a time and wait for my answer. Do not show a model answer before I respond. After my answer, briefly evaluate it and ask an appropriate follow-up question."
+      },
+
+      {
+        heading: "Answer Out Loud When Possible",
+        paragraphs: [
+          "If your real assessment requires speaking, include spoken practice rather than rehearsing everything silently.",
+          "A voice-enabled AI tool can make this easier, but you can also read the question, answer aloud without looking at notes, and then type or summarize your answer for feedback.",
+          "The important part is practicing the act of constructing an explanation rather than simply recognizing one."
+        ]
+      },
+
+      {
+        heading: "Practice Short, Structured Answers First",
+        paragraphs: [
+          "Long answers are not automatically strong answers. Begin by practicing a clear response that directly addresses the question before adding supporting detail.",
+          "A useful structure is to state the main answer, explain the reasoning, and then give an example or supporting point when relevant."
+        ],
+        prompt:
+          "Evaluate whether my answer directly addressed the question, explained the key reasoning, and used an appropriate example or supporting point. Identify anything important that was missing, but do not rewrite the entire answer for me."
+      },
+
+      {
+        heading: "Make AI Ask Follow-Up Questions",
+        paragraphs: [
+          "Follow-up questions are one of the most valuable parts of oral practice because they reveal whether you understand an idea beyond a memorized first response.",
+          "Ask the AI examiner to probe assumptions, request clarification, ask for examples, or change one part of a scenario."
+        ],
+        prompt:
+          "After each answer, ask one follow-up question based specifically on what I said. You may ask me to clarify a vague statement, justify my reasoning, provide an example, compare alternatives, or explain what would change under a different condition."
+      },
+
+      {
+        heading: "Use Increasing Difficulty",
+        paragraphs: [
+          "Do not begin every practice session with the hardest possible questions. Progress from basic retrieval toward explanation and application.",
+          "This makes it easier to identify exactly where your understanding begins to break down."
+        ],
+        list: [
+          "Level 1 — Define or identify",
+          "Level 2 — Explain in your own words",
+          "Level 3 — Compare or connect ideas",
+          "Level 4 — Apply the idea to a scenario",
+          "Level 5 — Defend, evaluate, or respond to a challenge"
+        ]
+      },
+
+      {
+        heading: "Practice Being Interrupted or Challenged",
+        paragraphs: [
+          "A real examiner may stop you, ask you to clarify a term, or challenge an assumption before you finish a prepared explanation.",
+          "Occasional challenge practice can help you become less dependent on delivering one memorized sequence."
+        ],
+        prompt:
+          "Run a challenging oral practice round. If my answer becomes vague, repetitive, unsupported, or moves away from the question, interrupt with a short follow-up and make me clarify the point before continuing."
+      },
+
+      {
+        heading: "Do Not Memorize AI Model Answers",
+        paragraphs: [
+          "A polished model response can be useful for identifying missing concepts, but memorizing its wording creates a fragile form of preparation.",
+          "If the examiner changes the wording or asks why you made a claim, a memorized script may no longer help.",
+          "After reviewing feedback, close the model answer and explain the concept again using your own words."
+        ]
+      },
+
+      {
+        heading: "Ask for Feedback on the Answer, Not Just a Score",
+        paragraphs: [
+          "A numerical score alone may not tell you what to improve.",
+          "Ask for feedback that separates factual accuracy, relevance, reasoning, clarity, and missing information."
+        ],
+        prompt:
+          "Evaluate my answer using five areas: accuracy, relevance to the question, reasoning, clarity, and important missing information. Keep the feedback concise and point me back to the course material when something needs verification."
+      },
+
+      {
+        heading: "Verify AI Feedback Against Your Course Material",
+        paragraphs: [
+          "AI can incorrectly claim that your answer is wrong or recommend information that your course does not require.",
+          "When feedback involves an important fact, definition, formula, interpretation, or technical claim, compare it with your lecturer's material or another authoritative course source.",
+          "Your official course requirements remain more important than the AI examiner's preferences."
+        ]
+      },
+
+      {
+        heading: "Create a Viva Weakness Log",
+        paragraphs: [
+          "After several questions, look for patterns rather than treating every mistake as an isolated problem.",
+          "A weakness log helps separate missing knowledge from difficulty explaining knowledge under pressure."
+        ],
+        list: [
+          "Topic I could not recall",
+          "Definition I could not explain clearly",
+          "Concept I understood but explained poorly",
+          "Follow-up question that exposed a gap",
+          "Example I could not produce",
+          "Reasoning I could not justify",
+          "AI feedback that needs verification"
+        ]
+      },
+
+      {
+        heading: "Turn Weak Answers Into Targeted Review",
+        paragraphs: [
+          "Do not immediately repeat the exact same question until you memorize its wording.",
+          "Return to the relevant course material, correct your understanding, and then answer a differently worded question testing the same concept."
+        ],
+        prompt:
+          "These are the concepts I struggled to explain. Create a new oral practice round that tests the same underlying knowledge using different wording and follow-up questions. Do not reuse the previous questions exactly."
+      },
+
+      {
+        heading: "Practice Saying 'I Don't Know' Productively",
+        paragraphs: [
+          "During practice, you will eventually encounter something you cannot answer. Do not train yourself to invent confident-sounding information.",
+          "Practice identifying what you do know, where your uncertainty begins, and what you would need to check.",
+          "The exact expectations in a real viva depend on the assessment, so follow your instructor's guidance about how uncertainty should be handled."
+        ]
+      },
+
+      {
+        heading: "Run a Full Mock Oral Exam",
+        paragraphs: [
+          "After several targeted sessions, combine the topics into a longer simulation.",
+          "Avoid notes during the mock session and delay detailed feedback until the end so that the experience is closer to continuous questioning."
+        ],
+        prompt:
+          "Run a 15-question mock oral exam based only on the course material I provided. Mix basic, explanatory, comparative, and application questions. Ask one question at a time, use follow-ups when appropriate, and save the detailed performance review until the session is finished."
+      },
+
+      {
+        heading: "Review the Mock Exam by Topic",
+        paragraphs: [
+          "At the end of the session, identify which topics were consistently strong, inconsistent, or weak.",
+          "Prioritize repeated weaknesses instead of spending equal revision time on everything."
+        ],
+        prompt:
+          "Review this mock oral exam and group the tested topics into Strong, Needs Review, and High Priority. Explain briefly why each topic belongs in that group based on my answers. Do not claim mastery of topics that were not tested."
+      },
+
+      {
+        heading: "Repeat the Exam Without the Same Questions",
+        paragraphs: [
+          "Repeated practice is more useful when you must reconstruct the knowledge rather than recognize a familiar question.",
+          "Ask for new wording, new examples, and different follow-ups while keeping the underlying syllabus coverage similar."
+        ]
+      },
+
+      {
+        heading: "A 25-Minute AI Oral Exam Practice Session",
+        list: [
+          "3 minutes — Choose the topics and approved course material.",
+          "3 minutes — Warm up with basic explanation questions.",
+          "10 minutes — Answer examiner-style questions and follow-ups.",
+          "4 minutes — Review factual and reasoning weaknesses.",
+          "3 minutes — Revisit the weakest course material.",
+          "2 minutes — Answer one final question on the weak area without notes."
+        ]
+      },
+
+      {
+        heading: "Common Mistakes When Using AI for Viva Preparation",
+        list: [
+          "Reading model answers instead of attempting questions",
+          "Practicing silently for an assessment that requires speaking",
+          "Memorizing one perfect script",
+          "Letting AI test topics outside the actual course",
+          "Using only easy definition questions",
+          "Avoiding follow-up questions",
+          "Trusting every piece of AI feedback",
+          "Repeating identical questions until they feel familiar",
+          "Ignoring topics that are uncomfortable to explain"
+        ]
+      },
+
+      {
+        heading: "Use AI for Oral Exam Practice Responsibly",
+        paragraphs: [
+          "Use AI as a rehearsal partner rather than as an authority on what your examiner will ask.",
+          "Do not assume generated questions predict the real exam. Use the syllabus, instructor guidance, official learning objectives, and approved course material to define what matters.",
+          "Also follow your institution's rules before uploading lecture material, assignments, research, or other protected content to an external AI service."
+        ]
+      },
+
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "AI can make oral exam preparation more interactive by giving you a partner that can ask questions, react to your answers, and expose gaps through follow-ups.",
+          "The strongest practice still requires you to do the difficult part: retrieve the knowledge, explain it in your own words, defend your reasoning, verify mistakes, and try again.",
+          "Use AI to create more opportunities to practice thinking out loud, not to create a script that thinks for you."
+        ]
+      }
+    ],
+
+    faqs: [
+      {
+        question: "Can I use AI to practice for a viva?",
+        answer:
+          "Yes. AI can act as a mock examiner by asking questions, waiting for your responses, generating follow-ups, and providing feedback. Keep the practice grounded in your actual course or research material."
+      },
+      {
+        question: "Can AI ask me oral exam questions?",
+        answer:
+          "Yes. Text or voice-enabled AI tools can generate examiner-style questions from topics or study material you provide. Ask for one question at a time so you attempt each answer before seeing feedback."
+      },
+      {
+        question: "Should I answer AI viva questions out loud?",
+        answer:
+          "If your real assessment is spoken, answering aloud is useful because it lets you practice constructing explanations verbally rather than only recognizing information on a page."
+      },
+      {
+        question: "Can AI predict my viva questions?",
+        answer:
+          "AI can generate plausible practice questions, but it cannot reliably predict exactly what your examiner will ask. Use official course requirements, supervisor guidance, and learning objectives to define your preparation."
+      },
+      {
+        question: "How can I make an AI mock viva harder?",
+        answer:
+          "Ask for follow-up questions, requests for justification, comparisons, changed scenarios, and challenges to vague assumptions. Increase difficulty gradually rather than using only difficult questions from the beginning."
+      },
+      {
+        question: "Should I memorize AI-generated viva answers?",
+        answer:
+          "No. Use model answers to identify missing information, then close them and explain the topic again in your own words. Oral exams often include follow-ups that make memorized scripts unreliable."
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "use-ai-to-study-for-exams",
+        category: "Exam Prep",
+        title: "How to Use AI to Study for Exams",
+        description:
+          "Build an AI-assisted exam workflow using active recall, targeted revision, and practice."
+      },
+      {
+        slug: "create-mock-exams-with-ai",
+        category: "Exam Prep",
+        title: "How to Create Mock Exams With AI",
+        description:
+          "Create realistic practice exams and use the results to identify what needs more revision."
+      },
+      {
+        slug: "how-to-use-ai-to-find-knowledge-gaps-before-an-exam",
+        category: "Exam Prep",
+        title: "How to Use AI to Find Gaps in Your Knowledge Before an Exam",
+        description:
+          "Use diagnostic questions and confidence checks to identify weak areas before an exam."
+      }
+    ]
+  },
 };
