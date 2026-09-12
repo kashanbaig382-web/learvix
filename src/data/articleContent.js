@@ -13383,4 +13383,361 @@ Keep the final review manageable.`,
       }
     ]
   },
+  "use-ai-to-create-a-study-error-log": {
+    introduction: [
+      "Getting a question wrong can be useful, but only if you understand why it went wrong. Simply reading the correct answer may make the solution look obvious without fixing the reasoning that caused the mistake.",
+      "An error log is a structured record of mistakes from quizzes, practice questions, mock exams, past papers, assignments, or other learning activities. Instead of treating every wrong answer as the same problem, you record what happened, identify a likely cause, choose a correction, and test yourself again.",
+      "AI can help organize this process and reveal repeated patterns across multiple mistakes. It should support the diagnosis rather than replace answer keys, course material, teacher feedback, or your own reasoning."
+    ],
+
+    sections: [
+      {
+        heading: "Quick Answer: How Do You Use AI to Create a Study Error Log?",
+        paragraphs: [
+          "Collect questions you answered incorrectly and keep your original answers. For each mistake, record the question, your attempt, the verified correct answer or feedback, and what you think caused the error.",
+          "Use AI to help classify the mistakes into consistent categories, identify repeated patterns, and suggest what kind of practice may address each pattern.",
+          "Then solve a fresh question without AI help. A mistake is not fully resolved just because you understand the correction while looking at it."
+        ]
+      },
+
+      {
+        heading: "What Is a Study Error Log?",
+        paragraphs: [
+          "A study error log is a record of mistakes designed to improve future performance rather than simply document wrong answers.",
+          "The useful part is not the size of the log. It is the connection between the mistake, its likely cause, the action you take, and what happens when you are tested again."
+        ]
+      },
+
+      {
+        heading: "Why Reading the Correct Answer Is Not Enough",
+        paragraphs: [
+          "Seeing a correct solution can create a feeling of familiarity. That is different from being able to produce the reasoning yourself on a new question.",
+          "After reviewing a correction, you need another attempt that tests whether the underlying problem has actually changed."
+        ]
+      },
+
+      {
+        heading: "Keep Your Original Wrong Answer",
+        paragraphs: [
+          "Do not immediately replace your first attempt with the correct solution.",
+          "Your original answer contains evidence about what you understood, misunderstood, overlooked, or attempted.",
+          "Without it, AI or a teacher may see the correct answer but have less information about why you missed it."
+        ]
+      },
+
+      {
+        heading: "Start With a Simple Error Log",
+        list: [
+          "Date",
+          "Subject or topic",
+          "Question",
+          "My original answer or approach",
+          "Verified correct answer",
+          "Likely error type",
+          "What caused the mistake",
+          "What I will do differently",
+          "Retest date",
+          "Retest result"
+        ]
+      },
+
+      {
+        heading: "Use Consistent Error Categories",
+        paragraphs: [
+          "If you create a completely new label for every mistake, patterns become difficult to see.",
+          "Start with a small set of categories and adapt them only when your subject genuinely requires something different."
+        ],
+        list: [
+          "Knowledge gap — I did not know or understand the concept.",
+          "Retrieval error — I learned it before but could not recall it.",
+          "Misread question — I misunderstood what was being asked.",
+          "Wrong method — I selected an inappropriate approach.",
+          "Procedure error — I knew the method but made a mistake during the steps.",
+          "Application error — I knew the concept but could not use it in this situation.",
+          "Time problem — I rushed, ran out of time, or abandoned the question.",
+          "Verification error — I failed to check an answer that could have been caught."
+        ]
+      },
+
+      {
+        heading: "Ask AI to Propose an Error Type",
+        paragraphs: [
+          "AI can help classify mistakes, but its classification should be treated as a hypothesis rather than a fact.",
+          "Give it the question, your actual attempt, and trusted correction information. If the evidence does not reveal why you made the mistake, the correct response may be unclear."
+        ],
+        prompt:
+          "Here is a question, my original attempt, and the verified correction. Classify the likely error using only these categories: knowledge gap, retrieval error, misread question, wrong method, procedure error, application error, time problem, verification error, or unclear. Explain what evidence supports the classification. Do not invent a cause if the information is insufficient."
+      },
+
+      {
+        heading: "Find the Earliest Point Where Your Reasoning Went Wrong",
+        paragraphs: [
+          "The final wrong answer may be the result of an earlier decision.",
+          "For a multi-step problem, identifying the first incorrect decision can be more useful than discussing every later consequence."
+        ],
+        prompt:
+          "Compare my attempt with the verified solution. Identify the earliest point where my reasoning appears to diverge from the correct approach. Explain the issue without completing the entire problem for me."
+      },
+
+      {
+        heading: "Separate Concept Problems From Execution Problems",
+        paragraphs: [
+          "Not every wrong answer means you need to relearn the chapter.",
+          "If you understood the concept but made a calculation, reading, timing, or checking mistake, rereading all of your notes may not address the actual problem."
+        ]
+      },
+
+      {
+        heading: "Write One Action for Each Mistake",
+        paragraphs: [
+          "An error label is useful only if it changes what you do next.",
+          "The action should match the cause rather than defaulting to 'study more.'"
+        ],
+        list: [
+          "Knowledge gap → relearn the concept, then test it.",
+          "Retrieval error → use active recall and later review.",
+          "Misread question → practice identifying command words and requirements.",
+          "Wrong method → compare when different methods should be used.",
+          "Procedure error → practice the specific step on fresh problems.",
+          "Application error → solve varied examples using the same concept.",
+          "Time problem → add timed practice.",
+          "Verification error → build a checking step into your process."
+        ]
+      },
+
+      {
+        heading: "Ask AI for a Correction Question, Not Just an Explanation",
+        paragraphs: [
+          "A long explanation may feel helpful without proving that you can now solve the problem.",
+          "After understanding the correction, ask for a fresh question that tests the same underlying skill."
+        ],
+        prompt:
+          "Create one new practice question that tests the same underlying concept or decision as my mistake but changes the surface details. Do not show the answer until I attempt it."
+      },
+
+      {
+        heading: "Retest Without Looking at the Correction",
+        paragraphs: [
+          "Hide the original solution and try the fresh problem independently.",
+          "If you still need the correction beside you, the problem may not yet be resolved.",
+          "Record the retest result in the error log instead of assuming that understanding the explanation means mastery."
+        ]
+      },
+
+      {
+        heading: "Use More Than One Retest When the Error Matters",
+        paragraphs: [
+          "One successful retry immediately after feedback may still depend on short-term familiarity.",
+          "For important or repeated mistakes, test the concept again later and in a slightly different context."
+        ]
+      },
+
+      {
+        heading: "Look for Patterns Across Multiple Mistakes",
+        paragraphs: [
+          "The biggest value of an error log appears after you have several entries.",
+          "Instead of reviewing mistakes as isolated events, count which causes and topics appear repeatedly."
+        ],
+        prompt:
+          "Here are entries from my study error log. Group them by error type and topic. Identify repeated patterns and rank the patterns by frequency. Use only the information in the log."
+      },
+
+      {
+        heading: "Do Not Confuse Frequency With Importance",
+        paragraphs: [
+          "The most common error is not automatically the most important one.",
+          "A less frequent mistake may deserve priority if it affects a foundational concept, a high-value exam skill, or several later topics."
+        ],
+        prompt:
+          "Using my error log and the assessment information I provide, help me prioritize which error patterns to address first. Consider frequency, importance to the course, upcoming assessment relevance, and whether the problem affects other topics."
+      },
+
+      {
+        heading: "Turn Repeated Errors Into Targeted Practice",
+        paragraphs: [
+          "Once a pattern is visible, build practice around that pattern rather than returning to generic revision.",
+          "For example, repeated application errors may require varied problems, while repeated retrieval failures may need active recall and spaced review."
+        ],
+        prompt:
+          "My repeated error pattern is: [describe pattern]. Using the course material I provide, create a short practice set designed specifically to test that weakness. Vary the questions and hide the answers until I respond."
+      },
+
+      {
+        heading: "Use an Error Log With Past Papers",
+        paragraphs: [
+          "Past papers can produce particularly useful error-log data because they expose how your knowledge performs against realistic question formats.",
+          "After each paper, record important wrong answers and classify why marks were lost instead of focusing only on the final score."
+        ]
+      },
+
+      {
+        heading: "Use an Error Log After Mock Exams",
+        paragraphs: [
+          "A mock exam becomes more valuable when its mistakes influence the next round of preparation.",
+          "Separate content weaknesses from timing, question interpretation, method selection, and checking problems."
+        ]
+      },
+
+      {
+        heading: "Track High-Confidence Mistakes",
+        paragraphs: [
+          "A wrong answer you were confident about deserves attention because it may reveal a misconception rather than simple uncertainty.",
+          "Consider adding a confidence field to important error-log entries."
+        ],
+        prompt:
+          "I rated my confidence before checking these answers. Identify mistakes where my confidence was high but the answer was wrong. Help me determine which ones may require deeper review, using the evidence I provide."
+      },
+
+      {
+        heading: "Add Subject-Specific Categories Only When Useful",
+        paragraphs: [
+          "Different subjects can produce different recurring errors.",
+          "Maths may need a units or calculation category, essay subjects may need evidence or interpretation categories, and languages may need grammar-specific labels.",
+          "Keep the system small enough that you will actually use it."
+        ]
+      },
+
+      {
+        heading: "Know When AI Cannot Diagnose the Mistake",
+        paragraphs: [
+          "Sometimes the final answer does not reveal what happened in your reasoning.",
+          "If AI cannot see your working, thought process, relevant diagram, teacher feedback, or course-specific marking rule, it may not have enough evidence.",
+          "Mark the cause as unclear rather than forcing a confident diagnosis."
+        ]
+      },
+
+      {
+        heading: "Verify AI Feedback Against Trusted Material",
+        paragraphs: [
+          "AI can misunderstand a question or provide an incorrect correction.",
+          "Use answer keys, textbooks, lecture material, instructor feedback, or other trusted course resources to establish what is correct before building practice around the feedback."
+        ]
+      },
+
+      {
+        heading: "Archive Errors That Are Actually Resolved",
+        paragraphs: [
+          "The goal is not to create an endless database of everything you have ever answered incorrectly.",
+          "When you can explain the correction and succeed on fresh practice without assistance, the entry can move out of your active review list."
+        ]
+      },
+
+      {
+        heading: "Common Mistakes When Building an AI Error Log",
+        list: [
+          "Deleting the original wrong answer",
+          "Recording only the correct solution",
+          "Using too many error categories",
+          "Accepting AI's diagnosis without checking it",
+          "Writing vague fixes such as 'study harder'",
+          "Never solving a fresh question",
+          "Reviewing the log without changing practice",
+          "Treating every mistake as a knowledge gap",
+          "Logging hundreds of minor errors that never affect future study"
+        ]
+      },
+
+      {
+        heading: "A 15-Minute Weekly Error Log Review",
+        list: [
+          "3 minutes — Add important new mistakes.",
+          "3 minutes — Check or refine error categories.",
+          "3 minutes — Identify repeated patterns.",
+          "3 minutes — Choose one or two priority weaknesses.",
+          "3 minutes — Schedule targeted practice and retesting."
+        ]
+      },
+
+      {
+        heading: "A Simple AI Error Log Workflow",
+        list: [
+          "1 — Keep the original attempt.",
+          "2 — Verify the correct answer.",
+          "3 — Record the mistake.",
+          "4 — Identify the likely cause.",
+          "5 — Choose a specific correction action.",
+          "6 — Create a fresh practice question.",
+          "7 — Retest without help.",
+          "8 — Review repeated patterns.",
+          "9 — Adjust your study plan.",
+          "10 — Archive the error after successful transfer."
+        ]
+      },
+
+      {
+        heading: "Use AI Error Analysis Responsibly",
+        paragraphs: [
+          "Do not upload restricted exam questions, confidential assessment material, personal data, or other content you are not permitted to share with an external AI system.",
+          "Follow your institution's rules for AI use and use approved tools when required.",
+          "AI should help you investigate mistakes. Trusted course material and your demonstrated performance on new questions should determine whether the correction is actually reliable."
+        ]
+      },
+
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "Wrong answers are more useful when they change what you practice next.",
+          "An AI-assisted error log can turn a collection of mistakes into patterns: what you misunderstand, what you forget, which methods you choose incorrectly, where time disappears, and which errors keep returning.",
+          "The goal is not to create a perfect log. It is to make the same important mistake less likely the next time you are tested."
+        ]
+      }
+    ],
+
+    faqs: [
+      {
+        question: "What is a study error log?",
+        answer:
+          "A study error log records important mistakes, their likely causes, the correction action you take, and the result of later retesting."
+      },
+      {
+        question: "How can AI help analyze my mistakes?",
+        answer:
+          "AI can help classify errors, compare attempts with verified corrections, identify repeated patterns, and generate fresh practice. Its diagnosis should still be checked against trusted course material."
+      },
+      {
+        question: "Should I record every question I get wrong?",
+        answer:
+          "Not necessarily. Prioritize repeated mistakes, important concepts, high-confidence errors, and mistakes that reveal a weakness worth changing."
+      },
+      {
+        question: "What types of mistakes should I track?",
+        answer:
+          "Useful categories can include knowledge gaps, retrieval errors, misread questions, wrong methods, procedure errors, application problems, timing problems, and verification mistakes."
+      },
+      {
+        question: "How do I know when a mistake is fixed?",
+        answer:
+          "A useful test is whether you can explain the correction and successfully solve a fresh question testing the same underlying skill without depending on the original solution."
+      },
+      {
+        question: "Can I use an error log for essay subjects?",
+        answer:
+          "Yes. Categories may include misunderstanding the question, unsupported claims, weak evidence, reasoning gaps, poor structure, or other recurring issues relevant to the subject."
+      }
+    ],
+
+    relatedGuides: [
+      {
+        slug: "how-to-use-ai-to-find-knowledge-gaps-before-an-exam",
+        category: "Exam Prep",
+        title: "How to Use AI to Find Gaps in Your Knowledge Before an Exam",
+        description:
+          "Diagnose weak areas before an exam using targeted questions, confidence checks, and retesting."
+      },
+      {
+        slug: "create-mock-exams-with-ai",
+        category: "Exam Prep",
+        title: "How to Create Mock Exams With AI",
+        description:
+          "Build realistic practice exams and use the results to guide your next round of revision."
+      },
+      {
+        slug: "how-to-use-ai-with-past-papers",
+        category: "Exam Prep",
+        title: "How to Use AI With Past Papers to Prepare for Exams",
+        description:
+          "Use real past papers to analyze question patterns, review mistakes, and improve targeted exam practice."
+      }
+    ]
+  },
 };

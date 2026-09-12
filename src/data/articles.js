@@ -419,6 +419,17 @@ export const articles = [
     publishedAt: "2026-09-12",
     updatedAt: "2026-09-12",
   },
+  {
+    slug: "use-ai-to-create-a-study-error-log",
+    category: "Exam Prep",
+    title: "How to Use AI to Learn From Your Mistakes With an Error Log",
+    description:
+      "Learn how to use AI to build a study error log, identify patterns behind wrong answers, choose targeted fixes, and retest your understanding.",
+    readTime: "11 min",
+    author: "Mirza Kashan",
+    publishedAt: "2026-09-12",
+    updatedAt: "2026-09-12",
+  },
 ];
 
 export const publishedArticles = articles.filter(
