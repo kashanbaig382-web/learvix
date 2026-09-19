@@ -2941,7 +2941,41 @@ Keep the final review manageable.`,
         prompt:
           "Using these verified study notes, create 10 practice questions. Do not show the answers immediately. Include a mix of concept questions, definitions, application questions, and short-answer questions."
       },
-
+      {
+        heading: "Worked Example: From PDF Text to Verified Study Notes",
+        paragraphs: [
+          "Here is a small example of what the workflow looks like in practice. Imagine a biology PDF contains a section explaining photosynthesis.",
+          "Suppose the source states that plants use light energy to convert carbon dioxide and water into glucose, with oxygen released as a by-product. The PDF also explains that the process takes place in chloroplasts."
+        ],
+        example: [
+          "SOURCE NOTES: Photosynthesis uses light energy. Carbon dioxide and water are used to produce glucose. Oxygen is released. The process occurs in chloroplasts.",
+          "FIRST AI DRAFT: Photosynthesis is the process plants use to make glucose using light, carbon dioxide, and water. It occurs in chloroplasts and releases oxygen.",
+          "VERIFIED VERSION: Plants use light energy during photosynthesis to convert carbon dioxide and water into glucose, releasing oxygen as a by-product. The process takes place in chloroplasts."
+        ],
+        paragraphsAfter: [
+          "Now compare each statement in the AI draft with the source. In this example, the main ideas are preserved, but the wording has changed. Before using the notes, you would check that every important term and relationship still matches the PDF.",
+          "The same method can be applied to a real chapter: extract a manageable section, generate notes, compare them line by line with the source, correct the notes, and only then create the shorter revision version."
+        ],
+        note:
+          "The example above is an illustrative LEARVIX example, not text taken from a real textbook or research paper."
+      },
+      {
+        heading: "Turn the Verified Notes Into a Revision Sheet",
+        paragraphs: [
+          "After verification, the same material can be compressed into something easier to review before an exam."
+        ],
+        example: [
+          "PHOTOSYNTHESIS — QUICK REVISION",
+          "Location: Chloroplasts",
+          "Inputs: Carbon dioxide + water + light energy",
+          "Main product: Glucose",
+          "By-product: Oxygen",
+          "Recall question: What inputs are required for photosynthesis and what products are formed?"
+        ],
+        paragraphsAfter: [
+          "This creates two useful layers: detailed verified notes for understanding and a compact revision sheet for retrieval practice."
+        ]
+      },
       {
         heading: "A Complete Example Workflow",
         paragraphs: [

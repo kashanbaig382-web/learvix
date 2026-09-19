@@ -1,5 +1,4 @@
 import { Inter, Manrope } from "next/font/google";
-import Script from "next/script";
 
 import "./globals.css";
 
@@ -70,18 +69,16 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={manrope.variable}>
-      <body className={inter.className}>
-        <Script
-          id="adsense-script"
+    <html lang="en">
+      <head>
+        <script
           async
-          strategy="afterInteractive"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2788908795904447"
           crossOrigin="anonymous"
-        />
+        ></script>
+      </head>
 
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
