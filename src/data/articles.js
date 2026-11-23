@@ -430,6 +430,29 @@ export const articles = [
     publishedAt: "2026-09-12",
     updatedAt: "2026-09-12",
   },
+
+  {
+    slug: "prepare-for-office-hours-with-ai",
+    category: "Study Guides",
+    title: "How to Prepare for Office Hours With AI and Ask Better Questions",
+    description:
+      "Learn how to use AI to organize course doubts, prepare specific questions, create an office hours agenda, and turn instructor guidance into clear next steps.",
+    readTime: "11 min read",
+    author: "Mirza Kashan",
+    publishedAt: "2026-11-24",
+    updatedAt: "2026-11-24",
+  },
+  {
+    slug: "create-a-course-glossary-with-ai",
+    category: "Study Guides",
+    title: "How to Create a Course Glossary With AI From Your Notes",
+    description:
+      "Learn how to extract important course terms, create accurate definitions, organize related concepts, verify examples, and build a useful revision glossary with AI.",
+    readTime: "12 min read",
+    author: "Mirza Kashan",
+    publishedAt: "2026-11-24",
+    updatedAt: "2026-11-24",
+  },
 ];
 
 export const publishedArticles = articles.filter(

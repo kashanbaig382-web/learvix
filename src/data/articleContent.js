@@ -13774,4 +13774,466 @@ Keep the final review manageable.`,
       }
     ]
   },
+
+  "prepare-for-office-hours-with-ai": {
+    introduction: [
+      "Attending office hours can be one of the most useful ways to get help with a difficult course, but many students arrive without knowing what to ask. They may understand that something is confusing without being able to explain exactly where they got stuck.",
+      "AI can help you prepare before meeting your instructor. You can organize confusing topics, turn vague doubts into specific questions, review your attempted solutions, and create a short agenda for the conversation.",
+      "The goal is not to use AI instead of your instructor. It is to arrive prepared, explain what you have already tried, and make better use of the time available."
+    ],
+    sections: [
+      {
+        heading: "Quick Answer: How Can AI Help You Prepare for Office Hours?",
+        paragraphs: [
+          "Collect the lecture material, assignment instructions, questions, or notes related to the problem you want to discuss. Identify what you understand, what you do not understand, and what you have already tried.",
+          "Ask AI to organize your doubts into specific questions and create a short meeting agenda. Review the questions yourself and remove anything that does not match your actual difficulty.",
+          "During office hours, listen to your instructor, take notes, and confirm any important instructions before leaving."
+        ],
+        list: [
+          "Choose two or three topics you need help with.",
+          "Collect relevant course material.",
+          "Write down what you already understand.",
+          "Record your attempts and exact points of confusion.",
+          "Use AI to organize specific questions.",
+          "Prepare a short meeting agenda.",
+          "Record the instructor's explanations and next steps."
+        ]
+      },
+      {
+        heading: "Why Students Should Prepare Before Office Hours",
+        paragraphs: [
+          "A vague question such as 'I do not understand this chapter' can make it difficult to identify where help is needed.",
+          "A more useful question identifies the exact concept, step, or assumption causing confusion. This gives your instructor something specific to explain.",
+          "Preparation also helps you avoid spending the meeting searching through files, remembering deadlines, or trying to reconstruct a problem you attempted several days earlier."
+        ],
+        example: [
+          "Vague question: I do not understand statistics.",
+          "Specific question: I understand how to calculate the mean, but I am confused about when to use the standard deviation formula for a sample.",
+          "Useful evidence: My attempted calculation and the question where I became stuck."
+        ]
+      },
+      {
+        heading: "Collect the Right Course Material",
+        paragraphs: [
+          "Before using AI, gather the material connected to your question. This may include lecture slides, textbook pages, assignment instructions, feedback, worked examples, or your own notes.",
+          "Use the official course material as the main reference. If your institution has rules about uploading course documents to external AI services, follow those rules and remove personal or restricted information where necessary."
+        ],
+        list: [
+          "The exact question or assignment instruction.",
+          "Relevant lecture notes or textbook section.",
+          "Your original attempt or working.",
+          "Any feedback already received.",
+          "The course topic or learning objective."
+        ]
+      },
+      {
+        heading: "Separate What You Understand From What You Do Not",
+        paragraphs: [
+          "Do not ask AI to explain an entire chapter if only one part is confusing. First identify the point where your understanding breaks down.",
+          "For example, you may understand a formula but not know why it applies to a particular question. Or you may understand a reading but struggle to connect its argument to the assignment.",
+          "This distinction helps you prepare questions that lead to useful explanations rather than another general summary."
+        ],
+        prompt: `I am preparing for office hours about this course topic.
+
+Course topic: [topic]
+What I understand: [explain briefly]
+What confuses me: [specific point]
+What I already tried: [attempt]
+
+Help me identify the exact gap in my understanding. Suggest up to five specific questions I could ask my instructor. Do not invent course requirements or assume what my instructor expects.`
+      },
+      {
+        heading: "Turn Vague Doubts Into Specific Questions",
+        paragraphs: [
+          "A good question gives your instructor enough context to understand the problem. It should explain what you were trying to do and where you became uncertain.",
+          "AI can help rewrite unclear questions, but check that the revised wording still describes your real difficulty. Do not use a question simply because it sounds more academic."
+        ],
+        example: [
+          "Instead of: Can you explain this assignment?",
+          "Ask: I understand the first requirement, but I am unsure how the second marking criterion should appear in my analysis. Could you clarify what is expected?",
+          "Instead of: Is my answer correct?",
+          "Ask: Could you help me identify the first step in my reasoning that needs correction?"
+        ],
+        prompt: `Rewrite these doubts as clear, respectful questions for my instructor.
+
+My doubts:
+[paste your questions]
+
+Keep the meaning unchanged. Make each question specific and concise. Do not add assumptions or answer the questions for me.`
+      },
+      {
+        heading: "Create a Short Office Hours Agenda",
+        paragraphs: [
+          "You may have several questions but limited time. Put the most important or time-sensitive issue first.",
+          "A short agenda gives the conversation direction while leaving room for follow-up questions."
+        ],
+        list: [
+          "Main topic or assignment I need help with.",
+          "The exact point where I am stuck.",
+          "What I have already attempted.",
+          "One or two follow-up questions.",
+          "What I need to do after the meeting."
+        ],
+        prompt: `Create a short office hours agenda from my information.
+
+Course: [course]
+Main issue: [issue]
+What I tried: [attempt]
+Questions: [questions]
+Upcoming deadline: [deadline, if applicable]
+
+Prioritize the most important issue first. Keep the agenda realistic for a short meeting. Do not invent dates or course policies.`
+      },
+      {
+        heading: "Use AI to Review Your Attempt Before the Meeting",
+        paragraphs: [
+          "If your question involves a calculation, written answer, or problem-solving process, bring your original attempt rather than only the final result.",
+          "You can ask AI to identify possible gaps or unclear steps, but do not treat its assessment as the instructor's grading decision.",
+          "The purpose is to understand your own attempt well enough to discuss it, not to replace it with an AI-generated solution."
+        ],
+        prompt: `Review my attempt as preparation for a discussion with my instructor.
+
+Question: [paste question]
+My attempt: [paste my working]
+Course material or method: [relevant material]
+
+Identify steps that may need clarification. Explain what information is missing if you cannot evaluate a step. Do not rewrite the entire answer or claim to know my instructor's marking decision.`
+      },
+      {
+        heading: "What to Do During Office Hours",
+        paragraphs: [
+          "Bring your prepared questions and explain the context briefly. Show your actual work when it is relevant, and allow the instructor to explain the concept or requirement.",
+          "If an explanation is unclear, ask a follow-up question rather than pretending to understand. You can also repeat the explanation in your own words to check whether you understood it correctly.",
+          "Take notes about important corrections, recommended resources, deadlines, and next steps."
+        ],
+        list: [
+          "Start with your highest-priority question.",
+          "Show the relevant course material or attempted work.",
+          "Explain what you already understand.",
+          "Ask for clarification when needed.",
+          "Write down important instructions.",
+          "Confirm the next action before leaving."
+        ]
+      },
+      {
+        heading: "Turn the Meeting Into a Follow-Up Action Plan",
+        paragraphs: [
+          "A useful meeting should lead to a clear next step. Afterward, organize your notes into actions you can complete.",
+          "AI can help summarize your own meeting notes, but compare the summary with what your instructor actually said. Do not let AI invent a deadline, policy, or requirement."
+        ],
+        prompt: `Organize these notes from my instructor meeting.
+
+Meeting notes:
+[paste your notes]
+
+Create three sections:
+1. Concepts I now understand.
+2. Questions that still need clarification.
+3. Actions I should complete next.
+
+Preserve the instructor's wording for important requirements. Mark unclear information instead of guessing.`
+      },
+      {
+        heading: "Common Mistakes to Avoid",
+        paragraphs: [
+          "AI preparation is useful only when it makes the real conversation more productive. Avoid using it in ways that hide your actual understanding or waste meeting time."
+        ],
+        list: [
+          "Do not arrive with a long list of generic AI-generated questions.",
+          "Do not present AI-generated explanations as your own attempted work.",
+          "Do not assume AI knows your instructor's expectations.",
+          "Do not ignore official course instructions.",
+          "Do not leave without understanding your next step."
+        ]
+      },
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "Preparing for office hours with AI is about asking better questions, not avoiding the effort of understanding a course.",
+          "Collect your material, identify the exact difficulty, prepare a short agenda, and bring your own attempts to the conversation. Afterward, turn the instructor's guidance into clear actions.",
+          "Used carefully, AI can help you become a more prepared and independent student while keeping your instructor's guidance at the center of the learning process."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Can AI help me prepare questions for my professor?",
+        answer: "Yes. Provide the relevant course topic, what you understand, and where you are stuck. AI can help turn vague doubts into specific questions that you can review before meeting your professor."
+      },
+      {
+        question: "Should I show my AI conversation to my instructor?",
+        answer: "You can share relevant parts if they help explain your preparation, but follow your institution's AI-use rules. Your own attempts and the original course material should remain central."
+      },
+      {
+        question: "Can AI tell me what my professor will ask?",
+        answer: "AI cannot reliably know what an instructor will ask or expect. It can help you identify possible questions from supplied course material, but these are practice suggestions rather than predictions."
+      },
+      {
+        question: "What should I bring to office hours?",
+        answer: "Bring the relevant assignment or question, your notes, your original attempt, specific doubts, and any feedback connected to the issue."
+      },
+      {
+        question: "Can AI summarize my office hours notes?",
+        answer: "Yes. AI can organize notes into explanations, unresolved questions, and next steps. Verify the summary against your actual notes and do not rely on it for unconfirmed deadlines or policies."
+      }
+    ],
+    relatedGuides: [
+      {
+        slug: "how-to-use-ai-to-explain-difficult-concepts",
+        category: "Study Guides",
+        title: "How to Use AI to Explain Difficult Concepts",
+        description: "Break down difficult ideas while checking whether you can explain them independently."
+      },
+      {
+        slug: "check-ai-answers-before-using-them-for-study",
+        category: "Study Guides",
+        title: "How to Check AI Answers Before Using Them for Study",
+        description: "Verify claims, explanations, and important details before relying on AI study answers."
+      },
+      {
+        slug: "how-to-break-down-assignments-with-ai",
+        category: "Productivity",
+        title: "How to Break Down Assignments With AI",
+        description: "Turn assignment requirements into manageable tasks and clear next steps."
+      }
+    ]
+  },
+
+  "create-a-course-glossary-with-ai": {
+    introduction: [
+      "Every course introduces terms that students must understand and use correctly. Some are simple definitions, while others describe processes, theories, formulas, technical methods, or ideas that have specific meanings within a subject.",
+      "A course glossary brings these terms together in one organized reference. AI can help extract terminology from lecture notes, readings, and course material, then organize definitions and examples into a format that is easier to review.",
+      "The important part is accuracy. AI-generated definitions should be checked against the original material, especially when a term has a specific meaning in your course."
+    ],
+    sections: [
+      {
+        heading: "Quick Answer: How Do You Create a Course Glossary With AI?",
+        paragraphs: [
+          "Collect notes, textbook extracts, lecture slides, or other approved course material. Ask AI to identify important terms and organize them alphabetically or by topic.",
+          "For each term, request a concise definition based on the supplied source, a simple explanation, and an example only when the source supports it. Check the definitions against the original material before using the glossary."
+        ],
+        list: [
+          "Choose one course or subject.",
+          "Collect the relevant learning material.",
+          "Extract important terms and phrases.",
+          "Group related terms by topic.",
+          "Create source-based definitions.",
+          "Verify definitions and examples.",
+          "Add page or lecture references.",
+          "Review the glossary using recall questions."
+        ]
+      },
+      {
+        heading: "What Is a Course Glossary?",
+        paragraphs: [
+          "A course glossary is an organized collection of important terms and their meanings. It helps students find definitions quickly and understand how terminology is used within a particular subject.",
+          "Unlike a general dictionary, a course glossary should reflect the meaning used in your textbook, lecture notes, or instructor-provided material.",
+          "For example, a word may have an everyday meaning and a more precise meaning in statistics, biology, economics, or computer science."
+        ]
+      },
+      {
+        heading: "Choose the Course Material You Want to Use",
+        paragraphs: [
+          "Start with a clearly defined source instead of combining every document from an entire semester. A single chapter, lecture, or unit is easier to process and verify.",
+          "Use materials you are permitted to share with the AI service. Follow institutional privacy and academic policies, especially when documents contain personal or restricted information."
+        ],
+        list: [
+          "Lecture notes.",
+          "Textbook chapters or approved extracts.",
+          "Lecture slides.",
+          "Course handouts.",
+          "Instructor-provided terminology lists.",
+          "Your own notes from class."
+        ]
+      },
+      {
+        heading: "Extract Important Terms From Your Notes",
+        paragraphs: [
+          "Ask AI to identify terms that are important to understanding the material, not every uncommon word in the document.",
+          "Useful glossary candidates may include technical vocabulary, named theories, formulas, processes, classifications, abbreviations, and concepts that appear repeatedly.",
+          "Review the extracted list yourself. Remove irrelevant words and add important terms that AI may have missed."
+        ],
+        prompt: `Read the course material below and identify important terminology for a student glossary.
+
+Course or subject: [subject]
+Unit or chapter: [unit]
+Material:
+[paste or provide your material]
+
+Return a table with:
+- Term
+- Why it appears important
+- Topic or section
+- Source location, if provided
+
+Include technical terms, key concepts, named theories, processes, and important abbreviations. Do not invent terminology or definitions.`
+      },
+      {
+        heading: "Group Terms Into Useful Categories",
+        paragraphs: [
+          "A long alphabetical list can be difficult to use when you are trying to understand how concepts relate to one another.",
+          "Organize terms by chapter, topic, process, or concept group. You can keep an alphabetical index as well so that a term remains easy to find.",
+          "Choose categories that reflect the structure of your actual course rather than asking AI to invent a new syllabus."
+        ],
+        example: [
+          "Statistics — population, sample, parameter, statistic.",
+          "Research methods — hypothesis, variable, observation, sampling.",
+          "Data analysis — mean, median, standard deviation, correlation."
+        ]
+      },
+      {
+        heading: "Write Definitions Based on the Original Source",
+        paragraphs: [
+          "A useful glossary definition should be clear without changing the meaning of the course material.",
+          "Ask AI to explain the term in plain language, but keep the source-based definition separate from any additional explanation. This is especially important for technical terms that have precise meanings.",
+          "If the source does not define a term clearly, mark it for verification rather than allowing AI to fill the gap with an unsupported explanation."
+        ],
+        prompt: `Create glossary entries using only the course material I provide.
+
+Terms:
+[paste approved term list]
+
+For each term, provide:
+1. A concise definition supported by the material.
+2. A plain-language explanation.
+3. A source reference if available.
+4. An uncertainty note if the material does not define it clearly.
+
+Do not invent definitions, facts, or source references. Keep additional background separate from the source-based definition.`
+      },
+      {
+        heading: "Add Examples Without Changing the Meaning",
+        paragraphs: [
+          "Examples can make abstract terminology easier to understand, but they must match the concept accurately.",
+          "If your course material contains an example, preserve it or summarize it carefully. If AI suggests a new example, label it as an additional illustration and verify that it is correct for your subject.",
+          "For formulas and technical procedures, include the variables and conditions needed to interpret the example."
+        ],
+        example: [
+          "Term: Population",
+          "Course definition: The complete group being studied in a statistical investigation.",
+          "Illustrative example: If a study examines every student enrolled at a college, that group is the population for the study."
+        ],
+        prompt: `For each glossary term, suggest one simple illustrative example.
+
+Use the definitions I provide:
+[paste verified definitions]
+
+Keep examples separate from the original course definitions. Do not add unsupported facts. If a term cannot be illustrated accurately from the available context, say so.`
+      },
+      {
+        heading: "Keep Similar Terms Separate",
+        paragraphs: [
+          "Students sometimes confuse terms that look or sound similar. A glossary can help by placing related concepts beside each other and explaining their differences.",
+          "Do not merge two terms just because they are related. Preserve their individual definitions and identify the specific distinction that matters in your course."
+        ],
+        prompt: `Compare these course terms using the supplied material.
+
+Terms: [term A] and [term B]
+Course material:
+[paste relevant source]
+
+Create a comparison table showing:
+- Definition of each term
+- Main difference
+- What they have in common
+- A course-based example if available
+
+Do not claim a difference unless the material supports it.`
+      },
+      {
+        heading: "Verify the Glossary Against Your Notes",
+        paragraphs: [
+          "Never assume that a polished definition is automatically correct. AI can simplify a concept too much, mix up related terms, or add details that were not present in your source.",
+          "Check every entry against the original notes or textbook. Pay particular attention to formulas, units, names, dates, exceptions, and subject-specific definitions.",
+          "Keep a source reference beside each important term so you can return to the original explanation when needed."
+        ],
+        list: [
+          "Is the definition supported by the course material?",
+          "Has an important condition or exception been removed?",
+          "Are similar terms kept separate?",
+          "Are formulas and symbols accurate?",
+          "Is the example appropriate for the definition?",
+          "Can I locate the original source?"
+        ]
+      },
+      {
+        heading: "Turn the Glossary Into a Revision Resource",
+        paragraphs: [
+          "A glossary should not become another document that you only read passively. Use it to test whether you can explain each term without looking at the definition.",
+          "Cover the definition and try to recall it. Then explain the concept in your own words and compare your answer with the verified entry.",
+          "Mark difficult terms and return to them during later revision sessions."
+        ],
+        prompt: `Create a glossary practice quiz using only these verified entries.
+
+Glossary:
+[paste your glossary]
+
+Ask one question at a time. Mix definition recall, term identification, and comparison questions. Wait for my answer before giving feedback. Do not introduce terms that are not in the glossary.`
+      },
+      {
+        heading: "Common Glossary Mistakes to Avoid",
+        paragraphs: [
+          "A large glossary is not automatically a useful one. Focus on terminology that helps you understand and apply the course material."
+        ],
+        list: [
+          "Do not include every unfamiliar word without checking its importance.",
+          "Do not accept AI definitions without source verification.",
+          "Do not remove important technical conditions to make definitions shorter.",
+          "Do not combine terms that have different meanings.",
+          "Do not invent textbook page numbers or lecture references.",
+          "Do not rely on reading definitions without testing recall."
+        ]
+      },
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "Creating a course glossary with AI can make terminology easier to organize and review, especially when a subject contains many technical concepts.",
+          "Start with a limited set of course material, extract important terms, write source-based definitions, and verify every entry. Then use the finished glossary for active recall and targeted revision.",
+          "The best glossary is not the longest one. It is the one that helps you understand and correctly use the language of your course."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Can AI create a glossary from lecture notes?",
+        answer: "Yes. AI can identify important terminology and organize it into glossary entries from supplied notes. Review the term list and verify each definition against the original course material."
+      },
+      {
+        question: "How many terms should a course glossary contain?",
+        answer: "There is no fixed number. Include the terms needed to understand the unit or course, and avoid adding unrelated vocabulary simply to make the glossary longer."
+      },
+      {
+        question: "Should glossary definitions be short or detailed?",
+        answer: "Keep the main definition concise while preserving the important meaning and conditions. Add a separate explanation or example when a concept needs more context."
+      },
+      {
+        question: "Can AI explain the difference between similar terms?",
+        answer: "Yes. Provide the relevant course definitions and ask AI to compare them. Verify the distinction against your textbook or instructor-provided material."
+      },
+      {
+        question: "Can I use an AI glossary to prepare for exams?",
+        answer: "Yes. Use it for definition recall, term identification, comparisons, and short explanations. Combine it with problem-solving and other practice required by your subject."
+      }
+    ],
+    relatedGuides: [
+      {
+        slug: "turn-lecture-notes-into-flashcards-with-ai",
+        category: "Study Guides",
+        title: "How to Turn Lecture Notes Into Flashcards With AI",
+        description: "Create focused flashcards from lecture notes and verify them before revision."
+      },
+      {
+        slug: "make-a-study-guide-from-notes-with-ai",
+        category: "Study Guides",
+        title: "How to Make a Study Guide From Notes With AI",
+        description: "Organize course notes into a structured study guide and revision resource."
+      },
+      {
+        slug: "how-to-use-ai-to-explain-difficult-concepts",
+        category: "Study Guides",
+        title: "How to Use AI to Explain Difficult Concepts",
+        description: "Break down difficult ideas while checking your independent understanding."
+      }
+    ]
+  },
 };
